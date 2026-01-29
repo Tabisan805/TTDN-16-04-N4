@@ -1,0 +1,6 @@
+name,street,city,phone,email,company_type,tax_code,industry_btl,company_size,customer_type_btl,rating
+Công ty CP Thương mại Á Châu,123 Đường Lý Thái Tổ,Hà Nội,02412345678,contact@cothang-acha.com,company,0123456789,Thương mại,51-200,regular,5
+Công ty TNHH Sản xuất Hoa Anh,456 Đường Trần Phú,TPHCM,02899999999,contact@sanxuat-hoaanh.com,company,0987654321,Sản xuất,201-500,vip,5
+Công ty CP Dịch vụ Phát Đạt,789 Đường Nguyễn Huệ,Đà Nẵng,02513579135,contact@dichvu-phatdat.com,company,0555888999,Dịch vụ,11-50,regular,4
+Công ty TNHH XNK Bắc Việt,321 Đường Hùng Vương,Hải Phòng,02256789000,contact@xnk-bacviet.com,company,0444555666,Xuất nhập khẩu,51-200,regular,4
+Công ty CP Nông nghiệp Á Châu,654 Đường Lý Thái Tổ,Huế,02734567890,contact@nongnghe-acha.com,company,0111222333,Nông nghiệp,1-10,potential,3

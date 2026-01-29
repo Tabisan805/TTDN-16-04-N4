@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- Handover Workflow Stages -->
+        <record id="handover_stage_draft" model="task.handover.stage">
+            <field name="name">Nháp</field>
+            <field name="description">Bàn giao mới được tạo, chưa gửi cho người nhận</field>
+            <field name="sequence">10</field>
+            <field name="color">1</field>
+            <field name="state">draft</field>
+        </record>
+        
+        <record id="handover_stage_pending" model="task.handover.stage">
+            <field name="name">Chờ xác nhận</field>
+            <field name="description">Bàn giao đã gửi, chờ người nhận xác nhận</field>
+            <field name="sequence">20</field>
+            <field name="color">5</field>
+            <field name="state">pending</field>
+        </record>
+        
+        <record id="handover_stage_confirmed" model="task.handover.stage">
+            <field name="name">Đã xác nhận</field>
+            <field name="description">Người nhận đã xác nhận bàn giao công việc</field>
+            <field name="sequence">30</field>
+            <field name="color">10</field>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="handover_stage_rejected" model="task.handover.stage">
+            <field name="name">Từ chối</field>
+            <field name="description">Bàn giao bị từ chối bởi người nhận</field>
+            <field name="sequence">40</field>
+            <field name="color">2</field>
+            <field name="state">rejected</field>
+        </record>
+        
+        <record id="handover_stage_completed" model="task.handover.stage">
+            <field name="name">Hoàn thành</field>
+            <field name="description">Bàn giao công việc đã hoàn thành</field>
+            <field name="sequence">50</field>
+            <field name="color">10</field>
+            <field name="state">completed</field>
+        </record>
+        
+    </data>
+</odoo>

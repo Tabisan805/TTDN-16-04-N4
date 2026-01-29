@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="view_crm_interaction_tree" model="ir.ui.view">
+        <field name="name">crm.interaction.tree</field>
+        <field name="model">crm.interaction</field>
+        <field name="arch" type="xml">
+            <list string="Lịch sử tương tác" decoration-success="outcome=='successful'" decoration-danger="outcome=='failed'">
+                <field name="date"/>
+                <field name="partner_id"/>
+                <field name="lead_id"/>
+                <field name="interaction_type_id"/>
+                <field name="title"/>
+                <field name="user_id"/>
+                <field name="duration"/>
+                <field name="outcome"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+    
+    <record id="view_crm_interaction_form" model="ir.ui.view">
+        <field name="name">crm.interaction.form</field>
+        <field name="model">crm.interaction</field>
+        <field name="arch" type="xml">
+            <form string="Tương tác">
+                <header>
+                    <button name="action_done" string="Hoàn thành" type="object" invisible="state != 'draft'" class="btn-primary"/>
+                    <button name="action_cancel" string="Hủy" type="object" invisible="state != 'draft'" class="btn-danger"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="title"/>
+                            <field name="partner_id"/>
+                            <field name="lead_id"/>
+                            <field name="interaction_type_id"/>
+                        </group>
+                        <group>
+                            <field name="date"/>
+                            <field name="duration"/>
+                            <field name="user_id"/>
+                            <field name="outcome"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Nội dung">
+                            <field name="description"/>
+                        </page>
+                        <page string="Lịch hẹn tiếp theo">
+                            <group>
+                                <field name="next_action_date"/>
+                                <field name="next_action_note"/>
+                                <field name="auto_create_task"/>
+                                <field name="task_id" readonly="1" invisible="not task_id"/>
+                            </group>
+                        </page>
+                        <page string="Liên kết">
+                            <group>
+                                <field name="sale_order_id"/>
+                                <field name="quotation_sent"/>
+                            </group>
+                        </page>
+                        <page string="File đính kèm">
+                            <field name="attachment_ids" widget="many2many_binary"/>
+                        </page>
+                    </notebook>
+                    <group>
+                        <field name="note"/>
+                    </group>
+                </sheet>
+                <!-- Chatter: Uncomment after server restart
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="message_ids"/>
+                </div>
+                -->
+            </form>
+        </field>
+    </record>
+    
+    <record id="view_crm_interaction_calendar" model="ir.ui.view">
+        <field name="name">crm.interaction.calendar</field>
+        <field name="model">crm.interaction</field>
+        <field name="arch" type="xml">
+            <calendar string="Lịch tương tác" date_start="date" color="interaction_type_id" mode="month">
+                <field name="title"/>
+                <field name="partner_id"/>
+                <field name="user_id"/>
+            </calendar>
+        </field>
+    </record>
+    
+    <record id="action_crm_interaction" model="ir.actions.act_window">
+        <field name="name">Lịch sử tương tác</field>
+        <field name="res_model">crm.interaction</field>
+        <field name="view_mode">list,form,calendar</field>
+    </record>
+    
+</odoo>

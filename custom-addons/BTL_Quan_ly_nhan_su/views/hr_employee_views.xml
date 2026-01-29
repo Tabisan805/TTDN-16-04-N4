@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Tree View -->
+    <record id="view_hr_employee_tree" model="ir.ui.view">
+        <field name="name">hr.employee.tree.btl</field>
+        <field name="model">hr.employee</field>
+        <field name="arch" type="xml">
+            <list string="Nhân viên">
+                <field name="employee_code"/>
+                <field name="name"/>
+                <field name="department_id"/>
+                <field name="job_id"/>
+                <field name="manager_id"/>
+                <field name="partner_count" string="KH" optional="show"/>
+                <field name="lead_count" string="Cơ hội" optional="show"/>
+                <field name="sales_this_month" string="Doanh thu tháng" widget="monetary" optional="show"/>
+                <field name="commission_this_month" string="Hoa hồng tháng" widget="monetary" optional="show"/>
+                <field name="total_orders_this_month" string="Đơn hàng tháng" optional="show"/>
+                <field name="wage_type" optional="hide"/>
+                <field name="basic_wage" optional="hide"/>
+                <field name="status"/>
+                <field name="currency_id" invisible="1"/>
+            </list>
+        </field>
+    </record>
+    
+    <!-- Form View -->
+    <record id="view_hr_employee_form" model="ir.ui.view">
+        <field name="name">hr.employee.form.btl</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            
+            <!-- Thêm stat buttons -->
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_customers" type="object" class="oe_stat_button" icon="fa-users"
+                        invisible="partner_count == 0">
+                    <field name="partner_count" widget="statinfo" string="Khách hàng"/>
+                </button>
+                <button name="action_view_leads" type="object" class="oe_stat_button" icon="fa-star"
+                        invisible="lead_count == 0">
+                    <field name="lead_count" widget="statinfo" string="Cơ hội"/>
+                </button>
+                <button name="action_view_sales_orders" type="object" class="oe_stat_button" icon="fa-shopping-cart"
+                        invisible="total_orders_this_month == 0">
+                    <field name="total_orders_this_month" widget="statinfo" string="Đơn hàng tháng"/>
+                </button>
+            </xpath>
+            
+            <xpath expr="//notebook" position="inside">
+                <page string="Thông tin lương &amp; KPI">
+                    <group>
+                        <group string="Thông tin cơ bản">
+                            <field name="employee_code"/>
+                            <field name="join_date"/>
+                            <field name="status"/>
+                            <field name="resign_date" invisible="status != 'resigned'"/>
+                            <field name="manager_id"/>
+                        </group>
+                        <group string="Chế độ lương">
+                            <field name="wage_type"/>
+                            <field name="basic_wage"/>
+                            <field name="standard_working_hours"/>
+                            <field name="standard_working_days"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Chính sách thưởng">
+                            <field name="enable_kpi_bonus"/>
+                            <field name="kpi_target" invisible="not enable_kpi_bonus"/>
+                            <field name="kpi_bonus_rate" invisible="not enable_kpi_bonus"/>
+                            <field name="has_commission"/>
+                            <field name="commission_rate" invisible="not has_commission"/>
+                        </group>
+                        <group string="Chế độ tăng ca">
+                            <field name="overtime_rate_normal"/>
+                            <field name="overtime_rate_weekend"/>
+                            <field name="overtime_rate_holiday"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Thống kê">
+                            <field name="total_work_days"/>
+                            <field name="total_overtime"/>
+                            <field name="current_month_salary"/>
+                        </group>
+                        <group string="Doanh thu &amp; Hoa hồng">
+                            <field name="currency_id" invisible="1"/>
+                            <field name="commission_rate"/>
+                            <label for="sales_today" string="Doanh thu hôm nay"/>
+                            <div>
+                                <field name="sales_today" class="oe_inline"/> 
+                                <span class="oe_inline"> (Hoa hồng: </span>
+                                <field name="commission_today" class="oe_inline"/>
+                                <span class="oe_inline">)</span>
+                            </div>
+                            <label for="sales_this_month" string="Doanh thu tháng này"/>
+                            <div>
+                                <field name="sales_this_month" class="oe_inline"/> 
+                                <span class="oe_inline"> (Hoa hồng: </span>
+                                <field name="commission_this_month" class="oe_inline"/>
+                                <span class="oe_inline">)</span>
+                            </div>
+                            <field name="total_orders_today" string="Đơn hàng hôm nay"/>
+                            <field name="total_orders_this_month" string="Đơn hàng tháng này"/>
+                        </group>
+                    </group>
+                </page>
+                <page string="Chấm công">
+                    <field name="attendance_ids"/>
+                </page>
+                <page string="Nghỉ phép">
+                    <field name="leave_ids"/>
+                </page>
+                <page string="Tăng ca">
+                    <field name="overtime_ids"/>
+                </page>
+                <page string="Thưởng phạt">
+                    <field name="reward_punishment_ids"/>
+                </page>
+                <page string="Bảng lương">
+                    <field name="payslip_ids"/>
+                </page>
+                <page string="Hiệu suất">
+                    <field name="performance_ids"/>
+                </page>
+                <page string="Khách hàng phụ trách">
+                    <group>
+                        <field name="partner_count"/>
+                        <field name="lead_count"/>
+                    </group>
+                    <group string="Danh sách khách hàng">
+                        <field name="partner_ids" nolabel="1">
+                            <list>
+                                <field name="name"/>
+                                <field name="phone"/>
+                                <field name="email"/>
+                                <field name="country_id"/>
+                            </list>
+                        </field>
+                    </group>
+                    <group string="Danh sách cơ hội">
+                        <field name="lead_ids" nolabel="1">
+                            <list>
+                                <field name="name"/>
+                                <field name="partner_id"/>
+                                <field name="expected_revenue"/>
+                                <field name="probability"/>
+                                <field name="stage_id"/>
+                            </list>
+                        </field>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    
+    <!-- Search View -->
+    <record id="view_hr_employee_filter_btl" model="ir.ui.view">
+        <field name="name">hr.employee.search.btl</field>
+        <field name="model">hr.employee</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" string="Nhân viên" filter_domain="['|', ('name','ilike',self), ('employee_code','ilike',self)]"/>
+                <field name="department_id"/>
+                <field name="job_id"/>
+                <field name="manager_id"/>
+                <filter string="Đang làm việc" name="working" domain="[('status', '=', 'working')]"/>
+                <filter string="Nghỉ việc" name="resigned" domain="[('status', '=', 'resigned')]"/>
+                <separator/>
+                <filter string="Có khách hàng" name="has_customers" domain="[('partner_count', '>', 0)]"/>
+                <filter string="Có doanh thu tháng này" name="has_sales" domain="[('sales_this_month', '>', 0)]"/>
+                <filter string="Có hoa hồng" name="has_commission" domain="[('has_commission', '=', True)]"/>
+                <separator/>
+                <filter string="Phòng ban" name="group_department" context="{'group_by':'department_id'}"/>
+                <filter string="Chức vụ" name="group_job" context="{'group_by':'job_id'}"/>
+                <filter string="Quản lý" name="group_manager" context="{'group_by':'manager_id'}"/>
+                <filter string="Trạng thái" name="group_status" context="{'group_by':'status'}"/>
+            </search>
+        </field>
+    </record>
+    
+    <!-- Action -->
+    <record id="action_hr_employee" model="ir.actions.act_window">
+        <field name="name">Nhân viên</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'search_default_working': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Tạo nhân viên mới
+            </p>
+        </field>
+    </record>
+    
+    <!-- Pivot View - Phân tích doanh thu nhân viên -->
+    <record id="view_hr_employee_pivot_sales" model="ir.ui.view">
+        <field name="name">hr.employee.pivot.sales</field>
+        <field name="model">hr.employee</field>
+        <field name="arch" type="xml">
+            <pivot string="Phân tích doanh thu nhân viên">
+                <field name="department_id" type="row"/>
+                <field name="name" type="row"/>
+                <field name="partner_count" type="measure"/>
+                <field name="lead_count" type="measure"/>
+                <field name="sales_this_month" type="measure"/>
+                <field name="commission_this_month" type="measure"/>
+                <field name="total_orders_this_month" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    
+    <!-- Graph View - Biểu đồ doanh thu -->
+    <record id="view_hr_employee_graph_sales" model="ir.ui.view">
+        <field name="name">hr.employee.graph.sales</field>
+        <field name="model">hr.employee</field>
+        <field name="arch" type="xml">
+            <graph string="Doanh thu nhân viên" type="bar">
+                <field name="name"/>
+                <field name="sales_this_month" type="measure"/>
+                <field name="commission_this_month" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    
+    <!-- Action - Báo cáo doanh thu nhân viên -->
+    <record id="action_hr_employee_sales_report" model="ir.actions.act_window">
+        <field name="name">Báo cáo doanh thu nhân viên</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">pivot,graph,list</field>
+        <field name="context">{'search_default_working': 1, 'search_default_has_sales': 1}</field>
+        <field name="domain">[('status', '=', 'working')]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Không có dữ liệu doanh thu
+            </p>
+            <p>
+                Báo cáo này hiển thị doanh thu và hoa hồng của từng nhân viên sale.
+            </p>
+        </field>
+    </record>
+    
+</odoo>

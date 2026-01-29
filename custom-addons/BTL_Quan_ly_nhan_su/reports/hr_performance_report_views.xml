@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Báo cáo hiệu suất - Placeholder -->
+    <record id="view_hr_performance_report" model="ir.ui.view">
+        <field name="name">hr.performance.report</field>
+        <field name="model">hr.performance</field>
+        <field name="arch" type="xml">
+            <graph string="Báo cáo hiệu suất" type="line">
+                <field name="date"/>
+                <field name="kpi_achievement" type="measure"/>
+                <field name="sales_amount" type="measure"/>
+            </graph>
+        </field>
+    </record>
+</odoo>

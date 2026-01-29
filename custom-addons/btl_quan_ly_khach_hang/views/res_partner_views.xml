@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Extend Partner Form -->
+    <record id="view_partner_form_btl" model="ir.ui.view">
+        <field name="name">res.partner.form.btl</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            
+            <!-- Thêm buttons thống kê -->
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_interactions" type="object" class="oe_stat_button" icon="fa-history">
+                    <field name="interaction_count" widget="statinfo" string="Tương tác"/>
+                </button>
+                <button name="action_view_purchased_products" type="object" class="oe_stat_button" icon="fa-shopping-cart"
+                        invisible="customer_rank == 0">
+                    <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_text">Sản phẩm</span>
+                    </div>
+                </button>
+            </xpath>
+            
+            <!-- Thêm phân loại khách hàng -->
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="customer_type_btl" widget="badge"/>
+                <field name="source_btl_id"/>
+                <field name="rating" widget="priority"/>
+            </xpath>
+            
+            <!-- Thêm thông tin nhân viên phụ trách -->
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="employee_id"/>
+                <field name="employee_department" invisible="not employee_id"/>
+            </xpath>
+            
+            <!-- Thêm tab Thông tin kinh doanh -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Thông tin kinh doanh" invisible="not is_company">
+                    <group>
+                        <group>
+                            <field name="tax_code"/>
+                            <field name="company_size"/>
+                            <field name="industry_btl"/>
+                        </group>
+                        <group>
+                            <field name="website_url" widget="url"/>
+                        </group>
+                    </group>
+                </page>
+                
+                <page string="Nhân viên phụ trách">
+                    <group>
+                        <group string="Thông tin nhân viên">
+                            <field name="employee_id"/>
+                            <field name="employee_name"/>
+                            <field name="employee_phone"/>
+                            <field name="employee_email" widget="email"/>
+                            <field name="employee_department"/>
+                        </group>
+                    </group>
+                </page>
+                
+                <page string="Lịch sử tương tác">
+                    <group>
+                        <group string="Thống kê tương tác">
+                            <field name="interaction_count"/>
+                            <field name="last_interaction_date"/>
+                            <field name="total_calls"/>
+                            <field name="total_meetings"/>
+                        </group>
+                        <group string="Thống kê mua hàng">
+                            <field name="total_orders"/>
+                            <field name="total_purchased" widget="monetary"/>
+                            <field name="average_order_value" widget="monetary"/>
+                            <field name="last_order_date"/>
+                        </group>
+                    </group>
+                    <field name="interaction_ids">
+                        <list>
+                            <field name="date"/>
+                            <field name="interaction_type_id"/>
+                            <field name="title"/>
+                            <field name="user_id"/>
+                            <field name="outcome"/>
+                            <field name="state"/>
+                        </list>
+                    </field>
+                </page>
+                
+                <page string="Sản phẩm đã mua" invisible="customer_rank == 0">
+                    <field name="purchased_product_ids">
+                        <list>
+                            <field name="name"/>
+                            <field name="categ_id"/>
+                            <field name="list_price"/>
+                        </list>
+                    </field>
+                </page>
+                
+                <page string="Quản lý công nợ" invisible="customer_rank == 0">
+                    <group>
+                        <group string="Hạn mức &amp; Công nợ">
+                            <field name="credit_limit" widget="monetary"/>
+                            <field name="current_debt" widget="monetary"/>
+                            <field name="debt_percentage" widget="progressbar"/>
+                            <field name="overdue_invoices"/>
+                        </group>
+                        <group string="Nhắc nhở thanh toán">
+                            <field name="payment_reminder_date"/>
+                            <field name="payment_reminder_sent"/>
+                            <button name="action_send_payment_reminder" string="Gửi nhắc nhở" 
+                                    type="object" class="btn-primary"
+                                    invisible="current_debt == 0"/>
+                        </group>
+                    </group>
+                </page>
+                
+                <page string="Phân tích mua hàng" invisible="customer_rank == 0">
+                    <group>
+                        <group string="Hành vi mua hàng">
+                            <field name="purchase_cycle_days"/>
+                            <field name="last_purchase_days_ago"/>
+                            <field name="is_inactive_customer"/>
+                            <field name="purchase_trend" widget="badge"/>
+                        </group>
+                        <group string="Giá trị khách hàng">
+                            <field name="customer_lifetime_value" widget="monetary"/>
+                            <field name="average_order_value" widget="monetary"/>
+                        </group>
+                    </group>
+                    <group string="Sản phẩm yêu thích">
+                        <field name="favorite_products" widget="many2many_tags"/>
+                    </group>
+                </page>
+            </xpath>
+            
+            <!-- Thêm ghi chú đặc biệt -->
+            <xpath expr="//field[@name='comment']" position="after">
+                <field name="customer_notes" placeholder="Ghi chú đặc biệt về khách hàng..."/>
+            </xpath>
+            
+        </field>
+    </record>
+    
+    <!-- Extend Partner Tree -->
+    <record id="view_partner_tree_btl" model="ir.ui.view">
+        <field name="name">res.partner.tree.btl</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='phone']" position="after">
+                <field name="customer_type_btl" optional="show"/>
+                <field name="source_btl_id" optional="hide"/>
+                <field name="total_purchased" optional="hide" widget="monetary"/>
+            </xpath>
+        </field>
+    </record>
+    
+</odoo>

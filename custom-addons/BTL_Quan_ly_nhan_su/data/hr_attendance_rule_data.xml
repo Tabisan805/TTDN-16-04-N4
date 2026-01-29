@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- Quy định chấm công mặc định -->
+        <record id="attendance_rule_default" model="hr.attendance.rule">
+            <field name="name">Quy định chấm công mặc định</field>
+            <field name="work_time_start">8.0</field>
+            <field name="work_time_end">17.0</field>
+            <field name="lunch_break_start">12.0</field>
+            <field name="lunch_break_end">13.0</field>
+            <field name="late_tolerance_minutes">15</field>
+            <field name="early_leave_tolerance_minutes">15</field>
+            <field name="late_deduction_per_minute">0.01</field>
+            <field name="early_deduction_per_minute">0.01</field>
+            <field name="absent_deduction">1.0</field>
+            <field name="late_fine_per_time">50000</field>
+            <field name="early_fine_per_time">50000</field>
+            <field name="absent_fine_per_day">200000</field>
+            <field name="perfect_attendance_bonus">500000</field>
+            <field name="perfect_attendance_days_required">26</field>
+        </record>
+        
+    </data>
+</odoo>

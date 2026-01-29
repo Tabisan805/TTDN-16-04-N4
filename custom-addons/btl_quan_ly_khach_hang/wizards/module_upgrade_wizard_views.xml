@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Module Upgrade Wizard Form View -->
+        <record id="view_module_upgrade_wizard_form" model="ir.ui.view">
+            <field name="name">module.upgrade.wizard.form</field>
+            <field name="model">module.upgrade.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Update Modules">
+                    <group>
+                        <field name="upgrade_type" widget="radio"/>
+                        <field name="show_progress"/>
+                    </group>
+                    
+                    <group string="Danh sách modules">
+                        <field name="module_ids" widget="many2many_tags" 
+                               options="{'no_create': True}"/>
+                    </group>
+                    
+                    <div class="alert alert-info" role="alert">
+                        <strong>⚠️ Lưu ý:</strong>
+                        <ul>
+                            <li>Update sẽ tải lại tất cả modules được chọn</li>
+                            <li>Hệ thống sẽ tạm dừng trong quá trình update</li>
+                            <li>Các kết nối hiện tại sẽ bị ngắt</li>
+                            <li>Quá trình có thể mất vài phút tùy theo số modules</li>
+                        </ul>
+                    </div>
+                    
+                    <footer>
+                        <button name="action_upgrade" type="object" string="Update Ngay" 
+                                class="btn-primary" confirm="Bạn chắc chắn muốn update? Hệ thống sẽ reload!"/>
+                        <button string="Hủy" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action để mở wizard -->
+        <record id="action_module_upgrade_wizard" model="ir.actions.act_window">
+            <field name="name">Update Modules</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">module.upgrade.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <!-- Menu item chính -->
+        <menuitem
+            id="menu_module_upgrade"
+            name="Update Modules"
+            parent="base.menu_administration"
+            action="action_module_upgrade_wizard"
+            sequence="100"/>
+
+    </data>
+</odoo>

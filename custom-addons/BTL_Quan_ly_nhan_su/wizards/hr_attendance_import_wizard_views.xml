@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hr_attendance_import_wizard_form" model="ir.ui.view">
+        <field name="name">hr.attendance.import.wizard.form</field>
+        <field name="model">hr.attendance.import.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Import chấm công">
+                <group>
+                    <field name="file_data" filename="file_name"/>
+                    <field name="file_name" invisible="1"/>
+                </group>
+                <div class="alert alert-info">
+                    <p>Format file CSV:</p>
+                    <ul>
+                        <li>employee_code: Mã nhân viên</li>
+                        <li>date: Ngày (YYYY-MM-DD)</li>
+                        <li>check_in: Giờ vào (HH:MM)</li>
+                        <li>check_out: Giờ ra (HH:MM)</li>
+                    </ul>
+                </div>
+                <footer>
+                    <button name="action_import" string="Import" type="object" class="btn-primary"/>
+                    <button string="Hủy" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_hr_attendance_import_wizard" model="ir.actions.act_window">
+        <field name="name">Import chấm công</field>
+        <field name="res_model">hr.attendance.import.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

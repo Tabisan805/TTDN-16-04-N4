@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- Nhóm quyền -->
+        <record id="group_crm_user" model="res.groups">
+            <field name="name">BTL CRM: Nhân viên Sales</field>
+            <field name="comment">Nhân viên sales chỉ xem được khách hàng của mình</field>
+        </record>
+        
+        <record id="group_crm_manager" model="res.groups">
+            <field name="name">BTL CRM: Quản lý Sales</field>
+            <field name="implied_ids" eval="[(4, ref('group_crm_user'))]"/>
+            <field name="comment">Quản lý sales xem được tất cả</field>
+        </record>
+        
+        <!-- Record Rules -->
+        
+        <!-- Nhân viên chỉ xem khách hàng của mình -->
+        <record id="crm_interaction_user_rule" model="ir.rule">
+            <field name="name">Nhân viên: Chỉ xem tương tác của mình</field>
+            <field name="model_id" ref="model_crm_interaction"/>
+            <field name="groups" eval="[(4, ref('group_crm_user'))]"/>
+            <field name="domain_force">[('user_id', '=', user.id)]</field>
+        </record>
+        
+        <!-- Quản lý xem tất cả -->
+        <record id="crm_interaction_manager_rule" model="ir.rule">
+            <field name="name">Quản lý: Xem tất cả tương tác</field>
+            <field name="model_id" ref="model_crm_interaction"/>
+            <field name="groups" eval="[(4, ref('group_crm_manager'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+        
+    </data>
+</odoo>

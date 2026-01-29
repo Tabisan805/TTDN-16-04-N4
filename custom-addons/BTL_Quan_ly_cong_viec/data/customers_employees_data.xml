@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Tạo Users liên kết với Employees -->
+        <!-- Sales Department Users -->
+        <record id="user_sales_manager" model="res.users">
+            <field name="name">Nguyễn Văn An</field>
+            <field name="login">nva@company.com</field>
+            <field name="email">nva@company.com</field>
+            <field name="password">123456</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_user'), ref('sales_team.group_sale_manager')])]"/>
+            <field name="employee_ids" eval="[(4, ref('BTL_Quan_ly_nhan_su.employee_demo_001'), 0)]"/>
+        </record>
+
+        <record id="user_sales_exec_1" model="res.users">
+            <field name="name">Trần Thị Bình</field>
+            <field name="login">ttb@company.com</field>
+            <field name="email">ttb@company.com</field>
+            <field name="password">123456</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_user')])]"/>
+            <field name="employee_ids" eval="[(4, ref('BTL_Quan_ly_nhan_su.employee_demo_002'), 0)]"/>
+        </record>
+
+        <record id="user_sales_exec_2" model="res.users">
+            <field name="name">Lê Văn Cường</field>
+            <field name="login">lvc@company.com</field>
+            <field name="email">lvc@company.com</field>
+            <field name="password">123456</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_user')])]"/>
+            <field name="employee_ids" eval="[(4, ref('BTL_Quan_ly_nhan_su.employee_demo_003'), 0)]"/>
+        </record>
+
+        <!-- Marketing Department Users -->
+        <record id="user_marketing_manager" model="res.users">
+            <field name="name">Phạm Văn Dũng</field>
+            <field name="login">pvd@company.com</field>
+            <field name="email">pvd@company.com</field>
+            <field name="password">123456</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_user')])]"/>
+            <field name="employee_ids" eval="[(4, ref('BTL_Quan_ly_nhan_su.employee_demo_016'), 0)]"/>
+        </record>
+
+        <record id="user_marketing_staff" model="res.users">
+            <field name="name">Hoàng Thị Elly</field>
+            <field name="login">hte@company.com</field>
+            <field name="email">hte@company.com</field>
+            <field name="password">123456</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_user')])]"/>
+            <field name="employee_ids" eval="[(4, ref('BTL_Quan_ly_nhan_su.employee_demo_017'), 0)]"/>
+        </record>
+
+        <!-- Accounting Department Users -->
+        <record id="user_accounting_manager" model="res.users">
+            <field name="name">Trương Văn Giang</field>
+            <field name="login">tvg@company.com</field>
+            <field name="email">tvg@company.com</field>
+            <field name="password">123456</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_user')])]"/>
+            <field name="employee_ids" eval="[(4, ref('BTL_Quan_ly_nhan_su.employee_demo_031'), 0)]"/>
+        </record>
+
+        <record id="user_accounting_staff" model="res.users">
+            <field name="name">Bùi Thị Hương</field>
+            <field name="login">bth@company.com</field>
+            <field name="email">bth@company.com</field>
+            <field name="password">123456</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_user')])]"/>
+            <field name="employee_ids" eval="[(4, ref('BTL_Quan_ly_nhan_su.employee_demo_032'), 0)]"/>
+        </record>
+
+        <!-- HR Department Users -->
+        <record id="user_hr_manager" model="res.users">
+            <field name="name">Vương Văn Kiên</field>
+            <field name="login">vvk@company.com</field>
+            <field name="email">vvk@company.com</field>
+            <field name="password">123456</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_user')])]"/>
+            <field name="employee_ids" eval="[(4, ref('BTL_Quan_ly_nhan_su.employee_demo_046'), 0)]"/>
+        </record>
+
+        <record id="user_hr_staff" model="res.users">
+            <field name="name">Mạc Thị Linh</field>
+            <field name="login">mtl@company.com</field>
+            <field name="email">mtl@company.com</field>
+            <field name="password">123456</field>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_user')])]"/>
+            <field name="employee_ids" eval="[(4, ref('BTL_Quan_ly_nhan_su.employee_demo_047'), 0)]"/>
+        </record>
+
+    </data>
+</odoo>

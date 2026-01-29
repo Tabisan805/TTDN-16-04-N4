@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- Loại thưởng -->
+        <record id="reward_type_kpi" model="hr.reward.punishment.type">
+            <field name="name">Thưởng KPI</field>
+            <field name="code">KPI_BONUS</field>
+            <field name="type">reward</field>
+            <field name="amount_type">percentage</field>
+            <field name="default_amount">20.0</field>
+            <field name="description">Thưởng khi đạt KPI</field>
+        </record>
+        
+        <record id="reward_type_sales" model="hr.reward.punishment.type">
+            <field name="name">Thưởng doanh số</field>
+            <field name="code">SALES_BONUS</field>
+            <field name="type">reward</field>
+            <field name="amount_type">percentage</field>
+            <field name="default_amount">5.0</field>
+            <field name="description">Hoa hồng doanh số</field>
+        </record>
+        
+        <record id="reward_type_attendance" model="hr.reward.punishment.type">
+            <field name="name">Thưởng chuyên cần</field>
+            <field name="code">ATTENDANCE_BONUS</field>
+            <field name="type">reward</field>
+            <field name="amount_type">fixed</field>
+            <field name="default_amount">500000</field>
+            <field name="description">Thưởng khi đi làm đầy đủ không trễ</field>
+        </record>
+        
+        <record id="reward_type_performance" model="hr.reward.punishment.type">
+            <field name="name">Thưởng hiệu suất</field>
+            <field name="code">PERFORMANCE_BONUS</field>
+            <field name="type">reward</field>
+            <field name="amount_type">fixed</field>
+            <field name="default_amount">1000000</field>
+            <field name="description">Thưởng cho nhân viên xuất sắc</field>
+        </record>
+        
+        <record id="reward_type_good_performance" model="hr.reward.punishment.type">
+            <field name="name">Thưởng hoàn thành công việc tốt</field>
+            <field name="code">GOOD_PERFORMANCE</field>
+            <field name="type">reward</field>
+            <field name="amount_type">fixed</field>
+            <field name="default_amount">500000</field>
+            <field name="description">Thưởng hoàn thành công việc tốt và đúng hạn</field>
+        </record>
+        
+        <record id="reward_type_excellent_customer_service" model="hr.reward.punishment.type">
+            <field name="name">Thưởng phục vụ khách hàng xuất sắc</field>
+            <field name="code">EXCELLENT_CUSTOMER_SERVICE</field>
+            <field name="type">reward</field>
+            <field name="amount_type">fixed</field>
+            <field name="default_amount">300000</field>
+            <field name="description">Thưởng phục vụ khách hàng xuất sắc, nhận được feedback tích cực</field>
+        </record>
+        
+        <record id="reward_type_innovation" model="hr.reward.punishment.type">
+            <field name="name">Thưởng đổi mới - sáng kiến</field>
+            <field name="code">INNOVATION_BONUS</field>
+            <field name="type">reward</field>
+            <field name="amount_type">fixed</field>
+            <field name="default_amount">400000</field>
+            <field name="description">Thưởng đề xuất và thực hiện sáng kiến cải tiến</field>
+        </record>
+        
+        <!-- Loại phạt -->
+        <record id="punishment_type_late" model="hr.reward.punishment.type">
+            <field name="name">Phạt đi trễ</field>
+            <field name="code">LATE_FINE</field>
+            <field name="type">punishment</field>
+            <field name="amount_type">fixed</field>
+            <field name="default_amount">50000</field>
+            <field name="description">Phạt khi đi làm muộn</field>
+        </record>
+        
+        <record id="punishment_type_early" model="hr.reward.punishment.type">
+            <field name="name">Phạt về sớm</field>
+            <field name="code">EARLY_FINE</field>
+            <field name="type">punishment</field>
+            <field name="amount_type">fixed</field>
+            <field name="default_amount">50000</field>
+            <field name="description">Phạt khi về sớm</field>
+        </record>
+        
+        <record id="punishment_type_absent" model="hr.reward.punishment.type">
+            <field name="name">Phạt nghỉ không phép</field>
+            <field name="code">ABSENT_FINE</field>
+            <field name="type">punishment</field>
+            <field name="amount_type">fixed</field>
+            <field name="default_amount">200000</field>
+            <field name="description">Phạt khi nghỉ làm không phép</field>
+        </record>
+        
+        <record id="punishment_type_violation" model="hr.reward.punishment.type">
+            <field name="name">Phạt vi phạm nội quy</field>
+            <field name="code">VIOLATION_FINE</field>
+            <field name="type">punishment</field>
+            <field name="amount_type">fixed</field>
+            <field name="default_amount">500000</field>
+            <field name="description">Phạt vi phạm nội quy công ty</field>
+        </record>
+        
+        <record id="punishment_type_attendance" model="hr.reward.punishment.type">
+            <field name="name">Phạt do vi phạm chấm công</field>
+            <field name="code">ATTENDANCE_VIOLATION</field>
+            <field name="type">punishment</field>
+            <field name="amount_type">fixed</field>
+            <field name="default_amount">100000</field>
+            <field name="description">Phạt đi trễ nhiều lần hoặc vắng mặt</field>
+        </record>
+        
+        <record id="punishment_type_attitude" model="hr.reward.punishment.type">
+            <field name="name">Phạt thái độ làm việc</field>
+            <field name="code">ATTITUDE_VIOLATION</field>
+            <field name="type">punishment</field>
+            <field name="amount_type">fixed</field>
+            <field name="default_amount">150000</field>
+            <field name="description">Phạt thái độ làm việc không tốt, vi phạm kỷ luật</field>
+        </record>
+        
+    </data>
+</odoo>

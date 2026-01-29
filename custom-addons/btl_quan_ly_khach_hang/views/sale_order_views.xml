@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Extend Sale Order Form -->
+    <record id="view_sale_order_form_btl" model="ir.ui.view">
+        <field name="name">sale.order.form.btl</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            
+            <!-- Thêm button xem tương tác -->
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_interactions" type="object" class="oe_stat_button" icon="fa-history"
+                        invisible="interaction_count == 0">
+                    <field name="interaction_count" widget="statinfo" string="Tương tác"/>
+                </button>
+            </xpath>
+            
+        </field>
+    </record>
+    
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Báo cáo lương - Placeholder -->
+    <record id="view_hr_payroll_report" model="ir.ui.view">
+        <field name="name">hr.payroll.report</field>
+        <field name="model">hr.payslip.btl</field>
+        <field name="arch" type="xml">
+            <graph string="Báo cáo lương" type="bar">
+                <field name="department_id"/>
+                <field name="net_salary" type="measure"/>
+            </graph>
+        </field>
+    </record>
+</odoo>

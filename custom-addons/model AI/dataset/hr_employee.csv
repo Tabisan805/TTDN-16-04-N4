@@ -1,0 +1,201 @@
+id,external_id,name,work_email,work_phone,work_mobile,department,gender,notes,marital_status,date_of_birth,nationality,identification_no,passport_no,visa_no,work_permit_no,visa_expire_date
+1,hr_emp_0001,Bernd Haas,bernd.haas@odoo.com,+490509838166,"""""",Bán hàng,Male,"""""",Married,19/04/1967,Germany,DE5292329895,D91896443,"""""","""""",""""""
+2,hr_emp_0002,Nadiah Kua,nadiah.kua@odoo.com,+6561165662,"""""",Kế toán,Female,Remote worker,Widower,17/07/1987,Singapore,SG7981617429,S98320035,V7910761617,WP67044117,15/10/2026
+3,hr_emp_0003,Bình An,binh.an@odoo.com,+84313960716,+84420141896,IT & Kỹ thuật,Male,"""""",Widower,14/05/1993,Vietnam,VN0667256644,V93426444,"""""","""""",""""""
+4,hr_emp_0004,Erik Dekker,erik.dekker@odoo.com,+32632027038,"""""",Hành chính,Male,Part-time,Widower,19/03/1979,Belgium,"""""",B55072294,"""""","""""",""""""
+5,hr_emp_0005,Mariah Carlson,mariah.carlson@odoo.com,+18137799410,+10347483855,IT & Kỹ thuật,Female,"""""",Widower,13/07/1981,United States,"""""",U42598874,"""""","""""",""""""
+6,hr_emp_0006,Matthew Bishop,matthew.bishop@odoo.com,+442126853770,+449601157291,Hành chính,Male,"""""",Widower,04/08/1985,United Kingdom,GB4220082532,G72062228,"""""","""""",""""""
+7,hr_emp_0007,Zoe Scott,zoe.scott@odoo.com,+445175812245,"""""",Chăm sóc khách hàng,Female,"""""",Single,12/12/1995,United Kingdom,"""""","""""","""""","""""",""""""
+8,hr_emp_0008,Nico Hoffmann,nico.hoffmann@odoo.com,+492126443229,+495530384430,Nhân sự,Male,"""""",Divorced,23/12/1993,Germany,"""""",D85654263,"""""","""""",""""""
+9,hr_emp_0009,Yuto Shimizu,yuto.shimizu@odoo.com,"""""","""""",IT & Kỹ thuật,Male,Team lead,Divorced,"""""",Japan,JP3456298425,J71243634,"""""","""""",""""""
+10,hr_emp_0010,Ralph Edwards,ralph.edwards@odoo.com,+14742238064,+18007199137,Bán hàng,Male,"""""",Divorced,17/12/1997,United States,US1213746938,"""""",V9175720891,WP32030683,06/09/2025
+11,hr_emp_0011,Arthur Simpson,arthur.simpson@odoo.com,+61793927814,+61573385332,IT & Kỹ thuật,Male,"""""",Single,22/10/1979,Australia,AU7317588423,A80553667,"""""","""""",""""""
+12,hr_emp_0012,Đỗ Võ,o.vo@odoo.com,"""""",+84813831423,Hành chính,Female,"""""",Widower,27/11/1999,Vietnam,VN5691741048,V41094921,V6317528415,WP96595813,29/12/2025
+13,hr_emp_0013,Lakshman Joshi,lakshman.joshi@odoo.com,+916517640158,+919706709193,Điều hành,Male,"""""",Married,20/02/1984,India,IN1997406404,I29883539,"""""","""""",""""""
+14,hr_emp_0014,Walter Seidel,walter.seidel@odoo.com,+491130462818,+492046290340,Kế toán,Male,"""""",Widower,05/03/1967,Germany,DE8875210344,D59836179,"""""","""""",""""""
+15,hr_emp_0015,Austin Turner,austin.turner@odoo.com,"""""","""""",Marketing,Male,"""""",Married,03/07/1983,Canada,CA1638220598,C89738141,"""""","""""",""""""
+16,hr_emp_0016,Julien Todd,julien.todd@odoo.com,+15503484774,"""""",Administration,Male,"""""",Widower,09/09/1985,Canada,CA4492855400,C73099370,V7935580079,WP89370383,08/01/2026
+17,hr_emp_0017,Tilde Haglund,tilde.haglund@odoo.com,+46401854900,"""""",Nhân sự,Female,"""""",Widower,27/07/1984,Sweden,SE5789225500,S36182527,"""""","""""",""""""
+18,hr_emp_0018,Elia Furrer,elia.furrer@odoo.com,+41938901696,"""""",Chăm sóc khách hàng,Male,"""""",Married,15/08/1970,Switzerland,"""""",C40688478,"""""","""""",""""""
+19,hr_emp_0019,René Moser,rene.moser@odoo.com,+41066771388,+41482767371,Hành chính,Male,"""""",Widower,01/07/1971,Switzerland,CH2909389230,"""""","""""","""""",""""""
+20,hr_emp_0020,Naman Subramanian,naman.subramanian@odoo.com,"""""",+915249453129,IT & Kỹ thuật,Male,"""""",Divorced,"""""",India,IN1237402712,I63328588,"""""","""""",""""""
+21,hr_emp_0021,Peter Schulte,peter.schulte@odoo.com,+497221341012,+492484935524,Kế toán,Male,"""""",Divorced,04/04/1965,Germany,DE8588809519,D81377440,V5481659825,WP12044239,17/11/2028
+22,hr_emp_0022,Su-bin Kang,subin.kang@odoo.com,+823570712909,+825291586537,Marketing,Female,"""""",Married,12/10/1991,South Korea,KR0420020630,K22997002,V1143198751,WP92804428,15/09/2026
+23,hr_emp_0023,Beatrice Wyss,beatrice.wyss@odoo.com,+41265289087,+41746936070,Marketing,Female,"""""",Widower,"""""",Switzerland,CH6445163658,C90588355,"""""","""""",""""""
+24,hr_emp_0024,Sacha Goossens,sacha.goossens@odoo.com,+32717232697,+32464718987,Chăm sóc khách hàng,Male,"""""",Married,18/06/1970,Belgium,BE5762837423,B24315713,V4449243097,WP23541051,28/04/2028
+25,hr_emp_0025,Jürgen Voigt,jurgen.voigt@odoo.com,+495646532717,+495096935039,Chăm sóc khách hàng,Male,"""""",Married,02/07/1981,Germany,"""""",D70799927,"""""","""""",""""""
+26,hr_emp_0026,Guizhen Yu,guizhen.yu@odoo.com,+8671089042072,+8699446733161,Bán hàng,Female,"""""",Widower,01/07/1999,China,CN8413184832,"""""","""""","""""",""""""
+27,hr_emp_0027,Douwe Pieters,douwe.pieters@odoo.com,+31123426168,"""""",Chăm sóc khách hàng,Male,"""""",Divorced,"""""",Netherlands,NL4196866097,N50589113,V9330435915,WP70490473,08/11/2027
+28,hr_emp_0028,Thanh Nguyễn,thanh.nguyen@odoo.com,+84739328205,+84660013754,Marketing,Male,"""""",Divorced,01/02/1970,Vietnam,"""""",V19414505,V0395872590,WP48805268,21/08/2028
+29,hr_emp_0029,Yuma Yoshimura,yuma.yoshimura@odoo.com,+817276223424,"""""",Chăm sóc khách hàng,Male,Contract employee,Single,21/04/1978,Japan,JP9749109381,J13590531,V9790160428,WP78759266,09/02/2028
+30,hr_emp_0030,Hyun-jung Cho,hyunjung.cho@odoo.com,+820686535256,+822810992724,Nhân sự,Female,"""""",Single,"""""",South Korea,"""""",K31319267,V6308522662,WP26301211,24/11/2028
+31,hr_emp_0031,Zayn Seah,zayn.seah@odoo.com,+6570531932,+6592604387,Bán hàng,Male,"""""",Divorced,30/10/1995,Singapore,SG1338550576,"""""","""""","""""",""""""
+32,hr_emp_0032,Emma Schumacher,emma.schumacher@odoo.com,+494875259997,"""""",Marketing,Female,"""""",Married,09/02/1972,Germany,DE9322831188,D98069428,V2862394856,WP71105106,22/06/2026
+33,hr_emp_0033,Greetje Vermeulen,greetje.vermeulen@odoo.com,+31244329237,+31324141980,Nhân sự,Female,"""""",Widower,"""""",Netherlands,NL9439444543,"""""","""""","""""",""""""
+34,hr_emp_0034,Dominika Lisowski,dominika.lisowski@odoo.com,"""""","""""",Bán hàng,Female,"""""",Single,01/12/1977,Poland,PL5216901350,P78192887,"""""","""""",""""""
+35,hr_emp_0035,Celina Anand,celina.anand@odoo.com,+913829812874,"""""",Nhân sự,Female,"""""",Married,05/12/1980,India,IN2011880243,"""""","""""","""""",""""""
+36,hr_emp_0036,Brittany Andrews,brittany.andrews@odoo.com,"""""","""""",Hành chính,Female,"""""",Widower,"""""",Canada,CA1738776891,"""""","""""","""""",""""""
+37,hr_emp_0037,Minato Fujii,minato.fujii@odoo.com,+813594935726,+817309948293,Marketing,Male,"""""",Divorced,28/06/1977,Japan,"""""",J25764732,V4702392838,WP98059828,14/07/2025
+38,hr_emp_0038,Iwona Piwowarczyk,iwona.piwowarczyk@odoo.com,+48914312878,"""""",Nhân sự,Female,"""""",Married,28/07/1987,Poland,PL9106220162,"""""","""""","""""",""""""
+39,hr_emp_0039,Inge Klaassen,inge.klaassen@odoo.com,+31156344075,"""""",Kế toán,Female,"""""",Widower,13/01/1983,Netherlands,NL1047128113,N16352658,"""""","""""",""""""
+40,hr_emp_0040,Qing Mo,qing.mo@odoo.com,+8637518644446,+8627388668471,Kế toán,Male,"""""",Divorced,12/03/1972,China,CN9427498262,"""""","""""","""""",""""""
+41,hr_emp_0041,Hikaru Masuda,hikaru.masuda@odoo.com,+818271445632,+819248524208,Chăm sóc khách hàng,Male,"""""",Single,18/10/1987,Japan,JP2263371610,J61087316,V4939755380,WP46641608,28/07/2025
+42,hr_emp_0042,Herta Winkler,herta.winkler@odoo.com,+497407372141,"""""",Marketing,Female,"""""",Single,09/02/1965,Germany,DE2000521856,"""""","""""","""""",""""""
+43,hr_emp_0043,Ume Kondo,ume.kondo@odoo.com,+810555997280,"""""",Administration,Female,"""""",Divorced,26/12/1981,Japan,JP3391361569,J14973709,"""""","""""",""""""
+44,hr_emp_0044,Phoebe Thomas,phoebe.thomas@odoo.com,+444035417096,+447733268666,Administration,Female,"""""",Married,14/08/1971,United Kingdom,"""""",G47687864,"""""","""""",""""""
+45,hr_emp_0045,Na-hyun Pi,nahyun.pi@odoo.com,"""""",+821064577476,Kế toán,Female,"""""",Widower,24/05/1965,South Korea,KR8044626872,K10314708,"""""","""""",""""""
+46,hr_emp_0046,Jasmine Powell,jasmine.powell@odoo.com,+447983681104,+442817765251,IT & Kỹ thuật,Female,"""""",Widower,29/01/1977,United Kingdom,GB2171759583,G06025434,V7765275123,WP37250401,10/10/2025
+47,hr_emp_0047,Xiaoxia Qiu,xiaoxia.qiu@odoo.com,+8657825296439,+8695873045617,IT & Kỹ thuật,Female,Senior staff,Single,06/05/1970,China,"""""","""""","""""","""""",""""""
+48,hr_emp_0048,Hào Thi,hao.thi@odoo.com,+84473426768,"""""",Administration,Male,"""""",Divorced,14/04/1975,Vietnam,VN5700689678,V95132745,"""""","""""",""""""
+49,hr_emp_0049,Yasuko Kuroda,yasuko.kuroda@odoo.com,+818391024972,+819911019714,Bán hàng,Female,"""""",Single,02/08/1973,Japan,JP6797975539,"""""","""""","""""",""""""
+50,hr_emp_0050,Valentijn Vos,valentijn.vos@odoo.com,+31545012098,+31016282509,Hành chính,Male,"""""",Married,"""""",Netherlands,"""""",N26566266,"""""","""""",""""""
+51,hr_emp_0051,Leon Schuster,leon.schuster@odoo.com,+490677992604,+491988210945,Chăm sóc khách hàng,Male,"""""",Single,"""""",Germany,"""""",D82779076,"""""","""""",""""""
+52,hr_emp_0052,Georg Malmström,georg.malmstrom@odoo.com,"""""","""""",IT & Kỹ thuật,Male,On probation,Divorced,04/10/1967,Sweden,SE8787804425,S38535780,"""""","""""",""""""
+53,hr_emp_0053,Mayank Sanyal,mayank.sanyal@odoo.com,+916239131632,"""""",Hành chính,Male,"""""",Widower,05/11/2000,India,"""""","""""","""""","""""",""""""
+54,hr_emp_0054,Hwan Samchong,hwan.samchong@odoo.com,+829148034847,+821605105676,Nhân sự,Male,"""""",Divorced,05/04/1986,South Korea,KR2966457951,"""""","""""","""""",""""""
+55,hr_emp_0055,Chie Miyamoto,chie.miyamoto@odoo.com,+817329938411,"""""",IT & Kỹ thuật,Female,"""""",Single,22/12/1983,Japan,"""""",J42922805,"""""","""""",""""""
+56,hr_emp_0056,Isabelle Brun,isabelle.brun@odoo.com,+41328364045,+41829701166,Hành chính,Female,"""""",Married,08/01/1984,Switzerland,CH6017516923,"""""",V7281625612,WP91599983,07/11/2027
+57,hr_emp_0057,Monika Bose,monika.bose@odoo.com,+911648226202,"""""",Điều hành,Female,"""""",Divorced,26/11/1996,India,"""""",I40088236,"""""","""""",""""""
+58,hr_emp_0058,Dũng Trịnh,dung.trinh@odoo.com,+84366446303,"""""",Marketing,Male,"""""",Married,"""""",Vietnam,VN3337417435,"""""","""""","""""",""""""
+59,hr_emp_0059,Clara Morales,clara.morales@odoo.com,+34986543609,"""""",Marketing,Female,"""""",Single,27/07/1993,Spain,ES9060906280,E51985030,"""""","""""",""""""
+60,hr_emp_0060,Messias Pinheiro,messias.pinheiro@odoo.com,+5565910521008,"""""",Kế toán,Male,"""""",Widower,06/11/1984,Brazil,"""""","""""",V6136277335,WP91485380,20/11/2025
+61,hr_emp_0061,Sung-hoon Pang,sunghoon.pang@odoo.com,+820573869400,"""""",Bán hàng,Male,"""""",Widower,03/01/1972,South Korea,KR3386465578,K76632109,"""""","""""",""""""
+62,hr_emp_0062,Nadzieja Sobczyk,nadzieja.sobczyk@odoo.com,+48523668699,+48879420354,Điều hành,Female,"""""",Widower,"""""",Poland,PL0106050290,P25381988,"""""","""""",""""""
+63,hr_emp_0063,Ivone Gomes,ivone.gomes@odoo.com,+5518125600187,+5541359217674,Bán hàng,Female,"""""",Widower,08/03/1996,Brazil,BR7118780755,B67683874,"""""","""""",""""""
+64,hr_emp_0064,Genevieve Hendrickx,genevieve.hendrickx@odoo.com,+32224029340,"""""",IT & Kỹ thuật,Female,"""""",Single,27/08/1996,Belgium,"""""",B68184390,"""""","""""",""""""
+65,hr_emp_0065,Peter Page,peter.page@odoo.com,+444417963899,+444318262669,Điều hành,Male,"""""",Single,23/06/1972,United Kingdom,GB5913145768,G11530673,"""""","""""",""""""
+66,hr_emp_0066,Gabriela Urbański,gabriela.urbanski@odoo.com,+48975850130,"""""",Hành chính,Female,"""""",Single,25/05/1966,Poland,PL4988606748,P18372423,"""""","""""",""""""
+67,hr_emp_0067,Martin Stewart,martin.stewart@odoo.com,+11389382634,+10696438311,IT & Kỹ thuật,Male,Remote worker,Single,14/11/1966,Canada,"""""","""""","""""","""""",""""""
+68,hr_emp_0068,Đào Đỗ,ao.o@odoo.com,"""""","""""",Administration,Female,"""""",Married,06/01/1982,Vietnam,VN9710685234,V32934180,"""""","""""",""""""
+69,hr_emp_0069,Lorena Dias,lorena.dias@odoo.com,+5563185378398,+5550101988690,Nhân sự,Female,"""""",Married,10/06/1981,Brazil,BR4765521368,"""""","""""","""""",""""""
+70,hr_emp_0070,Laura Norris,laura.norris@odoo.com,+10123114949,+15686281194,Chăm sóc khách hàng,Female,"""""",Single,05/08/1971,Canada,CA4611648279,C21420263,V3436084610,WP23582400,12/02/2026
+71,hr_emp_0071,Jonathan Morel,jonathan.morel@odoo.com,"""""",+32824219395,Nhân sự,Male,"""""",Divorced,12/06/1997,Belgium,"""""",B38232779,V7175221535,WP27853698,08/06/2028
+72,hr_emp_0072,Maryse Philippe,maryse.philippe@odoo.com,"""""","""""",Kế toán,Female,"""""",Widower,20/10/1971,France,FR4566341703,"""""","""""","""""",""""""
+73,hr_emp_0073,Thiago Moraes,thiago.moraes@odoo.com,+5573150745472,"""""",IT & Kỹ thuật,Female,"""""",Married,11/11/1976,Brazil,BR2180020224,"""""","""""","""""",""""""
+74,hr_emp_0074,Felix Nygren,felix.nygren@odoo.com,+46027662380,"""""",Hành chính,Male,"""""",Divorced,07/12/1991,Sweden,SE1648310572,S14022218,"""""","""""",""""""
+75,hr_emp_0075,Charlotte Wenger,charlotte.wenger@odoo.com,+41187404950,+41214832473,Bán hàng,Female,"""""",Divorced,"""""",Switzerland,"""""",C19548050,V8104994857,WP11456186,21/02/2028
+76,hr_emp_0076,Emma Käser,emma.kaser@odoo.com,+41288753437,+41196166060,Marketing,Female,"""""",Divorced,09/03/1966,Switzerland,CH3037416801,C60266593,"""""","""""",""""""
+77,hr_emp_0077,Jacob Ekstrand,jacob.ekstrand@odoo.com,"""""",+46541308916,IT & Kỹ thuật,Male,"""""",Widower,28/09/1965,Sweden,"""""",S04891050,"""""","""""",""""""
+78,hr_emp_0078,Jennifer Hunt,jennifer.hunt@odoo.com,+448954748568,"""""",Hành chính,Female,"""""",Divorced,29/01/1988,United Kingdom,"""""",G97935174,"""""","""""",""""""
+79,hr_emp_0079,Carina Lundström,carina.lundstrom@odoo.com,"""""","""""",Hành chính,Female,"""""",Divorced,14/12/1997,Sweden,SE7708490605,"""""","""""","""""",""""""
+80,hr_emp_0080,Yusuke Shimada,yusuke.shimada@odoo.com,+816817458181,+810987488960,Marketing,Male,"""""",Widower,09/03/1978,Japan,JP7589988512,J95667272,"""""","""""",""""""
+81,hr_emp_0081,Laura Oliveira,laura.oliveira@odoo.com,+5559896934979,+5554091429743,Administration,Female,"""""",Married,27/02/1989,Brazil,BR3953328412,"""""","""""","""""",""""""
+82,hr_emp_0082,Sophie Vliet,sophie.vliet@odoo.com,+31428870071,"""""",Marketing,Female,"""""",Divorced,25/03/1984,Netherlands,NL8652451587,"""""","""""","""""",""""""
+83,hr_emp_0083,Mathilde Jacquet,mathilde.jacquet@odoo.com,+33843741756,+33090338344,Nhân sự,Female,"""""",Widower,30/09/1991,France,"""""",F17622300,"""""","""""",""""""
+84,hr_emp_0084,Rubén Ferrer,ruben.ferrer@odoo.com,+34993750729,+34900048291,Kế toán,Male,"""""",Divorced,02/11/1968,Spain,ES2229332860,E44428038,V8534978249,WP62490131,03/11/2028
+85,hr_emp_0085,Marc Moreno,marc.moreno@odoo.com,+34509279956,+34902879755,Marketing,Male,"""""",Single,03/11/1995,Spain,ES2817166980,E26894950,"""""","""""",""""""
+86,hr_emp_0086,Samuel Jenkins,samuel.jenkins@odoo.com,+18528718960,+19179569257,Chăm sóc khách hàng,Male,"""""",Divorced,29/06/1991,United States,US9126452201,U39748677,"""""","""""",""""""
+87,hr_emp_0087,Ronald Manning,ronald.manning@odoo.com,+449294467057,"""""",Nhân sự,Male,"""""",Divorced,10/04/1965,United Kingdom,GB1116083288,G68633949,"""""","""""",""""""
+88,hr_emp_0088,Ivan Bühler,ivan.buhler@odoo.com,+41269376264,+41332400868,Điều hành,Male,Senior staff,Widower,09/11/1989,Switzerland,CH3007576829,C33986650,"""""","""""",""""""
+89,hr_emp_0089,Yuanyuan Zhao,yuanyuan.zhao@odoo.com,+8689655359907,+8664630930578,Hành chính,Female,"""""",Divorced,15/05/1967,China,CN7467160953,"""""",V5965537703,WP90005602,06/08/2026
+90,hr_emp_0090,Ruth Robinson,ruth.robinson@odoo.com,+18851068734,"""""",Điều hành,Female,"""""",Divorced,25/11/1975,Canada,"""""","""""",V9506606241,WP35773517,12/07/2028
+91,hr_emp_0091,Dina Janssen,dina.janssen@odoo.com,+31103929160,"""""",Bán hàng,Female,Team lead,Widower,20/12/1979,Netherlands,NL2263128109,N08689328,V7909051985,WP55526986,01/11/2027
+92,hr_emp_0092,Tú Quang,tu.quang@odoo.com,"""""",+84129030105,IT & Kỹ thuật,Female,"""""",Married,30/11/1977,Vietnam,VN4785667377,V86336455,"""""","""""",""""""
+93,hr_emp_0093,Xinyi Rodrigues,xinyi.rodrigues@odoo.com,+6543106919,+6571725660,Hành chính,Female,"""""",Married,29/06/1984,Singapore,"""""",S83583862,"""""","""""",""""""
+94,hr_emp_0094,Yen Li Fong,yenli.fong@odoo.com,"""""","""""",Điều hành,Female,"""""",Married,02/02/1974,Singapore,SG8031570682,S55997368,V3879521014,WP21223585,07/09/2026
+95,hr_emp_0095,Connor Boyd,connor.boyd@odoo.com,+440504912602,"""""",IT & Kỹ thuật,Male,"""""",Divorced,26/08/1965,United Kingdom,GB8431856571,G76582298,V1119001901,WP43332377,11/11/2025
+96,hr_emp_0096,Han-kyung Seonwoo,hankyung.seonwoo@odoo.com,+825897491289,+827520118105,Kế toán,Male,"""""",Divorced,30/11/1994,South Korea,KR2577805742,"""""","""""","""""",""""""
+97,hr_emp_0097,Alejandro Domínguez,alejandro.dominguez@odoo.com,+34927550103,+34372780408,Kế toán,Male,Part-time,Married,"""""",Spain,"""""",E51399976,"""""","""""",""""""
+98,hr_emp_0098,Xavier Tham,xavier.tham@odoo.com,"""""",+6528342512,Điều hành,Male,"""""",Divorced,07/01/1989,Singapore,SG4873335698,"""""","""""","""""",""""""
+99,hr_emp_0099,Sergio Capelli,sergio.capelli@odoo.com,+394619574558,+397550297357,Điều hành,Male,"""""",Married,05/03/1998,Italy,"""""",I48417476,V7926473172,WP85525012,08/06/2027
+100,hr_emp_0100,Rizwan Wu,rizwan.wu@odoo.com,+6589544354,+6540336705,IT & Kỹ thuật,Male,"""""",Married,06/09/1972,Singapore,SG2345015793,"""""",V0874047537,WP03482369,20/05/2028
+101,hr_emp_0101,Hùng Tạ,hung.ta@odoo.com,+84577354290,"""""",Hành chính,Male,"""""",Divorced,"""""",Vietnam,VN9520339709,"""""",V8643118240,WP06379337,17/08/2027
+102,hr_emp_0102,Sara Martínez,sara.martinez@odoo.com,+34322368693,"""""",Bán hàng,Female,Senior staff,Widower,20/11/1969,Spain,ES5227950461,E61446813,"""""","""""",""""""
+103,hr_emp_0103,Himari Miyashita,himari.miyashita@odoo.com,+818387751833,"""""",Marketing,Female,"""""",Widower,19/05/2000,Japan,JP5855255976,"""""","""""","""""",""""""
+104,hr_emp_0104,Oscar Singh,oscar.singh@odoo.com,+61520664707,"""""",Marketing,Male,"""""",Single,"""""",Australia,AU4019185985,A92024859,"""""","""""",""""""
+105,hr_emp_0105,Amit Rajagopalan,amit.rajagopalan@odoo.com,+919392064921,+919138961823,Nhân sự,Male,"""""",Divorced,03/09/1991,India,IN6993517910,"""""",V3396688984,WP66867205,19/07/2027
+106,hr_emp_0106,Kai Wen Shen,kaiwen.shen@odoo.com,+6562607090,+6571621757,Marketing,Male,"""""",Married,"""""",Singapore,"""""",S00680274,"""""","""""",""""""
+107,hr_emp_0107,Xiuxiu Fang,xiuxiu.fang@odoo.com,"""""","""""",Hành chính,Female,"""""",Divorced,10/04/1984,China,CN7958315996,"""""","""""","""""",""""""
+108,hr_emp_0108,Rasmus Brandt,rasmus.brandt@odoo.com,+46518907556,+46139142838,Marketing,Male,"""""",Single,"""""",Sweden,SE5886888969,"""""","""""","""""",""""""
+109,hr_emp_0109,Rebecca Simon,rebecca.simon@odoo.com,+498043122750,"""""",IT & Kỹ thuật,Female,"""""",Widower,18/01/1999,Germany,DE4865168338,"""""",V6406383062,WP54960373,13/03/2028
+110,hr_emp_0110,Kai Wen Chan,kaiwen.chan@odoo.com,+6549559472,"""""",Administration,Male,"""""",Married,21/08/1986,Singapore,"""""","""""",V2798965327,WP12818728,18/01/2026
+111,hr_emp_0111,Horst Schäfer,horst.schafer@odoo.com,+499727852771,"""""",Marketing,Male,Remote worker,Married,25/10/1977,Germany,DE9264896214,"""""",V1557211620,WP23036047,25/10/2028
+112,hr_emp_0112,Hugo Fuentes,hugo.fuentes@odoo.com,+34111754728,"""""",Marketing,Male,"""""",Divorced,04/09/1996,Spain,ES7816673101,"""""","""""","""""",""""""
+113,hr_emp_0113,Giang Kha,giang.kha@odoo.com,+84487202936,+84013695886,Bán hàng,Male,"""""",Single,"""""",Vietnam,VN6061512201,V91132472,V1868861817,WP62502561,27/01/2027
+114,hr_emp_0114,Vania Medeiros,vania.medeiros@odoo.com,+5521896664547,+5567743422905,Hành chính,Female,"""""",Divorced,06/02/1976,Brazil,BR9674637491,B69613218,V3918848218,WP26403779,10/12/2026
+115,hr_emp_0115,Henrik Heinrich,henrik.heinrich@odoo.com,+490811687416,+493518896899,Bán hàng,Male,"""""",Divorced,15/04/1977,Germany,DE7465210304,"""""","""""","""""",""""""
+116,hr_emp_0116,Clemens Schwarz,clemens.schwarz@odoo.com,+490799849510,+491735498027,Bán hàng,Male,Remote worker,Divorced,20/10/1976,Germany,DE1496034428,"""""","""""","""""",""""""
+117,hr_emp_0117,Khánh Thang,khanh.thang@odoo.com,+84666522611,+84034173258,IT & Kỹ thuật,Female,"""""",Widower,"""""",Vietnam,VN2659838343,V14440962,"""""","""""",""""""
+118,hr_emp_0118,Hae-young Yoon,haeyoung.yoon@odoo.com,"""""",+821881193516,Nhân sự,Female,"""""",Widower,16/02/1970,South Korea,"""""",K83095135,V1035479214,WP43257208,03/01/2028
+119,hr_emp_0119,Manfred Friedrich,manfred.friedrich@odoo.com,+491752097891,"""""",Nhân sự,Male,"""""",Divorced,15/04/1971,Germany,DE3452552966,"""""",V1881468330,WP42848517,01/06/2028
+120,hr_emp_0120,Evan Salazar,evan.salazar@odoo.com,+17800746152,"""""",Bán hàng,Male,"""""",Widower,06/10/1988,United States,US6875499772,U59095621,"""""","""""",""""""
+121,hr_emp_0121,Sabine De Wit,sabine.dewit@odoo.com,+32393435738,"""""",Kế toán,Female,Remote worker,Divorced,19/02/1971,Belgium,BE8970946815,"""""","""""","""""",""""""
+122,hr_emp_0122,Max Engström,max.engstrom@odoo.com,"""""","""""",Chăm sóc khách hàng,Male,"""""",Divorced,30/09/1998,Sweden,SE3616999697,S12796743,"""""","""""",""""""
+123,hr_emp_0123,Robert Ekström,robert.ekstrom@odoo.com,+46751504111,+46055092468,Hành chính,Male,"""""",Widower,15/05/1983,Sweden,"""""","""""",V1276140845,WP79702123,01/07/2027
+124,hr_emp_0124,João Marques,joao.marques@odoo.com,"""""",+5549834691079,Administration,Male,"""""",Married,14/09/1994,Brazil,BR0332715721,B37503721,"""""","""""",""""""
+125,hr_emp_0125,Marion Ziegler,marion.ziegler@odoo.com,+41892700517,"""""",Kế toán,Female,"""""",Single,25/04/1986,Switzerland,CH6624970102,C09417060,"""""","""""",""""""
+126,hr_emp_0126,Yiran Bai,yiran.bai@odoo.com,+8600674102648,+8614325033910,Hành chính,Female,Remote worker,Single,"""""",China,"""""",C21091835,V8933224822,WP41748721,10/09/2025
+127,hr_emp_0127,Simon Timmermans,simon.timmermans@odoo.com,+31045439925,"""""",Chăm sóc khách hàng,Male,"""""",Widower,03/06/1990,Netherlands,NL8035452554,"""""",V8124130847,WP30377248,26/05/2027
+128,hr_emp_0128,Ryan Wallace,ryan.wallace@odoo.com,+18631968649,+11542208167,Administration,Male,"""""",Divorced,10/10/1972,Canada,CA3059523480,C92642148,"""""","""""",""""""
+129,hr_emp_0129,Roy Gagné,roy.gagne@odoo.com,+13020462263,"""""",Marketing,Male,Part-time,Single,19/12/1986,Canada,"""""","""""",V3231357349,WP80047382,19/01/2027
+130,hr_emp_0130,Yashodhara Senapati,yashodhara.senapati@odoo.com,+910268647374,+912428687153,Kế toán,Female,"""""",Married,09/04/1989,India,IN4529983279,I85308906,"""""","""""",""""""
+131,hr_emp_0131,Ingrid Groß,ingrid.gro@odoo.com,+494176447851,+493391457237,Điều hành,Female,"""""",Widower,05/04/1972,Germany,DE0883200691,D52147655,"""""","""""",""""""
+132,hr_emp_0132,Vinícius Farias,vinicius.farias@odoo.com,+5560301742534,+5594801238430,Nhân sự,Male,"""""",Single,"""""",Brazil,BR4642386323,B51122794,V2879452963,WP96942147,06/10/2028
+133,hr_emp_0133,Wanting Liang,wanting.liang@odoo.com,+8684724259839,"""""",Marketing,Female,"""""",Widower,27/05/1984,China,CN3863637961,C55133862,"""""","""""",""""""
+134,hr_emp_0134,Ella Stone,ella.stone@odoo.com,+61872157640,+61834421020,IT & Kỹ thuật,Female,"""""",Divorced,01/09/1993,Australia,AU9999012623,A67370681,"""""","""""",""""""
+135,hr_emp_0135,Elina Engberg,elina.engberg@odoo.com,+46476271295,+46775429037,Điều hành,Female,"""""",Single,08/07/1985,Sweden,SE9141859539,"""""","""""","""""",""""""
+136,hr_emp_0136,Gijs van der Berg,gijs.vanderberg@odoo.com,+31188219467,"""""",Hành chính,Male,Contract employee,Widower,22/09/1995,Netherlands,"""""",N92206898,"""""","""""",""""""
+137,hr_emp_0137,Nasir Leong,nasir.leong@odoo.com,+6587510911,+6512674074,Nhân sự,Male,"""""",Widower,05/02/1976,Singapore,"""""",S76510822,V8690150066,WP28153550,15/04/2028
+138,hr_emp_0138,Isaac Sequeira,isaac.sequeira@odoo.com,+6550328140,"""""",Bán hàng,Male,"""""",Married,03/12/1973,Singapore,"""""",S24144221,V9044620926,WP00581191,16/03/2028
+139,hr_emp_0139,Wei Lin Mak,weilin.mak@odoo.com,+6554786063,+6598084273,Kế toán,Female,"""""",Divorced,01/08/1986,Singapore,SG5358989371,S29583012,"""""","""""",""""""
+140,hr_emp_0140,Lara Bieri,lara.bieri@odoo.com,+41160194046,+41676480289,Kế toán,Female,"""""",Single,26/07/1997,Switzerland,"""""","""""","""""","""""",""""""
+141,hr_emp_0141,Paulette Schmitt,paulette.schmitt@odoo.com,+33063012811,"""""",Điều hành,Female,"""""",Single,01/01/1969,France,"""""",F20709513,"""""","""""",""""""
+142,hr_emp_0142,Vanessa Jiménez,vanessa.jimenez@odoo.com,+34321210011,"""""",Hành chính,Female,"""""",Divorced,24/12/1969,Spain,ES7322349735,"""""",V9509681399,WP57008466,27/05/2028
+143,hr_emp_0143,Massimo Pacifico,massimo.pacifico@odoo.com,+395199200225,+394887759591,Kế toán,Male,"""""",Married,09/12/1984,Italy,"""""",I14296280,"""""","""""",""""""
+144,hr_emp_0144,Jenny Vikman,jenny.vikman@odoo.com,+46995514203,"""""",Kế toán,Female,"""""",Divorced,10/12/1987,Sweden,"""""",S16038993,"""""","""""",""""""
+145,hr_emp_0145,Wout Rousseau,wout.rousseau@odoo.com,+32425566217,+32147408892,Chăm sóc khách hàng,Male,"""""",Divorced,"""""",Belgium,BE9009430515,B94379944,"""""","""""",""""""
+146,hr_emp_0146,Sophia Young,sophia.young@odoo.com,+11866260470,"""""",Nhân sự,Female,"""""",Divorced,20/03/1978,Canada,CA2209696186,C47779815,"""""","""""",""""""
+147,hr_emp_0147,Arnav More,arnav.more@odoo.com,+914971571271,"""""",Điều hành,Male,"""""",Widower,23/07/1977,India,IN6013508030,I76800228,"""""","""""",""""""
+148,hr_emp_0148,Seth Young,seth.young@odoo.com,"""""","""""",IT & Kỹ thuật,Male,"""""",Widower,20/09/1966,Australia,"""""","""""","""""","""""",""""""
+149,hr_emp_0149,Joshua Quinn,joshua.quinn@odoo.com,+14587828974,+15619722588,Điều hành,Male,"""""",Single,28/08/1982,Canada,CA4030692870,"""""",V5283550986,WP70112950,24/04/2027
+150,hr_emp_0150,Paul Wolf,paul.wolf@odoo.com,"""""",+498193688001,IT & Kỹ thuật,Male,"""""",Widower,31/07/1973,Germany,DE3139617905,D62679536,V7590451039,WP73268050,24/01/2027
+151,hr_emp_0151,Roberta Ruggiero,roberta.ruggiero@odoo.com,"""""","""""",Chăm sóc khách hàng,Female,"""""",Married,"""""",Italy,IT4237234429,"""""","""""","""""",""""""
+152,hr_emp_0152,Sơn Tiêu,son.tieu@odoo.com,+84693708005,+84172531748,Bán hàng,Male,"""""",Widower,"""""",Vietnam,"""""","""""","""""","""""",""""""
+153,hr_emp_0153,Emanuel Lehmann,emanuel.lehmann@odoo.com,"""""","""""",Marketing,Male,"""""",Single,26/07/1972,Brazil,BR4435458155,B28166428,V6314492821,WP55317005,08/12/2026
+154,hr_emp_0154,Huimin Soh,huimin.soh@odoo.com,+6500422638,+6505307648,Chăm sóc khách hàng,Female,"""""",Widower,"""""",Singapore,SG6945755828,"""""",V0185864216,WP83187742,25/09/2027
+155,hr_emp_0155,Klaartje Desmet,klaartje.desmet@odoo.com,+32524956166,+32035521375,Kế toán,Female,Senior staff,Widower,22/04/1969,Belgium,"""""",B12974596,"""""","""""",""""""
+156,hr_emp_0156,Morgan Nichols,morgan.nichols@odoo.com,+10820076213,+13935901094,Chăm sóc khách hàng,Female,"""""",Married,09/09/1974,Canada,CA5352096544,C88662467,"""""","""""",""""""
+157,hr_emp_0157,Louise Newton,louise.newton@odoo.com,+446034531821,+449549876780,Marketing,Female,"""""",Widower,05/09/1979,United Kingdom,GB9677415556,"""""","""""","""""",""""""
+158,hr_emp_0158,Elsa David,elsa.david@odoo.com,"""""",+33305321584,Marketing,Female,"""""",Divorced,"""""",France,FR5868928684,F54851138,"""""","""""",""""""
+159,hr_emp_0159,Josh Hughes,josh.hughes@odoo.com,+447679775655,"""""",Bán hàng,Male,Team lead,Single,01/07/1997,United Kingdom,"""""",G80373335,V7445309045,WP49094793,06/08/2026
+160,hr_emp_0160,Ryder Cooper,ryder.cooper@odoo.com,+18294679034,+16149303089,Hành chính,Male,"""""",Single,25/09/1966,United States,"""""",U79554772,"""""","""""",""""""
+161,hr_emp_0161,Cheng Tang,cheng.tang@odoo.com,+8686250949282,"""""",Điều hành,Male,"""""",Widower,"""""",China,CN2970517823,"""""",V7941579536,WP07508042,17/10/2028
+162,hr_emp_0162,Natalia Ortega,natalia.ortega@odoo.com,+34953951592,+34941407778,Điều hành,Female,"""""",Single,20/11/1989,Spain,ES4622172655,E66632553,"""""","""""",""""""
+163,hr_emp_0163,Sven Kühn,sven.kuhn@odoo.com,+491172287187,"""""",Marketing,Male,"""""",Widower,12/09/1986,Germany,DE6992074363,"""""","""""","""""",""""""
+164,hr_emp_0164,Christine Nguyen,christine.nguyen@odoo.com,+32271993863,"""""",Chăm sóc khách hàng,Female,"""""",Single,25/10/1983,Belgium,BE1958275257,B63149990,"""""","""""",""""""
+165,hr_emp_0165,Nikunj Dubey,nikunj.dubey@odoo.com,+917203663032,"""""",Điều hành,Male,"""""",Single,21/08/1971,India,IN4932111938,I38090144,"""""","""""",""""""
+166,hr_emp_0166,Vicente Prieto,vicente.prieto@odoo.com,+34428954878,"""""",Marketing,Male,"""""",Widower,"""""",Spain,"""""",E24578647,V3000749318,WP69510600,22/05/2027
+167,hr_emp_0167,Dennis Wilson,dennis.wilson@odoo.com,+18820074542,+17116100448,Hành chính,Male,Part-time,Married,09/03/1984,United States,US3327083679,U38053243,V8171802294,WP75352878,12/12/2028
+168,hr_emp_0168,Jean Coppens,jean.coppens@odoo.com,+32096147439,+32777380528,Marketing,Male,Team lead,Widower,22/01/1995,Belgium,BE4409420739,B99331104,V2980415614,WP76595890,01/09/2026
+169,hr_emp_0169,Renata Tavares,renata.tavares@odoo.com,+5576169430251,+5574330934981,IT & Kỹ thuật,Female,"""""",Divorced,06/08/1995,Brazil,BR5172773294,B01057989,"""""","""""",""""""
+170,hr_emp_0170,Emma Duncan,emma.duncan@odoo.com,+61043734600,+61314589285,Bán hàng,Female,"""""",Divorced,11/09/1978,Australia,AU3354638074,A64674131,"""""","""""",""""""
+171,hr_emp_0171,Johanna Weiß,johanna.wei@odoo.com,+491340716477,+493877123860,Kế toán,Female,"""""",Widower,18/09/1974,Germany,DE7631871971,D11729108,"""""","""""",""""""
+172,hr_emp_0172,Long Hồ,long.ho@odoo.com,+84614505284,"""""",Administration,Male,"""""",Divorced,10/02/1997,Vietnam,"""""",V31858177,V0246502871,WP86716118,23/07/2028
+173,hr_emp_0173,Catarina Fonseca,catarina.fonseca@odoo.com,+5517044374432,"""""",Hành chính,Female,"""""",Divorced,04/07/1976,Brazil,BR1260363848,B14740264,"""""","""""",""""""
+174,hr_emp_0174,Zheng Xiong,zheng.xiong@odoo.com,+8680718510559,+8680322297931,Chăm sóc khách hàng,Male,"""""",Single,04/09/1980,China,CN2483072098,"""""","""""","""""",""""""
+175,hr_emp_0175,Willie Zimmerman,willie.zimmerman@odoo.com,+15968088024,"""""",Administration,Male,"""""",Single,"""""",United States,US1424762852,"""""","""""","""""",""""""
+176,hr_emp_0176,Prakash Ahmad,prakash.ahmad@odoo.com,+6559450229,+6529491237,Kế toán,Male,"""""",Widower,05/05/1977,Singapore,SG0229162020,S05357166,"""""","""""",""""""
+177,hr_emp_0177,Annemarie van Rijn,annemarie.vanrijn@odoo.com,+31002204115,"""""",IT & Kỹ thuật,Female,"""""",Single,05/05/1977,Netherlands,"""""",N48174264,"""""","""""",""""""
+178,hr_emp_0178,Szymon Tomaszewski,szymon.tomaszewski@odoo.com,+48329750801,"""""",Nhân sự,Male,"""""",Widower,02/11/1972,Poland,PL3537424988,"""""","""""","""""",""""""
+179,hr_emp_0179,Leonard Schubert,leonard.schubert@odoo.com,"""""","""""",Hành chính,Male,"""""",Widower,"""""",Germany,"""""",D97607203,"""""","""""",""""""
+180,hr_emp_0180,Raphaël Gerard,raphael.gerard@odoo.com,+32645281069,+32798185555,Kế toán,Male,Senior staff,Divorced,11/08/1995,Belgium,BE2118878684,"""""","""""","""""",""""""
+181,hr_emp_0181,Sienna Foster,sienna.foster@odoo.com,+61501142232,+61527626720,Kế toán,Female,"""""",Widower,"""""",Australia,"""""","""""",V7615002068,WP30757695,07/01/2026
+182,hr_emp_0182,Amy Smith,amy.smith@odoo.com,"""""","""""",Chăm sóc khách hàng,Female,"""""",Single,13/10/1971,Australia,AU5470058783,A26836242,"""""","""""",""""""
+183,hr_emp_0183,Margarita Giménez,margarita.gimenez@odoo.com,"""""","""""",Chăm sóc khách hàng,Female,"""""",Widower,02/08/1965,Spain,ES3209233291,"""""",V7814318155,WP11652540,10/08/2028
+184,hr_emp_0184,Hilde Koch,hilde.koch@odoo.com,+499443376117,"""""",Administration,Female,"""""",Divorced,24/02/1975,Germany,"""""","""""","""""","""""",""""""
+185,hr_emp_0185,Daniel Dixon,daniel.dixon@odoo.com,+13828675992,+15034387557,IT & Kỹ thuật,Male,Senior staff,Widower,11/02/1993,United States,US1684639339,U79897858,"""""","""""",""""""
+186,hr_emp_0186,Valentine Mercier,valentine.mercier@odoo.com,+32973251493,"""""",Chăm sóc khách hàng,Female,Part-time,Widower,30/08/1989,Belgium,"""""",B65768957,"""""","""""",""""""
+187,hr_emp_0187,Hugo Murray,hugo.murray@odoo.com,"""""","""""",Administration,Male,"""""",Single,24/09/1977,Australia,"""""",A17079937,"""""","""""",""""""
+188,hr_emp_0188,Willow Gibson,willow.gibson@odoo.com,"""""",+447071070460,Nhân sự,Female,Remote worker,Single,18/03/1993,United Kingdom,"""""","""""","""""","""""",""""""
+189,hr_emp_0189,Quang Thân,quang.than@odoo.com,+84819388396,"""""",Bán hàng,Male,"""""",Widower,20/05/1986,Vietnam,"""""",V57064055,V2390080407,WP73255525,21/08/2025
+190,hr_emp_0190,Gabriel Schenk,gabriel.schenk@odoo.com,+41727896711,"""""",IT & Kỹ thuật,Male,"""""",Single,22/06/1993,Switzerland,CH3267684458,C62299501,"""""","""""",""""""
+191,hr_emp_0191,Sophia Rose,sophia.rose@odoo.com,+61706049247,+61241238172,Administration,Female,"""""",Divorced,"""""",Australia,AU4503791149,A87094571,V6165974546,WP56185441,16/12/2026
+192,hr_emp_0192,Gabriel Manning,gabriel.manning@odoo.com,+18147840699,+16504974078,Chăm sóc khách hàng,Male,"""""",Single,11/05/1971,Canada,CA4268449325,C51806626,"""""","""""",""""""
+193,hr_emp_0193,Jean Thomas,jean.thomas@odoo.com,+15519010654,+16002855304,Kế toán,Female,"""""",Married,21/12/1989,United States,US6013679559,U64122743,V6720001563,WP15775258,27/05/2027
+194,hr_emp_0194,Lois Bosman,lois.bosman@odoo.com,+31616432190,"""""",Marketing,Female,"""""",Widower,07/09/1966,Netherlands,NL7458781071,"""""",V9928909074,WP00521277,22/01/2026
+195,hr_emp_0195,Silvestro Settembre,silvestro.settembre@odoo.com,+392750365658,"""""",Kế toán,Male,"""""",Married,18/03/1979,Italy,IT3062264023,I04188462,"""""","""""",""""""
+196,hr_emp_0196,Finn Post,finn.post@odoo.com,+31910232299,+31545605748,Administration,Male,"""""",Divorced,15/04/1988,Netherlands,"""""",N05058336,V1066476221,WP29898913,13/12/2025
+197,hr_emp_0197,Rika Kawasaki,rika.kawasaki@odoo.com,+811783246160,"""""",Điều hành,Female,"""""",Married,29/10/1995,Japan,JP0744599122,J50702855,"""""","""""",""""""
+198,hr_emp_0198,Maëlle Prevost,maelle.prevost@odoo.com,"""""","""""",Administration,Female,"""""",Single,18/04/1979,France,FR6019735719,F47093674,"""""","""""",""""""
+199,hr_emp_0199,Renate Franke,renate.franke@odoo.com,"""""","""""",IT & Kỹ thuật,Female,"""""",Widower,15/01/1967,Germany,"""""",D56448685,V2198790935,WP45846992,13/02/2026
+200,hr_emp_0200,Akihiro Matsuo,akihiro.matsuo@odoo.com,"""""","""""",Administration,Male,"""""",Married,"""""",Japan,JP0744216892,J09939806,"""""","""""",""""""

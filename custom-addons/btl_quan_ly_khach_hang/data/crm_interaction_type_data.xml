@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- Loại tương tác -->
+        <record id="interaction_type_call" model="crm.interaction.type">
+            <field name="name">Cuộc gọi</field>
+            <field name="code">CALL</field>
+            <field name="icon">fa-phone</field>
+            <field name="sequence">10</field>
+        </record>
+        
+        <record id="interaction_type_meeting" model="crm.interaction.type">
+            <field name="name">Cuộc họp</field>
+            <field name="code">MEETING</field>
+            <field name="icon">fa-users</field>
+            <field name="sequence">20</field>
+        </record>
+        
+        <record id="interaction_type_email" model="crm.interaction.type">
+            <field name="name">Email</field>
+            <field name="code">EMAIL</field>
+            <field name="icon">fa-envelope</field>
+            <field name="sequence">30</field>
+        </record>
+        
+        <record id="interaction_type_quotation" model="crm.interaction.type">
+            <field name="name">Báo giá</field>
+            <field name="code">QUOTATION</field>
+            <field name="icon">fa-file-text</field>
+            <field name="sequence">40</field>
+        </record>
+        
+        <record id="interaction_type_visit" model="crm.interaction.type">
+            <field name="name">Thăm khách hàng</field>
+            <field name="code">VISIT</field>
+            <field name="icon">fa-map-marker</field>
+            <field name="sequence">50</field>
+        </record>
+        
+        <record id="interaction_type_demo" model="crm.interaction.type">
+            <field name="name">Demo sản phẩm</field>
+            <field name="code">DEMO</field>
+            <field name="icon">fa-desktop</field>
+            <field name="sequence">60</field>
+        </record>
+        
+        <record id="interaction_type_note" model="crm.interaction.type">
+            <field name="name">Ghi chú</field>
+            <field name="code">NOTE</field>
+            <field name="icon">fa-sticky-note</field>
+            <field name="sequence">70</field>
+        </record>
+        
+        <record id="interaction_type_sms" model="crm.interaction.type">
+            <field name="name">SMS/Zalo</field>
+            <field name="code">SMS</field>
+            <field name="icon">fa-comment</field>
+            <field name="sequence">80</field>
+        </record>
+        
+    </data>
+</odoo>

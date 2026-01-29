@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hr_payslip_generate_wizard_form" model="ir.ui.view">
+        <field name="name">hr.payslip.generate.wizard.form</field>
+        <field name="model">hr.payslip.generate.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Tạo bảng lương hàng loạt">
+                <group>
+                    <field name="date"/>
+                    <field name="generate_all"/>
+                </group>
+                <group invisible="generate_all">
+                    <field name="department_ids" widget="many2many_tags"/>
+                    <field name="employee_ids" widget="many2many_tags"/>
+                </group>
+                <footer>
+                    <button name="action_generate" string="Tạo bảng lương" type="object" class="btn-primary"/>
+                    <button string="Hủy" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_hr_payslip_generate_wizard" model="ir.actions.act_window">
+        <field name="name">Tạo bảng lương hàng loạt</field>
+        <field name="res_model">hr.payslip.generate.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

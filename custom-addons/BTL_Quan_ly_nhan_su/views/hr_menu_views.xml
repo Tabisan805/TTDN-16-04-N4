@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Menu chính -->
+    <menuitem id="menu_hr_btl_root"
+              name="Nhân sự BTL"
+              sequence="10"
+              web_icon="hr,static/description/icon.png"/>
+    
+    <!-- Menu Nhân viên -->
+    <menuitem id="menu_hr_employee"
+              name="Nhân viên"
+              parent="menu_hr_btl_root"
+              action="action_hr_employee"
+              sequence="10"/>
+    
+    <!-- Menu Chấm công -->
+    <menuitem id="menu_hr_attendance_parent"
+              name="Chấm công"
+              parent="menu_hr_btl_root"
+              sequence="20"/>
+    
+    <menuitem id="menu_hr_attendance"
+              name="Chấm công"
+              parent="menu_hr_attendance_parent"
+              action="action_hr_attendance_btl"
+              sequence="10"/>
+    
+    <menuitem id="menu_hr_attendance_import"
+              name="Import chấm công"
+              parent="menu_hr_attendance_parent"
+              action="action_hr_attendance_import_wizard"
+              sequence="20"/>
+    
+    <menuitem id="menu_hr_work_entry"
+              name="Bảng công"
+              parent="menu_hr_attendance_parent"
+              action="action_hr_work_entry_btl"
+              sequence="30"/>
+    
+    <menuitem id="menu_hr_attendance_rule"
+              name="Quy định chấm công"
+              parent="menu_hr_attendance_parent"
+              action="action_hr_attendance_rule"
+              sequence="40"
+              groups="group_hr_admin"/>
+    
+    <!-- Menu Nghỉ phép &amp; Tăng ca -->
+    <menuitem id="menu_hr_time_off_parent"
+              name="Nghỉ phép &amp; Tăng ca"
+              parent="menu_hr_btl_root"
+              sequence="30"/>
+    
+    <menuitem id="menu_hr_leave"
+              name="Nghỉ phép"
+              parent="menu_hr_time_off_parent"
+              action="action_hr_leave_btl"
+              sequence="10"/>
+    
+    <menuitem id="menu_hr_overtime"
+              name="Tăng ca"
+              parent="menu_hr_time_off_parent"
+              action="action_hr_overtime"
+              sequence="20"/>
+    
+    <!-- Menu Thưởng phạt -->
+    <menuitem id="menu_hr_reward_punishment_parent"
+              name="Thưởng - Phạt"
+              parent="menu_hr_btl_root"
+              sequence="40"/>
+    
+    <menuitem id="menu_hr_reward_punishment"
+              name="Thưởng - Phạt"
+              parent="menu_hr_reward_punishment_parent"
+              action="action_hr_reward_punishment"
+              sequence="10"/>
+    
+    <menuitem id="menu_hr_reward_punishment_type"
+              name="Loại thưởng phạt"
+              parent="menu_hr_reward_punishment_parent"
+              action="action_hr_reward_punishment_type"
+              sequence="20"
+              groups="group_hr_admin"/>
+    
+    <!-- Menu Lương -->
+    <menuitem id="menu_hr_payroll_parent"
+              name="Lương"
+              parent="menu_hr_btl_root"
+              sequence="50"/>
+    
+    <menuitem id="menu_hr_payslip"
+              name="Bảng lương"
+              parent="menu_hr_payroll_parent"
+              action="action_hr_payslip_btl"
+              sequence="10"/>
+    
+    <menuitem id="menu_hr_payslip_generate"
+              name="Tạo bảng lương hàng loạt"
+              parent="menu_hr_payroll_parent"
+              action="action_hr_payslip_generate_wizard"
+              sequence="20"
+              groups="group_hr_officer"/>
+    
+    <!-- Menu Hiệu suất -->
+    <menuitem id="menu_hr_performance"
+              name="Hiệu suất"
+              parent="menu_hr_btl_root"
+              action="action_hr_performance"
+              sequence="60"/>
+    
+    <!-- Menu Báo cáo -->
+    <menuitem id="menu_hr_reports_parent"
+              name="Báo cáo"
+              parent="menu_hr_btl_root"
+              sequence="70"
+              groups="group_hr_officer"/>
+    
+    <menuitem id="menu_hr_attendance_report"
+              name="Báo cáo chấm công"
+              parent="menu_hr_reports_parent"
+              action="action_hr_attendance_btl"
+              sequence="10"/>
+    
+    <menuitem id="menu_hr_payroll_report"
+              name="Báo cáo lương"
+              parent="menu_hr_reports_parent"
+              action="action_hr_payslip_btl"
+              sequence="20"/>
+    
+    <menuitem id="menu_hr_performance_report"
+              name="Báo cáo hiệu suất"
+              parent="menu_hr_reports_parent"
+              action="action_hr_performance"
+              sequence="30"/>
+    
+    <menuitem id="menu_hr_sales_report"
+              name="Báo cáo doanh thu nhân viên"
+              parent="menu_hr_reports_parent"
+              action="action_hr_employee_sales_report"
+              sequence="40"/>
+    
+</odoo>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- Nguồn khách hàng -->
+        <record id="source_facebook" model="crm.source.btl">
+            <field name="name">Facebook</field>
+            <field name="code">FACEBOOK</field>
+            <field name="sequence">10</field>
+        </record>
+        
+        <record id="source_website" model="crm.source.btl">
+            <field name="name">Website</field>
+            <field name="code">WEBSITE</field>
+            <field name="sequence">20</field>
+        </record>
+        
+        <record id="source_referral" model="crm.source.btl">
+            <field name="name">Giới thiệu</field>
+            <field name="code">REFERRAL</field>
+            <field name="sequence">30</field>
+        </record>
+        
+        <record id="source_google_ads" model="crm.source.btl">
+            <field name="name">Google Ads</field>
+            <field name="code">GOOGLE_ADS</field>
+            <field name="sequence">40</field>
+        </record>
+        
+        <record id="source_facebook_ads" model="crm.source.btl">
+            <field name="name">Facebook Ads</field>
+            <field name="code">FB_ADS</field>
+            <field name="sequence">50</field>
+        </record>
+        
+        <record id="source_event" model="crm.source.btl">
+            <field name="name">Sự kiện</field>
+            <field name="code">EVENT</field>
+            <field name="sequence">60</field>
+        </record>
+        
+        <record id="source_cold_call" model="crm.source.btl">
+            <field name="name">Cold Call</field>
+            <field name="code">COLD_CALL</field>
+            <field name="sequence">70</field>
+        </record>
+        
+        <record id="source_email_marketing" model="crm.source.btl">
+            <field name="name">Email Marketing</field>
+            <field name="code">EMAIL_MKT</field>
+            <field name="sequence">80</field>
+        </record>
+        
+        <record id="source_other" model="crm.source.btl">
+            <field name="name">Khác</field>
+            <field name="code">OTHER</field>
+            <field name="sequence">90</field>
+        </record>
+        
+    </data>
+</odoo>

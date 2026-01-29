@@ -1,0 +1,895 @@
+================================================================================
+                    QUY TRÌNH QUẢN LÝ MODULE BTL
+                       Hệ thống ERP BTL - Odoo 19
+                        Ngày tạo: 07/01/2026
+================================================================================
+
+TỔNG QUAN HỆ THỐNG
+--------------------------------------------------------------------------------
+Module BTL bao gồm 3 module quản lý chính:
+1. Quản lý Công việc & Hoạt động (Quan_ly_cong_viec)
+2. Quản lý Khách hàng (Quan_ly_khach_hang)
+3. Quản lý Nhân sự (Quan_ly_nhan_su)
+
+Các module này được thiết kế để tích hợp với nhau tạo thành một hệ thống 
+quản lý doanh nghiệp toàn diện, từ quản lý khách hàng, công việc đến nhân sự.
+
+
+================================================================================
+MODULE 1: QUẢN LÝ CÔNG VIỆC & HOẠT ĐỘNG (Quan_ly_cong_viec)
+================================================================================
+
+MỤC ĐÍCH
+--------------------------------------------------------------------------------
+- Quản lý công việc (Task) và hoạt động (Activity) của toàn bộ doanh nghiệp
+- Tự động chuyển hóa tương tác khách hàng thành công việc
+- Theo dõi hiệu suất làm việc và tiến độ công việc
+- Phân bổ công việc theo phòng ban và nhân viên
+
+PHẠM VI ÁP DỤNG
+--------------------------------------------------------------------------------
+- Quản lý: Giao việc, theo dõi tiến độ
+- Sale: Follow-up khách hàng, báo giá
+- Marketing: Chiến dịch, nội dung
+- Kế toán: Hóa đơn, thanh toán
+- Nhân sự: Tuyển dụng, đánh giá
+- Trợ lý: Sắp xếp lịch, hỗ trợ
+
+QUY TRÌNH CHI TIẾT
+--------------------------------------------------------------------------------
+
+1. TẠO CÔNG VIỆC MỚI
+   ├─ Cách 1: Tạo thủ công
+   │  ├─ Truy cập menu: Công việc > Công việc > Tạo mới
+   │  ├─ Nhập thông tin:
+   │  │  ├─ Tên công việc (bắt buộc)
+   │  │  ├─ Loại công việc (bắt buộc): Sale, Marketing, Kế toán, HR, Trợ lý
+   │  │  ├─ Phòng ban: Chọn phòng ban thực hiện
+   │  │  ├─ Người thực hiện: Gán nhân viên phụ trách
+   │  │  ├─ Người giao việc: Tự động lấy user hiện tại
+   │  │  ├─ Người phối hợp: Thêm các nhân viên hỗ trợ
+   │  │  ├─ Mức độ ưu tiên: Thấp/Bình thường/Cao/Khẩn cấp
+   │  │  ├─ Thời gian bắt đầu
+   │  │  ├─ Thời gian kết thúc dự kiến
+   │  │  └─ Mô tả công việc
+   │  └─ Lưu công việc
+   │
+   ├─ Cách 2: Tự động từ tương tác khách hàng
+   │  ├─ Khi tạo tương tác với khách hàng (gọi điện, email, họp)
+   │  ├─ Hệ thống tự động tạo công việc follow-up
+   │  └─ Gán cho nhân viên sale phụ trách khách hàng đó
+   │
+   └─ Cách 3: Từ Lead/Cơ hội
+      ├─ Khi tạo Lead mới trong CRM
+      ├─ Tạo công việc "Liên hệ khách hàng tiềm năng"
+      └─ Gán cho sale theo phân bổ tự động
+
+2. THEO DÕI VÀ CẬP NHẬT CÔNG VIỆC
+   ├─ Cập nhật trạng thái:
+   │  ├─ Chưa bắt đầu: Công việc mới tạo
+   │  ├─ Đang thực hiện: Bắt đầu làm việc
+   │  ├─ Chờ phản hồi: Chờ khách hàng/bộ phận khác
+   │  ├─ Tạm dừng: Tạm ngưng công việc
+   │  ├─ Hoàn thành: Đã hoàn thành công việc
+   │  └─ Đã hủy: Hủy bỏ công việc
+   │
+   ├─ Cập nhật tiến độ:
+   │  ├─ Nhập tỷ lệ hoàn thành (0-100%)
+   │  ├─ Cập nhật kết quả thực hiện
+   │  └─ Ghi chú quá trình làm việc
+   │
+   └─ Theo dõi thời gian:
+      ├─ Thời gian dự kiến (tự động tính)
+      ├─ Thời gian thực tế (khi hoàn thành)
+      └─ Cảnh báo quá hạn (tự động)
+
+3. BÀN GIAO CÔNG VIỆC
+   ├─ Khi cần chuyển giao công việc cho người khác:
+   │  ├─ Nhấn nút "Bàn giao công việc"
+   │  ├─ Chọn người nhận bàn giao
+   │  ├─ Nhập lý do bàn giao
+   │  └─ Xác nhận bàn giao
+   │
+   ├─ Hệ thống tự động:
+   │  ├─ Ghi lại lịch sử bàn giao
+   │  ├─ Gửi thông báo cho người nhận
+   │  └─ Cập nhật người thực hiện mới
+   │
+   └─ Xem lịch sử bàn giao:
+      ├─ Tab "Lịch sử bàn giao" trong công việc
+      └─ Xem ai đã bàn giao cho ai, khi nào, vì sao
+
+4. LỊCH SỬ THAY ĐỔI
+   ├─ Hệ thống tự động theo dõi mọi thay đổi:
+   │  ├─ Thay đổi trạng thái
+   │  ├─ Thay đổi người thực hiện
+   │  ├─ Thay đổi thời gian
+   │  ├─ Thay đổi ưu tiên
+   │  └─ Cập nhật tiến độ
+   │
+   └─ Xem lịch sử:
+      ├─ Tab "Lịch sử thay đổi" trong công việc
+      └─ Chi tiết: ai, thay đổi gì, khi nào
+
+5. BÁO CÁO VÀ THỐNG KÊ
+   ├─ Báo cáo hiệu suất:
+   │  ├─ Số công việc hoàn thành/tổng số
+   │  ├─ Tỷ lệ hoàn thành đúng hạn
+   │  ├─ Thời gian trung bình hoàn thành
+   │  └─ Số công việc quá hạn
+   │
+   ├─ Dashboard theo vai trò:
+   │  ├─ Manager: Tổng quan toàn bộ
+   │  ├─ Team Leader: Công việc của team
+   │  └─ Nhân viên: Công việc cá nhân
+   │
+   └─ Lọc và phân tích:
+      ├─ Theo phòng ban
+      ├─ Theo loại công việc
+      ├─ Theo thời gian
+      └─ Theo nhân viên
+
+LIÊN KẾT VỚI MODULE KHÁC
+--------------------------------------------------------------------------------
+- Khách hàng: Công việc liên quan đến khách hàng, Lead, Đơn hàng
+- Nhân sự: Hiệu suất làm việc ảnh hưởng đến KPI nhân viên
+- CRM: Tự động tạo công việc từ cơ hội và tương tác
+
+
+================================================================================
+MODULE 2: QUẢN LÝ KHÁCH HÀNG (Quan_ly_khach_hang)
+================================================================================
+
+MỤC ĐÍCH
+--------------------------------------------------------------------------------
+- Quản lý khách hàng tiềm năng (Leads) và khách hàng chính thức (Customers)
+- Theo dõi lịch sử tương tác đầy đủ với khách hàng
+- Phân loại và đánh giá chất lượng khách hàng
+- Hỗ trợ quy trình chăm sóc khách hàng chuyên nghiệp
+
+QUY TRÌNH CHI TIẾT
+--------------------------------------------------------------------------------
+
+1. QUẢN LÝ KHÁCH HÀNG TIỀM NĂNG (LEADS)
+
+   A. TẠO LEAD MỚI
+      ├─ Truy cập: CRM > Leads > Tạo mới
+      ├─ Nhập thông tin cơ bản:
+      │  ├─ Tên khách hàng/công ty (bắt buộc)
+      │  ├─ Số điện thoại
+      │  ├─ Email
+      │  ├─ Địa chỉ
+      │  └─ Nguồn khách hàng (bắt buộc):
+      │     ├─ Website
+      │     ├─ Giới thiệu
+      │     ├─ Quảng cáo
+      │     ├─ Sự kiện
+      │     ├─ Mạng xã hội
+      │     └─ Khác
+      │
+      ├─ Thông tin doanh nghiệp:
+      │  ├─ Quy mô công ty: 1-10, 11-50, 51-200, 201-500, 500+ nhân viên
+      │  ├─ Ngành nghề
+      │  └─ Mã số thuế
+      │
+      ├─ Thông tin bán hàng:
+      │  ├─ Sản phẩm quan tâm
+      │  ├─ Ngân sách dự kiến
+      │  └─ Độ ưu tiên: Thấp, Trung bình, Cao, Rất cao
+      │
+      ├─ Phân công:
+      │  ├─ Sale phụ trách (tự động gán)
+      │  └─ Team sale
+      │
+      └─ Lưu lead
+
+   B. THEO DÕI VÀ CHĂM SÓC LEAD
+      ├─ Xem thông tin lead:
+      │  ├─ Thông tin cơ bản
+      │  ├─ Lịch sử tương tác
+      │  ├─ Nhân viên phụ trách
+      │  └─ Thống kê: Số cuộc gọi, họp, email
+      │
+      ├─ Tạo tương tác:
+      │  ├─ Nhấn "Tạo tương tác"
+      │  ├─ Chọn loại:
+      │  │  ├─ Cuộc gọi (Call)
+      │  │  ├─ Email
+      │  │  ├─ Cuộc họp (Meeting)
+      │  │  ├─ Gửi báo giá
+      │  │  └─ Khác
+      │  │
+      │  ├─ Nhập nội dung:
+      │  │  ├─ Tiêu đề tương tác
+      │  │  ├─ Nội dung chi tiết
+      │  │  ├─ Kết quả tương tác
+      │  │  └─ Thời gian
+      │  │
+      │  └─ Lưu tương tác
+      │     ├─ Trạng thái: Đã lên lịch → Đang thực hiện → Hoàn thành
+      │     └─ Hệ thống tự động tạo công việc follow-up
+      │
+      ├─ Đánh giá chất lượng lead:
+      │  ├─ Điểm chất lượng (0-100)
+      │  └─ Dựa trên: Ngân sách, Nhu cầu, Thời gian, Quyết định
+      │
+      └─ Theo dõi tiến độ:
+         ├─ Giai đoạn lead:
+         │  ├─ Mới (New)
+         │  ├─ Đã liên hệ (Qualified)
+         │  ├─ Đang đàm phán (Proposition)
+         │  └─ Đã thắng/thua (Won/Lost)
+         │
+         └─ Xác suất thành công (%)
+
+   C. CHUYỂN ĐỔI LEAD THÀNH KHÁCH HÀNG
+      ├─ Khi lead đồng ý mua hàng:
+      │  ├─ Nhấn "Chuyển đổi thành khách hàng"
+      │  ├─ Tạo khách hàng mới hoặc liên kết với khách hàng có sẵn
+      │  └─ Tạo cơ hội bán hàng (Opportunity)
+      │
+      └─ Hệ thống tự động:
+         ├─ Chuyển trạng thái lead sang "Đã thắng"
+         ├─ Tạo bản ghi khách hàng chính thức
+         └─ Giữ nguyên lịch sử tương tác
+
+2. QUẢN LÝ KHÁCH HÀNG CHÍNH THỨC (CUSTOMERS)
+
+   A. XEM VÀ CẬP NHẬT THÔNG TIN
+      ├─ Truy cập: Contacts > Khách hàng
+      ├─ Thông tin cơ bản:
+      │  ├─ Tên, địa chỉ, điện thoại, email
+      │  ├─ Loại khách hàng: Cá nhân/Công ty
+      │  └─ Nhân viên sale phụ trách
+      │
+      ├─ Phân loại khách hàng:
+      │  ├─ VIP, Thường xuyên, Mới
+      │  └─ Theo ngành nghề
+      │
+      └─ Cập nhật thông tin khi có thay đổi
+
+   B. LỊCH SỬ TƯƠNG TÁC
+      ├─ Xem tất cả tương tác:
+      │  ├─ Tab "Tương tác" trong form khách hàng
+      │  ├─ Lọc theo loại: Gọi điện, Email, Họp
+      │  └─ Sắp xếp theo thời gian
+      │
+      └─ Tạo tương tác mới:
+         ├─ Tương tự như với Lead
+         └─ Gắn với đơn hàng cụ thể nếu có
+
+   C. LỊCH SỬ MUA HÀNG
+      ├─ Tab "Đơn hàng" trong khách hàng
+      ├─ Xem:
+      │  ├─ Tổng doanh thu
+      │  ├─ Số đơn hàng
+      │  ├─ Sản phẩm đã mua
+      │  └─ Chu kỳ mua hàng
+      │
+      └─ Phân tích:
+         ├─ Xu hướng mua hàng
+         ├─ Sản phẩm yêu thích
+         └─ Giá trị đơn hàng trung bình
+
+   D. QUẢN LÝ CÔNG NỢ
+      ├─ Xem công nợ hiện tại
+      ├─ Lịch sử thanh toán
+      └─ Nhắc nhở thanh toán
+
+3. NGUỒN KHÁCH HÀNG
+
+   ├─ Quản lý nguồn khách hàng:
+   │  ├─ Truy cập: CRM > Cấu hình > Nguồn khách hàng
+   │  ├─ Tạo/chỉnh sửa nguồn:
+   │  │  ├─ Mã nguồn
+   │  │  ├─ Tên nguồn
+   │  │  └─ Mô tả
+   │  │
+   │  └─ Theo dõi hiệu quả nguồn:
+   │     ├─ Số lead từ nguồn
+   │     ├─ Tỷ lệ chuyển đổi
+   │     └─ Doanh thu từ nguồn
+   │
+   └─ Báo cáo nguồn khách hàng
+
+4. BÁO CÁO VÀ PHÂN TÍCH
+
+   ├─ Báo cáo Lead:
+   │  ├─ Số lead mới theo thời gian
+   │  ├─ Tỷ lệ chuyển đổi
+   │  ├─ Lead theo nguồn
+   │  └─ Lead theo sale
+   │
+   ├─ Báo cáo khách hàng:
+   │  ├─ Số khách hàng mới
+   │  ├─ Doanh thu theo khách hàng
+   │  ├─ Top khách hàng VIP
+   │  └─ Khách hàng ngừng mua hàng
+   │
+   └─ Báo cáo tương tác:
+      ├─ Số tương tác theo loại
+      ├─ Tương tác theo sale
+      └─ Hiệu quả tương tác
+
+LIÊN KẾT VỚI MODULE KHÁC
+--------------------------------------------------------------------------------
+- Công việc: Tự động tạo task follow-up từ tương tác
+- Nhân sự: Theo dõi hiệu suất sale qua doanh số và số khách hàng
+- Bán hàng: Tạo báo giá, đơn hàng từ khách hàng
+
+
+================================================================================
+MODULE 3: QUẢN LÝ NHÂN SỰ (Quan_ly_nhan_su)
+================================================================================
+
+MỤC ĐÍCH
+--------------------------------------------------------------------------------
+- Quản lý hồ sơ nhân viên
+- Chấm công và tính toán ngày công tự động
+- Quản lý thưởng, phạt, tăng ca
+- Tính lương tự động dựa trên công thức linh hoạt
+- Theo dõi hiệu suất và KPI nhân viên
+
+QUY TRÌNH CHI TIẾT
+--------------------------------------------------------------------------------
+
+1. QUẢN LÝ HỒ SƠ NHÂN VIÊN
+
+   A. TẠO NHÂN VIÊN MỚI
+      ├─ Truy cập: Nhân sự > Nhân viên > Tạo mới
+      ├─ Thông tin cơ bản:
+      │  ├─ Mã nhân viên (bắt buộc, duy nhất)
+      │  ├─ Họ tên
+      │  ├─ Ngày sinh
+      │  ├─ Số điện thoại, Email
+      │  ├─ Địa chỉ
+      │  └─ CCCD/CMND
+      │
+      ├─ Thông tin công việc:
+      │  ├─ Phòng ban (bắt buộc)
+      │  ├─ Chức vụ
+      │  ├─ Ngày vào làm (bắt buộc)
+      │  ├─ Quản lý trực tiếp
+      │  └─ Trạng thái: Đang làm việc/Nghỉ việc/Tạm nghỉ
+      │
+      ├─ Thông tin lương:
+      │  ├─ Hình thức tính lương:
+      │  │  ├─ Theo tháng (cố định)
+      │  │  ├─ Theo ngày công
+      │  │  └─ Theo giờ
+      │  │
+      │  └─ Lương cơ bản (bắt buộc)
+      │
+      ├─ Chính sách thưởng:
+      │  ├─ Thưởng KPI:
+      │  │  ├─ Bật/Tắt thưởng KPI
+      │  │  ├─ KPI mục tiêu (%)
+      │  │  └─ Tỷ lệ thưởng KPI (% lương)
+      │  │
+      │  └─ Hoa hồng:
+      │     ├─ Áp dụng hoa hồng (Bật/Tắt)
+      │     └─ Tỷ lệ hoa hồng (%)
+      │
+      ├─ Chế độ tăng ca:
+      │  ├─ Hệ số tăng ca ngày thường (1.5)
+      │  ├─ Hệ số tăng ca cuối tuần (2.0)
+      │  └─ Hệ số tăng ca ngày lễ (3.0)
+      │
+      └─ Chuẩn công:
+         ├─ Giờ làm chuẩn/ngày (8 giờ)
+         └─ Số ngày công chuẩn/tháng (26 ngày)
+
+   B. CẬP NHẬT HỒ SƠ
+      ├─ Thay đổi thông tin cá nhân
+      ├─ Thăng chức, chuyển phòng ban
+      ├─ Điều chỉnh lương
+      └─ Cập nhật trạng thái làm việc
+
+2. QUẢN LÝ CHẤM CÔNG
+
+   A. CHẤM CÔNG HÀNG NGÀY
+      ├─ Cách 1: Chấm công tự động (máy chấm công)
+      │  ├─ Tích hợp với thiết bị chấm công
+      │  └─ Tự động ghi nhận giờ vào/ra
+      │
+      ├─ Cách 2: Chấm công thủ công
+      │  ├─ Nhân sự > Chấm công > Tạo mới
+      │  ├─ Chọn nhân viên
+      │  ├─ Chọn ngày
+      │  ├─ Nhập giờ vào
+      │  ├─ Nhập giờ ra
+      │  └─ Lưu
+      │
+      └─ Hệ thống tự động tính:
+         ├─ Tổng giờ làm việc
+         ├─ Đi trễ (nếu vào sau giờ quy định)
+         ├─ Về sớm (nếu ra trước giờ quy định)
+         ├─ Tăng ca (nếu làm quá giờ)
+         └─ Số công: 1 công (đủ giờ), 0.5 công (thiếu), 0 công (vắng)
+
+   B. QUY TẮC CHẤM CÔNG
+      ├─ Cấu hình quy tắc:
+      │  ├─ Nhân sự > Cấu hình > Quy tắc chấm công
+      │  ├─ Thiết lập:
+      │  │  ├─ Giờ vào chuẩn (ví dụ: 8:00)
+      │  │  ├─ Giờ ra chuẩn (ví dụ: 17:30)
+      │  │  ├─ Thời gian được phép trễ (ví dụ: 15 phút)
+      │  │  ├─ Số giờ tối thiểu để tính 1 công (ví dụ: 7 giờ)
+      │  │  └─ Tính tăng ca từ giờ nào
+      │  │
+      │  └─ Quy tắc theo phòng ban (nếu khác nhau)
+      │
+      └─ Áp dụng quy tắc tự động
+
+   C. PHIẾU CÔNG THÁNG
+      ├─ Cuối tháng, hệ thống tự động tạo phiếu công:
+      │  ├─ Tổng ngày công thực tế
+      │  ├─ Số ngày đi trễ
+      │  ├─ Số ngày về sớm
+      │  ├─ Tổng giờ tăng ca
+      │  └─ Ngày nghỉ có phép/không phép
+      │
+      ├─ Phê duyệt phiếu công:
+      │  ├─ Quản lý kiểm tra
+      │  ├─ Phê duyệt hoặc yêu cầu chỉnh sửa
+      │  └─ Chốt phiếu công
+      │
+      └─ Sau khi chốt → Dữ liệu sang tính lương
+
+3. QUẢN LÝ NGHỈ PHÉP
+
+   A. ĐĂNG KÝ NGHỈ PHÉP
+      ├─ Nhân viên đăng ký:
+      │  ├─ Nhân sự > Nghỉ phép > Tạo mới
+      │  ├─ Chọn loại nghỉ:
+      │  │  ├─ Nghỉ phép năm
+      │  │  ├─ Nghỉ ốm
+      │  │  ├─ Nghỉ không lương
+      │  │  └─ Các loại khác
+      │  │
+      │  ├─ Chọn thời gian:
+      │  │  ├─ Từ ngày
+      │  │  ├─ Đến ngày
+      │  │  └─ Số ngày nghỉ (tự động tính)
+      │  │
+      │  ├─ Lý do nghỉ
+      │  └─ Gửi phê duyệt
+      │
+      └─ Quản lý phê duyệt:
+         ├─ Nhận thông báo yêu cầu
+         ├─ Xem thông tin đăng ký
+         ├─ Phê duyệt hoặc từ chối
+         └─ Nhân viên nhận thông báo kết quả
+
+   B. THEO DÕI PHÉP NĂM
+      ├─ Số phép được hưởng
+      ├─ Số phép đã sử dụng
+      └─ Số phép còn lại
+
+4. QUẢN LÝ TĂNG CA
+
+   A. ĐĂNG KÝ TĂNG CA
+      ├─ Nhân viên đăng ký:
+      │  ├─ Nhân sự > Tăng ca > Tạo mới
+      │  ├─ Chọn ngày tăng ca
+      │  ├─ Chọn loại:
+      │  │  ├─ Ngày thường
+      │  │  ├─ Cuối tuần
+      │  │  └─ Ngày lễ
+      │  │
+      │  ├─ Thời gian tăng ca:
+      │  │  ├─ Từ giờ
+      │  │  ├─ Đến giờ
+      │  │  └─ Tổng số giờ (tự động)
+      │  │
+      │  ├─ Lý do tăng ca
+      │  └─ Gửi phê duyệt
+      │
+      └─ Quản lý phê duyệt tương tự nghỉ phép
+
+   B. TÍNH TIỀN TĂNG CA
+      ├─ Hệ thống tự động tính:
+      │  ├─ Lương cơ bản theo giờ = Lương tháng / (Ngày công chuẩn × 8)
+      │  ├─ Tiền tăng ca = Số giờ × Lương giờ × Hệ số
+      │  │  ├─ Ngày thường: × 1.5
+      │  │  ├─ Cuối tuần: × 2.0
+      │  │  └─ Ngày lễ: × 3.0
+      │  │
+      │  └─ Cộng vào lương tháng
+
+5. QUẢN LÝ THƯỞNG PHẠT
+
+   A. TẠO THƯỞNG/PHẠT
+      ├─ Nhân sự > Thưởng phạt > Tạo mới
+      ├─ Chọn:
+      │  ├─ Loại: Thưởng hoặc Phạt
+      │  ├─ Nhân viên
+      │  ├─ Ngày
+      │  ├─ Loại thưởng/phạt:
+      │  │  ├─ Hoàn thành xuất sắc
+      │  │  ├─ Đi trễ
+      │  │  ├─ Vi phạm nội quy
+      │  │  └─ Khác
+      │  │
+      │  ├─ Số tiền
+      │  ├─ Lý do chi tiết
+      │  └─ Lưu
+      │
+      └─ Phê duyệt và áp dụng vào lương
+
+   B. LOẠI THƯỞNG/PHẠT
+      ├─ Cấu hình: Nhân sự > Cấu hình > Loại thưởng phạt
+      └─ Tạo các loại phổ biến với mức tiền mặc định
+
+6. TÍNH LƯƠNG
+
+   A. QUY TRÌNH TÍNH LƯƠNG HÀNG THÁNG
+      ├─ Bước 1: Chốt dữ liệu (cuối tháng)
+      │  ├─ Chốt phiếu công
+      │  ├─ Chốt tăng ca
+      │  ├─ Chốt nghỉ phép
+      │  └─ Chốt thưởng phạt
+      │
+      ├─ Bước 2: Tạo bảng lương
+      │  ├─ Nhân sự > Lương > Tạo bảng lương
+      │  ├─ Chọn tháng/năm
+      │  ├─ Chọn nhân viên (hoặc chọn tất cả)
+      │  └─ Nhấn "Tính lương"
+      │
+      ├─ Bước 3: Hệ thống tự động tính
+      │  ├─ Lương cơ bản (theo hình thức):
+      │  │  ├─ Theo tháng: Lương cố định
+      │  │  ├─ Theo ngày: Lương cơ bản × Số ngày công
+      │  │  └─ Theo giờ: Lương giờ × Tổng giờ làm
+      │  │
+      │  ├─ Thưởng KPI (nếu có):
+      │  │  ├─ Tính KPI thực tế (từ hiệu suất)
+      │  │  ├─ So với KPI mục tiêu
+      │  │  └─ Thưởng = Lương cơ bản × Tỷ lệ thưởng × (KPI thực tế/KPI mục tiêu)
+      │  │
+      │  ├─ Hoa hồng (nếu là sale):
+      │  │  ├─ Lấy tổng doanh thu từ đơn hàng trong tháng
+      │  │  └─ Hoa hồng = Doanh thu × Tỷ lệ hoa hồng (%)
+      │  │
+      │  ├─ Tiền tăng ca:
+      │  │  └─ Tổng tiền tăng ca đã được tính
+      │  │
+      │  ├─ Thưởng khác:
+      │  │  └─ Cộng các khoản thưởng
+      │  │
+      │  ├─ Phạt:
+      │  │  ├─ Trừ các khoản phạt
+      │  │  └─ Phạt đi trễ, về sớm (nếu có quy định)
+      │  │
+      │  └─ Tổng lương = Lương cơ bản + Các khoản thưởng - Các khoản phạt
+      │
+      ├─ Bước 4: Kiểm tra và điều chỉnh
+      │  ├─ Xem chi tiết từng khoản
+      │  ├─ Điều chỉnh nếu cần (thủ công)
+      │  └─ Ghi chú điều chỉnh
+      │
+      ├─ Bước 5: Phê duyệt bảng lương
+      │  ├─ Quản lý/Kế toán kiểm tra
+      │  ├─ Phê duyệt
+      │  └─ Chốt bảng lương (không thể sửa)
+      │
+      └─ Bước 6: Xuất bảng lương
+         ├─ In phiếu lương cho nhân viên
+         ├─ Xuất file Excel
+         └─ Gửi email phiếu lương
+
+   B. CÔNG THỨC CHI TIẾT
+
+      CÔNG THỨC LƯƠNG THÁNG:
+      ----------------------
+      Tổng lương = A + B + C + D + E - F
+
+      Trong đó:
+      A = Lương cơ bản (theo hình thức)
+      B = Thưởng KPI
+      C = Hoa hồng đơn hàng (cho nhân viên sale)
+      D = Tiền tăng ca
+      E = Các khoản thưởng khác
+      F = Các khoản phạt
+
+      CHI TIẾT TỪNG KHOẢN:
+      --------------------
+      
+      [A] Lương cơ bản:
+          - Theo tháng: Lương cố định
+          - Theo ngày công:
+            Lương = (Lương cơ bản / Ngày công chuẩn) × Số ngày công thực tế
+          - Theo giờ:
+            Lương = Lương giờ × Tổng giờ làm việc
+
+      [B] Thưởng KPI:
+          Thưởng KPI = Lương cơ bản × (Tỷ lệ thưởng KPI/100) × (KPI thực tế/KPI mục tiêu)
+          
+          Ví dụ:
+          - Lương cơ bản: 10,000,000 VNĐ
+          - Tỷ lệ thưởng KPI: 20% (khi đạt 100% KPI)
+          - KPI mục tiêu: 100%
+          - KPI thực tế: 120%
+          → Thưởng = 10,000,000 × 20% × (120%/100%) = 2,400,000 VNĐ
+
+      [C] Hoa hồng đơn hàng:
+          Hoa hồng = Tổng doanh thu đơn hàng tháng × (Tỷ lệ hoa hồng/100)
+          
+          Lưu ý:
+          - Chỉ áp dụng cho nhân viên có bật "Áp dụng hoa hồng"
+          - Tính dựa trên đơn hàng đã xác nhận trong tháng
+          - Tỷ lệ hoa hồng cấu hình riêng cho từng nhân viên
+          
+          Ví dụ:
+          - Doanh thu tháng từ đơn hàng: 100,000,000 VNĐ
+          - Tỷ lệ hoa hồng: 4%
+          → Hoa hồng = 100,000,000 × 4% = 4,000,000 VNĐ
+
+      [D] Tiền tăng ca:
+          Lương giờ = Lương cơ bản / (Ngày công chuẩn × 8 giờ)
+          
+          Tiền tăng ca ngày thường = Số giờ × Lương giờ × 1.5
+          Tiền tăng ca cuối tuần = Số giờ × Lương giờ × 2.0
+          Tiền tăng ca ngày lễ = Số giờ × Lương giờ × 3.0
+          
+          Ví dụ:
+          - Lương cơ bản: 10,000,000 VNĐ
+          - Ngày công chuẩn: 26 ngày
+          - Lương giờ = 10,000,000 / (26 × 8) = 48,077 VNĐ/giờ
+          - Tăng ca 10 giờ ngày thường
+          → Tiền tăng ca = 10 × 48,077 × 1.5 = 721,155 VNĐ
+
+      [E] Các khoản thưởng khác:
+          - Thưởng hoàn thành xuất sắc
+          - Thưởng dự án
+          - Thưởng sinh nhật, lễ tết
+          → Cộng tất cả các khoản
+
+      [F] Các khoản phạt:
+          - Phạt vi phạm nội quy
+          - Phạt đi trễ (nếu có quy định)
+          - Phạt về sớm
+          - Phạt vắng không phép
+          → Trừ tất cả các khoản
+
+7. THEO DÕI HIỆU SUẤT
+
+   A. ĐÁNH GIÁ HIỆU SUẤT
+      ├─ Tạo phiếu đánh giá:
+      │  ├─ Nhân sự > Hiệu suất > Tạo mới
+      │  ├─ Chọn nhân viên
+      │  ├─ Chọn kỳ đánh giá (tháng/quý/năm)
+      │  ├─ Nhập các chỉ số:
+      │  │  ├─ Chất lượng công việc
+      │  │  ├─ Năng suất
+      │  │  ├─ Kỹ năng chuyên môn
+      │  │  ├─ Tinh thần làm việc
+      │  │  └─ Khả năng làm việc nhóm
+      │  │
+      │  ├─ Tính điểm trung bình
+      │  └─ Nhận xét của quản lý
+      │
+      └─ Phê duyệt và lưu hồ sơ
+
+   B. KPI TỰ ĐỘNG
+      ├─ Hệ thống tự động tính KPI dựa trên:
+      │  ├─ Số công việc hoàn thành
+      │  ├─ Tỷ lệ hoàn thành đúng hạn
+      │  ├─ Chất lượng công việc
+      │  ├─ Doanh số (với sale)
+      │  └─ Số khách hàng mới (với sale)
+      │
+      └─ Cập nhật điểm KPI hàng tháng
+
+   C. DASHBOARD HIỆU SUẤT
+      ├─ Xem nhanh:
+      │  ├─ KPI hiện tại
+      │  ├─ Doanh thu/hoa hồng (sale)
+      │  ├─ Số công việc đang làm
+      │  └─ Công việc quá hạn
+      │
+      └─ Biểu đồ xu hướng theo thời gian
+
+8. BÁO CÁO NHÂN SỰ
+
+   ├─ Báo cáo chấm công:
+   │  ├─ Tổng hợp công tháng
+   │  ├─ Thống kê đi trễ/về sớm
+   │  └─ Thống kê vắng mặt
+   │
+   ├─ Báo cáo lương:
+   │  ├─ Tổng quỹ lương tháng
+   │  ├─ Lương theo phòng ban
+   │  └─ Chi tiết lương từng nhân viên
+   │
+   ├─ Báo cáo nghỉ phép:
+   │  ├─ Tổng ngày nghỉ
+   │  ├─ Nghỉ phép theo phòng ban
+   │  └─ Phép năm còn lại
+   │
+   ├─ Báo cáo tăng ca:
+   │  ├─ Tổng giờ tăng ca
+   │  ├─ Chi phí tăng ca
+   │  └─ Tăng ca theo phòng ban
+   │
+   └─ Báo cáo hiệu suất:
+      ├─ KPI trung bình
+      ├─ Top nhân viên xuất sắc
+      └─ Nhân viên cần cải thiện
+
+LIÊN KẾT VỚI MODULE KHÁC
+--------------------------------------------------------------------------------
+- Công việc: Hiệu suất công việc ảnh hưởng KPI và lương thưởng
+- Khách hàng: Doanh số từ khách hàng tính hoa hồng cho sale
+- Bán hàng: Đơn hàng của nhân viên sale để tính thưởng
+
+
+================================================================================
+TÍCH HỢP GIỮA CÁC MODULE
+================================================================================
+
+1. KHÁCH HÀNG → CÔNG VIỆC → NHÂN SỰ
+   ├─ Lead mới → Tạo task "Liên hệ khách hàng" → Gán cho sale
+   ├─ Tương tác khách hàng → Tạo task follow-up → Ghi nhận trong hiệu suất
+   └─ Hoàn thành task → Cập nhật KPI → Ảnh hưởng lương thưởng
+
+2. CÔNG VIỆC → NHÂN SỰ
+   ├─ Hoàn thành công việc đúng hạn → Tăng điểm KPI
+   ├─ Công việc quá hạn → Giảm điểm hiệu suất
+   └─ Số lượng task hoàn thành → Tính vào đánh giá tháng
+
+3. KHÁCH HÀNG → NHÂN SỰ
+   ├─ Đơn hàng từ khách hàng → Ghi nhận doanh số cho sale
+   ├─ Doanh số → Tính hoa hồng → Cộng vào lương
+   └─ Khách hàng mới → Tăng điểm KPI
+
+4. WORKFLOW TỔNG THỂ
+
+   A. VỚI NHÂN VIÊN SALE:
+      ├─ Được gán lead mới
+      ├─ Tạo tương tác với lead
+      ├─ Hệ thống tạo task follow-up tự động
+      ├─ Hoàn thành task → Tăng điểm KPI
+      ├─ Chuyển đổi lead thành khách hàng
+      ├─ Tạo đơn hàng
+      ├─ Doanh số ghi nhận
+      └─ Cuối tháng:
+         ├─ Tính KPI từ: Số lead, Tỷ lệ chuyển đổi, Doanh số
+         ├─ Tính lương:
+         │  ├─ Lương cơ bản
+         │  ├─ Thưởng KPI (nếu có bật)
+         │  ├─ Hoa hồng đơn hàng (nếu có bật)
+         │  └─ Các khoản thưởng/phạt khác
+         └─ Nhận lương
+
+   B. VỚI NHÂN VIÊN KHÁC:
+      ├─ Được gán task
+      ├─ Thực hiện và cập nhật tiến độ
+      ├─ Hoàn thành task → Tăng điểm KPI
+      ├─ Chấm công hàng ngày
+      ├─ Đăng ký tăng ca (nếu có)
+      └─ Cuối tháng:
+         ├─ Tính KPI từ: Số task hoàn thành, Tỷ lệ đúng hạn
+         ├─ Tính lương:
+         │  ├─ Lương cơ bản (theo công hoặc cố định)
+         │  ├─ Thưởng KPI
+         │  ├─ Tiền tăng ca
+         │  └─ Thưởng/phạt
+         └─ Nhận lương
+
+
+================================================================================
+LƯU Ý QUAN TRỌNG
+================================================================================
+
+1. YÊU CẦU HỆ THỐNG
+   ├─ Odoo 19.0 trở lên
+   ├─ Module dependencies:
+   │  ├─ base, hr, hr_attendance, hr_holidays
+   │  ├─ project, sale, crm, account
+   │  ├─ mail, calendar
+   └─ Lưu ý:
+      ├─ Đã cập nhật tương thích Odoo 19
+      ├─ Views sử dụng <list> thay vì <tree>
+      ├─ Actions sử dụng view_mode="list,form"
+      └─ Bỏ states="...", dùng invisible="..."
+
+2. PHÂN QUYỀN
+   ├─ Admin: Toàn quyền trên tất cả module
+   ├─ Manager: Xem tất cả, chỉnh sửa phòng ban mình
+   ├─ Team Leader: Quản lý nhóm, giao việc, phê duyệt nghỉ phép
+   ├─ Nhân viên: Xem và cập nhật công việc của mình
+   └─ HR: Toàn quyền module nhân sự
+
+3. CÁC FIELD QUAN TRỌNG
+   ├─ Nhân viên:
+   │  ├─ enable_kpi_bonus: Bật/tắt thưởng KPI
+   │  ├─ has_commission: Bật/tắt hoa hồng
+   │  ├─ commission_rate: Tỷ lệ hoa hồng (%)
+   │  ├─ total_overtime: Tổng giờ tăng ca (override từ hr_attendance)
+   │  └─ currency_id: Tiền tệ (mặc định VNĐ)
+   │
+   ├─ Bảng lương:
+   │  ├─ kpi_bonus: Tiền thưởng KPI
+   │  ├─ commission_amount: Tiền hoa hồng
+   │  ├─ overtime_amount: Tiền tăng ca
+   │  ├─ total_bonus: Tổng thưởng
+   │  └─ total_punishment: Tổng phạt
+   │
+   └─ Lưu ý:
+      - Không sử dụng: sales_amount, sales_bonus (đã xóa)
+      - Sử dụng: commission_amount thay thế
+
+4. BACKUP DỮ LIỆU
+   ├─ Backup database hàng ngày
+   ├─ Lưu trữ bảng lương đã chốt
+   └─ Backup file đính kèm định kỳ
+
+5. BẢO MẬT
+   ├─ Mỗi người chỉ xem được dữ liệu của mình (trừ quản lý)
+   ├─ Lương nhân viên được bảo mật
+   └─ Thông tin khách hàng chỉ sale phụ trách xem được
+
+6. HỖ TRỢ VÀ BẢO TRÌ
+   ├─ Liên hệ IT khi gặp lỗi hệ thống
+   ├─ Yêu cầu tính năng mới qua ticket
+   └─ Đào tạo sử dụng định kỳ cho nhân viên mới
+
+
+================================================================================
+PHỤ LỤC: CÁC MÃ TRẠNG THÁI VÀ LOẠI
+================================================================================
+
+TRẠNG THÁI CÔNG VIỆC:
+- not_started: Chưa bắt đầu
+- in_progress: Đang thực hiện
+- waiting: Chờ phản hồi
+- on_hold: Tạm dừng
+- completed: Hoàn thành
+- cancelled: Đã hủy
+
+LOẠI CÔNG VIỆC:
+- sale: Bán hàng
+- marketing: Marketing
+- accounting: Kế toán
+- hr: Nhân sự
+- assistant: Trợ lý
+
+MỨC ĐỘ ƯU TIÊN:
+- low: Thấp
+- normal: Bình thường
+- high: Cao
+- urgent: Khẩn cấp
+
+LOẠI TƯƠNG TÁC:
+- call: Cuộc gọi
+- email: Email
+- meeting: Cuộc họp
+- quotation: Báo giá
+- other: Khác
+
+TRẠNG THÁI NHÂN VIÊN:
+- working: Đang làm việc
+- resigned: Nghỉ việc
+- suspended: Tạm nghỉ
+
+HÌNH THỨC TÍNH LƯƠNG:
+- monthly: Theo tháng
+- daily: Theo ngày công
+- hourly: Theo giờ
+
+
+================================================================================
+                            HẾT TÀI LIỆU
+================================================================================
+
+Tài liệu này được tạo tự động từ hệ thống BTL.
+Mọi thắc mắc xin liên hệ phòng IT hoặc phòng Nhân sự.
+
+Phiên bản: 1.1 (Cập nhật cho Odoo 19)
+Ngày cập nhật: 09/01/2026
+Thay đổi:
+- Cập nhật tương thích Odoo 19
+- Sửa tên field: Thưởng doanh số → Hoa hồng
+- Cập nhật công thức tính lương
+- Bổ sung yêu cầu hệ thống

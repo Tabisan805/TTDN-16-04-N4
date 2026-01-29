@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Báo cáo chấm công - Placeholder -->
+    <record id="view_hr_attendance_report" model="ir.ui.view">
+        <field name="name">hr.attendance.report</field>
+        <field name="model">hr.attendance.btl</field>
+        <field name="arch" type="xml">
+            <graph string="Báo cáo chấm công" type="bar">
+                <field name="employee_id"/>
+                <field name="work_days" type="measure"/>
+            </graph>
+        </field>
+    </record>
+</odoo>

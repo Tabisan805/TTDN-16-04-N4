@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- Nhóm quyền -->
+        <record id="group_hr_user" model="res.groups">
+            <field name="name">Nhân viên</field>
+            <field name="comment">Nhân viên chỉ xem được dữ liệu cá nhân</field>
+        </record>
+        
+        <record id="group_hr_officer" model="res.groups">
+            <field name="name">Nhân sự (HR)</field>
+            <field name="implied_ids" eval="[(4, ref('group_hr_user'))]"/>
+            <field name="comment">HR quản lý toàn bộ nhân sự, chấm công, lương</field>
+        </record>
+        
+        <record id="group_hr_manager" model="res.groups">
+            <field name="name">Quản lý</field>
+            <field name="implied_ids" eval="[(4, ref('group_hr_officer'))]"/>
+            <field name="comment">Quản lý xem báo cáo phòng ban</field>
+        </record>
+        
+        <record id="group_hr_admin" model="res.groups">
+            <field name="name">Admin</field>
+            <field name="implied_ids" eval="[(4, ref('group_hr_manager'))]"/>
+            <field name="comment">Admin cấu hình toàn bộ hệ thống</field>
+        </record>
+        
+        <!-- Record Rules -->
+        
+        <!-- Nhân viên chỉ xem được dữ liệu của mình -->
+        <record id="hr_attendance_employee_rule" model="ir.rule">
+            <field name="name">Nhân viên: Chỉ xem chấm công của mình</field>
+            <field name="model_id" ref="model_hr_attendance_btl"/>
+            <field name="groups" eval="[(4, ref('group_hr_user'))]"/>
+            <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+        </record>
+        
+        <record id="hr_leave_employee_rule" model="ir.rule">
+            <field name="name">Nhân viên: Chỉ xem nghỉ phép của mình</field>
+            <field name="model_id" ref="model_hr_leave_btl"/>
+            <field name="groups" eval="[(4, ref('group_hr_user'))]"/>
+            <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+        </record>
+        
+        <record id="hr_payslip_employee_rule" model="ir.rule">
+            <field name="name">Nhân viên: Chỉ xem lương của mình</field>
+            <field name="model_id" ref="model_hr_payslip_btl"/>
+            <field name="groups" eval="[(4, ref('group_hr_user'))]"/>
+            <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+        </record>
+        
+        <!-- HR xem tất cả -->
+        <record id="hr_attendance_officer_rule" model="ir.rule">
+            <field name="name">HR: Xem tất cả chấm công</field>
+            <field name="model_id" ref="model_hr_attendance_btl"/>
+            <field name="groups" eval="[(4, ref('group_hr_officer'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+        
+        <record id="hr_leave_officer_rule" model="ir.rule">
+            <field name="name">HR: Xem tất cả nghỉ phép</field>
+            <field name="model_id" ref="model_hr_leave_btl"/>
+            <field name="groups" eval="[(4, ref('group_hr_officer'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+        
+        <record id="hr_payslip_officer_rule" model="ir.rule">
+            <field name="name">HR: Xem tất cả bảng lương</field>
+            <field name="model_id" ref="model_hr_payslip_btl"/>
+            <field name="groups" eval="[(4, ref('group_hr_officer'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+        
+    </data>
+</odoo>

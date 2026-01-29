@@ -1,0 +1,16 @@
+employee_code,date,check_in,check_out,department,overtime_hours,note,status
+NV001,2026-01-17,08:00,17:00,Sales,0,Chấm công bình thường,confirmed
+NV002,2026-01-17,08:30,17:30,Marketing,1,Tăng ca 1h,confirmed
+NV003,2026-01-17,08:00,17:00,Accounting,0,Chấm công bình thường,confirmed
+NV004,2026-01-17,09:00,18:00,HR,1,Tăng ca 1h,confirmed
+NV005,2026-01-17,08:15,17:15,Sales,0,Chấm công bình thường,confirmed
+
+Hướng dẫn:
+- employee_code: Mã nhân viên (bắt buộc)
+- date: Ngày (YYYY-MM-DD) (bắt buộc)
+- check_in: Giờ vào (HH:MM) (bắt buộc)
+- check_out: Giờ ra (HH:MM) (tùy chọn)
+- department: Tên phòng ban (tùy chọn)
+- overtime_hours: Giờ tăng ca (tùy chọn)
+- note: Ghi chú (tùy chọn)
+- status: Trạng thái (confirmed/draft/approved)

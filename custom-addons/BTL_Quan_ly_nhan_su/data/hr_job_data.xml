@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- ==================== PHÒNG ĐIỀU HÀNH ==================== -->
+        <record id="job_ceo" model="hr.job">
+            <field name="name">Giám đốc điều hành (CEO)</field>
+            <field name="department_id" ref="department_management"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">1</field>
+        </record>
+        
+        <record id="job_manager" model="hr.job">
+            <field name="name">Quản lý</field>
+            <field name="department_id" ref="department_management"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">3</field>
+        </record>
+        
+        <!-- ==================== PHÒNG BÁN HÀNG ==================== -->
+        <record id="job_sales_manager" model="hr.job">
+            <field name="name">Trưởng phòng Kinh doanh</field>
+            <field name="department_id" ref="department_sales"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">1</field>
+        </record>
+        
+        <record id="job_sales_team_leader" model="hr.job">
+            <field name="name">Trưởng nhóm Sale</field>
+            <field name="department_id" ref="department_sales"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">3</field>
+        </record>
+        
+        <record id="job_sales_executive" model="hr.job">
+            <field name="name">Nhân viên Kinh doanh</field>
+            <field name="department_id" ref="department_sales"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">10</field>
+        </record>
+        
+        <record id="job_sales_admin" model="hr.job">
+            <field name="name">Sales Admin</field>
+            <field name="department_id" ref="department_sales"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">2</field>
+        </record>
+        
+        <!-- ==================== PHÒNG MARKETING ==================== -->
+        <record id="job_marketing_manager" model="hr.job">
+            <field name="name">Trưởng phòng Marketing</field>
+            <field name="department_id" ref="department_marketing"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">1</field>
+        </record>
+        
+        <record id="job_marketing_executive" model="hr.job">
+            <field name="name">Nhân viên Marketing</field>
+            <field name="department_id" ref="department_marketing"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">5</field>
+        </record>
+        
+        <record id="job_content_creator" model="hr.job">
+            <field name="name">Content Creator</field>
+            <field name="department_id" ref="department_marketing"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">3</field>
+        </record>
+        
+        <record id="job_graphic_designer" model="hr.job">
+            <field name="name">Graphic Designer</field>
+            <field name="department_id" ref="department_marketing"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">2</field>
+        </record>
+        
+        <!-- ==================== PHÒNG KẾ TOÁN ==================== -->
+        <record id="job_accounting_manager" model="hr.job">
+            <field name="name">Trưởng phòng Kế toán</field>
+            <field name="department_id" ref="department_accounting"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">1</field>
+        </record>
+        
+        <record id="job_accountant" model="hr.job">
+            <field name="name">Kế toán viên</field>
+            <field name="department_id" ref="department_accounting"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">3</field>
+        </record>
+        
+        <record id="job_cashier" model="hr.job">
+            <field name="name">Thu ngân</field>
+            <field name="department_id" ref="department_accounting"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">2</field>
+        </record>
+        
+        <!-- ==================== PHÒNG NHÂN SỰ ==================== -->
+        <record id="job_hr_manager" model="hr.job">
+            <field name="name">Trưởng phòng Nhân sự</field>
+            <field name="department_id" ref="department_hr"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">1</field>
+        </record>
+        
+        <record id="job_hr_officer" model="hr.job">
+            <field name="name">Nhân viên Nhân sự</field>
+            <field name="department_id" ref="department_hr"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">2</field>
+        </record>
+        
+        <record id="job_recruiter" model="hr.job">
+            <field name="name">Nhân viên Tuyển dụng</field>
+            <field name="department_id" ref="department_hr"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">1</field>
+        </record>
+        
+        <!-- ==================== PHÒNG HÀNH CHÍNH ==================== -->
+        <record id="job_admin_manager" model="hr.job">
+            <field name="name">Trưởng phòng Hành chính</field>
+            <field name="department_id" ref="department_assistant"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">1</field>
+        </record>
+        
+        <record id="job_assistant" model="hr.job">
+            <field name="name">Trợ lý</field>
+            <field name="department_id" ref="department_assistant"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">3</field>
+        </record>
+        
+        <record id="job_receptionist" model="hr.job">
+            <field name="name">Lễ tân</field>
+            <field name="department_id" ref="department_assistant"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">2</field>
+        </record>
+        
+        <!-- ==================== PHÒNG IT ==================== -->
+        <record id="job_it_manager" model="hr.job">
+            <field name="name">Trưởng phòng IT</field>
+            <field name="department_id" ref="department_it"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">1</field>
+        </record>
+        
+        <record id="job_developer" model="hr.job">
+            <field name="name">Lập trình viên</field>
+            <field name="department_id" ref="department_it"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">5</field>
+        </record>
+        
+        <record id="job_it_support" model="hr.job">
+            <field name="name">Nhân viên IT Support</field>
+            <field name="department_id" ref="department_it"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">2</field>
+        </record>
+        
+        <!-- ==================== PHÒNG CHĂM SÓC KHÁCH HÀNG ==================== -->
+        <record id="job_cs_manager" model="hr.job">
+            <field name="name">Trưởng phòng Chăm sóc khách hàng</field>
+            <field name="department_id" ref="department_customer_service"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">1</field>
+        </record>
+        
+        <record id="job_customer_service" model="hr.job">
+            <field name="name">Nhân viên Chăm sóc khách hàng</field>
+            <field name="department_id" ref="department_customer_service"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="no_of_recruitment">5</field>
+        </record>
+        
+    </data>
+</odoo>

@@ -1,0 +1,53 @@
+services:
+  # 1. Database Service
+
+  db:
+    container_name: postgres_odoo_fitdnu
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: manh
+      POSTGRES_PASSWORD: manh
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - db_data:/var/lib/postgresql/data/pgdata
+    ports:
+      - "5433:5432"
+    restart: always
+  # 2. Odoo App Service
+
+  odoo:
+    image: odoo:19.0
+    container_name: odoo_app_fitdnu
+    depends_on:
+      - db
+    ports:
+      - "8069:8069"
+    volumes:
+      - ./addons:/mnt/extra-addons
+      - ./custom-addons:/mnt/custom-addons
+      - ./odoo.conf:/etc/odoo/odoo.conf
+      - odoo_data:/var/lib/odoo
+    command: odoo -c /etc/odoo/odoo.conf -i base,BTL_Quan_ly_khach_hang,BTL_Quan_ly_nhan_su,BTL_Quan_ly_cong_viec -d manh --without-demo=all --logfile=/var/log/odoo/odoo.log --log-level=debug
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # 3. PgAdmin
+  pgadmin:
+    container_name: pgadmin_container_fitdnu
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: manh12088@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: manh12088
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5051:80"
+    depends_on:
+      - db
+
+volumes:
+  db_data:
+  odoo_data:

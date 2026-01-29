@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Wizard Form View -->
+    <record id="view_task_handover_wizard_form" model="ir.ui.view">
+        <field name="name">task.handover.wizard.form</field>
+        <field name="model">task.handover.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Bàn giao công việc">
+                <group>
+                    <group>
+                        <field name="task_id" readonly="1"/>
+                        <field name="from_user_id"/>
+                        <field name="to_user_id"/>
+                    </group>
+                    <group>
+                        <field name="handover_date"/>
+                    </group>
+                </group>
+                <group>
+                    <field name="notes" placeholder="Ghi chú về việc bàn giao..."/>
+                </group>
+                <footer>
+                    <button string="Bàn giao" name="action_handover" type="object" class="btn-primary"/>
+                    <button string="Hủy" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_task_handover_wizard" model="ir.actions.act_window">
+        <field name="name">Bàn giao công việc</field>
+        <field name="res_model">task.handover.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="project.model_project_task"/>
+    </record>
+</odoo>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- ==================== MAIN MENU ==================== -->
+    
+    <menuitem id="menu_btl_task_root"
+              name="BTL Công việc"
+              sequence="10"
+              web_icon="BTL_Quan_ly_cong_viec,static/description/icon.png"/>
+    
+    <!-- Công việc -->
+    <menuitem id="menu_btl_task"
+              name="Công việc"
+              parent="menu_btl_task_root"
+              sequence="10"/>
+    
+    <menuitem id="menu_btl_task_all"
+              name="Tất cả công việc"
+              parent="menu_btl_task"
+              action="project_task_btl_action"
+              sequence="10"/>
+    
+    <menuitem id="menu_btl_task_handover"
+              name="Bàn giao công việc"
+              parent="menu_btl_task"
+              action="task_handover_btl_action"
+              sequence="20"/>
+    
+    <!-- Cấu hình -->
+    <menuitem id="menu_btl_task_config"
+              name="Cấu hình"
+              parent="menu_btl_task_root"
+              sequence="90"/>
+    
+    <menuitem id="menu_btl_task_type"
+              name="Loại công việc"
+              parent="menu_btl_task_config"
+              action="task_type_btl_action"
+              sequence="10"/>
+    
+    <!-- Báo cáo -->
+    <menuitem id="menu_btl_task_report"
+              name="Báo cáo"
+              parent="menu_btl_task_root"
+              sequence="80"/>
+    
+    <menuitem id="menu_btl_task_performance"
+              name="Hiệu suất"
+              parent="menu_btl_task_report"
+              action="task_performance_btl_action"
+              sequence="10"/>
+    
+</odoo>

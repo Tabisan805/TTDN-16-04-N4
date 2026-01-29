@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Cron: Nhắc nhở thanh toán tự động -->
+    <record id="ir_cron_payment_reminder" model="ir.cron">
+        <field name="name">BTL: Nhắc nhở thanh toán khách hàng</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_send_payment_reminders()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+    
+    <!-- Cron: Cảnh báo khách hàng không hoạt động -->
+    <record id="ir_cron_inactive_customer_alert" model="ir.cron">
+        <field name="name">BTL: Cảnh báo khách hàng không hoạt động</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_check_inactive_customers()</field>
+        <field name="interval_number">7</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+    
+    <!-- Cron: Nhắc nhở lịch hẹn tiếp theo -->
+    <record id="ir_cron_next_action_reminder" model="ir.cron">
+        <field name="name">BTL: Nhắc nhở lịch hẹn tương tác</field>
+        <field name="model_id" ref="model_crm_interaction"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_send_next_action_reminders()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+    
+    <!-- Cron: Cập nhật xác suất lead tự động -->
+    <record id="ir_cron_update_lead_probability" model="ir.cron">
+        <field name="name">BTL: Cập nhật xác suất Lead</field>
+        <field name="model_id" ref="crm.model_crm_lead"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_update_lead_probability()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+    
+</odoo>

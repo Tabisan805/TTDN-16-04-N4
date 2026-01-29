@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_crm_source_all,crm.source.btl.all,model_crm_source_btl,,1,1,1,1
+access_crm_source_user,crm.source.btl.user,model_crm_source_btl,group_crm_user,1,0,0,0
+access_crm_source_manager,crm.source.btl.manager,model_crm_source_btl,group_crm_manager,1,1,1,1
+access_crm_interaction_type_all,crm.interaction.type.all,model_crm_interaction_type,,1,1,1,1
+access_crm_interaction_type_user,crm.interaction.type.user,model_crm_interaction_type,group_crm_user,1,0,0,0
+access_crm_interaction_type_manager,crm.interaction.type.manager,model_crm_interaction_type,group_crm_manager,1,1,1,1
+access_crm_interaction_all,crm.interaction.all,model_crm_interaction,,1,1,1,1
+access_crm_interaction_user,crm.interaction.user,model_crm_interaction,group_crm_user,1,1,1,0
+access_crm_interaction_manager,crm.interaction.manager,model_crm_interaction,group_crm_manager,1,1,1,1
+access_crm_lead_all,crm.lead.all,crm.model_crm_lead,,1,1,1,1
+access_res_partner_all,res.partner.all,base.model_res_partner,,1,1,1,1

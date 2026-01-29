@@ -1,0 +1,26 @@
+name,work_email,work_phone,gender,department,job_title,birthday,join_date,basic_wage,wage_type,has_commission,commission_rate,status
+Nguyễn Văn An,nva@company.com,0901234001,male,Sales,Sales Manager,1985-05-15,2020-01-15,25000000,monthly,true,5.0,working
+Trần Thị Bình,ttb@company.com,0901234002,female,Sales,Sales Executive,1990-08-20,2021-03-20,15000000,monthly,true,4.5,working
+Lê Văn Cường,lvc@company.com,0901234003,male,Sales,Sales Executive,1988-12-10,2021-06-15,14000000,monthly,true,4.0,working
+Phạm Thị Dung,ptd@company.com,0901234004,female,Sales,Sales Executive,1992-02-25,2022-01-10,16000000,monthly,true,4.5,working
+Hoàng Văn Em,hve@company.com,0901234005,male,Sales,Sales Staff,1995-07-30,2022-05-01,12000000,monthly,true,3.0,working
+Vũ Thị Giang,vtg@company.com,0901234006,female,Sales,Sales Staff,1993-09-18,2022-07-15,11000000,monthly,true,3.0,working
+Đặng Văn Hùng,dvh@company.com,0901234007,male,Sales,Sales Staff,1994-03-22,2021-11-01,13000000,monthly,true,3.5,working
+Bùi Thị Hoa,bth@company.com,0901234008,female,Sales,Telesales,1996-01-05,2023-02-20,10000000,monthly,true,2.5,working
+Ngô Văn Khánh,nvk@company.com,0901234009,male,Sales,Telesales,1991-11-12,2023-04-10,9500000,monthly,true,2.5,working
+Đinh Thị Lan,dtl@company.com,0901234010,female,Sales,Telesales,1997-06-08,2023-05-01,9000000,monthly,true,2.5,working
+
+Hướng dẫn:
+- name: Tên nhân viên (bắt buộc)
+- work_email: Email công ty (bắt buộc, không được trùng)
+- work_phone: Số điện thoại công ty (tùy chọn)
+- gender: Giới tính (male/female/other) (tùy chọn)
+- department: Tên phòng ban (tùy chọn, tên phòng phải tồn tại)
+- job_title: Chức danh (tùy chọn, tên chức danh phải tồn tại)
+- birthday: Ngày sinh (YYYY-MM-DD) (tùy chọn)
+- join_date: Ngày vào làm (YYYY-MM-DD) (tùy chọn)
+- basic_wage: Lương cơ bản (số) (tùy chọn)
+- wage_type: Hình thức lương (monthly/daily/hourly) (tùy chọn)
+- has_commission: Có hoa hồng? (true/false) (tùy chọn)
+- commission_rate: Tỷ lệ hoa hồng (%) (tùy chọn)
+- status: Trạng thái (working/resigned/suspended) (tùy chọn)

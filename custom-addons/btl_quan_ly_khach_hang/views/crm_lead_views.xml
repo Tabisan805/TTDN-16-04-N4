@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Extend Lead Form -->
+    <record id="view_crm_lead_form_btl" model="ir.ui.view">
+        <field name="name">crm.lead.form.btl</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            
+            <!-- Thêm buttons trên header -->
+            <xpath expr="//header" position="inside">
+                <button name="action_convert_to_customer" string="Chuyển đổi thành khách hàng" 
+                        type="object" class="btn-primary" 
+                        invisible="stage_status == 'won'"/>
+                <button name="action_view_interactions" string="Lịch sử tương tác" type="object" 
+                        class="oe_stat_button" icon="fa-history"
+                        invisible="interaction_count == 0"/>
+                <button name="action_create_interaction" string="Tạo tương tác" type="object" class="btn-primary"/>
+            </xpath>
+            
+            <!-- Thêm thông tin nguồn -->
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="source_btl_id"/>
+                <field name="employee_id"/>
+                <field name="employee_department" invisible="not employee_id"/>
+            </xpath>
+            
+            <!-- Thêm tab thông tin bổ sung -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Thông tin bổ sung">
+                    <group>
+                        <group>
+                            <field name="company_size"/>
+                            <field name="industry_btl"/>
+                            <field name="tax_code"/>
+                        </group>
+                        <group>
+                            <field name="budget"/>
+                            <field name="priority_btl" widget="priority"/>
+                            <field name="quality_score"/>
+                            <field name="probability" widget="progressbar"/>
+                            <field name="stage_status"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="interested_product_ids" widget="many2many_tags"/>
+                    </group>
+                </page>
+                
+                <page string="Lịch sử tương tác">
+                    <group>
+                        <group>
+                            <field name="interaction_count"/>
+                            <field name="last_interaction_date"/>
+                        </group>
+                        <group string="Thống kê">
+                            <field name="total_calls"/>
+                            <field name="total_meetings"/>
+                            <field name="total_emails"/>
+                        </group>
+                    </group>
+                    <field name="interaction_ids">
+                        <list>
+                            <field name="date"/>
+                            <field name="interaction_type_id"/>
+                            <field name="title"/>
+                            <field name="user_id"/>
+                            <field name="outcome"/>
+                            <field name="state"/>
+                        </list>
+                    </field>
+                </page>
+                
+                <page string="🤖 AI Predictive Scoring">
+                    <group string="Kết quả dự đoán AI">
+                        <group>
+                            <field name="ai_score" widget="gauge" readonly="1"/>
+                            <field name="ai_will_convert" widget="boolean" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="ai_confidence" readonly="1"/>
+                            <field name="ai_risk_level" readonly="1"/>
+                            <field name="ai_last_update" readonly="1"/>
+                        </group>
+                    </group>
+                    
+                    <group>
+                        <button name="action_refresh_ai_score" type="object" string="Cập nhật lại AI Score" class="btn-primary"/>
+                    </group>
+                </page>
+            </xpath>
+            
+        </field>
+    </record>
+
+    <!-- Tree View hiển thị các trường mới - không inherit từ CRM, tạo standalone -->
+    <record id="view_crm_lead_tree_btl" model="ir.ui.view">
+        <field name="name">crm.lead.tree.btl</field>
+        <field name="model">crm.lead</field>
+        <field name="arch" type="xml">
+            <list string="Leads" sample="1" decoration-success="probability >= 80" decoration-warning="probability >= 50 and probability &lt; 80" decoration-danger="probability &lt; 50">
+                <field name="name" string="Lead"/>
+                <field name="partner_id" string="Company"/>
+                <field name="company_size" string="Quy mô"/>
+                <field name="industry_btl" string="Ngành"/>
+                <field name="budget" string="Ngân sách"/>
+                <field name="priority_btl" string="Độ ưu tiên"/>
+                <field name="quality_score" string="Điểm CL"/>
+                <field name="probability" string="Prob %"/>
+                <field name="ai_score" string="AI Score" widget="progressbar" optional="show"/>
+            </list>
+        </field>
+    </record>
+    
+</odoo>

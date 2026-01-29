@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- ==================== TASK PERFORMANCE VIEWS ==================== -->
+    
+    <!-- List View -->
+    <record id="task_performance_btl_list_view" model="ir.ui.view">
+        <field name="name">task.performance.btl.list</field>
+        <field name="model">task.performance.btl</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="user_id"/>
+                <field name="department_id"/>
+                <field name="period_start"/>
+                <field name="period_end"/>
+                <field name="total_tasks"/>
+                <field name="completed_tasks"/>
+                <field name="completion_rate"/>
+                <field name="performance_score" widget="progressbar"/>
+            </list>
+        </field>
+    </record>
+    
+    <!-- Form View -->
+    <record id="task_performance_btl_form_view" model="ir.ui.view">
+        <field name="name">task.performance.btl.form</field>
+        <field name="model">task.performance.btl</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="user_id"/>
+                            <field name="department_id"/>
+                        </group>
+                        <group>
+                            <field name="period_start"/>
+                            <field name="period_end"/>
+                        </group>
+                    </group>
+                    <group string="Thống kê công việc">
+                        <group>
+                            <field name="total_tasks"/>
+                            <field name="completed_tasks"/>
+                            <field name="in_progress_tasks"/>
+                        </group>
+                        <group>
+                            <field name="overdue_tasks"/>
+                            <field name="cancelled_tasks"/>
+                            <field name="avg_completion_time"/>
+                        </group>
+                    </group>
+                    <group string="Hiệu suất">
+                        <group>
+                            <field name="completion_rate" widget="progressbar"/>
+                            <field name="ontime_rate" widget="progressbar"/>
+                        </group>
+                        <group>
+                            <field name="performance_score" widget="progressbar"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- Action -->
+    <record id="task_performance_btl_action" model="ir.actions.act_window">
+        <field name="name">Hiệu suất công việc</field>
+        <field name="res_model">task.performance.btl</field>
+        <field name="view_mode">list,form,graph,pivot</field>
+    </record>
+    
+</odoo>

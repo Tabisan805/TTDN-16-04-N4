@@ -1,0 +1,6 @@
+name,task_type_code,priority_level,description,status
+Chạy ads Facebook,marketing,high,Chạy quảng cáo Facebook cho khách hàng ABC,in_progress
+Lập báo cáo doanh số,accounting,normal,Lập báo cáo doanh số tháng 1,in_progress
+Tổ chức họp team,hr,normal,Tổ chức họp team để đánh giá hiệu suất,in_progress
+Thiết kế brochure,marketing,urgent,Thiết kế brochure cho sản phẩm mới,in_progress
+Xử lý hóa đơn,accounting,normal,Xử lý hóa đơn khách hàng XYZ,completed

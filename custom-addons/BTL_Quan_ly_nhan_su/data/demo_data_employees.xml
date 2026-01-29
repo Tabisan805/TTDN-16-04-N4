@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- 50 Nhân viên demo với phòng ban và vị trí đa dạng -->
+        
+        <!-- PHÒNG SALES (15 người) -->
+        <record id="employee_demo_001" model="hr.employee">
+            <field name="name">Nguyễn Văn An</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_sales_manager"/>
+            <field name="work_email">nva@company.com</field>
+            <field name="work_phone">0901234001</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=10950)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="25000000"/>
+            <field name="has_commission" eval="True"/>
+            <field name="commission_rate" eval="5.0"/>
+            <field name="enable_kpi_bonus" eval="True"/>
+            <field name="kpi_target" eval="100.0"/>
+        </record>
+
+        <record id="employee_demo_002" model="hr.employee">
+            <field name="name">Trần Thị Bình</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_sales_executive"/>
+            <field name="work_email">ttb@company.com</field>
+            <field name="work_phone">0901234002</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=9125)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="15000000"/>
+            <field name="has_commission" eval="True"/>
+            <field name="commission_rate" eval="4.5"/>
+        </record>
+
+        <record id="employee_demo_003" model="hr.employee">
+            <field name="name">Lê Văn Cường</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_sales_executive"/>
+            <field name="work_email">lvc@company.com</field>
+            <field name="work_phone">0901234003</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8395)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="14000000"/>
+            <field name="has_commission" eval="True"/>
+            <field name="commission_rate" eval="4.0"/>
+        </record>
+
+        <record id="employee_demo_004" model="hr.employee">
+            <field name="name">Phạm Thị Dung</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_sales_executive"/>
+            <field name="work_email">ptd@company.com</field>
+            <field name="work_phone">0901234004</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=9490)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="16000000"/>
+            <field name="has_commission" eval="True"/>
+        </record>
+
+        <record id="employee_demo_005" model="hr.employee">
+            <field name="name">Hoàng Văn Em</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_sales_staff"/>
+            <field name="work_email">hve@company.com</field>
+            <field name="work_phone">0901234005</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7665)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="12000000"/>
+            <field name="has_commission" eval="True"/>
+        </record>
+
+        <record id="employee_demo_006" model="hr.employee">
+            <field name="name">Vũ Thị Giang</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_sales_staff"/>
+            <field name="work_email">vtg@company.com</field>
+            <field name="work_phone">0901234006</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8030)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="11000000"/>
+            <field name="has_commission" eval="True"/>
+        </record>
+
+        <record id="employee_demo_007" model="hr.employee">
+            <field name="name">Đặng Văn Hùng</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_sales_staff"/>
+            <field name="work_email">dvh@company.com</field>
+            <field name="work_phone">0901234007</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7300)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="13000000"/>
+            <field name="has_commission" eval="True"/>
+        </record>
+
+        <record id="employee_demo_008" model="hr.employee">
+            <field name="name">Bùi Thị Hoa</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_telesales"/>
+            <field name="work_email">bth@company.com</field>
+            <field name="work_phone">0901234008</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8760)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="10000000"/>
+            <field name="has_commission" eval="True"/>
+        </record>
+
+        <record id="employee_demo_009" model="hr.employee">
+            <field name="name">Ngô Văn Khánh</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_telesales"/>
+            <field name="work_email">nvk@company.com</field>
+            <field name="work_phone">0901234009</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7665)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="9500000"/>
+            <field name="has_commission" eval="True"/>
+        </record>
+
+        <record id="employee_demo_010" model="hr.employee">
+            <field name="name">Đinh Thị Lan</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_telesales"/>
+            <field name="work_email">dtl@company.com</field>
+            <field name="work_phone">0901234010</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8125)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="9000000"/>
+            <field name="has_commission" eval="True"/>
+        </record>
+
+        <record id="employee_demo_011" model="hr.employee">
+            <field name="name">Trương Văn Minh</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_sales_staff"/>
+            <field name="work_email">tvm@company.com</field>
+            <field name="work_phone">0901234011</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7935)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="12500000"/>
+            <field name="has_commission" eval="True"/>
+        </record>
+
+        <record id="employee_demo_012" model="hr.employee">
+            <field name="name">Lý Thị Nga</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_sales_staff"/>
+            <field name="work_email">ltn@company.com</field>
+            <field name="work_phone">0901234012</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8490)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="11500000"/>
+            <field name="has_commission" eval="True"/>
+        </record>
+
+        <record id="employee_demo_013" model="hr.employee">
+            <field name="name">Võ Văn Phong</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_sales_staff"/>
+            <field name="work_email">vvp@company.com</field>
+            <field name="work_phone">0901234013</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7500)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="13500000"/>
+            <field name="has_commission" eval="True"/>
+        </record>
+
+        <record id="employee_demo_014" model="hr.employee">
+            <field name="name">Dương Thị Quỳnh</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_sales_coordinator"/>
+            <field name="work_email">dtq@company.com</field>
+            <field name="work_phone">0901234014</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8200)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="14500000"/>
+        </record>
+
+        <record id="employee_demo_015" model="hr.employee">
+            <field name="name">Phan Văn Sơn</field>
+            <field name="department_id" ref="hr_department_sales"/>
+            <field name="job_id" ref="job_sales_coordinator"/>
+            <field name="work_email">pvs@company.com</field>
+            <field name="work_phone">0901234015</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7800)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="14000000"/>
+        </record>
+
+        <!-- PHÒNG MARKETING (8 người) -->
+        <record id="employee_demo_016" model="hr.employee">
+            <field name="name">Mai Thị Tâm</field>
+            <field name="department_id" ref="hr_department_marketing"/>
+            <field name="job_id" ref="job_marketing_manager"/>
+            <field name="work_email">mtt@company.com</field>
+            <field name="work_phone">0901234016</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=9855)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="22000000"/>
+        </record>
+
+        <record id="employee_demo_017" model="hr.employee">
+            <field name="name">Hồ Văn Uy</field>
+            <field name="department_id" ref="hr_department_marketing"/>
+            <field name="job_id" ref="job_marketing_specialist"/>
+            <field name="work_email">hvu@company.com</field>
+            <field name="work_phone">0901234017</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8395)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="15000000"/>
+        </record>
+
+        <record id="employee_demo_018" model="hr.employee">
+            <field name="name">Cao Thị Vân</field>
+            <field name="department_id" ref="hr_department_marketing"/>
+            <field name="job_id" ref="job_content_writer"/>
+            <field name="work_email">ctv@company.com</field>
+            <field name="work_phone">0901234018</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7665)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="12000000"/>
+        </record>
+
+        <record id="employee_demo_019" model="hr.employee">
+            <field name="name">Tô Văn Xuân</field>
+            <field name="department_id" ref="hr_department_marketing"/>
+            <field name="job_id" ref="job_graphic_designer"/>
+            <field name="work_email">tvx@company.com</field>
+            <field name="work_phone">0901234019</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8030)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="13000000"/>
+        </record>
+
+        <record id="employee_demo_020" model="hr.employee">
+            <field name="name">Lâm Thị Yến</field>
+            <field name="department_id" ref="hr_department_marketing"/>
+            <field name="job_id" ref="job_social_media_specialist"/>
+            <field name="work_email">lty@company.com</field>
+            <field name="work_phone">0901234020</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7300)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="11000000"/>
+        </record>
+
+        <record id="employee_demo_021" model="hr.employee">
+            <field name="name">Đỗ Văn An</field>
+            <field name="department_id" ref="hr_department_marketing"/>
+            <field name="job_id" ref="job_marketing_staff"/>
+            <field name="work_email">dva2@company.com</field>
+            <field name="work_phone">0901234021</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7935)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="10000000"/>
+        </record>
+
+        <record id="employee_demo_022" model="hr.employee">
+            <field name="name">Chu Thị Bích</field>
+            <field name="department_id" ref="hr_department_marketing"/>
+            <field name="job_id" ref="job_marketing_staff"/>
+            <field name="work_email">ctb@company.com</field>
+            <field name="work_phone">0901234022</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7500)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="10500000"/>
+        </record>
+
+        <record id="employee_demo_023" model="hr.employee">
+            <field name="name">Từ Văn Chiến</field>
+            <field name="department_id" ref="hr_department_marketing"/>
+            <field name="job_id" ref="job_seo_specialist"/>
+            <field name="work_email">tvc@company.com</field>
+            <field name="work_phone">0901234023</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8125)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="14000000"/>
+        </record>
+
+        <!-- PHÒNG KẾ TOÁN (7 người) -->
+        <record id="employee_demo_024" model="hr.employee">
+            <field name="name">Huỳnh Thị Diệu</field>
+            <field name="department_id" ref="hr_department_accounting"/>
+            <field name="job_id" ref="job_chief_accountant"/>
+            <field name="work_email">htd@company.com</field>
+            <field name="work_phone">0901234024</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=10585)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="24000000"/>
+        </record>
+
+        <record id="employee_demo_025" model="hr.employee">
+            <field name="name">Ung Văn Em</field>
+            <field name="department_id" ref="hr_department_accounting"/>
+            <field name="job_id" ref="job_accountant"/>
+            <field name="work_email">uve@company.com</field>
+            <field name="work_phone">0901234025</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8760)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="16000000"/>
+        </record>
+
+        <record id="employee_demo_026" model="hr.employee">
+            <field name="name">Âu Thị Phượng</field>
+            <field name="department_id" ref="hr_department_accounting"/>
+            <field name="job_id" ref="job_accountant"/>
+            <field name="work_email">atp@company.com</field>
+            <field name="work_phone">0901234026</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=9125)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="15000000"/>
+        </record>
+
+        <record id="employee_demo_027" model="hr.employee">
+            <field name="name">Ông Văn Giang</field>
+            <field name="department_id" ref="hr_department_accounting"/>
+            <field name="job_id" ref="job_accountant"/>
+            <field name="work_email">ovg@company.com</field>
+            <field name="work_phone">0901234027</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8395)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="14500000"/>
+        </record>
+
+        <record id="employee_demo_028" model="hr.employee">
+            <field name="name">Bạch Thị Hương</field>
+            <field name="department_id" ref="hr_department_accounting"/>
+            <field name="job_id" ref="job_accounting_staff"/>
+            <field name="work_email">bth2@company.com</field>
+            <field name="work_phone">0901234028</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7665)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="11000000"/>
+        </record>
+
+        <record id="employee_demo_029" model="hr.employee">
+            <field name="name">Kiều Văn Ích</field>
+            <field name="department_id" ref="hr_department_accounting"/>
+            <field name="job_id" ref="job_accounting_staff"/>
+            <field name="work_email">kvi@company.com</field>
+            <field name="work_phone">0901234029</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7300)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="10500000"/>
+        </record>
+
+        <record id="employee_demo_030" model="hr.employee">
+            <field name="name">Viên Thị Kim</field>
+            <field name="department_id" ref="hr_department_accounting"/>
+            <field name="job_id" ref="job_cashier"/>
+            <field name="work_email">vtk@company.com</field>
+            <field name="work_phone">0901234030</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8030)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="9500000"/>
+        </record>
+
+        <!-- PHÒNG NHÂN SỰ (5 người) -->
+        <record id="employee_demo_031" model="hr.employee">
+            <field name="name">Thạch Văn Long</field>
+            <field name="department_id" ref="hr_department_hr"/>
+            <field name="job_id" ref="job_hr_manager"/>
+            <field name="work_email">tvl@company.com</field>
+            <field name="work_phone">0901234031</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=10220)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="23000000"/>
+        </record>
+
+        <record id="employee_demo_032" model="hr.employee">
+            <field name="name">Gia Thị Mai</field>
+            <field name="department_id" ref="hr_department_hr"/>
+            <field name="job_id" ref="job_hr_officer"/>
+            <field name="work_email">gtm@company.com</field>
+            <field name="work_phone">0901234032</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8760)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="14000000"/>
+        </record>
+
+        <record id="employee_demo_033" model="hr.employee">
+            <field name="name">Phùng Văn Nam</field>
+            <field name="department_id" ref="hr_department_hr"/>
+            <field name="job_id" ref="job_hr_officer"/>
+            <field name="work_email">pvn@company.com</field>
+            <field name="work_phone">0901234033</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8395)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="13500000"/>
+        </record>
+
+        <record id="employee_demo_034" model="hr.employee">
+            <field name="name">Đoàn Thị Oanh</field>
+            <field name="department_id" ref="hr_department_hr"/>
+            <field name="job_id" ref="job_recruiter"/>
+            <field name="work_email">dto@company.com</field>
+            <field name="work_phone">0901234034</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7665)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="12000000"/>
+        </record>
+
+        <record id="employee_demo_035" model="hr.employee">
+            <field name="name">Lữ Văn Phú</field>
+            <field name="department_id" ref="hr_department_hr"/>
+            <field name="job_id" ref="job_training_staff"/>
+            <field name="work_email">lvp@company.com</field>
+            <field name="work_phone">0901234035</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7935)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="11500000"/>
+        </record>
+
+        <!-- PHÒNG HÀNH CHÍNH (4 người) -->
+        <record id="employee_demo_036" model="hr.employee">
+            <field name="name">Mạc Thị Quỳnh</field>
+            <field name="department_id" ref="hr_department_admin"/>
+            <field name="job_id" ref="job_admin_officer"/>
+            <field name="work_email">mtq@company.com</field>
+            <field name="work_phone">0901234036</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=9125)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="12000000"/>
+        </record>
+
+        <record id="employee_demo_037" model="hr.employee">
+            <field name="name">Sử Văn Rồng</field>
+            <field name="department_id" ref="hr_department_admin"/>
+            <field name="job_id" ref="job_receptionist"/>
+            <field name="work_email">svr@company.com</field>
+            <field name="work_phone">0901234037</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7300)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="8500000"/>
+        </record>
+
+        <record id="employee_demo_038" model="hr.employee">
+            <field name="name">La Thị Sương</field>
+            <field name="department_id" ref="hr_department_admin"/>
+            <field name="job_id" ref="job_secretary"/>
+            <field name="work_email">lts@company.com</field>
+            <field name="work_phone">0901234038</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8030)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="10000000"/>
+        </record>
+
+        <record id="employee_demo_039" model="hr.employee">
+            <field name="name">Tống Văn Thắng</field>
+            <field name="department_id" ref="hr_department_admin"/>
+            <field name="job_id" ref="job_driver"/>
+            <field name="work_email">tvt@company.com</field>
+            <field name="work_phone">0901234039</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=9855)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="9000000"/>
+        </record>
+
+        <!-- BAN ĐIỀU HÀNH (3 người) -->
+        <record id="employee_demo_040" model="hr.employee">
+            <field name="name">Trịnh Văn Út</field>
+            <field name="department_id" ref="hr_department_management"/>
+            <field name="job_id" ref="job_ceo"/>
+            <field name="work_email">tvu@company.com</field>
+            <field name="work_phone">0901234040</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=14600)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="60000000"/>
+        </record>
+
+        <record id="employee_demo_041" model="hr.employee">
+            <field name="name">Khúc Thị Vân</field>
+            <field name="department_id" ref="hr_department_management"/>
+            <field name="job_id" ref="job_coo"/>
+            <field name="work_email">ktv@company.com</field>
+            <field name="work_phone">0901234041</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=13140)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="50000000"/>
+        </record>
+
+        <record id="employee_demo_042" model="hr.employee">
+            <field name="name">Nghiêm Văn Xuân</field>
+            <field name="department_id" ref="hr_department_management"/>
+            <field name="job_id" ref="job_cfo"/>
+            <field name="work_email">nvx@company.com</field>
+            <field name="work_phone">0901234042</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=12775)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="48000000"/>
+        </record>
+
+        <!-- PHÒNG IT (5 người) -->
+        <record id="employee_demo_043" model="hr.employee">
+            <field name="name">Trương Văn Yến</field>
+            <field name="department_id" ref="hr_department_it"/>
+            <field name="job_id" ref="job_it_manager"/>
+            <field name="work_email">tvy@company.com</field>
+            <field name="work_phone">0901234043</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=10220)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="28000000"/>
+        </record>
+
+        <record id="employee_demo_044" model="hr.employee">
+            <field name="name">Phí Thị Anh</field>
+            <field name="department_id" ref="hr_department_it"/>
+            <field name="job_id" ref="job_developer"/>
+            <field name="work_email">pta@company.com</field>
+            <field name="work_phone">0901234044</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8395)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="20000000"/>
+        </record>
+
+        <record id="employee_demo_045" model="hr.employee">
+            <field name="name">Nguyên Văn Bình</field>
+            <field name="department_id" ref="hr_department_it"/>
+            <field name="job_id" ref="job_developer"/>
+            <field name="work_email">nvb@company.com</field>
+            <field name="work_phone">0901234045</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7665)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="18000000"/>
+        </record>
+
+        <record id="employee_demo_046" model="hr.employee">
+            <field name="name">Văn Thị Cúc</field>
+            <field name="department_id" ref="hr_department_it"/>
+            <field name="job_id" ref="job_tester"/>
+            <field name="work_email">vtc@company.com</field>
+            <field name="work_phone">0901234046</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=8030)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="14000000"/>
+        </record>
+
+        <record id="employee_demo_047" model="hr.employee">
+            <field name="name">Hà Văn Dũng</field>
+            <field name="department_id" ref="hr_department_it"/>
+            <field name="job_id" ref="job_it_support"/>
+            <field name="work_email">hvd@company.com</field>
+            <field name="work_phone">0901234047</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7300)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="12000000"/>
+        </record>
+
+        <!-- PHÒNG CHĂM SÓC KHÁCH HÀNG (3 người) -->
+        <record id="employee_demo_048" model="hr.employee">
+            <field name="name">Ân Thị Em</field>
+            <field name="department_id" ref="hr_department_customer_service"/>
+            <field name="job_id" ref="job_customer_service_manager"/>
+            <field name="work_email">ate@company.com</field>
+            <field name="work_phone">0901234048</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=9490)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="18000000"/>
+        </record>
+
+        <record id="employee_demo_049" model="hr.employee">
+            <field name="name">Kha Văn Phong</field>
+            <field name="department_id" ref="hr_department_customer_service"/>
+            <field name="job_id" ref="job_customer_service_staff"/>
+            <field name="work_email">kvp@company.com</field>
+            <field name="work_phone">0901234049</field>
+            <field name="gender">male</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7935)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="10000000"/>
+        </record>
+
+        <record id="employee_demo_050" model="hr.employee">
+            <field name="name">Biện Thị Giang</field>
+            <field name="department_id" ref="hr_department_customer_service"/>
+            <field name="job_id" ref="job_customer_service_staff"/>
+            <field name="work_email">btg@company.com</field>
+            <field name="work_phone">0901234050</field>
+            <field name="gender">female</field>
+            <field name="birthday" eval="(DateTime.now() - timedelta(days=7500)).strftime('%Y-%m-%d')"/>
+            <field name="status">working</field>
+            <field name="wage_type">monthly</field>
+            <field name="basic_wage" eval="9500000"/>
+        </record>
+
+    </data>
+</odoo>

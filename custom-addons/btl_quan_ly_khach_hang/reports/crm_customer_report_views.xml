@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Báo cáo khách hàng - Graph View -->
+    <record id="view_crm_customer_report_graph" model="ir.ui.view">
+        <field name="name">crm.customer.report.graph</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <graph string="Báo cáo khách hàng" type="bar">
+                <field name="customer_type_btl"/>
+                <field name="total_purchased" type="measure"/>
+                <field name="total_orders" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    
+    <!-- Báo cáo khách hàng - Pivot View -->
+    <record id="view_crm_customer_report_pivot" model="ir.ui.view">
+        <field name="name">crm.customer.report.pivot</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <pivot string="Phân tích khách hàng">
+                <field name="customer_type_btl" type="row"/>
+                <field name="source_btl_id" type="row"/>
+                <field name="total_purchased" type="measure"/>
+                <field name="total_orders" type="measure"/>
+                <field name="average_order_value" type="measure"/>
+                <field name="customer_lifetime_value" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    
+    <!-- Action báo cáo khách hàng -->
+    <record id="action_crm_customer_analysis" model="ir.actions.act_window">
+        <field name="name">Phân tích khách hàng</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">graph,pivot,form,list</field>
+        <field name="domain">[('customer_rank', '>', 0)]</field>
+        <field name="context">{'search_default_customer': 1}</field>
+    </record>
+    
+    <!-- Menu item -->
+    <menuitem id="menu_crm_customer_analysis"
+              name="Phân tích khách hàng"
+              parent="crm.crm_menu_report"
+              action="action_crm_customer_analysis"
+              sequence="10"/>
+</odoo>

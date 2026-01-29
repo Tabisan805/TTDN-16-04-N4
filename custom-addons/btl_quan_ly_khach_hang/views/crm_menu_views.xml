@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Menu chính -->
+    <menuitem id="menu_crm_btl_root"
+              name="Khách hàng BTL"
+              sequence="20"
+              web_icon="crm,static/description/icon.png"/>
+    
+    <!-- Menu Khách hàng tiềm năng -->
+    <menuitem id="menu_crm_lead"
+              name="Khách hàng tiềm năng"
+              parent="menu_crm_btl_root"
+              action="crm.crm_lead_all_leads"
+              sequence="10"/>
+    
+    <!-- Menu Khách hàng chính thức -->
+    <menuitem id="menu_crm_customer"
+              name="Khách hàng chính thức"
+              parent="menu_crm_btl_root"
+              action="contacts.action_contacts"
+              sequence="20"/>
+    
+    <!-- Menu Tương tác -->
+    <menuitem id="menu_crm_interaction_parent"
+              name="Tương tác"
+              parent="menu_crm_btl_root"
+              sequence="30"/>
+    
+    <menuitem id="menu_crm_interaction"
+              name="Lịch sử tương tác"
+              parent="menu_crm_interaction_parent"
+              action="action_crm_interaction"
+              sequence="10"/>
+    
+    <menuitem id="menu_crm_interaction_type"
+              name="Loại tương tác"
+              parent="menu_crm_interaction_parent"
+              action="action_crm_interaction_type"
+              sequence="20"
+              groups="base.group_system"/>
+    
+    <!-- Menu Cấu hình -->
+    <menuitem id="menu_crm_config_parent"
+              name="Cấu hình"
+              parent="menu_crm_btl_root"
+              sequence="90"
+              groups="base.group_system"/>
+    
+    <menuitem id="menu_crm_source"
+              name="Nguồn khách hàng"
+              parent="menu_crm_config_parent"
+              action="action_crm_source"
+              sequence="10"/>
+    
+    <!-- Menu Báo cáo -->
+    <menuitem id="menu_crm_reports_parent"
+              name="Báo cáo"
+              parent="menu_crm_btl_root"
+              sequence="80"/>
+    
+    <menuitem id="menu_crm_customer_report"
+              name="Báo cáo khách hàng"
+              parent="menu_crm_reports_parent"
+              action="contacts.action_contacts"
+              sequence="10"/>
+    
+    <menuitem id="menu_crm_interaction_report"
+              name="Báo cáo tương tác"
+              parent="menu_crm_reports_parent"
+              action="action_crm_interaction"
+              sequence="20"/>
+    
+</odoo>

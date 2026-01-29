@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- Sample Leads with Extended Information (Company Size, Industry, Budget) -->
+        
+        <!-- Lead 1: Large Manufacturing Company -->
+        <record id="lead_sample_001" model="crm.lead">
+            <field name="name">Dự án thiết bị sản xuất cho Công ty A</field>
+            <field name="partner_name">Công ty Cổ phần Sản xuất Hoa Kỳ</field>
+            <field name="contact_name">Nguyễn Văn A</field>
+            <field name="email_from">contact@manufacturer-vn.com</field>
+            <field name="phone">0123456789</field>
+            <field name="type">lead</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="probability">65.0</field>
+            <field name="company_size">500+</field>
+            <field name="industry_btl">Sản xuất và Chế biến</field>
+            <field name="tax_code">0101234567</field>
+            <field name="budget" eval="5000000000"/>
+            <field name="priority_btl">3</field>
+            <field name="quality_score">85</field>
+        </record>
+        
+        <!-- Lead 2: Medium Technology Company -->
+        <record id="lead_sample_002" model="crm.lead">
+            <field name="name">Giải pháp phần mềm quản lý dự án</field>
+            <field name="partner_name">Công ty TNHH Công nghệ Thiên Sơn</field>
+            <field name="contact_name">Trần Thị B</field>
+            <field name="email_from">info@techcompany.vn</field>
+            <field name="phone">0987654321</field>
+            <field name="type">lead</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="probability">72.0</field>
+            <field name="company_size">201-500</field>
+            <field name="industry_btl">Công nghệ Thông tin</field>
+            <field name="tax_code">0102345678</field>
+            <field name="budget" eval="2500000000"/>
+            <field name="priority_btl">2</field>
+            <field name="quality_score">78</field>
+        </record>
+        
+        <!-- Lead 3: Small Service Company -->
+        <record id="lead_sample_003" model="crm.lead">
+            <field name="name">Dịch vụ quản lý tài chính</field>
+            <field name="partner_name">Công ty TNHH Dịch vụ Tài chính Hòa Bình</field>
+            <field name="contact_name">Lê Văn C</field>
+            <field name="email_from">finance@service.vn</field>
+            <field name="phone">0912345678</field>
+            <field name="type">lead</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="probability">58.0</field>
+            <field name="company_size">51-200</field>
+            <field name="industry_btl">Dịch vụ Tài chính</field>
+            <field name="tax_code">0103456789</field>
+            <field name="budget" eval="1200000000"/>
+            <field name="priority_btl">1</field>
+            <field name="quality_score">62</field>
+        </record>
+        
+        <!-- Lead 4: Retail/Commerce Company -->
+        <record id="lead_sample_004" model="crm.lead">
+            <field name="name">Hệ thống quản lý bán lẻ tích hợp</field>
+            <field name="partner_name">Chuỗi bán lẻ Hương Sen</field>
+            <field name="contact_name">Phạm Thị D</field>
+            <field name="email_from">admin@huongsen-retail.vn</field>
+            <field name="phone">0934567890</field>
+            <field name="type">lead</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="probability">55.0</field>
+            <field name="company_size">201-500</field>
+            <field name="industry_btl">Bán lẻ và Thương mại</field>
+            <field name="tax_code">0104567890</field>
+            <field name="budget" eval="1800000000"/>
+            <field name="priority_btl">2</field>
+            <field name="quality_score">70</field>
+        </record>
+        
+        <!-- Lead 5: Healthcare Company -->
+        <record id="lead_sample_005" model="crm.lead">
+            <field name="name">Giải pháp quản lý bệnh viện hiện đại</field>
+            <field name="partner_name">Bệnh viện Đa khoa Sức khỏe Việt</field>
+            <field name="contact_name">Hoàng Văn E</field>
+            <field name="email_from">contact@healthcarevn.com</field>
+            <field name="phone">0945678901</field>
+            <field name="type">lead</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="probability">68.0</field>
+            <field name="company_size">11-50</field>
+            <field name="industry_btl">Y tế và Chăm sóc sức khỏe</field>
+            <field name="tax_code">0105678901</field>
+            <field name="budget" eval="800000000"/>
+            <field name="priority_btl">3</field>
+            <field name="quality_score">88</field>
+        </record>
+        
+        <!-- Lead 6: Education Sector -->
+        <record id="lead_sample_006" model="crm.lead">
+            <field name="name">Nền tảng học tập trực tuyến cho trường học</field>
+            <field name="partner_name">Trường Đại học Kỹ thuật Hà Nội</field>
+            <field name="contact_name">Trương Văn F</field>
+            <field name="email_from">it@hutec.edu.vn</field>
+            <field name="phone">0956789012</field>
+            <field name="type">lead</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="probability">45.0</field>
+            <field name="company_size">11-50</field>
+            <field name="industry_btl">Giáo dục</field>
+            <field name="tax_code">0106789012</field>
+            <field name="budget" eval="500000000"/>
+            <field name="priority_btl">1</field>
+            <field name="quality_score">55</field>
+        </record>
+        
+        <!-- Lead 7: Logistics Company -->
+        <record id="lead_sample_007" model="crm.lead">
+            <field name="name">Hệ thống theo dõi vận chuyển thông minh</field>
+            <field name="partner_name">Công ty Vận tải và Logistics Đông Á</field>
+            <field name="contact_name">Đỗ Văn G</field>
+            <field name="email_from">logistics@dongasia.vn</field>
+            <field name="phone">0967890123</field>
+            <field name="type">lead</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="probability">75.0</field>
+            <field name="company_size">51-200</field>
+            <field name="industry_btl">Vận tải và Kho bãi</field>
+            <field name="tax_code">0107890123</field>
+            <field name="budget" eval="2000000000"/>
+            <field name="priority_btl">2</field>
+            <field name="quality_score">82</field>
+        </record>
+        
+        <!-- Lead 8: Agriculture/Food Processing -->
+        <record id="lead_sample_008" model="crm.lead">
+            <field name="name">Giải pháp nông nghiệp thông minh</field>
+            <field name="partner_name">Công ty Nông nghiệp Xuất khẩu Mê Kông</field>
+            <field name="contact_name">Ngô Thị H</field>
+            <field name="email_from">export@mekong-agri.vn</field>
+            <field name="phone">0978901234</field>
+            <field name="type">lead</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="probability">52.0</field>
+            <field name="company_size">11-50</field>
+            <field name="industry_btl">Nông nghiệp và Thực phẩm</field>
+            <field name="tax_code">0108901234</field>
+            <field name="budget" eval="600000000"/>
+            <field name="priority_btl">1</field>
+            <field name="quality_score">60</field>
+        </record>
+        
+        <!-- Lead 9: Construction/Real Estate -->
+        <record id="lead_sample_009" model="crm.lead">
+            <field name="name">Phần mềm quản lý dự án xây dựng</field>
+            <field name="partner_name">Tập đoàn Xây dựng Vinahouse</field>
+            <field name="contact_name">Võ Văn I</field>
+            <field name="email_from">project@vinahouse.vn</field>
+            <field name="phone">0989012345</field>
+            <field name="type">lead</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="probability">80.0</field>
+            <field name="company_size">500+</field>
+            <field name="industry_btl">Xây dựng và Bất động sản</field>
+            <field name="tax_code">0109012345</field>
+            <field name="budget" eval="4500000000"/>
+            <field name="priority_btl">3</field>
+            <field name="quality_score">90</field>
+        </record>
+        
+        <!-- Lead 10: Tourism/Hospitality -->
+        <record id="lead_sample_010" model="crm.lead">
+            <field name="name">Hệ thống quản lý khách sạn toàn diện</field>
+            <field name="partner_name">Tập đoàn Khách sạn Sông Cái</field>
+            <field name="contact_name">Bùi Thị J</field>
+            <field name="email_from">admin@songcai-hotels.vn</field>
+            <field name="phone">0990123456</field>
+            <field name="type">lead</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="probability">63.0</field>
+            <field name="company_size">201-500</field>
+            <field name="industry_btl">Du lịch và Khách sạn</field>
+            <field name="tax_code">0110123456</field>
+            <field name="budget" eval="1500000000"/>
+            <field name="priority_btl">2</field>
+            <field name="quality_score">75</field>
+        </record>
+
+    </data>
+</odoo>

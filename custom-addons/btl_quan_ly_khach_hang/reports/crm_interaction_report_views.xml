@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Báo cáo tương tác - Graph View -->
+    <record id="view_crm_interaction_report_graph" model="ir.ui.view">
+        <field name="name">crm.interaction.report.graph</field>
+        <field name="model">crm.interaction</field>
+        <field name="arch" type="xml">
+            <graph string="Báo cáo tương tác" type="bar">
+                <field name="interaction_type_id"/>
+                <field name="duration" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    
+    <!-- Báo cáo tương tác - Pivot View -->
+    <record id="view_crm_interaction_report_pivot" model="ir.ui.view">
+        <field name="name">crm.interaction.report.pivot</field>
+        <field name="model">crm.interaction</field>
+        <field name="arch" type="xml">
+            <pivot string="Phân tích tương tác">
+                <field name="user_id" type="row"/>
+                <field name="interaction_type_id" type="col"/>
+                <field name="duration" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    
+    <!-- Action báo cáo tương tác -->
+    <record id="action_crm_interaction_analysis" model="ir.actions.act_window">
+        <field name="name">Phân tích tương tác</field>
+        <field name="res_model">crm.interaction</field>
+        <field name="view_mode">graph,pivot,form,list</field>
+        <field name="context">{'search_default_done': 1}</field>
+    </record>
+    
+    <!-- Menu item -->
+    <menuitem id="menu_crm_interaction_analysis"
+              name="Phân tích tương tác"
+              parent="crm.crm_menu_report"
+              action="action_crm_interaction_analysis"
+              sequence="20"/>
+</odoo>

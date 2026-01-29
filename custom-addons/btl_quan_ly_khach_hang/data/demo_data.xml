@@ -1,0 +1,1961 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 100 Customer Records -->
+        <record id="customer_demo_001" model="res.partner">
+            <field name="name">Công ty CP Du lịch Tiến Phát</field>
+            <field name="street">170 Đường Hùng Vương</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02689808898</field>
+            <field name="email">contact1@côngtycpdulịcht.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_002" model="res.partner">
+            <field name="name">Công ty TNHH XNK Hưng Thịnh</field>
+            <field name="street">357 Đường Trần Phú</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02647000028</field>
+            <field name="email">contact2@côngtyxnkhưngth.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_003" model="res.partner">
+            <field name="name">Công ty CP Sản xuất Châu Á</field>
+            <field name="street">121 Đường Hai Bà Trưng</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02625681642</field>
+            <field name="email">contact3@côngtycpsảnxuất.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_004" model="res.partner">
+            <field name="name">Công ty CP Nông nghiệp Á Châu</field>
+            <field name="street">841 Đường Trần Phú</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02474179557</field>
+            <field name="email">contact4@côngtycpnôngngh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_005" model="res.partner">
+            <field name="name">Công ty TNHH Dịch vụ Hưng Thịnh</field>
+            <field name="street">998 Đường Nguyễn Huệ</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02845676058</field>
+            <field name="email">contact5@côngtydịchvụhưn.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_006" model="res.partner">
+            <field name="name">Công ty TNHH XNK Á Châu</field>
+            <field name="street">983 Đường Trần Phú</field>
+            <field name="city">Huế</field>
+            <field name="phone">02746022405</field>
+            <field name="email">contact6@côngtyxnkáchâu.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_007" model="res.partner">
+            <field name="name">Công ty TNHH Dịch vụ Á Châu</field>
+            <field name="street">968 Đường Hùng Vương</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02941654171</field>
+            <field name="email">contact7@côngtydịchvụách.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_008" model="res.partner">
+            <field name="name">Công ty TNHH XNK Á Châu</field>
+            <field name="street">988 Đường Trần Phú</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02718188085</field>
+            <field name="email">contact8@côngtyxnkáchâu.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_009" model="res.partner">
+            <field name="name">Công ty TNHH Giáo dục Tiến Phát</field>
+            <field name="street">162 Đường Lê Lợi</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02871355019</field>
+            <field name="email">contact9@côngtygiáodụcti.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_010" model="res.partner">
+            <field name="name">Công ty CP Nông nghiệp Á Châu</field>
+            <field name="street">548 Đường Hai Bà Trưng</field>
+            <field name="city">Hải Phòng</field>
+            <field name="phone">02643280558</field>
+            <field name="email">contact10@côngtycpnôngngh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_011" model="res.partner">
+            <field name="name">Công ty CP Thương mại Đông Á</field>
+            <field name="street">352 Đường Hùng Vương</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02640039480</field>
+            <field name="email">contact11@côngtycpthươngm.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_012" model="res.partner">
+            <field name="name">Công ty CP Thương mại Hưng Thịnh</field>
+            <field name="street">809 Đường Lý Thái Tổ</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02448031622</field>
+            <field name="email">contact12@côngtycpthươngm.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_013" model="res.partner">
+            <field name="name">Công ty TNHH Giáo dục Hưng Thịnh</field>
+            <field name="street">702 Đường Nguyễn Huệ</field>
+            <field name="city">Nha Trang</field>
+            <field name="phone">02949571366</field>
+            <field name="email">contact13@côngtygiáodụchư.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_014" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Phát Đạt</field>
+            <field name="street">911 Đường Trần Phú</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02788383668</field>
+            <field name="email">contact14@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_015" model="res.partner">
+            <field name="name">Công ty CP Nông nghiệp Bắc Việt</field>
+            <field name="street">454 Đường Lý Thái Tổ</field>
+            <field name="city">Hải Phòng</field>
+            <field name="phone">02724464627</field>
+            <field name="email">contact15@côngtycpnôngngh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_016" model="res.partner">
+            <field name="name">Công ty CP Nông nghiệp Tiến Phát</field>
+            <field name="street">988 Đường Trần Phú</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02830224611</field>
+            <field name="email">contact16@côngtycpnôngngh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_017" model="res.partner">
+            <field name="name">Công ty TNHH Dịch vụ An Khang</field>
+            <field name="street">873 Đường Trần Phú</field>
+            <field name="city">Huế</field>
+            <field name="phone">02786211269</field>
+            <field name="email">contact17@côngtydịchvụank.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_018" model="res.partner">
+            <field name="name">Công ty TNHH XNK Thành Công</field>
+            <field name="street">643 Đường Nguyễn Huệ</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02534374958</field>
+            <field name="email">contact18@côngtyxnkthànhc.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_019" model="res.partner">
+            <field name="name">Công ty CP Thương mại Việt Nam</field>
+            <field name="street">280 Đường Lê Lợi</field>
+            <field name="city">Cần Thơ</field>
+            <field name="phone">02758677214</field>
+            <field name="email">contact19@côngtycpthươngm.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_020" model="res.partner">
+            <field name="name">Công ty CP Du lịch Phát Đạt</field>
+            <field name="street">710 Đường Trần Phú</field>
+            <field name="city">Huế</field>
+            <field name="phone">02461494495</field>
+            <field name="email">contact20@côngtycpdulịchp.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_021" model="res.partner">
+            <field name="name">Công ty CP Du lịch Thành Công</field>
+            <field name="street">873 Đường Hùng Vương</field>
+            <field name="city">Cần Thơ</field>
+            <field name="phone">02529312470</field>
+            <field name="email">contact21@côngtycpdulịcht.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_022" model="res.partner">
+            <field name="name">Công ty CP Xây dựng Tiến Phát</field>
+            <field name="street">40 Đường Trần Phú</field>
+            <field name="city">Huế</field>
+            <field name="phone">02662929510</field>
+            <field name="email">contact22@côngtycpxâydựng.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_023" model="res.partner">
+            <field name="name">Công ty TNHH XNK An Khang</field>
+            <field name="street">324 Đường Nguyễn Huệ</field>
+            <field name="city">Nha Trang</field>
+            <field name="phone">02734294072</field>
+            <field name="email">contact23@côngtyxnkankhan.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_024" model="res.partner">
+            <field name="name">Công ty TNHH Dịch vụ Châu Á</field>
+            <field name="street">823 Đường Lê Lợi</field>
+            <field name="city">Hải Phòng</field>
+            <field name="phone">02466030873</field>
+            <field name="email">contact24@côngtydịchvụchâ.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_025" model="res.partner">
+            <field name="name">Công ty CP Du lịch Thành Công</field>
+            <field name="street">198 Đường Hai Bà Trưng</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02565809089</field>
+            <field name="email">contact25@côngtycpdulịcht.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_026" model="res.partner">
+            <field name="name">Công ty CP Du lịch Châu Á</field>
+            <field name="street">74 Đường Hùng Vương</field>
+            <field name="city">Huế</field>
+            <field name="phone">02655346798</field>
+            <field name="email">contact26@côngtycpdulịchc.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_027" model="res.partner">
+            <field name="name">Công ty TNHH Công nghệ Châu Á</field>
+            <field name="street">504 Đường Trần Phú</field>
+            <field name="city">Cần Thơ</field>
+            <field name="phone">02531876880</field>
+            <field name="email">contact27@côngtycôngnghệc.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_028" model="res.partner">
+            <field name="name">Công ty TNHH Y tế Bắc Việt</field>
+            <field name="street">673 Đường Lê Lợi</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02847969911</field>
+            <field name="email">contact28@côngtyytếbắcviệ.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_029" model="res.partner">
+            <field name="name">Công ty TNHH Giáo dục An Khang</field>
+            <field name="street">823 Đường Lê Lợi</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02788886042</field>
+            <field name="email">contact29@côngtygiáodụcan.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_030" model="res.partner">
+            <field name="name">Công ty CP Nông nghiệp Châu Á</field>
+            <field name="street">127 Đường Lý Thái Tổ</field>
+            <field name="city">Huế</field>
+            <field name="phone">02566604600</field>
+            <field name="email">contact30@côngtycpnôngngh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_031" model="res.partner">
+            <field name="name">Công ty CP Du lịch Hưng Thịnh</field>
+            <field name="street">464 Đường Trần Phú</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02538787350</field>
+            <field name="email">contact31@côngtycpdulịchh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_032" model="res.partner">
+            <field name="name">Công ty TNHH Công nghệ Tiến Phát</field>
+            <field name="street">885 Đường Hùng Vương</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02747231449</field>
+            <field name="email">contact32@côngtycôngnghệt.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_033" model="res.partner">
+            <field name="name">Công ty CP Nông nghiệp Thành Công</field>
+            <field name="street">632 Đường Hai Bà Trưng</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02797018321</field>
+            <field name="email">contact33@côngtycpnôngngh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_034" model="res.partner">
+            <field name="name">Công ty CP Xây dựng Bắc Việt</field>
+            <field name="street">875 Đường Lê Lợi</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02715871599</field>
+            <field name="email">contact34@côngtycpxâydựng.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_035" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Bắc Việt</field>
+            <field name="street">676 Đường Nguyễn Huệ</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02780707889</field>
+            <field name="email">contact35@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_036" model="res.partner">
+            <field name="name">Doanh nghiệp tư nhân Đông Á</field>
+            <field name="street">661 Đường Lê Lợi</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02475098663</field>
+            <field name="email">contact36@doanhnghiệptưnh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_037" model="res.partner">
+            <field name="name">Công ty TNHH Dịch vụ Đông Á</field>
+            <field name="street">176 Đường Hai Bà Trưng</field>
+            <field name="city">Huế</field>
+            <field name="phone">02968379683</field>
+            <field name="email">contact37@côngtydịchvụđôn.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_038" model="res.partner">
+            <field name="name">Công ty TNHH Giáo dục Bắc Việt</field>
+            <field name="street">349 Đường Trần Phú</field>
+            <field name="city">Nha Trang</field>
+            <field name="phone">02958717210</field>
+            <field name="email">contact38@côngtygiáodụcbắ.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_039" model="res.partner">
+            <field name="name">Công ty TNHH Y tế Châu Á</field>
+            <field name="street">213 Đường Trần Phú</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02839859347</field>
+            <field name="email">contact39@côngtyytếchâuá.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_040" model="res.partner">
+            <field name="name">Công ty CP Thương mại Hưng Thịnh</field>
+            <field name="street">196 Đường Lý Thái Tổ</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02989181279</field>
+            <field name="email">contact40@côngtycpthươngm.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_041" model="res.partner">
+            <field name="name">Công ty CP Xây dựng Việt Nam</field>
+            <field name="street">562 Đường Nguyễn Huệ</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02766526277</field>
+            <field name="email">contact41@côngtycpxâydựng.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_042" model="res.partner">
+            <field name="name">Doanh nghiệp tư nhân Việt Nam</field>
+            <field name="street">588 Đường Lý Thái Tổ</field>
+            <field name="city">Cần Thơ</field>
+            <field name="phone">02877225555</field>
+            <field name="email">contact42@doanhnghiệptưnh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_043" model="res.partner">
+            <field name="name">Công ty TNHH Giáo dục Phát Đạt</field>
+            <field name="street">194 Đường Lý Thái Tổ</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02846180907</field>
+            <field name="email">contact43@côngtygiáodụcph.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_044" model="res.partner">
+            <field name="name">Công ty TNHH Y tế Thành Công</field>
+            <field name="street">947 Đường Hùng Vương</field>
+            <field name="city">Cần Thơ</field>
+            <field name="phone">02455364052</field>
+            <field name="email">contact44@côngtyytếthànhc.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_045" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Bắc Việt</field>
+            <field name="street">889 Đường Lê Lợi</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02570340604</field>
+            <field name="email">contact45@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_046" model="res.partner">
+            <field name="name">Công ty TNHH XNK Tiến Phát</field>
+            <field name="street">61 Đường Lê Lợi</field>
+            <field name="city">Nha Trang</field>
+            <field name="phone">02959240779</field>
+            <field name="email">contact46@côngtyxnktiếnph.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_047" model="res.partner">
+            <field name="name">Công ty CP Xây dựng Việt Nam</field>
+            <field name="street">992 Đường Lý Thái Tổ</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02880267277</field>
+            <field name="email">contact47@côngtycpxâydựng.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_048" model="res.partner">
+            <field name="name">Công ty CP Xây dựng Hưng Thịnh</field>
+            <field name="street">607 Đường Lý Thái Tổ</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02785862989</field>
+            <field name="email">contact48@côngtycpxâydựng.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_049" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Đông Á</field>
+            <field name="street">359 Đường Trần Phú</field>
+            <field name="city">Hải Phòng</field>
+            <field name="phone">02619662935</field>
+            <field name="email">contact49@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_050" model="res.partner">
+            <field name="name">Công ty TNHH Y tế Phát Đạt</field>
+            <field name="street">354 Đường Hai Bà Trưng</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02944271741</field>
+            <field name="email">contact50@côngtyytếphátđạ.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_051" model="res.partner">
+            <field name="name">Công ty TNHH Y tế Châu Á</field>
+            <field name="street">154 Đường Hai Bà Trưng</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02661488535</field>
+            <field name="email">contact51@côngtyytếchâuá.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_052" model="res.partner">
+            <field name="name">Công ty CP Du lịch Bắc Việt</field>
+            <field name="street">105 Đường Lê Lợi</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02560714320</field>
+            <field name="email">contact52@côngtycpdulịchb.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_053" model="res.partner">
+            <field name="name">Công ty CP Thương mại Thành Công</field>
+            <field name="street">46 Đường Trần Phú</field>
+            <field name="city">Cần Thơ</field>
+            <field name="phone">02624080291</field>
+            <field name="email">contact53@côngtycpthươngm.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_054" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Hưng Thịnh</field>
+            <field name="street">447 Đường Lý Thái Tổ</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02668713097</field>
+            <field name="email">contact54@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_055" model="res.partner">
+            <field name="name">Công ty CP Sản xuất Đông Á</field>
+            <field name="street">948 Đường Lê Lợi</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02498115649</field>
+            <field name="email">contact55@côngtycpsảnxuất.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_056" model="res.partner">
+            <field name="name">Công ty CP Thương mại Á Châu</field>
+            <field name="street">892 Đường Trần Phú</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02470019397</field>
+            <field name="email">contact56@côngtycpthươngm.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_057" model="res.partner">
+            <field name="name">Công ty TNHH XNK Tiến Phát</field>
+            <field name="street">218 Đường Nguyễn Huệ</field>
+            <field name="city">Cần Thơ</field>
+            <field name="phone">02535220450</field>
+            <field name="email">contact57@côngtyxnktiếnph.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_058" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Tiến Phát</field>
+            <field name="street">201 Đường Nguyễn Huệ</field>
+            <field name="city">Huế</field>
+            <field name="phone">02587862000</field>
+            <field name="email">contact58@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_059" model="res.partner">
+            <field name="name">Công ty CP Du lịch Đông Á</field>
+            <field name="street">448 Đường Nguyễn Huệ</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02972517110</field>
+            <field name="email">contact59@côngtycpdulịchđ.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_060" model="res.partner">
+            <field name="name">Công ty TNHH Dịch vụ Phát Đạt</field>
+            <field name="street">32 Đường Hai Bà Trưng</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02740025332</field>
+            <field name="email">contact60@côngtydịchvụphá.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_061" model="res.partner">
+            <field name="name">Công ty CP Xây dựng Hưng Thịnh</field>
+            <field name="street">124 Đường Nguyễn Huệ</field>
+            <field name="city">Hải Phòng</field>
+            <field name="phone">02574454044</field>
+            <field name="email">contact61@côngtycpxâydựng.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_062" model="res.partner">
+            <field name="name">Công ty CP Thương mại Tiến Phát</field>
+            <field name="street">548 Đường Lê Lợi</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02773271587</field>
+            <field name="email">contact62@côngtycpthươngm.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_063" model="res.partner">
+            <field name="name">Công ty TNHH Giáo dục Tiến Phát</field>
+            <field name="street">87 Đường Lê Lợi</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02830478311</field>
+            <field name="email">contact63@côngtygiáodụcti.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_064" model="res.partner">
+            <field name="name">Công ty TNHH Giáo dục Việt Nam</field>
+            <field name="street">808 Đường Trần Phú</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02542748691</field>
+            <field name="email">contact64@côngtygiáodụcvi.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_065" model="res.partner">
+            <field name="name">Công ty CP Nông nghiệp Hưng Thịnh</field>
+            <field name="street">193 Đường Lý Thái Tổ</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02879552754</field>
+            <field name="email">contact65@côngtycpnôngngh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_066" model="res.partner">
+            <field name="name">Công ty CP Du lịch Đông Á</field>
+            <field name="street">781 Đường Lý Thái Tổ</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02638908649</field>
+            <field name="email">contact66@côngtycpdulịchđ.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_067" model="res.partner">
+            <field name="name">Công ty TNHH Giáo dục Hưng Thịnh</field>
+            <field name="street">325 Đường Trần Phú</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02757756021</field>
+            <field name="email">contact67@côngtygiáodụchư.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_068" model="res.partner">
+            <field name="name">Doanh nghiệp tư nhân Việt Nam</field>
+            <field name="street">598 Đường Lê Lợi</field>
+            <field name="city">Nha Trang</field>
+            <field name="phone">02486408254</field>
+            <field name="email">contact68@doanhnghiệptưnh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_069" model="res.partner">
+            <field name="name">Công ty CP Thương mại Thành Công</field>
+            <field name="street">919 Đường Hai Bà Trưng</field>
+            <field name="city">Huế</field>
+            <field name="phone">02490654430</field>
+            <field name="email">contact69@côngtycpthươngm.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_070" model="res.partner">
+            <field name="name">Công ty CP Du lịch Việt Nam</field>
+            <field name="street">987 Đường Hùng Vương</field>
+            <field name="city">Hải Phòng</field>
+            <field name="phone">02667704120</field>
+            <field name="email">contact70@côngtycpdulịchv.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_071" model="res.partner">
+            <field name="name">Công ty TNHH XNK Phát Đạt</field>
+            <field name="street">98 Đường Hùng Vương</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02689135136</field>
+            <field name="email">contact71@côngtyxnkphátđạ.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_072" model="res.partner">
+            <field name="name">Công ty CP Thương mại Tiến Phát</field>
+            <field name="street">586 Đường Trần Phú</field>
+            <field name="city">Cần Thơ</field>
+            <field name="phone">02995474995</field>
+            <field name="email">contact72@côngtycpthươngm.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_073" model="res.partner">
+            <field name="name">Công ty TNHH Công nghệ Phát Đạt</field>
+            <field name="street">515 Đường Hùng Vương</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02882628502</field>
+            <field name="email">contact73@côngtycôngnghệp.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_074" model="res.partner">
+            <field name="name">Công ty TNHH Dịch vụ Bắc Việt</field>
+            <field name="street">968 Đường Hùng Vương</field>
+            <field name="city">Huế</field>
+            <field name="phone">02744261295</field>
+            <field name="email">contact74@côngtydịchvụbắc.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_075" model="res.partner">
+            <field name="name">Công ty CP Xây dựng Châu Á</field>
+            <field name="street">49 Đường Lý Thái Tổ</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02934676141</field>
+            <field name="email">contact75@côngtycpxâydựng.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_076" model="res.partner">
+            <field name="name">Công ty TNHH Giáo dục Thành Công</field>
+            <field name="street">386 Đường Hùng Vương</field>
+            <field name="city">Hải Phòng</field>
+            <field name="phone">02411885562</field>
+            <field name="email">contact76@côngtygiáodụcth.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_077" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Tiến Phát</field>
+            <field name="street">510 Đường Hai Bà Trưng</field>
+            <field name="city">Nha Trang</field>
+            <field name="phone">02473027787</field>
+            <field name="email">contact77@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_078" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Bắc Việt</field>
+            <field name="street">396 Đường Trần Phú</field>
+            <field name="city">Hồ Chí Minh</field>
+            <field name="phone">02458632783</field>
+            <field name="email">contact78@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_079" model="res.partner">
+            <field name="name">Công ty CP Xây dựng Việt Nam</field>
+            <field name="street">340 Đường Hùng Vương</field>
+            <field name="city">Hải Phòng</field>
+            <field name="phone">02413026758</field>
+            <field name="email">contact79@côngtycpxâydựng.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_080" model="res.partner">
+            <field name="name">Công ty TNHH Dịch vụ Việt Nam</field>
+            <field name="street">912 Đường Lý Thái Tổ</field>
+            <field name="city">Huế</field>
+            <field name="phone">02499220562</field>
+            <field name="email">contact80@côngtydịchvụviệ.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_081" model="res.partner">
+            <field name="name">Công ty TNHH Y tế Châu Á</field>
+            <field name="street">517 Đường Hai Bà Trưng</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02737213600</field>
+            <field name="email">contact81@côngtyytếchâuá.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_082" model="res.partner">
+            <field name="name">Công ty TNHH Công nghệ Hưng Thịnh</field>
+            <field name="street">44 Đường Nguyễn Huệ</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02928119297</field>
+            <field name="email">contact82@côngtycôngnghệh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_083" model="res.partner">
+            <field name="name">Công ty TNHH Y tế Châu Á</field>
+            <field name="street">715 Đường Hùng Vương</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02743779016</field>
+            <field name="email">contact83@côngtyytếchâuá.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_084" model="res.partner">
+            <field name="name">Công ty CP Du lịch Thành Công</field>
+            <field name="street">102 Đường Trần Phú</field>
+            <field name="city">Nha Trang</field>
+            <field name="phone">02827560102</field>
+            <field name="email">contact84@côngtycpdulịcht.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_085" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Phát Đạt</field>
+            <field name="street">158 Đường Trần Phú</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02572174421</field>
+            <field name="email">contact85@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_086" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Phát Đạt</field>
+            <field name="street">100 Đường Nguyễn Huệ</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02641248832</field>
+            <field name="email">contact86@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_087" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Bắc Việt</field>
+            <field name="street">661 Đường Trần Phú</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02574115936</field>
+            <field name="email">contact87@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_088" model="res.partner">
+            <field name="name">Công ty CP Nông nghiệp Tiến Phát</field>
+            <field name="street">996 Đường Hùng Vương</field>
+            <field name="city">Nha Trang</field>
+            <field name="phone">02795108213</field>
+            <field name="email">contact88@côngtycpnôngngh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_089" model="res.partner">
+            <field name="name">Công ty CP Sản xuất Phát Đạt</field>
+            <field name="street">847 Đường Nguyễn Huệ</field>
+            <field name="city">Đà Nẵng</field>
+            <field name="phone">02695494545</field>
+            <field name="email">contact89@côngtycpsảnxuất.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_090" model="res.partner">
+            <field name="name">Công ty CP Du lịch Châu Á</field>
+            <field name="street">571 Đường Lý Thái Tổ</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02849085982</field>
+            <field name="email">contact90@côngtycpdulịchc.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_091" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Á Châu</field>
+            <field name="street">92 Đường Lê Lợi</field>
+            <field name="city">Vũng Tàu</field>
+            <field name="phone">02486554850</field>
+            <field name="email">contact91@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_092" model="res.partner">
+            <field name="name">Công ty CP Xây dựng Phát Đạt</field>
+            <field name="street">549 Đường Lý Thái Tổ</field>
+            <field name="city">Hải Phòng</field>
+            <field name="phone">02733629236</field>
+            <field name="email">contact92@côngtycpxâydựng.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_093" model="res.partner">
+            <field name="name">Công ty TNHH Logistics Phát Đạt</field>
+            <field name="street">742 Đường Trần Phú</field>
+            <field name="city">Nha Trang</field>
+            <field name="phone">02793239613</field>
+            <field name="email">contact93@côngtylogistics.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_094" model="res.partner">
+            <field name="name">Công ty TNHH Y tế Á Châu</field>
+            <field name="street">957 Đường Nguyễn Huệ</field>
+            <field name="city">Nha Trang</field>
+            <field name="phone">02752412776</field>
+            <field name="email">contact94@côngtyytếáchâu.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_095" model="res.partner">
+            <field name="name">Công ty CP Du lịch Hưng Thịnh</field>
+            <field name="street">942 Đường Trần Phú</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02737824449</field>
+            <field name="email">contact95@côngtycpdulịchh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_096" model="res.partner">
+            <field name="name">Công ty TNHH Dịch vụ Hưng Thịnh</field>
+            <field name="street">390 Đường Hùng Vương</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">02746189807</field>
+            <field name="email">contact96@côngtydịchvụhưn.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_097" model="res.partner">
+            <field name="name">Doanh nghiệp tư nhân Đông Á</field>
+            <field name="street">515 Đường Hai Bà Trưng</field>
+            <field name="city">Hải Phòng</field>
+            <field name="phone">02530446886</field>
+            <field name="email">contact97@doanhnghiệptưnh.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_098" model="res.partner">
+            <field name="name">Công ty TNHH Y tế Hưng Thịnh</field>
+            <field name="street">498 Đường Lê Lợi</field>
+            <field name="city">Huế</field>
+            <field name="phone">02827716184</field>
+            <field name="email">contact98@côngtyytếhưngth.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_099" model="res.partner">
+            <field name="name">Công ty CP Du lịch Việt Nam</field>
+            <field name="street">385 Đường Lý Thái Tổ</field>
+            <field name="city">Nha Trang</field>
+            <field name="phone">02760801761</field>
+            <field name="email">contact99@côngtycpdulịchv.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+        <record id="customer_demo_100" model="res.partner">
+            <field name="name">Công ty TNHH Giáo dục An Khang</field>
+            <field name="street">983 Đường Hùng Vương</field>
+            <field name="city">Hải Phòng</field>
+            <field name="phone">02921319460</field>
+            <field name="email">contact100@côngtygiáodụcan.com</field>
+            <field name="customer_rank" eval="1"/>
+            <field name="is_company" eval="True"/>
+            <field name="company_type">company</field>
+        </record>
+
+        <!-- 50 CRM Lead Records -->
+        <record id="lead_demo_001" model="crm.lead">
+            <field name="name">Cung cấp thiết bị - 66</field>
+            <field name="partner_id" ref="customer_demo_066"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="500000000"/>
+            <field name="probability" eval="26"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">lost</field>
+        </record>
+        <record id="lead_demo_002" model="crm.lead">
+            <field name="name">Tư vấn giải pháp - 92</field>
+            <field name="partner_id" ref="customer_demo_092"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="100000000"/>
+            <field name="probability" eval="11"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">won</field>
+        </record>
+        <record id="lead_demo_003" model="crm.lead">
+            <field name="name">Cung cấp thiết bị - 19</field>
+            <field name="partner_id" ref="customer_demo_019"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="100000000"/>
+            <field name="probability" eval="84"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_004" model="crm.lead">
+            <field name="name">Cơ hội mua phần mềm - 17</field>
+            <field name="partner_id" ref="customer_demo_017"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="1000000000"/>
+            <field name="probability" eval="74"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_005" model="crm.lead">
+            <field name="name">Cung cấp thiết bị - 67</field>
+            <field name="partner_id" ref="customer_demo_067"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="100000000"/>
+            <field name="probability" eval="71"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">won</field>
+        </record>
+        <record id="lead_demo_006" model="crm.lead">
+            <field name="name">Hợp đồng bảo trì - 38</field>
+            <field name="partner_id" ref="customer_demo_038"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="50000000"/>
+            <field name="probability" eval="62"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">proposition</field>
+        </record>
+        <record id="lead_demo_007" model="crm.lead">
+            <field name="name">Tư vấn giải pháp - 77</field>
+            <field name="partner_id" ref="customer_demo_077"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="100000000"/>
+            <field name="probability" eval="80"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">won</field>
+        </record>
+        <record id="lead_demo_008" model="crm.lead">
+            <field name="name">Cơ hội mua phần mềm - 52</field>
+            <field name="partner_id" ref="customer_demo_052"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="1000000000"/>
+            <field name="probability" eval="12"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">qualified</field>
+        </record>
+        <record id="lead_demo_009" model="crm.lead">
+            <field name="name">Hợp đồng bảo trì - 65</field>
+            <field name="partner_id" ref="customer_demo_065"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="1000000000"/>
+            <field name="probability" eval="15"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">qualified</field>
+        </record>
+        <record id="lead_demo_010" model="crm.lead">
+            <field name="name">Đào tạo nhân sự - 6</field>
+            <field name="partner_id" ref="customer_demo_006"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="200000000"/>
+            <field name="probability" eval="15"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">lost</field>
+        </record>
+        <record id="lead_demo_011" model="crm.lead">
+            <field name="name">Dự án triển khai hệ thống - 51</field>
+            <field name="partner_id" ref="customer_demo_051"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="1000000000"/>
+            <field name="probability" eval="41"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">qualified</field>
+        </record>
+        <record id="lead_demo_012" model="crm.lead">
+            <field name="name">Tư vấn giải pháp - 45</field>
+            <field name="partner_id" ref="customer_demo_045"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="500000000"/>
+            <field name="probability" eval="48"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">won</field>
+        </record>
+        <record id="lead_demo_013" model="crm.lead">
+            <field name="name">Hợp đồng bảo trì - 35</field>
+            <field name="partner_id" ref="customer_demo_035"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="50000000"/>
+            <field name="probability" eval="65"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">qualified</field>
+        </record>
+        <record id="lead_demo_014" model="crm.lead">
+            <field name="name">Cung cấp thiết bị - 13</field>
+            <field name="partner_id" ref="customer_demo_013"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="1000000000"/>
+            <field name="probability" eval="87"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">won</field>
+        </record>
+        <record id="lead_demo_015" model="crm.lead">
+            <field name="name">Hợp đồng bảo trì - 79</field>
+            <field name="partner_id" ref="customer_demo_079"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="50000000"/>
+            <field name="probability" eval="16"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">qualified</field>
+        </record>
+        <record id="lead_demo_016" model="crm.lead">
+            <field name="name">Dự án triển khai hệ thống - 10</field>
+            <field name="partner_id" ref="customer_demo_010"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="200000000"/>
+            <field name="probability" eval="31"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_017" model="crm.lead">
+            <field name="name">Cung cấp thiết bị - 84</field>
+            <field name="partner_id" ref="customer_demo_084"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="200000000"/>
+            <field name="probability" eval="22"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">proposition</field>
+        </record>
+        <record id="lead_demo_018" model="crm.lead">
+            <field name="name">Hợp đồng bảo trì - 25</field>
+            <field name="partner_id" ref="customer_demo_025"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="500000000"/>
+            <field name="probability" eval="87"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">won</field>
+        </record>
+        <record id="lead_demo_019" model="crm.lead">
+            <field name="name">Cung cấp thiết bị - 24</field>
+            <field name="partner_id" ref="customer_demo_024"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="50000000"/>
+            <field name="probability" eval="76"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_020" model="crm.lead">
+            <field name="name">Cung cấp thiết bị - 78</field>
+            <field name="partner_id" ref="customer_demo_078"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="50000000"/>
+            <field name="probability" eval="63"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">proposition</field>
+        </record>
+        <record id="lead_demo_021" model="crm.lead">
+            <field name="name">Cung cấp thiết bị - 8</field>
+            <field name="partner_id" ref="customer_demo_008"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="1000000000"/>
+            <field name="probability" eval="40"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">won</field>
+        </record>
+        <record id="lead_demo_022" model="crm.lead">
+            <field name="name">Đào tạo nhân sự - 76</field>
+            <field name="partner_id" ref="customer_demo_076"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="1000000000"/>
+            <field name="probability" eval="27"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">lost</field>
+        </record>
+        <record id="lead_demo_023" model="crm.lead">
+            <field name="name">Tư vấn giải pháp - 7</field>
+            <field name="partner_id" ref="customer_demo_007"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="1000000000"/>
+            <field name="probability" eval="63"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">qualified</field>
+        </record>
+        <record id="lead_demo_024" model="crm.lead">
+            <field name="name">Dự án triển khai hệ thống - 9</field>
+            <field name="partner_id" ref="customer_demo_009"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="50000000"/>
+            <field name="probability" eval="73"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">lost</field>
+        </record>
+        <record id="lead_demo_025" model="crm.lead">
+            <field name="name">Cơ hội mua phần mềm - 60</field>
+            <field name="partner_id" ref="customer_demo_060"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="200000000"/>
+            <field name="probability" eval="26"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_026" model="crm.lead">
+            <field name="name">Cung cấp thiết bị - 21</field>
+            <field name="partner_id" ref="customer_demo_021"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="1000000000"/>
+            <field name="probability" eval="44"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">proposition</field>
+        </record>
+        <record id="lead_demo_027" model="crm.lead">
+            <field name="name">Cung cấp thiết bị - 88</field>
+            <field name="partner_id" ref="customer_demo_088"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="100000000"/>
+            <field name="probability" eval="59"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">qualified</field>
+        </record>
+        <record id="lead_demo_028" model="crm.lead">
+            <field name="name">Tư vấn giải pháp - 97</field>
+            <field name="partner_id" ref="customer_demo_097"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="500000000"/>
+            <field name="probability" eval="32"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_029" model="crm.lead">
+            <field name="name">Dự án triển khai hệ thống - 79</field>
+            <field name="partner_id" ref="customer_demo_079"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="200000000"/>
+            <field name="probability" eval="41"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">proposition</field>
+        </record>
+        <record id="lead_demo_030" model="crm.lead">
+            <field name="name">Tư vấn giải pháp - 76</field>
+            <field name="partner_id" ref="customer_demo_076"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="50000000"/>
+            <field name="probability" eval="56"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_031" model="crm.lead">
+            <field name="name">Hợp đồng bảo trì - 62</field>
+            <field name="partner_id" ref="customer_demo_062"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="200000000"/>
+            <field name="probability" eval="14"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">won</field>
+        </record>
+        <record id="lead_demo_032" model="crm.lead">
+            <field name="name">Đào tạo nhân sự - 51</field>
+            <field name="partner_id" ref="customer_demo_051"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="500000000"/>
+            <field name="probability" eval="27"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">qualified</field>
+        </record>
+        <record id="lead_demo_033" model="crm.lead">
+            <field name="name">Đào tạo nhân sự - 61</field>
+            <field name="partner_id" ref="customer_demo_061"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="100000000"/>
+            <field name="probability" eval="31"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">qualified</field>
+        </record>
+        <record id="lead_demo_034" model="crm.lead">
+            <field name="name">Tư vấn giải pháp - 42</field>
+            <field name="partner_id" ref="customer_demo_042"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="200000000"/>
+            <field name="probability" eval="58"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">won</field>
+        </record>
+        <record id="lead_demo_035" model="crm.lead">
+            <field name="name">Dự án triển khai hệ thống - 55</field>
+            <field name="partner_id" ref="customer_demo_055"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="500000000"/>
+            <field name="probability" eval="66"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">lost</field>
+        </record>
+        <record id="lead_demo_036" model="crm.lead">
+            <field name="name">Đào tạo nhân sự - 9</field>
+            <field name="partner_id" ref="customer_demo_009"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="500000000"/>
+            <field name="probability" eval="53"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_037" model="crm.lead">
+            <field name="name">Hợp đồng bảo trì - 81</field>
+            <field name="partner_id" ref="customer_demo_081"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="100000000"/>
+            <field name="probability" eval="13"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">proposition</field>
+        </record>
+        <record id="lead_demo_038" model="crm.lead">
+            <field name="name">Dự án triển khai hệ thống - 2</field>
+            <field name="partner_id" ref="customer_demo_002"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="50000000"/>
+            <field name="probability" eval="74"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_039" model="crm.lead">
+            <field name="name">Cơ hội mua phần mềm - 44</field>
+            <field name="partner_id" ref="customer_demo_044"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="1000000000"/>
+            <field name="probability" eval="21"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">proposition</field>
+        </record>
+        <record id="lead_demo_040" model="crm.lead">
+            <field name="name">Cơ hội mua phần mềm - 76</field>
+            <field name="partner_id" ref="customer_demo_076"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="100000000"/>
+            <field name="probability" eval="53"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_041" model="crm.lead">
+            <field name="name">Cung cấp thiết bị - 75</field>
+            <field name="partner_id" ref="customer_demo_075"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="50000000"/>
+            <field name="probability" eval="20"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_042" model="crm.lead">
+            <field name="name">Dự án triển khai hệ thống - 17</field>
+            <field name="partner_id" ref="customer_demo_017"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="200000000"/>
+            <field name="probability" eval="67"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">lost</field>
+        </record>
+        <record id="lead_demo_043" model="crm.lead">
+            <field name="name">Tư vấn giải pháp - 13</field>
+            <field name="partner_id" ref="customer_demo_013"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="100000000"/>
+            <field name="probability" eval="10"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_044" model="crm.lead">
+            <field name="name">Đào tạo nhân sự - 2</field>
+            <field name="partner_id" ref="customer_demo_002"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="500000000"/>
+            <field name="probability" eval="19"/>
+            <field name="priority_btl">3</field>
+            <field name="stage_status">won</field>
+        </record>
+        <record id="lead_demo_045" model="crm.lead">
+            <field name="name">Dự án triển khai hệ thống - 10</field>
+            <field name="partner_id" ref="customer_demo_010"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="500000000"/>
+            <field name="probability" eval="10"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">new</field>
+        </record>
+        <record id="lead_demo_046" model="crm.lead">
+            <field name="name">Dự án triển khai hệ thống - 19</field>
+            <field name="partner_id" ref="customer_demo_019"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="100000000"/>
+            <field name="probability" eval="89"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">won</field>
+        </record>
+        <record id="lead_demo_047" model="crm.lead">
+            <field name="name">Tư vấn giải pháp - 83</field>
+            <field name="partner_id" ref="customer_demo_083"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="100000000"/>
+            <field name="probability" eval="45"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">lost</field>
+        </record>
+        <record id="lead_demo_048" model="crm.lead">
+            <field name="name">Dự án triển khai hệ thống - 47</field>
+            <field name="partner_id" ref="customer_demo_047"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="200000000"/>
+            <field name="probability" eval="49"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">won</field>
+        </record>
+        <record id="lead_demo_049" model="crm.lead">
+            <field name="name">Đào tạo nhân sự - 84</field>
+            <field name="partner_id" ref="customer_demo_084"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="500000000"/>
+            <field name="probability" eval="34"/>
+            <field name="priority_btl">1</field>
+            <field name="stage_status">proposition</field>
+        </record>
+        <record id="lead_demo_050" model="crm.lead">
+            <field name="name">Dự án triển khai hệ thống - 13</field>
+            <field name="partner_id" ref="customer_demo_013"/>
+            <field name="type">opportunity</field>
+            <field name="expected_revenue" eval="100000000"/>
+            <field name="probability" eval="75"/>
+            <field name="priority_btl">2</field>
+            <field name="stage_status">new</field>
+        </record>
+
+        <!-- 50 Customer Interaction Records -->
+        <record id="interaction_demo_001" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_023"/>
+            <field name="lead_id" ref="lead_demo_036"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=47))"/>
+            <field name="duration" eval="15"/>
+            <field name="outcome">failed</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_002" model="crm.interaction">
+            <field name="title">Ký hợp đồng</field>
+            <field name="partner_id" ref="customer_demo_061"/>
+            <field name="lead_id" ref="lead_demo_021"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=88))"/>
+            <field name="duration" eval="90"/>
+            <field name="outcome">successful</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_003" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_070"/>
+            <field name="lead_id" ref="lead_demo_014"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=18))"/>
+            <field name="duration" eval="60"/>
+            <field name="outcome">failed</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_004" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_032"/>
+            <field name="lead_id" ref="lead_demo_005"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=59))"/>
+            <field name="duration" eval="15"/>
+            <field name="outcome">scheduled</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_005" model="crm.interaction">
+            <field name="title">Họp với khách hàng</field>
+            <field name="partner_id" ref="customer_demo_082"/>
+            <field name="lead_id" ref="lead_demo_022"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=49))"/>
+            <field name="duration" eval="90"/>
+            <field name="outcome">scheduled</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_006" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_002"/>
+            <field name="lead_id" ref="lead_demo_015"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=16))"/>
+            <field name="duration" eval="60"/>
+            <field name="outcome">pending</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_007" model="crm.interaction">
+            <field name="title">Gọi điện tư vấn</field>
+            <field name="partner_id" ref="customer_demo_072"/>
+            <field name="lead_id" ref="lead_demo_044"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=76))"/>
+            <field name="duration" eval="45"/>
+            <field name="outcome">failed</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_008" model="crm.interaction">
+            <field name="title">Chăm sóc khách hàng</field>
+            <field name="partner_id" ref="customer_demo_079"/>
+            <field name="lead_id" ref="lead_demo_013"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=14))"/>
+            <field name="duration" eval="120"/>
+            <field name="outcome">scheduled</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_009" model="crm.interaction">
+            <field name="title">Chăm sóc khách hàng</field>
+            <field name="partner_id" ref="customer_demo_084"/>
+            <field name="lead_id" ref="lead_demo_017"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=59))"/>
+            <field name="duration" eval="60"/>
+            <field name="outcome">pending</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_010" model="crm.interaction">
+            <field name="title">Gọi điện tư vấn</field>
+            <field name="partner_id" ref="customer_demo_075"/>
+            <field name="lead_id" ref="lead_demo_045"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=5))"/>
+            <field name="duration" eval="45"/>
+            <field name="outcome">successful</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_011" model="crm.interaction">
+            <field name="title">Gọi điện tư vấn</field>
+            <field name="partner_id" ref="customer_demo_029"/>
+            <field name="lead_id" ref="lead_demo_027"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=6))"/>
+            <field name="duration" eval="45"/>
+            <field name="outcome">pending</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_012" model="crm.interaction">
+            <field name="title">Ký hợp đồng</field>
+            <field name="partner_id" ref="customer_demo_007"/>
+            <field name="lead_id" ref="lead_demo_035"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=75))"/>
+            <field name="duration" eval="15"/>
+            <field name="outcome">scheduled</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_013" model="crm.interaction">
+            <field name="title">Gọi điện tư vấn</field>
+            <field name="partner_id" ref="customer_demo_050"/>
+            <field name="lead_id" ref="lead_demo_015"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=41))"/>
+            <field name="duration" eval="90"/>
+            <field name="outcome">failed</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_014" model="crm.interaction">
+            <field name="title">Demo sản phẩm</field>
+            <field name="partner_id" ref="customer_demo_040"/>
+            <field name="lead_id" ref="lead_demo_038"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=69))"/>
+            <field name="duration" eval="30"/>
+            <field name="outcome">successful</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_015" model="crm.interaction">
+            <field name="title">Gọi điện tư vấn</field>
+            <field name="partner_id" ref="customer_demo_009"/>
+            <field name="lead_id" ref="lead_demo_034"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=40))"/>
+            <field name="duration" eval="15"/>
+            <field name="outcome">pending</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_016" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_075"/>
+            <field name="lead_id" ref="lead_demo_039"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=54))"/>
+            <field name="duration" eval="45"/>
+            <field name="outcome">failed</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_017" model="crm.interaction">
+            <field name="title">Họp với khách hàng</field>
+            <field name="partner_id" ref="customer_demo_020"/>
+            <field name="lead_id" ref="lead_demo_050"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=71))"/>
+            <field name="duration" eval="45"/>
+            <field name="outcome">scheduled</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_018" model="crm.interaction">
+            <field name="title">Gọi điện tư vấn</field>
+            <field name="partner_id" ref="customer_demo_037"/>
+            <field name="lead_id" ref="lead_demo_005"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=87))"/>
+            <field name="duration" eval="60"/>
+            <field name="outcome">scheduled</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_019" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_048"/>
+            <field name="lead_id" ref="lead_demo_039"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=90))"/>
+            <field name="duration" eval="120"/>
+            <field name="outcome">scheduled</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_020" model="crm.interaction">
+            <field name="title">Gọi điện tư vấn</field>
+            <field name="partner_id" ref="customer_demo_043"/>
+            <field name="lead_id" ref="lead_demo_042"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=71))"/>
+            <field name="duration" eval="90"/>
+            <field name="outcome">failed</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_021" model="crm.interaction">
+            <field name="title">Demo sản phẩm</field>
+            <field name="partner_id" ref="customer_demo_032"/>
+            <field name="lead_id" ref="lead_demo_026"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=88))"/>
+            <field name="duration" eval="120"/>
+            <field name="outcome">pending</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_022" model="crm.interaction">
+            <field name="title">Họp với khách hàng</field>
+            <field name="partner_id" ref="customer_demo_061"/>
+            <field name="lead_id" ref="lead_demo_026"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=56))"/>
+            <field name="duration" eval="120"/>
+            <field name="outcome">failed</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_023" model="crm.interaction">
+            <field name="title">Gọi điện tư vấn</field>
+            <field name="partner_id" ref="customer_demo_092"/>
+            <field name="lead_id" ref="lead_demo_050"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=90))"/>
+            <field name="duration" eval="60"/>
+            <field name="outcome">scheduled</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_024" model="crm.interaction">
+            <field name="title">Demo sản phẩm</field>
+            <field name="partner_id" ref="customer_demo_091"/>
+            <field name="lead_id" ref="lead_demo_012"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=15))"/>
+            <field name="duration" eval="30"/>
+            <field name="outcome">failed</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_025" model="crm.interaction">
+            <field name="title">Ký hợp đồng</field>
+            <field name="partner_id" ref="customer_demo_020"/>
+            <field name="lead_id" ref="lead_demo_017"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=21))"/>
+            <field name="duration" eval="90"/>
+            <field name="outcome">successful</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_026" model="crm.interaction">
+            <field name="title">Ký hợp đồng</field>
+            <field name="partner_id" ref="customer_demo_090"/>
+            <field name="lead_id" ref="lead_demo_030"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=28))"/>
+            <field name="duration" eval="30"/>
+            <field name="outcome">pending</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_027" model="crm.interaction">
+            <field name="title">Họp với khách hàng</field>
+            <field name="partner_id" ref="customer_demo_037"/>
+            <field name="lead_id" ref="lead_demo_049"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=67))"/>
+            <field name="duration" eval="15"/>
+            <field name="outcome">successful</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_028" model="crm.interaction">
+            <field name="title">Họp với khách hàng</field>
+            <field name="partner_id" ref="customer_demo_029"/>
+            <field name="lead_id" ref="lead_demo_028"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=1))"/>
+            <field name="duration" eval="120"/>
+            <field name="outcome">successful</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_029" model="crm.interaction">
+            <field name="title">Demo sản phẩm</field>
+            <field name="partner_id" ref="customer_demo_053"/>
+            <field name="lead_id" ref="lead_demo_025"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=20))"/>
+            <field name="duration" eval="15"/>
+            <field name="outcome">successful</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_030" model="crm.interaction">
+            <field name="title">Demo sản phẩm</field>
+            <field name="partner_id" ref="customer_demo_063"/>
+            <field name="lead_id" ref="lead_demo_013"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=51))"/>
+            <field name="duration" eval="90"/>
+            <field name="outcome">failed</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_031" model="crm.interaction">
+            <field name="title">Ký hợp đồng</field>
+            <field name="partner_id" ref="customer_demo_076"/>
+            <field name="lead_id" ref="lead_demo_032"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=12))"/>
+            <field name="duration" eval="60"/>
+            <field name="outcome">successful</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_032" model="crm.interaction">
+            <field name="title">Gọi điện tư vấn</field>
+            <field name="partner_id" ref="customer_demo_070"/>
+            <field name="lead_id" ref="lead_demo_042"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=63))"/>
+            <field name="duration" eval="15"/>
+            <field name="outcome">failed</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_033" model="crm.interaction">
+            <field name="title">Gọi điện tư vấn</field>
+            <field name="partner_id" ref="customer_demo_049"/>
+            <field name="lead_id" ref="lead_demo_039"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=89))"/>
+            <field name="duration" eval="15"/>
+            <field name="outcome">pending</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_034" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_031"/>
+            <field name="lead_id" ref="lead_demo_004"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=53))"/>
+            <field name="duration" eval="45"/>
+            <field name="outcome">scheduled</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_035" model="crm.interaction">
+            <field name="title">Họp với khách hàng</field>
+            <field name="partner_id" ref="customer_demo_031"/>
+            <field name="lead_id" ref="lead_demo_015"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=63))"/>
+            <field name="duration" eval="60"/>
+            <field name="outcome">failed</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_036" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_090"/>
+            <field name="lead_id" ref="lead_demo_047"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=58))"/>
+            <field name="duration" eval="60"/>
+            <field name="outcome">failed</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_037" model="crm.interaction">
+            <field name="title">Ký hợp đồng</field>
+            <field name="partner_id" ref="customer_demo_092"/>
+            <field name="lead_id" ref="lead_demo_049"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=88))"/>
+            <field name="duration" eval="15"/>
+            <field name="outcome">scheduled</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_038" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_012"/>
+            <field name="lead_id" ref="lead_demo_015"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=58))"/>
+            <field name="duration" eval="15"/>
+            <field name="outcome">successful</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_039" model="crm.interaction">
+            <field name="title">Ký hợp đồng</field>
+            <field name="partner_id" ref="customer_demo_046"/>
+            <field name="lead_id" ref="lead_demo_008"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=69))"/>
+            <field name="duration" eval="60"/>
+            <field name="outcome">scheduled</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_040" model="crm.interaction">
+            <field name="title">Demo sản phẩm</field>
+            <field name="partner_id" ref="customer_demo_068"/>
+            <field name="lead_id" ref="lead_demo_018"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=51))"/>
+            <field name="duration" eval="120"/>
+            <field name="outcome">pending</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_041" model="crm.interaction">
+            <field name="title">Ký hợp đồng</field>
+            <field name="partner_id" ref="customer_demo_042"/>
+            <field name="lead_id" ref="lead_demo_026"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=42))"/>
+            <field name="duration" eval="30"/>
+            <field name="outcome">failed</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_042" model="crm.interaction">
+            <field name="title">Gọi điện tư vấn</field>
+            <field name="partner_id" ref="customer_demo_057"/>
+            <field name="lead_id" ref="lead_demo_042"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=52))"/>
+            <field name="duration" eval="15"/>
+            <field name="outcome">failed</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_043" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_032"/>
+            <field name="lead_id" ref="lead_demo_030"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=12))"/>
+            <field name="duration" eval="120"/>
+            <field name="outcome">pending</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_044" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_012"/>
+            <field name="lead_id" ref="lead_demo_040"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=80))"/>
+            <field name="duration" eval="30"/>
+            <field name="outcome">successful</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_045" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_040"/>
+            <field name="lead_id" ref="lead_demo_043"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=34))"/>
+            <field name="duration" eval="30"/>
+            <field name="outcome">successful</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_046" model="crm.interaction">
+            <field name="title">Demo sản phẩm</field>
+            <field name="partner_id" ref="customer_demo_007"/>
+            <field name="lead_id" ref="lead_demo_024"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=23))"/>
+            <field name="duration" eval="120"/>
+            <field name="outcome">pending</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_047" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_027"/>
+            <field name="lead_id" ref="lead_demo_050"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=25))"/>
+            <field name="duration" eval="45"/>
+            <field name="outcome">pending</field>
+            <field name="state">done</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_048" model="crm.interaction">
+            <field name="title">Demo sản phẩm</field>
+            <field name="partner_id" ref="customer_demo_091"/>
+            <field name="lead_id" ref="lead_demo_039"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=84))"/>
+            <field name="duration" eval="30"/>
+            <field name="outcome">successful</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_049" model="crm.interaction">
+            <field name="title">Chăm sóc khách hàng</field>
+            <field name="partner_id" ref="customer_demo_097"/>
+            <field name="lead_id" ref="lead_demo_010"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=17))"/>
+            <field name="duration" eval="90"/>
+            <field name="outcome">successful</field>
+            <field name="state">cancelled</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+        <record id="interaction_demo_050" model="crm.interaction">
+            <field name="title">Gửi báo giá</field>
+            <field name="partner_id" ref="customer_demo_042"/>
+            <field name="lead_id" ref="lead_demo_046"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=64))"/>
+            <field name="duration" eval="15"/>
+            <field name="outcome">failed</field>
+            <field name="state">draft</field>
+            <field name="description">&lt;p&gt;Tương tác với khách hàng về dự án&lt;/p&gt;</field>
+        </record>
+    </data>
+</odoo>

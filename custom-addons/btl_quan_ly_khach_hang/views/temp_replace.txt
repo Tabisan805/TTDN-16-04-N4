@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="view_crm_interaction_type_tree" model="ir.ui.view">
+        <field name="name">crm.interaction.type.tree</field>
+        <field name="model">crm.interaction.type</field>
+        <field name="arch" type="xml">
+            <list string="Loại tương tác">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="icon"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+    
+    <record id="view_crm_interaction_type_form" model="ir.ui.view">
+        <field name="name">crm.interaction.type.form</field>
+        <field name="model">crm.interaction.type</field>
+        <field name="arch" type="xml">
+            <form string="Loại tương tác">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="sequence"/>
+                        </group>
+                        <group>
+                            <field name="icon"/>
+                            <field name="color" widget="color_picker"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_crm_interaction_type" model="ir.actions.act_window">
+        <field name="name">Loại tương tác</field>
+        <field name="res_model">crm.interaction.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+</odoo>
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="view_crm_interaction_tree" model="ir.ui.view">
+        <field name="name">crm.interaction.tree</field>
+        <field name="model">crm.interaction</field>
+        <field name="arch" type="xml">
+            <list string="Lịch sử tương tác" decoration-success="outcome=='successful'" decoration-danger="outcome=='failed'">
+                <field name="date"/>
+                <field name="partner_id"/>
+                <field name="lead_id"/>
+                <field name="interaction_type_id"/>
+                <field name="title"/>
+                <field name="user_id"/>
+                <field name="duration"/>
+                <field name="outcome"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+    
+    <record id="view_crm_interaction_form" model="ir.ui.view">
+        <field name="name">crm.interaction.form</field>
+        <field name="model">crm.interaction</field>
+        <field name="arch" type="xml">
+            <form string="Tương tác">
+                <header>
+                    <button name="action_done" string="Hoàn thành" type="object" states="draft" class="btn-primary"/>
+                    <button name="action_cancel" string="Hủy" type="object" states="draft" class="btn-danger"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="title"/>
+                            <field name="partner_id"/>
+                            <field name="lead_id"/>
+                            <field name="interaction_type_id"/>
+                        </group>
+                        <group>
+                            <field name="date"/>
+                            <field name="duration"/>
+                            <field name="user_id"/>
+                            <field name="outcome"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Nội dung">
+                            <field name="description"/>
+                        </page>
+                        <page string="Lịch hẹn tiếp theo">
+                            <group>
+                                <field name="next_action_date"/>
+                                <field name="next_action_note"/>
+                            </group>
+                        </page>
+                        <page string="Liên kết">
+                            <group>
+                                <field name="sale_order_id"/>
+                                <field name="quotation_sent"/>
+                            </group>
+                        </page>
+                        <page string="File đính kèm">
+                            <field name="attachment_ids" widget="many2many_binary"/>
+                        </page>
+                    </notebook>
+                    <group>
+                        <field name="note"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    
+    <record id="view_crm_interaction_calendar" model="ir.ui.view">
+        <field name="name">crm.interaction.calendar</field>
+        <field name="model">crm.interaction</field>
+        <field name="arch" type="xml">
+            <calendar string="Lịch tương tác" date_start="date" color="interaction_type_id">
+                <field name="title"/>
+                <field name="partner_id"/>
+            </calendar>
+        </field>
+    </record>
+    
+    <record id="action_crm_interaction" model="ir.actions.act_window">
+        <field name="name">Lịch sử tương tác</field>
+        <field name="res_model">crm.interaction</field>
+        <field name="view_mode">tree,form,calendar</field>
+    </record>
+    
+</odoo>
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Extend Lead Form -->
+    <record id="view_crm_lead_form_btl" model="ir.ui.view">
+        <field name="name">crm.lead.form.btl</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            
+            <!-- Thêm buttons trên header -->
+            <xpath expr="//header" position="inside">
+                <button name="action_view_interactions" string="Lịch sử tương tác" type="object" 
+                        class="oe_stat_button" icon="fa-history"
+                        attrs="{'invisible': [('interaction_count', '=', 0)]}"/>
+                <button name="action_create_interaction" string="Tạo tương tác" type="object" class="btn-primary"/>
+            </xpath>
+            
+            <!-- Thêm thông tin nguồn -->
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="source_btl_id"/>
+                <field name="employee_id"/>
+                <field name="employee_department" attrs="{'invisible': [('employee_id', '=', False)]}"/>
+            </xpath>
+            
+            <!-- Thêm tab thông tin bổ sung -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Thông tin bổ sung">
+                    <group>
+                        <group>
+                            <field name="company_size"/>
+                            <field name="industry_btl"/>
+                            <field name="tax_code"/>
+                        </group>
+                        <group>
+                            <field name="budget"/>
+                            <field name="priority_btl" widget="priority"/>
+                            <field name="quality_score"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="interested_product_ids" widget="many2many_tags"/>
+                    </group>
+                </page>
+                
+                <page string="Lịch sử tương tác">
+                    <group>
+                        <group>
+                            <field name="interaction_count"/>
+                            <field name="last_interaction_date"/>
+                        </group>
+                        <group string="Thống kê">
+                            <field name="total_calls"/>
+                            <field name="total_meetings"/>
+                            <field name="total_emails"/>
+                        </group>
+                    </group>
+                    <field name="interaction_ids">
+                        <list>
+                            <field name="date"/>
+                            <field name="interaction_type_id"/>
+                            <field name="title"/>
+                            <field name="user_id"/>
+                            <field name="outcome"/>
+                            <field name="state"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+            
+        </field>
+    </record>
+    
+</odoo>
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Menu chính -->
+    <menuitem id="menu_crm_btl_root"
+              name="Khách hàng BTL"
+              sequence="20"
+              web_icon="crm,static/description/icon.png"/>
+    
+    <!-- Menu Khách hàng tiềm năng -->
+    <menuitem id="menu_crm_lead"
+              name="Khách hàng tiềm năng"
+              parent="menu_crm_btl_root"
+              action="crm.crm_lead_all_leads"
+              sequence="10"/>
+    
+    <!-- Menu Khách hàng chính thức -->
+    <menuitem id="menu_crm_customer"
+              name="Khách hàng chính thức"
+              parent="menu_crm_btl_root"
+              action="contacts.action_contacts"
+              sequence="20"/>
+    
+    <!-- Menu Tương tác -->
+    <menuitem id="menu_crm_interaction_parent"
+              name="Tương tác"
+              parent="menu_crm_btl_root"
+              sequence="30"/>
+    
+    <menuitem id="menu_crm_interaction"
+              name="Lịch sử tương tác"
+              parent="menu_crm_interaction_parent"
+              action="action_crm_interaction"
+              sequence="10"/>
+    
+    <menuitem id="menu_crm_interaction_type"
+              name="Loại tương tác"
+              parent="menu_crm_interaction_parent"
+              action="action_crm_interaction_type"
+              sequence="20"
+              groups="base.group_system"/>
+    
+    <!-- Menu Cấu hình -->
+    <menuitem id="menu_crm_config_parent"
+              name="Cấu hình"
+              parent="menu_crm_btl_root"
+              sequence="90"
+              groups="base.group_system"/>
+    
+    <menuitem id="menu_crm_source"
+              name="Nguồn khách hàng"
+              parent="menu_crm_config_parent"
+              action="action_crm_source"
+              sequence="10"/>
+    
+    <!-- Menu Báo cáo -->
+    <menuitem id="menu_crm_reports_parent"
+              name="Báo cáo"
+              parent="menu_crm_btl_root"
+              sequence="80"/>
+    
+    <menuitem id="menu_crm_customer_report"
+              name="Báo cáo khách hàng"
+              parent="menu_crm_reports_parent"
+              action="contacts.action_contacts"
+              sequence="10"/>
+    
+    <menuitem id="menu_crm_interaction_report"
+              name="Báo cáo tương tác"
+              parent="menu_crm_reports_parent"
+              action="action_crm_interaction"
+              sequence="20"/>
+    
+</odoo>
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="view_crm_source_tree" model="ir.ui.view">
+        <field name="name">crm.source.btl.tree</field>
+        <field name="model">crm.source.btl</field>
+        <field name="arch" type="xml">
+            <list string="Nguồn khách hàng">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="lead_count"/>
+                <field name="customer_count"/>
+                <field name="conversion_rate" widget="percentage"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+    
+    <record id="view_crm_source_form" model="ir.ui.view">
+        <field name="name">crm.source.btl.form</field>
+        <field name="model">crm.source.btl</field>
+        <field name="arch" type="xml">
+            <form string="Nguồn khách hàng">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="sequence"/>
+                        </group>
+                        <group>
+                            <field name="active"/>
+                            <field name="color" widget="color_picker"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Thống kê">
+                            <field name="lead_count"/>
+                            <field name="customer_count"/>
+                            <field name="conversion_rate" widget="percentage"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_crm_source" model="ir.actions.act_window">
+        <field name="name">Nguồn khách hàng</field>
+        <field name="res_model">crm.source.btl</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+</odoo>
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Extend Partner Form -->
+    <record id="view_partner_form_btl" model="ir.ui.view">
+        <field name="name">res.partner.form.btl</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            
+            <!-- Thêm buttons thống kê -->
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_interactions" type="object" class="oe_stat_button" icon="fa-history">
+                    <field name="interaction_count" widget="statinfo" string="Tương tác"/>
+                </button>
+                <button name="action_view_purchased_products" type="object" class="oe_stat_button" icon="fa-shopping-cart"
+                        attrs="{'invisible': [('customer_rank', '=', 0)]}">
+                    <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_text">Sản phẩm</span>
+                    </div>
+                </button>
+            </xpath>
+            
+            <!-- Thêm phân loại khách hàng -->
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="customer_type_btl" widget="badge"/>
+                <field name="source_btl_id"/>
+                <field name="rating" widget="priority"/>
+            </xpath>
+            
+            <!-- Thêm thông tin nhân viên phụ trách -->
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="employee_id"/>
+                <field name="employee_department" attrs="{'invisible': [('employee_id', '=', False)]}"/>
+            </xpath>
+            
+            <!-- Thêm tab Thông tin kinh doanh -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Thông tin kinh doanh" attrs="{'invisible': [('is_company', '=', False)]}">
+                    <group>
+                        <group>
+                            <field name="tax_code"/>
+                            <field name="company_size"/>
+                            <field name="industry_btl"/>
+                        </group>
+                        <group>
+                            <field name="website_url" widget="url"/>
+                        </group>
+                    </group>
+                </page>
+                
+                <page string="Nhân viên phụ trách">
+                    <group>
+                        <group string="Thông tin nhân viên">
+                            <field name="employee_id"/>
+                            <field name="employee_name"/>
+                            <field name="employee_phone"/>
+                            <field name="employee_email" widget="email"/>
+                            <field name="employee_department"/>
+                        </group>
+                    </group>
+                </page>
+                
+                <page string="Lịch sử tương tác">
+                    <group>
+                        <group string="Thống kê tương tác">
+                            <field name="interaction_count"/>
+                            <field name="last_interaction_date"/>
+                            <field name="total_calls"/>
+                            <field name="total_meetings"/>
+                        </group>
+                        <group string="Thống kê mua hàng">
+                            <field name="total_orders"/>
+                            <field name="total_purchased" widget="monetary"/>
+                            <field name="average_order_value" widget="monetary"/>
+                            <field name="last_order_date"/>
+                        </group>
+                    </group>
+                    <field name="interaction_ids">
+                        <list>
+                            <field name="date"/>
+                            <field name="interaction_type_id"/>
+                            <field name="title"/>
+                            <field name="user_id"/>
+                            <field name="outcome"/>
+                            <field name="state"/>
+                        </list>
+                    </field>
+                </page>
+                
+                <page string="Sản phẩm đã mua" attrs="{'invisible': [('customer_rank', '=', 0)]}">
+                    <field name="purchased_product_ids">
+                        <list>
+                            <field name="name"/>
+                            <field name="categ_id"/>
+                            <field name="list_price"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+            
+            <!-- Thêm ghi chú đặc biệt -->
+            <xpath expr="//field[@name='comment']" position="after">
+                <field name="customer_notes" placeholder="Ghi chú đặc biệt về khách hàng..."/>
+            </xpath>
+            
+        </field>
+    </record>
+    
+    <!-- Extend Partner Tree -->
+    <record id="view_partner_tree_btl" model="ir.ui.view">
+        <field name="name">res.partner.tree.btl</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='phone']" position="after">
+                <field name="customer_type_btl" optional="show"/>
+                <field name="source_btl_id" optional="hide"/>
+                <field name="total_purchased" optional="hide" widget="monetary"/>
+            </xpath>
+        </field>
+    </record>
+    
+</odoo>
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Extend Sale Order Form -->
+    <record id="view_sale_order_form_btl" model="ir.ui.view">
+        <field name="name">sale.order.form.btl</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            
+            <!-- Thêm button xem tương tác -->
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_interactions" type="object" class="oe_stat_button" icon="fa-history"
+                        attrs="{'invisible': [('interaction_count', '=', 0)]}">
+                    <field name="interaction_count" widget="statinfo" string="Tương tác"/>
+                </button>
+            </xpath>
+            
+        </field>
+    </record>
+    
+</odoo>

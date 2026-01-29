@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hr_attendance_rule_tree" model="ir.ui.view">
+        <field name="name">hr.attendance.rule.tree</field>
+        <field name="model">hr.attendance.rule</field>
+        <field name="arch" type="xml">
+            <list string="Quy định chấm công">
+                <field name="name"/>
+                <field name="work_time_start" widget="float_time"/>
+                <field name="work_time_end" widget="float_time"/>
+                <field name="late_tolerance_minutes"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+    
+    <record id="view_hr_attendance_rule_form" model="ir.ui.view">
+        <field name="name">hr.attendance.rule.form</field>
+        <field name="model">hr.attendance.rule</field>
+        <field name="arch" type="xml">
+            <form string="Quy định chấm công">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="active"/>
+                    </group>
+                    <group>
+                        <group string="Giờ làm việc">
+                            <field name="work_time_start" widget="float_time"/>
+                            <field name="work_time_end" widget="float_time"/>
+                            <field name="lunch_break_start" widget="float_time"/>
+                            <field name="lunch_break_end" widget="float_time"/>
+                        </group>
+                        <group string="Dung sai">
+                            <field name="late_tolerance_minutes"/>
+                            <field name="early_leave_tolerance_minutes"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Trừ công">
+                            <field name="late_deduction_per_minute"/>
+                            <field name="early_deduction_per_minute"/>
+                            <field name="absent_deduction"/>
+                        </group>
+                        <group string="Phạt tiền">
+                            <field name="late_fine_per_time"/>
+                            <field name="early_fine_per_time"/>
+                            <field name="absent_fine_per_day"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Thưởng chuyên cần">
+                            <field name="perfect_attendance_bonus"/>
+                            <field name="perfect_attendance_days_required"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_hr_attendance_rule" model="ir.actions.act_window">
+        <field name="name">Quy định chấm công</field>
+        <field name="res_model">hr.attendance.rule</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

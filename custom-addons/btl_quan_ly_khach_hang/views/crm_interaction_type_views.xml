@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="view_crm_interaction_type_tree" model="ir.ui.view">
+        <field name="name">crm.interaction.type.tree</field>
+        <field name="model">crm.interaction.type</field>
+        <field name="arch" type="xml">
+            <list string="Loại tương tác">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="icon"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+    
+    <record id="view_crm_interaction_type_form" model="ir.ui.view">
+        <field name="name">crm.interaction.type.form</field>
+        <field name="model">crm.interaction.type</field>
+        <field name="arch" type="xml">
+            <form string="Loại tương tác">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="sequence"/>
+                        </group>
+                        <group>
+                            <field name="icon"/>
+                            <field name="color" widget="color_picker"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_crm_interaction_type" model="ir.actions.act_window">
+        <field name="name">Loại tương tác</field>
+        <field name="res_model">crm.interaction.type</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    
+</odoo>

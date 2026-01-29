@@ -1,0 +1,586 @@
+id,title,project,stage,state,customer,start_date,deadline,assignees,priority,tags,description,parent_task
+1,Furnitures,Renovations,In Progress (Renovations),In Progress,Wood Corner,21/03/2025,15/05/2025,Gabriel Schenk,Low priority,"Client, Development","Dự án: Renovations
+Tên tác vụ: Furnitures
+Mức độ ưu tiên: Low priority
+Mô tả: Lựa chọn và chuẩn bị các loại nội thất phù hợp cho không gian được cải tạo, đảm bảo phong cách, chất lượng và ngân sách phù hợp với yêu cầu dự án. Hoàn thành công việc này trong khoảng thời gian cho phép để hỗ trợ giai đoạn hoàn thiện cuối cùng của dự án.",Client Meeting - 17
+2,Painting,Home Construction,New (Home Construction),Done,Azure Interior,03/02/2026,11/03/2026,"Emma Duncan, Joshua Quinn",Urgent,Review,Must coordinate with electrical team,Demolition - Subtask 53
+3,Drywall Installation,Home Construction,New (Home Construction),Cancelled,"Lumber Inc, ASUSTeK",10/01/2026,21/01/2026,"Brittany Andrews, Samuel Jenkins",Medium priority,"Testing, Client, Design","Project: Home Construction
+Task: Drywall Installation
+Priority: Medium
+Description: Tiến hành lắp đặt tấm drywall theo bản vẽ kỹ thuật, đảm bảo các bức tường được lắp chặt khít và thẳng hàng với các khung kết cấu. Hoàn thiện việc tape và putty trên các mối nối drywall để chuẩn bị cho sơn và hoàn thiện bề mặt cuối cùng.",Bug Fixing - Subtask 83
+4,Upselling Opportunity,Sales Pipeline,Lost (Sales),Cancelled,"The Jackson Group, Brandon Freeman",14/01/2026,16/02/2026,Maryse Philippe,High priority,Budget,Custom requirements discussed,Demolition - Subtask 80
+5,Flooring Upgrade,Renovations,In Progress (Renovations),In Progress,"Bright Solutions, China Export",15/01/2026,02/02/2026,"Horst Schäfer, Naman Subramanian",Urgent,"Testing, Work",Must be done <b>before</b> plumbing,Drywall Installation - Subtask 72
+6,Workflow Setup,ERP Implementation,Deployment (ERP),In Progress,"ASUSTeK, Azure Interior",16/02/2026,18/03/2026,Clara Morales,High priority,Training,User acceptance pending,Bug Fixing - Subtask 67
+7,Partnership Discussion,Sales Pipeline,Lead (Sales),Changes Requested,"The Jackson Group, Bright Solutions",22/10/2025,13/11/2025,Lois Bosman,High priority,Interior,Custom requirements discussed,Reference Check - 52
+8,Lighting Fixtures,Renovations,Done (Renovations),Done,Camptocamp,21/04/2025,07/05/2025,Ume Kondo,Medium priority,Development,Material samples pending,Permit Approval - 18
+9,Final Approval,Sales Pipeline,Lost (Sales),Cancelled,Lumber Inc,10/01/2026,21/01/2026,Hae-young Yoon,Urgent,"Training, Meeting, Review",Custom requirements discussed,Subcontractor Coordination - 86
+10,Electrical Wiring,Home Construction,Cancelled (Home Construction),Changes Requested,Delta PC,06/01/2026,06/02/2026,Lara Bieri,High priority,Budget,"Project: Home Construction
+Task: Electrical Wiring
+Priority: High priority
+
+Description: Thực hiện lắp đặt hệ thống dây điện, ống dẫn, và các thiết bị điện theo thiết kế kỹ thuật và tiêu chuẩn an toàn. Đảm bảo toàn bộ công việc được hoàn thành đúng quy chuẩn, an toàn điện và đáp ứng các yêu cầu của dự án xây dựng nhà ở.",Demolition - Subtask 14
+11,Workflow Setup,ERP Implementation,Deployment (ERP),Waiting,Azure Interior,10/01/2026,09/02/2026,Johanna Weiß,High priority,Development,"Task: Workflow Setup
+Project: ERP Implementation
+Priority: High Priority
+
+Description (Vietnamese):
+Thiết lập và cấu hình các quy trình làm việc trong hệ thống ERP để đảm bảo các hoạt động kinh doanh chạy hiệu quả. Xác định các bước quy trình, quyền hạn phê duyệt và điều kiện chuyển tiếp để tối ưu hóa dòng công việc tổ chức.",Safety Compliance - 63
+12,Flooring,Home Construction,Done (Home Construction),On Hold,Lumber Inc,13/02/2026,13/03/2026,Roberta Ruggiero,Urgent,"Planning, Testing, Support","
+Task: Flooring
+Project: Home Construction
+Priority: Urgent
+Description: Hoàn thành lắp đặt sàn nhà bao gồm chuẩn bị nền, chọn vật liệu sàn phù hợp và thi công theo đúng tiêu chuẩn kỹ thuật. Đảm bảo chất lượng bề mặt sàn phẳng, bền và đáp ứng yêu cầu thẩm mỹ của dự án trong thời gian soonest possible.
+",Flooring Upgrade - Subtask 56
+13,System Analysis,ERP Implementation,Deployment (ERP),Done,Think Big Systems,07/01/2026,19/01/2026,Gabriel Schenk,Low priority,"Meeting, Development",Integration complexity high,User Training - 97
+14,Kitchen Renovations,Renovations,In Progress (Renovations),In Progress,Wood Corner,05/03/2026,19/03/2026,"Jasmine Powell, Connor Boyd",Medium priority,"Support, Meeting, Design",The customer did not choose the colour yet,Roof Installation - 45
+15,Security Audit,ERP Implementation,Deployment (ERP),Waiting,"Deco Addict, Camptocamp",20/02/2026,27/02/2026,"Ronald Manning, Leonard Schubert",Low priority,"Documentation, Interior",Critical for Q1 launch,
+16,Partnership Discussion,Sales Pipeline,Qualified (Sales),Cancelled,Gemini Furniture,13/02/2026,03/03/2026,Roberta Ruggiero,Low priority,"Work, Support, Review",Multiple stakeholders involved,Final Touches - 18
+17,Client Walkthrough,Home Construction,Cancelled (Home Construction),On Hold,"Ready Mat, Deco Addict",02/12/2025,24/01/2026,Beatrice Wyss,Urgent,Documentation,Must coordinate with electrical team,
+18,Door Installation,Renovations,In Progress (Renovations),Cancelled,ASUSTeK,24/06/2025,17/07/2025,"Jean Coppens, Wei Lin Mak",Medium priority,"Planning, Work, Interior","
+Project: Renovations
+Task: Door Installation
+Priority: Medium
+Description: Lắp đặt các cửa ra vào mới theo thiết kế kiến trúc, đảm bảo đúng kích thước, định vị chính xác và hoàn thiện các chi tiết kết nối. Hoàn thành công việc với chất lượng cao, kiểm tra độ khít kín và độ mượt mà của cánh cửa trước khi bàn giao.
+",Partnership Discussion - 37
+19,Subcontractor Coordination,Home Construction,In Progress (Home Construction),Done,"Agrolait, ASUSTeK",14/02/2026,07/03/2026,Guizhen Yu,Medium priority,"Support, Design","Dự án: Home Construction
+Nhiệm vụ: Subcontractor Coordination
+Ưu tiên: Medium priority
+
+Mô tả: Điều phối và giám sát các nhà thầu phụ để đảm bảo tiến độ công việc, chất lượng thực hiện, và tuân thủ các thỏa thuận hợp đồng trong dự án xây dựng nhà. Quản lý lịch trình làm việc, giao tiếp hiệu quả, và giải quyết các vấn đề phát sinh để đảm bảo dự án hoàn thành đúng tiến độ và ngân sách.",
+20,ROI Presentation,Sales Pipeline,Qualified (Sales),In Progress,"Ready Mat, Delta PC",27/08/2025,14/09/2025,Nadzieja Sobczyk,High priority,"Testing, Client",Timeline is aggressive,Material Selection - 77
+21,Landscaping,Home Construction,Done (Home Construction),Approved,"Bright Solutions, The Jackson Group",07/04/2025,21/05/2025,Willow Gibson,Medium priority,"Training, Testing","Project: Home Construction
+Task: Landscaping
+Priority: Medium
+Description: Thiết kế và thực hiện công việc cảnh quan bao gồm trồng cây, cỏ, trang trí sân vườn để tạo môi trường xanh và thẩm mỹ cho khu vực xung quanh ngôi nhà. Hoàn thành các công việc chuẩn bị địa hình, lắp đặt hệ thống tưới nước và đảm bảo chất lượng theo tiêu chuẩn dự án.",Requirement Gathering - Subtask 32
+22,Competitor Analysis - 97,Sales Pipeline,Qualified (Sales),Waiting,"Ready Mat, Camptocamp",08/02/2026,01/03/2026,"Roberta Ruggiero, Amit Rajagopalan",High priority,Urgent,Budget approval pending,Reference Check - 70
+23,Door Installation - 54,Renovations,Done (Renovations),Changes Requested,Azure Interior,29/01/2026,02/03/2026,Vanessa Jiménez,Low priority,"Documentation, Meeting",The customer did not choose the colour yet,Kitchen Renovations - 78
+24,User Training - 97,ERP Implementation,Planning (ERP),On Hold,Think Big Systems,23/02/2025,22/04/2025,"Long Hồ, Vinícius Farias",Urgent,"Interior, Documentation",Performance benchmarks required,Permit Application - Subtask 35
+25,Electrical Wiring - 91,Home Construction,Cancelled (Home Construction),Done,China Export,01/02/2026,27/02/2026,Jenny Vikman,Low priority,Work,Foundation needs to be completed before winter,Post Go-Live Support - Subtask 5
+26,Workflow Setup - 66,ERP Implementation,Deployment (ERP),Approved,"Deco Addict, Delta PC",02/11/2025,12/12/2025,"Hilde Koch, Vicente Prieto",High priority,"Budget, Review, Work",Performance benchmarks required,Design Consultation - 32
+27,Kitchen Renovations - 78,Renovations,Review (Renovations),Cancelled,"Ready Mat, ASUSTeK",25/12/2025,19/01/2026,Emma Käser,Medium priority,"Interior, Training","Tên: Kitchen Renovations - 78
+Dự án: Renovations
+Độ ưu tiên: Medium priority
+Mô tả: Thực hiện các công việc cải tạo và nâng cấp nhà bếp theo tiêu chuẩn thiết kế hiện đại, bao gồm cập nhật thiết bị, vật liệu hoàn thiện và bố trí không gian. Đảm bảo hoàn thành công việc đúng tiến độ và đạt yêu cầu chất lượng cao.",
+28,Tile Work - 8,Renovations,Done (Renovations),Changes Requested,The Jackson Group,10/10/2025,08/11/2025,"Dũng Trịnh, Chie Miyamoto",Low priority,"Documentation, Budget",The customer did not choose the colour yet,Design Consultation - 70
+29,Material Procurement - 90,Home Construction,New (Home Construction),Changes Requested,Deco Addict,26/12/2025,14/01/2026,"Jürgen Voigt, Alejandro Domínguez",Urgent,"Documentation, Budget, Development",Waiting for material delivery,Post Go-Live Support - Subtask 92
+30,Client Meeting - 17,Sales Pipeline,Proposal (Sales),In Progress,"China Export, ASUSTeK",07/10/2025,14/11/2025,Isaac Sequeira,Medium priority,Meeting,Budget approval pending,Reference Check - Subtask 60
+31,Design Consultation - 32,Renovations,Done (Renovations),Waiting,Think Big Systems,07/01/2026,19/01/2026,Celina Anand,Urgent,Interior,Budget adjustment required,Go-Live Planning - Subtask 7
+32,Subcontractor Coordination - 86,Home Construction,Cancelled (Home Construction),Changes Requested,"Azure Interior, China Export",13/02/2026,13/03/2026,"Peter Schulte, Matthew Bishop",Urgent,"Design, Interior",Client requested changes to the original plan,Report Customization - Subtask 6
+33,Exterior Finishing - 2,Home Construction,New (Home Construction),On Hold,"China Export, Agrolait",05/03/2026,24/03/2026,"Elina Engberg, Joshua Quinn",Low priority,"Development, Client","Dự án: Home Construction
+Nhiệm vụ: Exterior Finishing - 2
+Mức ưu tiên: Low priority
+Mô tả: Hoàn thiện các chi tiết ngoại thất bao gồm sơn tường, lắp đặt mái chức năng và xử lý các khe hở nhằm đảm bảo bền vững trước yếu tố thời tiết. Kiểm tra và điều chỉnh các phần tử ngoài cùng để đạt tiêu chuẩn chất lượng và tính thẩm mỹ của công trình.",
+34,Permit Approval - 88,Home Construction,New (Home Construction),Approved,China Export,07/02/2026,27/02/2026,"Carina Lundström, Elia Furrer",Urgent,"Development, Review, Design",Waiting for material delivery,Data Migration - 48
+35,Permit Application - 63,Renovations,New (Renovations),Approved,Gemini Furniture,16/02/2026,08/03/2026,Gabriel Schenk,Low priority,"Work, Design, Support","Task: Permit Application - 63
+Project: Renovations
+Priority: Low priority
+Description: Xử lý hồ sơ xin phép số 63 cho dự án Renovations, bao gồm các yêu cầu cấp phép và thủ tục hành chính liên quan. Đảm bảo tất cả các tài liệu cần thiết được hoàn thành và nộp đúng hạn theo quy định.",Permit Approval - 72
+36,User Training - 99,ERP Implementation,Testing (ERP),Waiting,Deco Addict,17/02/2025,17/03/2025,"Louise Newton, Rika Kawasaki",Medium priority,"Development, Review, Meeting",User acceptance pending,System Analysis
+37,Window Replacement - 65,Renovations,New (Renovations),On Hold,Azure Interior,19/01/2026,04/02/2026,"Messias Pinheiro, Jean Coppens",High priority,Review,"Dự án: Renovations
+Tác vụ: Window Replacement - 65
+Ưu tiên: High priority
+
+Mô tả: Thay thế cửa sổ số 65 theo tiêu chuẩn chất lượng cao với các vật liệu bền vững và hiệu năng năng lượng tối ưu. Hoàn thành công việc trong thời hạn quy định để đảm bảo tiến độ dự án cải tạo toàn bộ.",Permit Application - Subtask 59
+38,Final Touches - 18,Renovations,New (Renovations),Approved,"China Export, Brandon Freeman",21/02/2026,24/03/2026,Morgan Nichols,Low priority,"Work, Urgent, Design","Tên dự án: Renovations
+Tên nhiệm vụ: Final Touches - 18
+Mức độ ưu tiên: Thấp
+Mô tả: Hoàn thành các chi tiết cuối cùng để đảm bảo chất lượng và sự hài lòng của khách hàng. Kiểm tra kỹ lưỡng toàn bộ công trình và điều chỉnh những khuyết điểm nhỏ nếu cần thiết.",ROI Presentation
+39,Safety Compliance - 63,Home Construction,In Progress (Home Construction),Done,"ASUSTeK, Gemini Furniture",20/08/2025,08/09/2025,Cheng Tang,Low priority,"Support, Documentation, Testing","Task ID: Safety Compliance - 63
+Project: Home Construction
+Priority: Low priority
+
+Description:
+Kiểm tra và đảm bảo tuân thủ các tiêu chuẩn an toàn xây dựng hiện hành tại công trình, bao gồm kiểm định các thiết bị bảo vệ và điều kiện làm việc an toàn. Thực hiện báo cáo chi tiết về tình trạng tuân thủ an toàn để lưu giữ hồ sơ dự án.",Drywall Installation - 34
+40,Requirement Analysis - 99,Sales Pipeline,Won (Sales),Cancelled,Ready Mat,19/12/2025,20/01/2026,"Ryan Wallace, Lorena Dias",Urgent,"Development, Planning",High priority client - CEO involvement,
+41,Workflow Setup - 27,ERP Implementation,Planning (ERP),Cancelled,"Camptocamp, Wood Corner",24/11/2025,26/12/2025,"Morgan Nichols, Đào Đỗ",Urgent,"Budget, Interior",Critical for Q1 launch,Access Control Setup - Subtask 64
+42,HVAC Installation - 6,Home Construction,In Progress (Home Construction),Waiting,Think Big Systems,05/01/2026,23/01/2026,"Ella Stone, Yiran Bai",Urgent,"Testing, Support, Work",Client requested changes to the original plan,Bathroom Fixtures - 66
+43,Material Selection - 77,Renovations,New (Renovations),Waiting,"Delta PC, Gemini Furniture",01/11/2025,19/11/2025,Robert Ekström,Urgent,"Support, Design","Task: Material Selection - 77
+Project: Renovations
+Priority: Urgent
+
+Description: Tiến hành lựa chọn và đánh giá các vật liệu phù hợp cho giai đoạn thi công 77 của dự án Renovations nhằm đảm bảo chất lượng và tiến độ công trình. Hoàn thành việc xác định các nhà cung cấp và thực hiện đặt hàng vật liệu trong thời gian sớm nhất để không ảnh hưởng đến lịch trình dự án.",
+44,Final Inspection - 78,Home Construction,Cancelled (Home Construction),Waiting,Azure Interior,11/01/2026,10/02/2026,Hyun-jung Cho,Low priority,Client,Foundation needs to be completed before winter,Kitchen Cabinets - Subtask 47
+45,Performance Testing - 6,ERP Implementation,Testing (ERP),On Hold,Lumber Inc,05/01/2026,01/02/2026,Louise Newton,Urgent,"Meeting, Work, Client","Task ID: Performance Testing - 6
+Project: ERP Implementation
+Priority: Urgent
+Description: Thực hiện kiểm tra hiệu suất hệ thống ERP với tải lượng giao dịch cao để đảm bảo tính ổn định và đáp ứng các yêu cầu về thời gian phản hồi. Xác định và ghi nhận các điểm tắc nghẽn trong hiệu năng để tối ưu hóa trước khi triển khai chính thức.",Material Selection - 77
+46,Roof Installation - 45,Home Construction,New (Home Construction),On Hold,Brandon Freeman,07/03/2026,24/03/2026,Rizwan Wu,Medium priority,"Review, Support","Dự án: Home Construction
+Nhiệm vụ: Roof Installation - 45
+Mức độ ưu tiên: Medium priority
+Mô tả: Lắp đặt hệ thống mái che cho công trình với các tiêu chuẩn kỹ thuật và an toàn xây dựng. Đảm bảo hoàn thành đúng tiến độ theo kế hoạch dự án.",Kitchen Renovations
+47,Module Configuration - 79,ERP Implementation,Planning (ERP),Cancelled,The Jackson Group,14/02/2026,16/03/2026,"Elsa David, Elina Engberg",Low priority,"Interior, Development, Review",Data cleanup in progress,User Training - 99
+48,Renewal Discussion - 39,Sales Pipeline,Lost (Sales),Waiting,Ready Mat,10/03/2026,17/03/2026,"Wei Lin Mak, Isaac Sequeira",Low priority,"Client, Testing",Budget approval pending,Flooring
+49,Permit Approval - 18,Home Construction,Done (Home Construction),On Hold,Ready Mat,25/01/2026,11/02/2026,"Sienna Foster, Elsa David",Low priority,"Urgent, Client, Interior",Client requested changes to the original plan,Flooring
+50,Final Touches - 24,Renovations,In Progress (Renovations),Approved,Brandon Freeman,02/06/2025,19/06/2025,Jenny Vikman,Low priority,"Testing, Design, Client",Material samples pending,
+51,Landscaping - 89,Home Construction,Cancelled (Home Construction),In Progress,The Jackson Group,22/02/2026,16/03/2026,"Raphaël Gerard, Mathilde Jacquet",Urgent,Support,"Task: Landscaping - 89
+Project: Home Construction
+Priority: Urgent
+
+Description: Hoàn thành công việc chuẩn bị và thiết kế cảnh quan cho khu vực ngoài trời của dự án, bao gồm trồng cây, lắp đặt hệ thống tưới nước và sắp xếp các yếu tố trang trí theo kế hoạch đã phê duyệt. Cần ưu tiên hoàn thành công đoạn này để đảm bảo tiến độ chung của dự án Home Construction.",Performance Testing - Subtask 11
+52,Cabinet Installation - 7,Renovations,New (Renovations),Cancelled,Azure Interior,18/12/2025,17/01/2026,Sienna Foster,Medium priority,Review,Material samples pending,Renewal Discussion - Subtask 100
+53,Contract Negotiation - 76,Sales Pipeline,Won (Sales),In Progress,Wood Corner,11/10/2025,23/11/2025,Morgan Nichols,Low priority,"Training, Documentation",Competitive bid situation,Final Approval
+54,Workflow Setup - 60,ERP Implementation,Planning (ERP),On Hold,Lumber Inc,03/08/2025,01/09/2025,Marc Moreno,Low priority,"Testing, Review",Critical for Q1 launch,Flooring
+55,Security Audit - 51,ERP Implementation,Deployment (ERP),On Hold,Azure Interior,02/01/2026,04/02/2026,Gabriel Manning,Low priority,"Budget, Meeting",Critical for Q1 launch,User Training - 99
+56,Reference Check - 34,Sales Pipeline,Won (Sales),Done,Delta PC,13/01/2026,13/02/2026,"Monika Bose, Felix Nygren",Medium priority,"Documentation, Development","Task: Reference Check - 34
+Project: Sales Pipeline
+Priority: Medium
+
+Mô tả công việc:
+Tiến hành kiểm tra và xác minh các tài liệu tham chiếu từ khách hàng tiềm năng nhằm đảm bảo tính xác thực và đáp ứng các tiêu chuẩn chất lượng của dự án Sales Pipeline. Hoàn thành việc xác nhận thông tin và cập nhật trạng thái trong hệ thống quản lý bán hàng để hỗ trợ quy trình bán hàng tiếp theo.",Workflow Setup - 27
+57,Data Migration - 48,ERP Implementation,Testing (ERP),Done,"Bright Solutions, Lumber Inc",26/02/2026,10/03/2026,"Valentijn Vos, Douwe Pieters",High priority,Documentation,User acceptance pending,System Analysis - 56
+58,Plumbing - 72,Renovations,New (Renovations),Done,Bright Solutions,08/11/2025,03/01/2026,"Yuma Yoshimura, Yusuke Shimada",Medium priority,"Support, Client",Customer requests a new meeting,Module Configuration - 79
+59,System Analysis - 38,ERP Implementation,Closed (ERP),Changes Requested,"Lumber Inc, The Jackson Group",05/03/2025,22/03/2025,Marc Moreno,High priority,Interior,Data cleanup in progress,Subcontractor Coordination - Subtask 69
+60,Bug Fixing - 46,ERP Implementation,Planning (ERP),Changes Requested,Delta PC,05/06/2025,01/07/2025,Hùng Tạ,Medium priority,Development,Dependencies on vendor API,Product Demo - Subtask 1
+61,System Analysis - 56,ERP Implementation,Planning (ERP),On Hold,Brandon Freeman,30/01/2026,02/03/2026,"Ronald Manning, Daniel Dixon",Medium priority,"Training, Testing, Planning",Dependencies on vendor API,
+62,Requirement Analysis - 48,Sales Pipeline,Qualified (Sales),Done,ASUSTeK,15/12/2025,05/02/2026,Herta Winkler,Medium priority,"Documentation, Review, Design",Competitive bid situation,Plumbing - 72
+63,Integration Testing - 96,ERP Implementation,Closed (ERP),Done,"Lumber Inc, Azure Interior",31/01/2026,08/02/2026,Akihiro Matsuo,High priority,Testing,Integration complexity high,Electrical Wiring - 91
+64,Drywall Installation - 76,Home Construction,Cancelled (Home Construction),On Hold,Gemini Furniture,02/02/2026,17/02/2026,"Herta Winkler, Long Hồ",Medium priority,"Support, Budget, Client",Foundation needs to be completed before winter,User Training - 84
+65,Permit Approval - 72,Home Construction,New (Home Construction),In Progress,Lumber Inc,04/01/2026,22/01/2026,Gabriela Urbański,High priority,"Development, Review",Building code compliance required,UAT Preparation - Subtask 49
+66,Final Touches - 99,Renovations,In Progress (Renovations),In Progress,"Wood Corner, Bright Solutions",18/03/2025,05/04/2025,Kai Wen Shen,Urgent,Design,Design needs final approval,Lead Qualification - Subtask 31
+67,Drywall Installation - 77,Home Construction,Cancelled (Home Construction),Waiting,"Ready Mat, Gemini Furniture",07/08/2025,06/09/2025,Wanting Liang,Low priority,Interior,Requires specialized equipment,
+68,Reference Check - 52,Sales Pipeline,Qualified (Sales),Changes Requested,"Azure Interior, ASUSTeK",23/02/2026,19/03/2026,"Nico Hoffmann, Ivan Bühler",Low priority,"Design, Client",Custom requirements discussed,
+69,Foundation Work - 69,Home Construction,Cancelled (Home Construction),Done,"China Export, Camptocamp",17/02/2026,28/02/2026,Georg Malmström,Medium priority,"Interior, Development","Dự án: Home Construction
+Tác vụ: Foundation Work - 69
+Độ ưu tiên: Medium priority
+
+Mô tả: Thực hiện các công việc chuẩn bị nền móng bao gồm đào móng, chuẩn bị lớp đệm và kiểm tra độ bằng phẳng theo tiêu chuẩn kỹ thuật xây dựng. Đảm bảo hoàn thành đúng tiến độ và chất lượng công trình để chuẩn bị cho giai đoạn xây dựng cột, dầm kế tiếp.",
+70,User Training - 84,ERP Implementation,Development (ERP),Approved,"Think Big Systems, The Jackson Group",20/02/2026,28/03/2026,Josh Hughes,Urgent,"Client, Review","
+Task ID: User Training - 84
+Project: ERP Implementation
+Priority: Urgent
+
+Description:
+Tập huấn người dùng cuối về các module chính của hệ thống ERP để đảm bảo quá trình triển khai suôn sẻ và tối ưu hóa sử dụng phần mềm. Hoàn thành khóa đào tạo trong thời gian sớm nhất có thể để giảm thiểu rủi ro về việc chậm trễ trong việc áp dụng hệ thống.
+",
+71,Exterior Finishing - 42,Home Construction,New (Home Construction),On Hold,"Azure Interior, Deco Addict",18/12/2025,22/01/2026,Kai Wen Shen,High priority,"Design, Interior, Work",Requires specialized equipment,
+72,Structural Changes - 7,Renovations,Review (Renovations),Changes Requested,Deco Addict,02/01/2026,30/01/2026,Sven Kühn,Low priority,"Testing, Review, Urgent",Must be done <b>before</b> plumbing,
+73,Client Meeting - 72,Sales Pipeline,Proposal (Sales),Changes Requested,Delta PC,20/02/2026,05/03/2026,"Paul Wolf, Giang Kha",Medium priority,"Development, Testing, Support",Competitive bid situation,Foundation Work - 69
+74,Feature Enhancement - 79,ERP Implementation,Planning (ERP),Waiting,"Deco Addict, Delta PC",13/01/2026,30/01/2026,Himari Miyashita,Low priority,"Interior, Review, Support",Dependencies on vendor API,
+75,Reference Check - 52,Sales Pipeline,Proposal (Sales),In Progress,"Lumber Inc, Deco Addict",27/02/2026,27/03/2026,"Massimo Pacifico, Valentijn Vos",Urgent,"Review, Budget",Competitive bid situation,Kitchen Cabinets - Subtask 21
+76,Product Demo - 17,Sales Pipeline,Lead (Sales),On Hold,"The Jackson Group, Agrolait",08/01/2026,11/02/2026,Minato Fujii,High priority,"Design, Meeting","Project: Sales Pipeline
+Task: Product Demo - 17
+Priority: High priority
+
+Description:
+Chuẩn bị và thực hiện bản demo sản phẩm cho khách hàng tiềm năng nhằm giới thiệu các tính năng chính và thuyết phục họ về giá trị của giải pháp. Đảm bảo rằng các tài liệu hỗ trợ, slide thuyết trình và các ví dụ thực tế được chuẩn bị đầy đủ để tạo ấn tượng chuyên nghiệp và thúc đẩy quá trình bán hàng.",Permit Application - 63
+77,Bathroom Fixtures - 39,Home Construction,Cancelled (Home Construction),Done,Camptocamp,22/01/2026,20/02/2026,Greetje Vermeulen,Medium priority,"Budget, Documentation",Client requested changes to the original plan,Roof Installation - Subtask 71
+78,Vendor Coordination - 29,ERP Implementation,Development (ERP),Waiting,"China Export, Bright Solutions",11/03/2026,23/03/2026,Raphaël Gerard,Low priority,"Support, Testing",Critical for Q1 launch,Feedback Collection - Subtask 87
+79,Electrical Wiring - 12,Home Construction,Done (Home Construction),Approved,"Deco Addict, Delta PC",22/02/2026,06/03/2026,"Szymon Tomaszewski, Roy Gagné",High priority,Documentation,Client requested changes to the original plan,Reference Check - 52
+80,Reference Check - 70,Sales Pipeline,Qualified (Sales),Done,Think Big Systems,20/02/2026,10/03/2026,"Klaartje Desmet, Daniel Dixon",High priority,"Budget, Meeting","Dự án: Sales Pipeline
+Tên nhiệm vụ: Reference Check - 70
+Mức độ ưu tiên: High priority
+Mô tả: Tiến hành kiểm tra các tài liệu tham khảo và xác minh thông tin của khách hàng tiềm năng trong quy trình bán hàng để đảm bảo độ tin cậy và chất lượng cao nhất. Hoàn thành kiểm tra tham khảo trong thời gian sớm nhất để hỗ trợ tiến độ dự án Sales Pipeline.",Material Selection - Subtask 90
+81,Final Inspection - 46,Home Construction,Cancelled (Home Construction),Changes Requested,Azure Interior,11/01/2026,15/02/2026,Hwan Samchong,Low priority,"Client, Support, Budget",Must coordinate with electrical team,Demolition - Subtask 53
+82,Demolition - 43,Renovations,New (Renovations),Approved,"Think Big Systems, Ready Mat",15/03/2026,25/03/2026,Zheng Xiong,Low priority,"Meeting, Design",The customer did not choose the colour yet,Vendor Coordination - 72
+83,Onboarding Setup - 52,Sales Pipeline,Lost (Sales),Changes Requested,Delta PC,06/06/2025,23/07/2025,Dina Janssen,High priority,"Work, Development, Review",Custom requirements discussed,
+84,Documentation - 15,ERP Implementation,Deployment (ERP),In Progress,Delta PC,17/09/2025,05/10/2025,Vania Medeiros,Low priority,"Development, Budget",Performance benchmarks required,Final Touches - 37
+85,Design Consultation - 70,Renovations,Review (Renovations),Done,"Bright Solutions, Camptocamp",10/02/2026,23/02/2026,"Sophia Rose, Klaartje Desmet",High priority,"Training, Budget",Material samples pending,Kitchen Renovations
+86,Plumbing - 5,Renovations,In Progress (Renovations),Changes Requested,Bright Solutions,01/01/2026,01/02/2026,Samuel Jenkins,Low priority,Documentation,Customer requests a new meeting,Door Installation - Subtask 38
+87,Wall Painting - 95,Renovations,Review (Renovations),On Hold,Bright Solutions,13/01/2026,23/01/2026,"Yuma Yoshimura, Jennifer Hunt",High priority,"Testing, Meeting, Review","Task: Wall Painting - 95
+Project: Renovations
+Priority: High priority
+
+Description: Hoàn thành công việc sơn tường theo tiêu chuẩn chất lượng cao để đảm bảo kết thúc dự án Cải tạo đúng thời hạn. Ưu tiên thực hiện với độ chính xác và tỉ mỉ trong từng chi tiết sơn để đạt hiệu quả thẩm mỹ tối ưu.",Reference Check - Subtask 60
+88,Final Approval - 67,Sales Pipeline,Qualified (Sales),Cancelled,Azure Interior,13/02/2026,16/03/2026,Nico Hoffmann,Urgent,Planning,"Task: Final Approval - 67
+Project: Sales Pipeline
+Priority: Urgent
+
+Description: Thực hiện phê duyệt cuối cùng cho giai đoạn bán hàng 67 nhằm hoàn tất quy trình và đẩy nhanh tiến độ dự án theo lịch biểu đã định. Cần xử lý ưu tiên cao để tránh trì hoãn các bước tiếp theo trong đường ống bán hàng.",
+89,Bathroom Fixtures - 66,Home Construction,Done (Home Construction),In Progress,"Wood Corner, Agrolait",22/01/2026,31/01/2026,Dennis Wilson,Low priority,Design,"Dự án: Home Construction
+Tác vụ: Bathroom Fixtures - 66
+Mức độ ưu tiên: Low priority
+Mô tả: Lựa chọn và cài đặt các thiết bị phòng tắm bao gồm vòi nước, bồn cầu, bồn rửa và các phụ kiện liên quan để hoàn thiện không gian vệ sinh. Đảm bảo tất cả các thiết bị đáp ứng tiêu chuẩn chất lượng và thẩm mỹ của dự án.",Report Customization - Subtask 6
+90,Vendor Coordination - 72,ERP Implementation,Development (ERP),On Hold,"Brandon Freeman, Wood Corner",24/12/2025,25/01/2026,"Max Engström, Rebecca Simon",High priority,"Meeting, Training",User acceptance pending,Report Customization - Subtask 19
+91,Partnership Discussion - 37,Sales Pipeline,Negotiation (Sales),Done,"Brandon Freeman, ASUSTeK",08/05/2025,15/06/2025,Ryan Wallace,Urgent,"Documentation, Interior","Task: Partnership Discussion - 37
+Project: Sales Pipeline
+Priority: Urgent
+
+Description: Cuộc thảo luận quan trọng với đối tác tiềm năng nhằm tìm hiểu nhu cầu kinh doanh và khám phá cơ hội hợp tác chiến lược để phát triển doanh số bán hàng. Cần hoàn thành các thỏa thuận ban đầu và lên kế hoạch cho bước tiếp theo trong quy trình đàm phán để đạt được mục tiêu hợp tác.",Partnership Discussion - 99
+92,Drywall Installation - 34,Home Construction,New (Home Construction),Cancelled,Brandon Freeman,18/01/2025,10/03/2025,Elsa David,High priority,"Interior, Budget",Building code compliance required,Cabinet Installation - Subtask 96
+93,Kitchen Renovations - 11,Renovations,Review (Renovations),In Progress,"Bright Solutions, Ready Mat",08/02/2026,11/03/2026,Finn Post,Low priority,"Interior, Support",Material samples pending,Go-Live Planning - Subtask 7
+94,Subcontractor Coordination - 15,Home Construction,New (Home Construction),Done,Deco Addict,28/02/2026,09/03/2026,"Klaartje Desmet, Oscar Singh",Low priority,"Support, Testing","Nhiệm vụ: Subcontractor Coordination - 15
+Dự án: Home Construction
+Mức độ ưu tiên: Low priority
+
+Mô tả: Phối hợp và quản lý các công việc của các nhà thầu phụ trong giai đoạn thi công nhà ở, đảm bảo tiến độ công việc diễn ra đúng kế hoạch và chất lượng đạt tiêu chuẩn yêu cầu. Liên lạc thường xuyên với các nhà thầu để giải quyết các vấn đề phát sinh và tối ưu hóa hiệu suất làm việc.",Account Review - Subtask 10
+95,Partnership Discussion - 99,Sales Pipeline,Won (Sales),On Hold,The Jackson Group,25/02/2026,20/03/2026,Austin Turner,Urgent,Work,"**Task:** Partnership Discussion - 99
+**Project:** Sales Pipeline
+**Priority:** Urgent
+**Description:** Thảo luận chiến lược hợp tác với đối tác chính nhằm mở rộng cơ hội kinh doanh và tăng doanh số bán hàng. Cần hoàn thành cuộc họp trong tuần này để đánh giá khả năng hợp tác và thỏa thuận điều khoản kinh doanh.
+
+**Translation:** Strategic partnership discussion with key partners to expand business opportunities and increase sales revenue. Meeting needs to be completed this week to assess collaboration potential and negotiate business terms.",Deal Closing - Subtask 16
+96,Client Walkthrough - 82,Home Construction,Done (Home Construction),In Progress,Think Big Systems,30/01/2026,18/02/2026,Emma Käser,Urgent,"Support, Interior, Meeting",Must coordinate with electrical team,Wall Painting - 95
+97,Final Touches - 37,Renovations,Review (Renovations),In Progress,Azure Interior,20/02/2026,28/02/2026,Lara Bieri,Urgent,"Testing, Client, Budget","
+Project: Renovations
+Task: Final Touches - 37
+Priority: Urgent
+Description: Hoàn thiện các chi tiết cuối cùng của dự án cải tạo, bao gồm kiểm tra chất lượng, dọn dẹp và đảm bảo tất cả các công việc đáp ứng tiêu chuẩn yêu cầu. Cần ưu tiên hoàn thành ngay để sẵn sàng cho bàn giao dự án.
+",
+98,Performance Testing - 21,ERP Implementation,Development (ERP),Changes Requested,Ready Mat,13/02/2026,19/03/2026,Jenny Vikman,Medium priority,Testing,Performance benchmarks required,
+99,Data Migration - 44,ERP Implementation,Planning (ERP),On Hold,"The Jackson Group, Bright Solutions",01/02/2026,02/03/2026,Charlotte Wenger,Medium priority,"Budget, Review, Support",Training materials needed,Pricing Discussion - Subtask 65
+100,Post Go-Live Support - 66,ERP Implementation,Testing (ERP),On Hold,Deco Addict,07/03/2026,26/03/2026,Tilde Haglund,High priority,Testing,"Task: Post Go-Live Support - 66
+Project: ERP Implementation
+Priority: High priority
+
+Task Description (Vietnamese):
+Cung cấp hỗ trợ sau khi triển khai hệ thống ERP, bao gồm giám sát hiệu suất, xử lý sự cố và hỗ trợ người dùng cuối. Đảm bảo tính ổn định và hiệu quả hoạt động của hệ thống trong giai đoạn quan trọng này.
+",Vendor Coordination - Subtask 41
+101,Product Demo - Subtask 1,Sales Pipeline,Lost (Sales),Done,"ASUSTeK, Ready Mat",21/02/2026,17/03/2026,"Xavier Tham, Yen Li Fong",Low priority,Meeting,"Task: Product Demo - Subtask 1
+Project: Sales Pipeline
+Priority: Low
+Description: Chuẩn bị các tài liệu và slides trình bày sản phẩm cho cuộc demo sắp tới. Đảm bảo tất cả các thông tin kỹ thuật và lợi ích sản phẩm được trình bày rõ ràng và chuyên nghiệp.",System Analysis - 38
+102,Design Consultation - Subtask 2,Renovations,In Progress (Renovations),Done,"Wood Corner, Azure Interior",11/02/2026,27/02/2026,Yuto Shimizu,Low priority,"Urgent, Budget","Task: Design Consultation - Subtask 2
+Project: Renovations
+Priority: Low priority
+Description: Tiến hành tham vấn và thu thập phản hồi từ các bên liên quan về thiết kế khu vực thứ hai của dự án cải tạo. Hoàn thành báo cáo tóm tắt các đề xuất thiết kế và khuyến nghị cải tiến để trình cho đội quản lý dự án.",Final Touches - 37
+103,Partnership Discussion - Subtask 3,Sales Pipeline,Proposal (Sales),Waiting,Deco Addict,29/12/2025,19/01/2026,"Ronald Manning, Erik Dekker",Low priority,"Testing, Work, Planning","Task: Partnership Discussion - Subtask 3
+Project: Sales Pipeline
+Priority: Low priority
+Description (Vietnamese): Tiến hành thảo luận chi tiết về các điều khoản hợp tác và lợi ích kinh tế với đối tác để định hình chiến lược phát triển kinh doanh dài hạn. Chuẩn bị tài liệu hỗ trợ và các đề xuất cụ thể nhằm hỗ trợ cho vòng đàm phán tiếp theo.",Flooring
+104,User Training - Subtask 4,ERP Implementation,Planning (ERP),On Hold,"Camptocamp, ASUSTeK",02/02/2025,25/02/2025,"Emma Duncan, Bình An",Low priority,"Training, Planning, Testing",Dependencies on vendor API,User Training - 97
+105,Post Go-Live Support - Subtask 5,ERP Implementation,Development (ERP),On Hold,"Wood Corner, Azure Interior",25/02/2026,23/03/2026,Su-bin Kang,Urgent,"Work, Testing",Data cleanup in progress,Reference Check - 52
+106,Report Customization - Subtask 6,ERP Implementation,Deployment (ERP),Changes Requested,Delta PC,13/02/2026,20/02/2026,"Jürgen Voigt, Yuma Yoshimura",Medium priority,"Development, Meeting",User acceptance pending,
+107,Go-Live Planning - Subtask 7,ERP Implementation,Deployment (ERP),Cancelled,"Brandon Freeman, Bright Solutions",17/01/2026,09/02/2026,"Emma Duncan, Marc Moreno",Urgent,Design,Performance benchmarks required,Lighting Fixtures - Subtask 77
+108,Account Review - Subtask 8,Sales Pipeline,Lost (Sales),Waiting,"China Export, The Jackson Group",02/01/2025,07/02/2025,Iwona Piwowarczyk,Low priority,Documentation,"Task: Account Review - Subtask 8
+Project: Sales Pipeline
+Priority: Low
+
+Description:
+Kiểm tra và xác nhận thông tin tài khoản khách hàng, bao gồm dữ liệu liên hệ và lịch sử giao dịch để đảm bảo tính chính xác và cập nhật. Hoàn thành nhiệm vụ này trong khuôn khổ quy trình quản lý tài khoản định kỳ của phòng Sales.",Data Migration - 44
+109,Change Management - Subtask 9,ERP Implementation,Planning (ERP),In Progress,Ready Mat,22/02/2026,06/03/2026,"Vinícius Farias, Xiuxiu Fang",Medium priority,"Review, Client, Support",Integration complexity high,Deal Closing - Subtask 16
+110,Account Review - Subtask 10,Sales Pipeline,Proposal (Sales),On Hold,"Wood Corner, Brandon Freeman",15/10/2025,12/12/2025,"Nadiah Kua, Simon Timmermans",Low priority,Support,Custom requirements discussed,
+111,Performance Testing - Subtask 11,ERP Implementation,Development (ERP),Approved,"Lumber Inc, Agrolait",20/01/2026,06/02/2026,Sienna Foster,High priority,Design,"Task: Performance Testing - Subtask 11
+Project: ERP Implementation
+Priority: High priority
+
+Description (Vietnamese):
+Tiến hành kiểm thử hiệu suất hệ thống ERP nhằm đảm bảo tính ổn định và tốc độ xử lý dữ liệu lớn dưới tải công việc cao. Xác định các điểm tắc nghẽn và đưa ra khuyến nghị tối ưu hóa để đáp ứng yêu cầu hiệu suất của doanh nghiệp.
+
+English Translation:
+Conduct performance testing of the ERP system to ensure stability and data processing speed under high workload conditions. Identify bottlenecks and provide optimization recommendations to meet business performance requirements.",Exterior Finishing - 2
+112,Flooring - Subtask 12,Home Construction,Cancelled (Home Construction),Changes Requested,Think Big Systems,18/02/2026,15/03/2026,"Gabriela Urbański, Sabine De Wit",High priority,"Review, Meeting","Task: Flooring - Subtask 12
+Project: Home Construction
+Priority: High priority
+Description: Thực hiện lắp đặt hoàn thiện sàn nhà, bao gồm việc kiểm tra chất lượng vật liệu và đảm bảo độ bằng phẳng theo tiêu chuẩn kỹ thuật xây dựng. Công việc này đòi hỏi sự chính xác cao và tuân thủ lịch trình thi công để đảm bảo tiến độ dự án.",Client Walkthrough - 82
+113,Roof Installation - Subtask 13,Home Construction,Done (Home Construction),Approved,Lumber Inc,20/02/2026,16/03/2026,Yusuke Shimada,Medium priority,"Work, Meeting",Foundation needs to be completed before winter,Tile Work - 8
+114,Demolition - Subtask 14,Renovations,Review (Renovations),Changes Requested,Lumber Inc,19/01/2026,16/02/2026,"Clara Morales, Lakshman Joshi",High priority,"Development, Support",Material samples pending,Final Touches - 99
+115,System Backup - Subtask 15,ERP Implementation,Development (ERP),Cancelled,"Azure Interior, The Jackson Group",03/04/2025,24/04/2025,"Valentijn Vos, Sara Martínez",Medium priority,"Budget, Support","Task: System Backup - Subtask 15
+Project: ERP Implementation
+Priority: Medium
+
+Description: Thực hiện sao lưu dữ liệu hệ thống theo lịch trình định kỳ và xác minh tính toàn vẹn của các bản sao lưu. Đảm bảo rằng tất cả các quy trình sao lưu tuân thủ các tiêu chuẩn bảo mật và khôi phục dữ liệu được thử nghiệm.",Lighting Fixtures - Subtask 77
+116,Deal Closing - Subtask 16,Sales Pipeline,Qualified (Sales),Changes Requested,Ready Mat,08/01/2026,10/02/2026,Raphaël Gerard,Urgent,"Planning, Training, Documentation",Timeline is aggressive,Onboarding Setup - 52
+117,Flooring - Subtask 17,Home Construction,In Progress (Home Construction),On Hold,"Camptocamp, Think Big Systems",27/02/2026,18/03/2026,"Zheng Xiong, Arnav More",Medium priority,Budget,Requires specialized equipment,Contract Negotiation - Subtask 97
+118,Plumbing - Subtask 18,Renovations,New (Renovations),On Hold,"Wood Corner, Camptocamp",06/03/2026,20/03/2026,Paul Wolf,Medium priority,Meeting,Customer requests a new meeting,Account Review - Subtask 33
+119,Report Customization - Subtask 19,ERP Implementation,Closed (ERP),Waiting,Brandon Freeman,03/03/2026,23/03/2026,Mariah Carlson,Urgent,Documentation,"Task: Report Customization - Subtask 19
+Project: ERP Implementation
+Priority: Urgent
+
+Description:
+Tùy chỉnh các báo cáo hệ thống theo yêu cầu đặc thù của khách hàng, bao gồm điều chỉnh định dạng, bộ lọc dữ liệu và các trường dữ liệu để đảm bảo đáp ứng đủ nhu cầu phân tích kinh doanh. Hoàn thành công việc này trước thời hạn đã định để hỗ trợ tiến độ tổng thể dự án triển khai ERP.",User Training - Subtask 4
+120,Material Procurement - Subtask 20,Home Construction,Done (Home Construction),Waiting,Camptocamp,01/02/2026,14/02/2026,Cheng Tang,Medium priority,Development,"Project: Home Construction
+Task: Material Procurement - Subtask 20
+Priority: Medium priority
+
+Description: Tiến hành mua sắm và đặt hàng các vật liệu xây dựng cần thiết cho giai đoạn tiếp theo của dự án, bao gồm kiểm tra chất lượng và đảm bảo giao hàng đúng thời hạn. Phối hợp với các nhà cung cấp để tối ưu hóa chi phí và đảm bảo tuân thủ các thông số kỹ thuật đã được phê duyệt.",Report Customization - Subtask 6
+121,Kitchen Cabinets - Subtask 21,Home Construction,In Progress (Home Construction),Waiting,Brandon Freeman,24/12/2025,24/01/2026,Rubén Ferrer,Urgent,Documentation,"Task: Kitchen Cabinets - Subtask 21
+Project: Home Construction
+Priority: Urgent
+Description: Hoàn thành lắp đặt các tủ bếp theo thiết kế chi tiết và đảm bảo all các kết nối điện, nước được kiểm tra an toàn trước khi chuyển giao. Yêu cầu kiểm tra chất lượng bề mặt, cửa tủ, và các phần cứng để đáp ứng tiêu chuẩn xây dựng.",Workflow Setup - 66
+122,Bathroom Fixtures - Subtask 22,Home Construction,Done (Home Construction),Approved,"Wood Corner, Lumber Inc",01/06/2025,20/06/2025,"Huimin Soh, Marion Ziegler",Low priority,"Support, Review",Requires specialized equipment,Demolition - Subtask 14
+123,Lead Qualification - Subtask 23,Sales Pipeline,Proposal (Sales),Changes Requested,Bright Solutions,20/02/2026,27/02/2026,Ryder Cooper,Low priority,"Training, Documentation, Budget","
+Task: Lead Qualification - Subtask 23
+Project: Sales Pipeline
+Priority: Low priority
+
+Description (Vietnamese):
+Đánh giá và phân loại các khách hàng tiềm năng dựa trên tiêu chí định trước để xác định mức độ sẵn sàng mua hàng. Hoàn thành các kiểm tra xác minh cần thiết và cập nhật trạng thái lead trong hệ thống CRM.
+
+(English translation for reference: Assess and classify potential customers based on predetermined criteria to determine purchase readiness. Complete necessary verification checks and update lead status in the CRM system.)
+",Workflow Setup - 60
+124,Final Approval - Subtask 24,Sales Pipeline,Proposal (Sales),Approved,Gemini Furniture,24/01/2026,02/02/2026,Ruth Robinson,High priority,Training,"Task Description for ""Final Approval - Subtask 24"":
+
+Dự án: Sales Pipeline
+Tên công việc: Final Approval - Subtask 24
+Độ ưu tiên: High priority
+
+Mô tả công việc:
+Thực hiện kiểm duyệt và phê duyệt cuối cùng cho các tài liệu và quy trình bán hàng nhằm đảm bảo tuân thủ tiêu chuẩn chất lượng và chính sách công ty trước khi triển khai đến khách hàng. Công việc này đòi hỏi sự chú ý tỉ mỉ đến chi tiết và phải được hoàn thành trong thời gian nhanh chóng do tính cấp bách của giai đoạn này.",Bathroom Fixtures - 39
+125,Cabinet Installation - Subtask 25,Renovations,New (Renovations),On Hold,Ready Mat,26/02/2026,11/03/2026,Hae-young Yoon,High priority,Work,"Task: Cabinet Installation - Subtask 25
+Project: Renovations
+Priority: High priority
+
+Description (Vietnamese):
+""Thực hiện lắp đặt tủ canh cuối cùng và kiểm tra toàn bộ hệ thống canh để đảm bảo chất lượng, độ chính xác về mặt bằng và an toàn theo tiêu chuẩn dự án. Hoàn tất các công việc hoàn thiện bề mặt và điều chỉnh cửa tủ để đạt tiêu chuẩn kỹ thuật yêu cầu.""
+
+Translation:
+""Complete the installation of the final cabinet unit and verify the entire cabinet system to ensure quality, level accuracy, and safety according to project standards. Finalize surface finishing and adjust cabinet doors to meet required technical specifications.""",Onboarding Setup - 52
+126,Roof Installation - Subtask 26,Home Construction,In Progress (Home Construction),Cancelled,"Delta PC, Camptocamp",26/10/2025,19/12/2025,"Ivan Bühler, Sung-hoon Pang",Urgent,"Work, Meeting","Task: Roof Installation - Subtask 26
+Project: Home Construction
+Priority: Urgent
+Description: Hoàn thành lắp đặt các tấm mái cuối cùng và kiểm tra chất lượng các mối nối để đảm bảo tính toàn vẹn của kết cấu mái nhà. Thực hiện các bước kiểm tra cuối cùng và sửa chữa bất kỳ khuyết tật nào trước khi chuyển sang giai đoạn tiếp theo của dự án.",
+127,Furnitures - Subtask 27,Renovations,In Progress (Renovations),Approved,Agrolait,26/02/2026,05/03/2026,"Gijs van der Berg, Sơn Tiêu",Urgent,"Review, Work, Interior","Tên công việc: Furnitures - Subtask 27
+Dự án: Renovations
+Mức độ ưu tiên: Urgent
+
+Mô tả công việc:
+Hoàn thành lựa chọn, mua sắm và kiểm tra chất lượng các loại nội thất cần thiết cho dự án sửa chữa nhằm đảm bảo đáp ứng tiêu chuẩn thiết kế và tiến độ dự án. Cần phối hợp với nhà cung cấp và đội thi công để đảm bảo giao hàng đúng thời hạn và lắp đặt chính xác theo yêu cầu kỹ thuật.",Subcontractor Coordination - Subtask 46
+128,Reference Check - Subtask 28,Sales Pipeline,Qualified (Sales),On Hold,"Gemini Furniture, China Export",19/01/2026,18/02/2026,Akihiro Matsuo,Low priority,Testing,The customer requests a new meeting to launch the second phase,Material Procurement - Subtask 98
+129,Requirement Analysis - Subtask 29,Sales Pipeline,Lead (Sales),In Progress,"Gemini Furniture, Lumber Inc",31/12/2025,30/01/2026,Bernd Haas,Urgent,"Development, Budget",The customer requests a new meeting to launch the second phase,Cabinet Installation - Subtask 96
+130,Bug Fixing - Subtask 30,ERP Implementation,Closed (ERP),Approved,"Lumber Inc, Brandon Freeman",25/02/2026,08/03/2026,Rika Kawasaki,Low priority,"Meeting, Interior","Task: Bug Fixing - Subtask 30
+Project: ERP Implementation
+Priority: Low priority
+
+Description:
+Xác định và khắc phục các lỗi nhỏ trong hệ thống ERP để đảm bảo tính ổn định và hiệu suất tối ưu của ứng dụng. Công việc này bao gồm kiểm tra, phân tích và triển khai các bản vá lỗi cần thiết.
+
+Task Details:
+- Task Type: Bug Fixing
+- Subtask Number: 30
+- Status: Open
+- Severity: Low
+- Estimated Effort: 2-4 hours",Electrical Wiring
+131,Lead Qualification - Subtask 31,Sales Pipeline,Won (Sales),Waiting,"Ready Mat, Bright Solutions",08/03/2026,27/03/2026,Brittany Andrews,High priority,Budget,Competitive bid situation,Access Control Setup - Subtask 64
+132,Requirement Gathering - Subtask 32,ERP Implementation,Closed (ERP),Approved,"Deco Addict, China Export",14/03/2026,27/03/2026,"Amy Smith, Thanh Nguyễn",Low priority,"Training, Development","Task Description for Requirement Gathering - Subtask 32:
+
+Tiến hành thu thập và phân tích các yêu cầu chi tiết từ các bộ phận liên quan để đảm bảo hệ thống ERP được triển khai đáp ứng đầy đủ nhu cầu kinh doanh. Ghi chép tài liệu các yêu cầu kỹ thuật và chức năng để phục vụ cho giai đoạn thiết kế và phát triển tiếp theo.
+
+Priority: Low Priority
+Project: ERP Implementation",Final Touches - 37
+133,Account Review - Subtask 33,Sales Pipeline,Qualified (Sales),Done,"Lumber Inc, China Export",03/09/2025,05/10/2025,"Lorena Dias, Sơn Tiêu",Medium priority,Work,Competitive bid situation,Performance Testing - Subtask 81
+134,Plumbing Setup - Subtask 34,Home Construction,New (Home Construction),Waiting,Azure Interior,12/02/2026,22/02/2026,"Nasir Leong, Gijs van der Berg",Urgent,Development,"Task: Plumbing Setup - Subtask 34
+Project: Home Construction
+Priority: Urgent
+
+Description:
+Tiến hành kiểm tra và lắp đặt các đường ống nước cấp và thoát nước theo thiết kế kỹ thuật đã được phê duyệt, đảm bảo tuân thủ các tiêu chuẩn xây dựng và an toàn. Hoàn thành công việc trong thời hạn quy định để tránh ảnh hưởng đến tiến độ thi công các hạng mục khác của dự án.",System Backup - Subtask 15
+135,Permit Application - Subtask 35,Renovations,Done (Renovations),Approved,"Ready Mat, Think Big Systems",05/02/2026,13/02/2026,"Greetje Vermeulen, Wout Rousseau",High priority,Testing,"Task: Permit Application - Subtask 35
+Project: Renovations
+Priority: High Priority
+
+Description: Hoàn thành các yêu cầu giấy phép cuối cùng và gửi đơn xin cấp phép chính thức cho cơ quan có thẩm quyền để đảm bảo tuân thủ quy định xây dựng. Xác minh tất cả tài liệu đính kèm đúng đắn và đầy đủ trước khi nộp để tránh trễ trong quá trình phê duyệt.",Final Approval
+136,Proposal Preparation - Subtask 36,Sales Pipeline,Won (Sales),On Hold,"Think Big Systems, Agrolait",07/01/2026,20/01/2026,"Emma Käser, Charlotte Wenger",Medium priority,Work,"Task: Proposal Preparation - Subtask 36
+Project: Sales Pipeline
+Priority: Medium
+
+Description (Vietnamese):
+Chuẩn bị các tài liệu và nội dung đề xuất chi tiết, bao gồm định giá, điều khoản dịch vụ và lịch triển khai để gửi cho khách hàng tiềm năng. Đảm bảo tất cả các yếu tố kinh doanh được xác nhận và phù hợp với yêu cầu cụ thể của khách hàng trước khi hoàn tất.",HVAC Installation - 6
+137,Reference Check - Subtask 37,Sales Pipeline,Proposal (Sales),Approved,"Lumber Inc, Delta PC",25/08/2025,23/09/2025,"Messias Pinheiro, Paulette Schmitt",Low priority,Testing,Custom requirements discussed,Change Management - Subtask 9
+138,Door Installation - Subtask 38,Renovations,Review (Renovations),Cancelled,Lumber Inc,24/03/2025,20/05/2025,"João Marques, Xiaoxia Qiu",Medium priority,Meeting,Must be done <b>before</b> plumbing,Plumbing - 5
+139,Demolition - Subtask 39,Renovations,Review (Renovations),Approved,Gemini Furniture,16/03/2026,24/03/2026,Hùng Tạ,Low priority,Training,"Task: Demolition - Subtask 39
+Project: Renovations
+Priority: Low priority
+
+Description: Tiến hành tháo dỡ các vật liệu xây dựng cũ và loại bỏ khỏi khu vực công trình theo quy định an toàn. Công việc này được thực hiện với mức độ ưu tiên thấp và tuân thủ đầy đủ các tiêu chuẩn an toàn lao động hiện hành.",Feedback Collection - Subtask 87
+140,Wall Framing - Subtask 40,Home Construction,Cancelled (Home Construction),In Progress,Think Big Systems,01/02/2026,13/02/2026,"Celina Anand, Carina Lundström",Low priority,Planning,Building code compliance required,System Backup - Subtask 15
+141,Vendor Coordination - Subtask 41,ERP Implementation,Deployment (ERP),Waiting,Deco Addict,29/01/2026,25/02/2026,Hyun-jung Cho,Medium priority,Design,Critical for Q1 launch,Subcontractor Coordination - Subtask 46
+142,Wall Painting - Subtask 42,Renovations,Review (Renovations),Changes Requested,"China Export, Delta PC",31/12/2025,15/01/2026,Jacob Ekstrand,Medium priority,"Development, Review","Project: Renovations
+Task: Wall Painting - Subtask 42
+Priority: Medium
+
+Description:
+Thực hiện sơn tường cho các bức tường phòng khách và phòng ngủ chính, đảm bảo chất lượng bề mặt đồng đều và tuân thủ các tiêu chuẩn kỹ thuật được quy định. Hoàn thành công việc sơn trong thời gian dự kiến và báo cáo tiến độ cho bộ phận giám sát dự án.",Permit Approval - 72
+143,Feature Enhancement - Subtask 43,ERP Implementation,Planning (ERP),Done,Agrolait,26/01/2026,22/02/2026,"Jean Coppens, Kai Wen Chan",High priority,"Client, Documentation","Task: Feature Enhancement - Subtask 43
+Project: ERP Implementation
+Priority: High Priority
+
+Description:
+Tối ưu hóa quy trình quản lý kho hàng bằng cách cải tiến hệ thống theo dõi tồn kho thời gian thực và tích hợp báo cáo tự động để nâng cao hiệu suất hoạt động. Đảm bảo hoàn thành công việc theo đúng thời hạn để hỗ trợ giai đoạn triển khai tiếp theo của dự án ERP.",
+144,Tile Work - Subtask 44,Renovations,Review (Renovations),Changes Requested,"Ready Mat, Deco Addict",20/02/2026,25/03/2026,"Sacha Goossens, Vinícius Farias",Medium priority,Testing,The customer did not choose the colour yet,
+145,User Training - Subtask 45,ERP Implementation,Planning (ERP),Done,"Deco Addict, Delta PC",19/02/2026,22/03/2026,Austin Turner,Low priority,Training,Performance benchmarks required,Material Procurement - Subtask 98
+146,Subcontractor Coordination - Subtask 46,Home Construction,Done (Home Construction),Waiting,Camptocamp,29/01/2026,01/03/2026,Sara Martínez,Urgent,"Testing, Client","Task ID: Subtask 46
+Project: Home Construction
+Task Name: Subcontractor Coordination
+Priority: Urgent
+Description (Vietnamese): Phối hợp và quản lý các nhà thầu phụ để đảm bảo tiến độ công việc xây dựng nhà ở được thực hiện đúng lịch biểu và đạt tiêu chuẩn chất lượng. Kiểm tra và xác nhận hoàn thiện các hạng mục công việc của các nhà thầu phụ trước khi thanh toán và tiến hành giai đoạn tiếp theo.",Furnitures - Subtask 27
+147,Kitchen Cabinets - Subtask 47,Home Construction,In Progress (Home Construction),Cancelled,Azure Interior,26/03/2025,30/04/2025,Emma Duncan,Medium priority,Interior,Client requested changes to the original plan,Account Review - Subtask 52
+148,System Backup - Subtask 48,ERP Implementation,Development (ERP),In Progress,Ready Mat,12/03/2026,29/03/2026,"Huimin Soh, Arnav More",Low priority,"Development, Testing, Client","Task: System Backup - Subtask 48
+Project: ERP Implementation
+Priority: Low
+Description: Thực hiện sao lưu toàn bộ dữ liệu hệ thống ERP theo quy trình định kỳ để đảm bảo an toàn và khôi phục dữ liệu khi cần thiết. Kiểm tra tính toàn vẹn của bản sao lưu và ghi lại kết quả vào hệ thống quản lý tài liệu.",User Training - Subtask 4
+149,UAT Preparation - Subtask 49,ERP Implementation,Deployment (ERP),In Progress,"Deco Addict, Azure Interior",20/02/2026,20/03/2026,Vania Medeiros,Urgent,"Development, Client","Task: UAT Preparation - Subtask 49
+Project: ERP Implementation
+Priority: Urgent
+Description: Kiểm tra và xác nhận toàn bộ quy trình cấu hình hệ thống ERP theo các yêu cầu kỹ thuật được phê duyệt để đảm bảo sẵn sàng cho giai đoạn kiểm thử chấp nhận người dùng. Hoàn thành việc xác thực dữ liệu chính và các cài đặt tham số quan trọng trước ngày bắt đầu UAT.",Design Consultation - Subtask 2
+150,Plumbing - Subtask 50,Renovations,New (Renovations),Done,"Brandon Freeman, Bright Solutions",06/01/2026,20/01/2026,Iwona Piwowarczyk,Low priority,Meeting,Customer requests a new meeting,Report Customization - Subtask 19
+151,Material Procurement - Subtask 51,Home Construction,New (Home Construction),On Hold,Gemini Furniture,13/09/2025,03/11/2025,Rebecca Simon,Low priority,Client,Weather dependent task,Bug Fixing - Subtask 67
+152,Account Review - Subtask 52,Sales Pipeline,Proposal (Sales),Waiting,Delta PC,29/12/2025,03/02/2026,Yusuke Shimada,High priority,"Support, Testing, Planning",Timeline is aggressive,Demolition - Subtask 80
+153,Demolition - Subtask 53,Renovations,In Progress (Renovations),Waiting,Azure Interior,15/02/2026,09/03/2026,"Jean Thomas, Hae-young Yoon",High priority,"Design, Training","Subtask ID: 53
+Project: Renovations
+Task: Demolition - Subtask 53
+Priority: High priority
+Description: Tiến hành phá dỡ các vật liệu và cấu trúc cũ theo tiêu chuẩn an toàn xây dựng, đảm bảo xóa sạch các chướng ngại vật để chuẩn bị cho giai đoạn xây dựng mới. Hoàn thành công việc trong thời gian quy định và báo cáo tiến độ hàng ngày cho quản lý dự án.",
+154,Competitor Analysis - Subtask 54,Sales Pipeline,Proposal (Sales),Done,Azure Interior,06/12/2025,28/12/2025,Leonard Schubert,Urgent,"Documentation, Design",The customer requests a new meeting to launch the second phase,Final Touches - 37
+155,Plumbing Setup - Subtask 55,Home Construction,Cancelled (Home Construction),Done,Brandon Freeman,04/02/2026,02/03/2026,"Bernd Haas, Peter Page",High priority,Client,Building code compliance required,
+156,Flooring Upgrade - Subtask 56,Renovations,Done (Renovations),Waiting,"Azure Interior, Gemini Furniture",12/01/2026,13/02/2026,Zheng Xiong,Low priority,Budget,"Task: Flooring Upgrade - Subtask 56
+Project: Renovations
+Priority: Low priority
+Description: Thực hiện kiểm tra và đánh giá tình trạng hiện tại của sàn nhà để xác định những khu vực cần cải tiến hoặc thay thế. Lập kế hoạch chi tiết cho việc nâng cấp sàn và báo cáo các khuyến nghị về vật liệu phù hợp với bộ phim thi công.",Permit Approval - 88
+157,Upselling Opportunity - Subtask 57,Sales Pipeline,Qualified (Sales),In Progress,Lumber Inc,07/01/2026,19/01/2026,Ronald Manning,Medium priority,"Review, Documentation, Design","Task: Upselling Opportunity - Subtask 57
+Project: Sales Pipeline
+Priority: Medium
+
+Description:
+Xác định và liên hệ với các khách hàng hiện tại để giới thiệu các sản phẩm hoặc dịch vụ bổ sung phù hợp với nhu cầu của họ. Chuẩn bị tài liệu hỗ trợ bán hàng và tiến hành cuộc gọi hoặc cuộc họp để trình bày cơ hội nâng cấp và tối đa hóa giá trị đơn hàng.",
+158,Requirement Analysis - Subtask 58,Sales Pipeline,Lost (Sales),In Progress,"Think Big Systems, Camptocamp",27/02/2026,06/03/2026,Jean Coppens,Urgent,Support,Competitive bid situation,Change Management - Subtask 9
+159,Permit Application - Subtask 59,Renovations,New (Renovations),Approved,Deco Addict,08/11/2025,06/12/2025,"Ryder Cooper, Dominika Lisowski",Low priority,Planning,The customer did not choose the colour yet,
+160,Reference Check - Subtask 60,Sales Pipeline,Negotiation (Sales),Cancelled,"Wood Corner, Lumber Inc",23/02/2026,08/03/2026,"Brittany Andrews, Đỗ Võ",Urgent,Meeting,Timeline is aggressive,Door Installation - 54
+161,Bug Fixing - Subtask 61,ERP Implementation,Planning (ERP),Waiting,"Agrolait, Deco Addict",20/02/2026,12/03/2026,Erik Dekker,Urgent,Documentation,"Dự án: ERP Implementation
+Công việc: Bug Fixing - Subtask 61
+Mức độ ưu tiên: Urgent
+
+Mô tả công việc:
+Xác định và khắc phục các lỗi hệ thống trong module báo cáo tài chính nhằm đảm bảo tính chính xác dữ liệu và tuân thủ yêu cầu kinh doanh. Tiến hành kiểm tra toàn diện các chức năng liên quan và xác nhận khắc phục hoàn toàn trước khi triển khai lên môi trường sản xuất.",Account Review - Subtask 10
+162,Insulation - Subtask 62,Home Construction,Cancelled (Home Construction),Waiting,Ready Mat,27/01/2026,09/02/2026,Lakshman Joshi,High priority,Budget,Requires specialized equipment,Requirement Gathering - Subtask 32
+163,Final Inspection - Subtask 63,Home Construction,Cancelled (Home Construction),Approved,"Lumber Inc, Camptocamp",09/03/2026,18/03/2026,Christine Nguyen,Urgent,Review,"Dự án: Home Construction
+Tác vụ: Final Inspection - Subtask 63
+Độ ưu tiên: Urgent
+
+Mô tả: Tiến hành kiểm tra chất lượng cuối cùng toàn bộ các hạng mục xây dựng theo tiêu chuẩn quy định để đảm bảo công trình đáp ứng các yêu cầu kỹ thuật và an toàn. Hoàn tất báo cáo kiểm tra và xử lý các vấn đề phát hiện trong thời gian sớm nhất.",
+164,Access Control Setup - Subtask 64,ERP Implementation,Development (ERP),Done,Bright Solutions,06/03/2026,16/03/2026,Daniel Dixon,Urgent,"Development, Client","Task Description:
+Project: ERP Implementation
+Task: Access Control Setup - Subtask 64
+Priority: Urgent
+
+Description (Vietnamese):
+""Cấu hình và thiết lập các quyền truy cập chi tiết cho hệ thống ERP nhằm đảm bảo an ninh dữ liệu và kiểm soát truy cập theo các vai trò người dùng khác nhau. Hoàn thành cấu hình các chính sách truy cập, phân quyền và kiểm tra quyền hạn trong giai đoạn này trước khi triển khai hệ thống.""",Exterior Finishing - 2
+165,Pricing Discussion - Subtask 65,Sales Pipeline,Proposal (Sales),On Hold,Lumber Inc,05/10/2025,06/11/2025,Khánh Thang,Low priority,"Interior, Development",High priority client - CEO involvement,Reference Check - 52
+166,Feature Enhancement - Subtask 66,ERP Implementation,Closed (ERP),In Progress,"Azure Interior, Gemini Furniture",01/01/2026,31/01/2026,Thanh Nguyễn,Low priority,"Testing, Interior","Nhiệm vụ: Feature Enhancement - Subtask 66
+Dự án: ERP Implementation
+Mức độ ưu tiên: Low priority
+
+Mô tả: Cải thiện và tối ưu hóa các tính năng hiện có trong hệ thống ERP để nâng cao hiệu suất và trải nghiệm người dùng. Thực hiện các điều chỉnh nhỏ và bổ sung các tính năng phụ trợ nhằm hoàn thiện quy trình xử lý dữ liệu và nâng cao tính ổn định của ứng dụng.",Door Installation - Subtask 38
+167,Bug Fixing - Subtask 67,ERP Implementation,Testing (ERP),In Progress,Bright Solutions,10/02/2026,09/03/2026,Khánh Thang,Medium priority,Development,"Task: Bug Fixing - Subtask 67
+Project: ERP Implementation
+Priority: Medium priority
+
+Description: Khắc phục lỗi kỹ thuật được xác định trong hệ thống quản lý tài chính để đảm bảo tính ổn định và hiệu suất của ứng dụng ERP. Kiểm tra và xác nhận lại toàn bộ quy trình sau khi khắc phục để đảm bảo không ảnh hưởng đến các chức năng khác.",Reference Check - 34
+168,Requirement Gathering - Subtask 68,ERP Implementation,Testing (ERP),On Hold,Bright Solutions,14/01/2026,15/02/2026,"Leon Schuster, Oscar Singh",Low priority,Development,"Task: Requirement Gathering - Subtask 68
+Project: ERP Implementation
+Priority: Low priority
+
+Description:
+Tiến hành thu thập và ghi lại các yêu cầu kỹ thuật chi tiết từ các bộ phận liên quan nhằm đảm bảo sự tích hợp toàn diện của hệ thống ERP. Phân tích và xác nhận tính khả thi của các yêu cầu được nêu ra để hỗ trợ giai đoạn lập kế hoạch tiếp theo.
+",
+169,Subcontractor Coordination - Subtask 69,Home Construction,Done (Home Construction),Approved,Gemini Furniture,16/09/2025,21/10/2025,Felix Nygren,Medium priority,"Meeting, Interior","Tên: Subcontractor Coordination - Subtask 69
+Dự án: Home Construction
+Độ ưu tiên: Trung bình
+Mô tả công việc: Phối hợp với các nhà thầu phụ để đảm bảo tiến độ công việc, chất lượng thực hiện và tuân thủ các quy định an toàn tại công trường. Kiểm tra và xác nhận việc hoàn thành các công đoạn được giao phó theo kế hoạch dự kiến.",Vendor Coordination - 72
+170,Door Installation - Subtask 70,Renovations,Done (Renovations),On Hold,Lumber Inc,17/01/2026,14/02/2026,Szymon Tomaszewski,High priority,"Client, Testing","Task: Door Installation - Subtask 70
+Project: Renovations
+Priority: High priority
+Description: Lắp đặt cửa ra vào theo thông số kỹ thuật và tiêu chuẩn chất lượng đã được phê duyệt cho dự án cải tạo. Đảm bảo hoàn thành công việc đúng hạn và kiểm tra kỹ lưỡng mức độ chính xác, an toàn trước khi bàn giao.
+",
+171,Roof Installation - Subtask 71,Home Construction,Cancelled (Home Construction),In Progress,The Jackson Group,07/12/2025,23/12/2025,"Jean Thomas, Hùng Tạ",Urgent,"Development, Work",Foundation needs to be completed before winter,Client Walkthrough - 82
+172,Drywall Installation - Subtask 72,Home Construction,New (Home Construction),Cancelled,"Delta PC, Brandon Freeman",20/01/2026,22/02/2026,Lakshman Joshi,Medium priority,Testing,Foundation needs to be completed before winter,Door Installation
+173,Final Touches - Subtask 73,Renovations,New (Renovations),Approved,"The Jackson Group, Think Big Systems",27/05/2025,19/07/2025,"Sơn Tiêu, Julien Todd",Medium priority,"Development, Budget, Work","Task: Final Touches - Subtask 73
+Project: Renovations
+Priority: Medium priority
+Description: Hoàn thiện các chi tiết cuối cùng cho dự án cải tạo, bao gồm kiểm tra chất lượng và điều chỉnh các yếu tố còn lại. Đảm bảo tất cả các công việc được thực hiện đúng tiêu chuẩn trước khi bàn giao.",Bug Fixing - Subtask 83
+174,Workflow Setup - Subtask 74,ERP Implementation,Testing (ERP),In Progress,"The Jackson Group, Lumber Inc",27/02/2026,23/03/2026,"Annemarie van Rijn, Laura Oliveira",High priority,Development,Data cleanup in progress,Design Consultation - 32
+175,Documentation - Subtask 75,ERP Implementation,Closed (ERP),Waiting,"ASUSTeK, Ready Mat",23/06/2025,17/07/2025,Natalia Ortega,Medium priority,Interior,Training materials needed,Vendor Coordination - Subtask 41
+176,Furnitures - Subtask 76,Renovations,Done (Renovations),Done,Think Big Systems,27/05/2025,26/06/2025,"Amy Smith, Dennis Wilson",Medium priority,"Documentation, Training","Tên công việc: Furnitures - Subtask 76
+Dự án: Renovations
+Mức độ ưu tiên: Medium priority
+
+Mô tả công việc:
+Tiến hành lựa chọn, đo đạc và sắp xếp vị trí các đồ nội thất phù hợp với thiết kế không gian renovátion. Đảm bảo chất lượng, kích thước và màu sắc của các sản phẩm nội thất đáp ứng đúng tiêu chuẩn dự án.",
+177,Lighting Fixtures - Subtask 77,Renovations,New (Renovations),Waiting,Brandon Freeman,14/02/2026,01/03/2026,"Hùng Tạ, Austin Turner",Medium priority,"Urgent, Review, Training","Tên công việc: Lighting Fixtures - Subtask 77
+Dự án: Renovations
+Mức độ ưu tiên: Medium priority
+
+Mô tả công việc:
+Tiến hành kiểm tra, lựa chọn và lắp đặt các thiết bị chiếu sáng phù hợp cho các khu vực của dự án tu sửa, đảm bảo chất lượng, hiệu suất năng lượng và tuân thủ các tiêu chuẩn kỹ thuật. Hoàn thành việc xử lý các vấn đề liên quan đến hệ thống điện chiếu sáng và chuẩn bị báo cáo tiến độ cho giai đoạn tiếp theo của dự án.",Plumbing Setup - Subtask 55
+178,Tile Work - Subtask 78,Renovations,Review (Renovations),In Progress,Camptocamp,06/12/2025,11/01/2026,Nico Hoffmann,Low priority,"Client, Training",The customer did not choose the colour yet,Cabinet Installation - Subtask 25
+179,Insulation - Subtask 79,Home Construction,New (Home Construction),Changes Requested,Bright Solutions,01/03/2026,26/03/2026,"Jean Coppens, Yasuko Kuroda",Low priority,"Interior, Design","Task: Insulation - Subtask 79
+Project: Home Construction
+Priority: Low priority
+Description: Kiểm tra và hoàn thiện công tác lắp đặt vật liệu cách nhiệt ở các khu vực phụ của công trình, đảm bảo độ dày và chất lượng phù hợp với tiêu chuẩn kỹ thuật. Ghi chép lại chi tiết công việc và báo cáo tiến độ cho nhóm giám sát dự án.",Roof Installation - Subtask 91
+180,Demolition - Subtask 80,Renovations,In Progress (Renovations),On Hold,Deco Addict,02/02/2026,04/03/2026,Zoe Scott,Medium priority,Design,"Task Name: Demolition - Subtask 80
+Project: Renovations
+Priority: Medium
+
+Description: Thực hiện công việc phá dỡ các cấu trúc và vật liệu xây dựng cũ theo đúng kế hoạch và tiêu chuẩn an toàn công trường. Đảm bảo loại bỏ hoàn toàn các vật thải xây dựng và chuẩn bị mặt bằng sạch cho các công đoạn thi công tiếp theo.",Bug Fixing - Subtask 67
+181,Performance Testing - Subtask 81,ERP Implementation,Planning (ERP),Approved,Deco Addict,26/10/2025,18/11/2025,Xiaoxia Qiu,Urgent,"Interior, Support",Dependencies on vendor API,Vendor Coordination - Subtask 41
+182,Drywall Installation - Subtask 82,Home Construction,In Progress (Home Construction),Cancelled,Bright Solutions,07/01/2026,10/02/2026,"Leon Schuster, Yuma Yoshimura",Urgent,Testing,"Project: Home Construction
+Task: Drywall Installation - Subtask 82
+Priority: Urgent
+
+Description:
+Tiến hành lắp đặt tấm vữa khô trên các bức tường tầng hai, đảm bảo các mối nối được khít chặt và phẳng lì theo tiêu chuẩn xây dựng. Hoàn thành công việc trong vòng 3 ngày để không ảnh hưởng đến lịch trình công trình chung.",Demolition - Subtask 80
+183,Bug Fixing - Subtask 83,ERP Implementation,Deployment (ERP),Waiting,"Deco Addict, Ready Mat",19/01/2025,10/03/2025,Han-kyung Seonwoo,Low priority,Development,"Dự án: ERP Implementation
+Tác vụ: Bug Fixing - Subtask 83
+Mức độ ưu tiên: Low priority
+
+Mô tả: Kiểm tra và sửa các lỗi nhỏ trong module xử lý dữ liệu tài chính để đảm bảo hệ thống hoạt động ổn định. Tác vụ này bao gồm việc xác nhận các báo cáo lỗi, phân tích nguyên nhân và triển khai các bản vá phù hợp.",Permit Application - Subtask 35
+184,Competitor Analysis - Subtask 84,Sales Pipeline,Lost (Sales),Done,"Brandon Freeman, Bright Solutions",15/02/2026,05/03/2026,Silvestro Settembre,High priority,"Design, Meeting","Task: Competitor Analysis - Subtask 84
+Project: Sales Pipeline
+Priority: High priority
+
+Description (Vietnamese):
+Phân tích chi tiết các chiến lược định giá, tính năng sản phẩm và kênh phân phối của các đối thủ cạnh tranh chính để xác định các cơ hội thúc đẩy doanh số bán hàng. Báo cáo kết quả phân tích kèm theo các khuyến nghị chiến lược nhằm cải thiện vị thế cạnh tranh của công ty trong thị trường.
+
+English Translation:
+Conduct a detailed analysis of pricing strategies, product features, and distribution channels of major competitors to identify opportunities for driving sales growth. Report findings with strategic recommendations to improve the company's competitive position in the market.",Flooring Upgrade
+185,Pricing Discussion - Subtask 85,Sales Pipeline,Proposal (Sales),In Progress,"Wood Corner, Brandon Freeman",05/03/2026,19/03/2026,"Oscar Singh, Elsa David",Urgent,"Documentation, Meeting","Task: Pricing Discussion - Subtask 85
+Project: Sales Pipeline
+Priority: Urgent
+Description: Tiến hành cuộc thảo luận chi tiết về chiến lược định giá sản phẩm và lợi nhuận biên độ để đảm bảo tính cạnh tranh trên thị trường. Hoàn thành việc xác định mức giá tối ưu và thỏa thuận với đội bán hàng trước hạn chót dự án.",
+186,Countertop Replacement - Subtask 86,Renovations,In Progress (Renovations),Done,"Delta PC, Brandon Freeman",20/02/2026,17/03/2026,Laura Oliveira,Urgent,Interior,"Task Description - Countertop Replacement - Subtask 86
+Project: Renovations
+Priority: Urgent
+
+Description:
+Thực hiện lắp đặt mặt bàn mới để thay thế mặt bàn hiện tại, đảm bảo các tiêu chí chất lượng và độ chính xác kỹ thuật theo tiêu chuẩn dự án. Hoàn thiện tất cả công việc liên quan bao gồm chuẩn bị bề mặt, kiểm tra độ bằng phẳng, và hoàn tất các chi tiết mạch nước, điện tương ứng.",Requirement Analysis - 99
+187,Feedback Collection - Subtask 87,Sales Pipeline,Proposal (Sales),Changes Requested,"China Export, Wood Corner",07/01/2026,31/01/2026,"Sung-hoon Pang, Gabriel Schenk",Medium priority,"Budget, Documentation",Timeline is aggressive,User Training - 84
+188,Design Consultation - Subtask 88,Renovations,Done (Renovations),Done,Brandon Freeman,15/01/2026,04/02/2026,Đỗ Võ,Low priority,"Review, Urgent, Planning","Task: Design Consultation - Subtask 88
+Project: Renovations
+Priority: Low Priority
+
+Description:
+Tham khảo với đội ngũ thiết kế để xem xét các phương án cải thiện chi tiết và tối ưu hóa bản vẽ hiện tại. Công việc này sẽ hỗ trợ hoàn thiện giai đoạn thiết kế trước khi chuyển sang etapa thi công chính.",Workflow Setup - 66
+189,Deal Closing - Subtask 89,Sales Pipeline,Proposal (Sales),Done,"Azure Interior, The Jackson Group",06/02/2026,13/02/2026,"Oscar Singh, Klaartje Desmet",Urgent,Development,Custom requirements discussed,Demolition - Subtask 14
+190,Material Selection - Subtask 90,Renovations,Done (Renovations),In Progress,Bright Solutions,01/06/2025,20/06/2025,Monika Bose,Medium priority,"Client, Design","Task: Material Selection - Subtask 90
+Project: Renovations
+Priority: Medium
+Description: Đánh giá và lựa chọn các vật liệu phù hợp cho giai đoạn tiếp theo của dự án cải tạo, đảm bảo chất lượng, giá cả và tính khả thi về mặt kỹ thuật. Cần hoàn thành đúng hạn để chuẩn bị cho các công đoạn thi công tiếp theo.",Performance Testing - Subtask 81
+191,Roof Installation - Subtask 91,Home Construction,New (Home Construction),On Hold,Brandon Freeman,17/02/2026,25/02/2026,"Ivan Bühler, Sabine De Wit",High priority,Documentation,"Công việc: Roof Installation - Subtask 91
+Dự án: Home Construction
+Mức độ ưu tiên: High priority
+
+Mô tả công việc:
+Thực hiện lắp đặt hệ thống mái nhà theo thiết kế và tiêu chuẩn kỹ thuật đã được phê duyệt, đảm bảo chất lượng hoàn thiện và tính năng chống thấm nước toàn diện. Hoàn thành công đoạn này trong lịch trình dự kiến để đảm bảo tiến độ chung của dự án Xây dựng Nhà ở.",Deal Closing - Subtask 89
+192,Post Go-Live Support - Subtask 92,ERP Implementation,Closed (ERP),Done,Wood Corner,17/01/2025,16/03/2025,Leon Schuster,Urgent,"Client, Work","Task: Post Go-Live Support - Subtask 92
+Project: ERP Implementation
+Priority: Urgent
+
+Description:
+Cung cấp hỗ trợ kỹ thuật và khắc phục các sự cố phát sinh sau khi triển khai hệ thống ERP để đảm bảo hoạt động ổn định và tối ưu hóa hiệu suất. Xử lý các yêu cầu từ người dùng cuối, cập nhật tài liệu và điều chỉnh cấu hình theo nhu cầu thực tế của tổ chức.",Subcontractor Coordination - 86
+193,Structural Changes - Subtask 93,Renovations,Done (Renovations),Waiting,Deco Addict,06/07/2025,25/08/2025,"Ryan Wallace, Felix Nygren",High priority,Work,The customer did not choose the colour yet,System Backup - Subtask 48
+194,Landscaping - Subtask 94,Home Construction,Done (Home Construction),Done,"Gemini Furniture, The Jackson Group",15/08/2025,15/09/2025,Monika Bose,High priority,Design,"Task: Landscaping - Subtask 94
+Project: Home Construction
+Priority: High priority
+
+Description: Hoàn thành công tác thiết kế và trồng cây cảnh cho khu vực sân vườn phía trước nhà, đảm bảo phù hợp với kiến trúc tổng thể của công trình. Thi công các hạng mục cảnh quan bao gồm trồng cây xanh, lát đá lối đi và lắp đặt hệ thống tưới nước tự động theo tiêu chuẩn kỹ thuật đã phê duyệt.",Feedback Collection - Subtask 99
+195,User Training - Subtask 95,ERP Implementation,Deployment (ERP),Changes Requested,"Ready Mat, Gemini Furniture",21/02/2026,28/02/2026,Guizhen Yu,High priority,"Review, Client",Integration complexity high,Landscaping - 89
+196,Cabinet Installation - Subtask 96,Renovations,Done (Renovations),Waiting,Camptocamp,15/02/2026,06/03/2026,Tilde Haglund,Urgent,Review,The customer did not choose the colour yet,Design Consultation - Subtask 2
+197,Contract Negotiation - Subtask 97,Sales Pipeline,Proposal (Sales),Done,"Camptocamp, Wood Corner",13/04/2025,21/05/2025,Emanuel Lehmann,Urgent,"Interior, Review, Urgent","Task Name: Contract Negotiation - Subtask 97
+Project: Sales Pipeline
+Priority: Urgent
+Description: Xác minh các điều khoản hợp đồng chính và điều chỉnh các điểm chưa thỏa thuận để hoàn thành vòng đàm phán cuối cùng. Đảm bảo tất cả các yêu cầu pháp lý được đáp ứng và chuẩn bị tài liệu ký kết trong thời hạn quy định.",User Training - Subtask 95
+198,Material Procurement - Subtask 98,Home Construction,New (Home Construction),In Progress,China Export,20/04/2025,28/05/2025,Hào Thi,Low priority,"Support, Review","Project: Home Construction
+Task: Material Procurement - Subtask 98
+Priority: Low Priority
+
+Description:
+Tiến hành đánh giá và lựa chọn nhà cung cấp vật liệu xây dựng phù hợp, đảm bảo chất lượng sản phẩm và giá cả cạnh tranh cho dự án. Hoàn thành các thủ tục đặt hàng và xác nhận giao hàng vào thời gian dự kiến để hỗ trợ tiến độ xây dựng.
+
+Translation (for reference):
+Conduct evaluation and selection of appropriate building material suppliers, ensuring product quality and competitive pricing for the project. Complete ordering procedures and confirm delivery at the scheduled time to support construction progress.",Subcontractor Coordination - Subtask 46
+199,Feedback Collection - Subtask 99,Sales Pipeline,Lost (Sales),On Hold,Bright Solutions,01/03/2026,19/03/2026,Lara Bieri,Urgent,"Development, Support","Dự án: Sales Pipeline
+Công việc: Feedback Collection - Subtask 99
+Mức độ ưu tiên: Urgent
+
+Mô tả công việc:
+Tiến hành thu thập phản hồi từ khách hàng và các bên liên quan để đánh giá hiệu suất quy trình bán hàng hiện tại. Hoàn thành việc phân tích và tổng hợp dữ liệu phản hồi để hỗ trợ cải thiện chiến lược sales trong thời gian sớm nhất.",Demolition - 43
+200,Renewal Discussion - Subtask 100,Sales Pipeline,Negotiation (Sales),Done,China Export,01/01/2026,06/02/2026,Inge Klaassen,Medium priority,Work,Timeline is aggressive,Roof Installation - Subtask 91

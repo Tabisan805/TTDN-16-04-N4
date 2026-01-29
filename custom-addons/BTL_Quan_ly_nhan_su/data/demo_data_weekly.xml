@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        
+        <!-- ========== CHẤM CÔNG (ATTENDANCE) - 7 NGÀY QUA ========== -->
+        
+        <!-- Ngày 20/1/2026 (Thứ 2) -->
+        <record id="attendance_week_001" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_001"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=6)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=6)).replace(hour=7, minute=0, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=6)).replace(hour=17, minute=30, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="attendance_week_002" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_002"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=6)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=6)).replace(hour=7, minute=30, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=6)).replace(hour=17, minute=45, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="attendance_week_003" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_003"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=6)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=6)).replace(hour=8, minute=15, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=6)).replace(hour=18, minute=0, second=0)"/>
+            <field name="state">confirmed</field>
+            <field name="note">Đi trễ 15 phút</field>
+        </record>
+        
+        <record id="attendance_week_004" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_005"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=6)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=6)).replace(hour=7, minute=5, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=6)).replace(hour=17, minute=20, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <!-- Ngày 21/1/2026 (Thứ 3) -->
+        <record id="attendance_week_005" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_001"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=5)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=5)).replace(hour=7, minute=2, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=5)).replace(hour=18, minute=15, second=0)"/>
+            <field name="state">confirmed</field>
+            <field name="note">Tăng ca 1 giờ</field>
+        </record>
+        
+        <record id="attendance_week_006" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_002"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=5)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=5)).replace(hour=7, minute=20, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=5)).replace(hour=17, minute=50, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="attendance_week_007" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_004"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=5)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=5)).replace(hour=7, minute=0, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=5)).replace(hour=17, minute=0, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="attendance_week_008" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_006"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=5)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=5)).replace(hour=8, minute=0, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=5)).replace(hour=17, minute=30, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <!-- Ngày 22/1/2026 (Thứ 4) -->
+        <record id="attendance_week_009" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_001"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=4)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=4)).replace(hour=7, minute=0, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=4)).replace(hour=17, minute=0, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="attendance_week_010" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_003"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=4)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=4)).replace(hour=7, minute=15, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=4)).replace(hour=17, minute=45, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="attendance_week_011" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_005"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=4)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=4)).replace(hour=7, minute=10, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=4)).replace(hour=18, minute=20, second=0)"/>
+            <field name="state">confirmed</field>
+            <field name="note">Tăng ca 1.33 giờ</field>
+        </record>
+        
+        <record id="attendance_week_012" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_007"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=4)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=4)).replace(hour=8, minute=30, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=4)).replace(hour=17, minute=0, second=0)"/>
+            <field name="state">confirmed</field>
+            <field name="note">Về sớm 30 phút</field>
+        </record>
+        
+        <!-- Ngày 23/1/2026 (Thứ 5) -->
+        <record id="attendance_week_013" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_002"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=3)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=3)).replace(hour=7, minute=0, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=3)).replace(hour=17, minute=30, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="attendance_week_014" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_004"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=3)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=3)).replace(hour=7, minute=5, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=3)).replace(hour=17, minute=15, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="attendance_week_015" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_006"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=3)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=3)).replace(hour=7, minute=20, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=3)).replace(hour=18, minute=30, second=0)"/>
+            <field name="state">confirmed</field>
+            <field name="note">Tăng ca 1.17 giờ</field>
+        </record>
+        
+        <record id="attendance_week_016" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_008"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=3)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=3)).replace(hour=7, minute=50, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=3)).replace(hour=17, minute=10, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <!-- Ngày 24/1/2026 (Thứ 6) -->
+        <record id="attendance_week_017" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_001"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=2)).replace(hour=7, minute=10, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=2)).replace(hour=17, minute=45, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="attendance_week_018" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_005"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=2)).replace(hour=7, minute=0, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=2)).replace(hour=17, minute=0, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="attendance_week_019" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_009"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=2)).replace(hour=7, minute=30, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=2)).replace(hour=17, minute=30, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="attendance_week_020" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_010"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=2)).replace(hour=8, minute=0, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=2)).replace(hour=17, minute=0, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <!-- Ngày 25/1/2026 (Thứ 7 - Thứ 7) -->
+        <record id="attendance_week_021" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_002"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=1)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=1)).replace(hour=8, minute=0, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=1)).replace(hour=16, minute=30, second=0)"/>
+            <field name="state">confirmed</field>
+            <field name="note">Làm việc ngày thứ 7 (không bắt buộc)</field>
+        </record>
+        
+        <record id="attendance_week_022" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_006"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=1)).strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="(DateTime.now() - timedelta(days=1)).replace(hour=8, minute=30, second=0)"/>
+            <field name="check_out" eval="(DateTime.now() - timedelta(days=1)).replace(hour=17, minute=0, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <!-- Ngày hôm nay (26/1/2026) -->
+        <record id="attendance_week_023" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_001"/>
+            <field name="date" eval="DateTime.now().strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="DateTime.now().replace(hour=7, minute=5, second=0)"/>
+            <field name="check_out" eval="DateTime.now().replace(hour=17, minute=30, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <record id="attendance_week_024" model="hr.attendance.btl">
+            <field name="employee_id" ref="employee_demo_003"/>
+            <field name="date" eval="DateTime.now().strftime('%Y-%m-%d')"/>
+            <field name="check_in" eval="DateTime.now().replace(hour=7, minute=0, second=0)"/>
+            <field name="check_out" eval="DateTime.now().replace(hour=17, minute=0, second=0)"/>
+            <field name="state">confirmed</field>
+        </record>
+        
+        <!-- ========== XIN NGHỈ (LEAVE) - NHỮNG NGÀY QUA ========== -->
+        
+        <record id="leave_demo_001" model="hr.leave.btl">
+            <field name="employee_id" ref="employee_demo_004"/>
+            <field name="date_from" eval="(DateTime.now() - timedelta(days=6)).strftime('%Y-%m-%d')"/>
+            <field name="date_to" eval="(DateTime.now() - timedelta(days=5)).strftime('%Y-%m-%d')"/>
+            <field name="leave_type">annual</field>
+            <field name="is_approved">True</field>
+            <field name="is_paid">True</field>
+            <field name="state">approved</field>
+            <field name="reason">Xin phép cá nhân</field>
+        </record>
+        
+        <record id="leave_demo_002" model="hr.leave.btl">
+            <field name="employee_id" ref="employee_demo_007"/>
+            <field name="date_from" eval="(DateTime.now() - timedelta(days=4)).strftime('%Y-%m-%d')"/>
+            <field name="date_to" eval="(DateTime.now() - timedelta(days=4)).strftime('%Y-%m-%d')"/>
+            <field name="leave_type">sick</field>
+            <field name="is_approved">True</field>
+            <field name="is_paid">True</field>
+            <field name="state">approved</field>
+            <field name="reason">Nghỉ ốm</field>
+        </record>
+        
+        <record id="leave_demo_003" model="hr.leave.btl">
+            <field name="employee_id" ref="employee_demo_010"/>
+            <field name="date_from" eval="(DateTime.now() - timedelta(days=3)).strftime('%Y-%m-%d')"/>
+            <field name="date_to" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="leave_type">annual</field>
+            <field name="is_approved">True</field>
+            <field name="is_paid">True</field>
+            <field name="state">approved</field>
+            <field name="reason">Phép năm</field>
+        </record>
+        
+        <!-- ========== TĂNG CA (OVERTIME) - 7 NGÀY QUA ========== -->
+        
+        <record id="overtime_week_001" model="hr.overtime">
+            <field name="employee_id" ref="employee_demo_001"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=5)).strftime('%Y-%m-%d')"/>
+            <field name="time_from">18.0</field>
+            <field name="time_to">19.25</field>
+            <field name="overtime_type">normal</field>
+            <field name="state">approved</field>
+            <field name="reason">Hoàn thành báo cáo bán hàng</field>
+        </record>
+        
+        <record id="overtime_week_002" model="hr.overtime">
+            <field name="employee_id" ref="employee_demo_005"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=4)).strftime('%Y-%m-%d')"/>
+            <field name="time_from">17.5</field>
+            <field name="time_to">19.2</field>
+            <field name="overtime_type">normal</field>
+            <field name="state">approved</field>
+            <field name="reason">Hỗ trợ dự án khách hàng VIP</field>
+        </record>
+        
+        <record id="overtime_week_003" model="hr.overtime">
+            <field name="employee_id" ref="employee_demo_006"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=3)).strftime('%Y-%m-%d')"/>
+            <field name="time_from">18.0</field>
+            <field name="time_to">19.1</field>
+            <field name="overtime_type">normal</field>
+            <field name="state">approved</field>
+            <field name="reason">Xử lý các đơn đặt hàng cuối ngày</field>
+        </record>
+        
+        <record id="overtime_week_004" model="hr.overtime">
+            <field name="employee_id" ref="employee_demo_002"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=1)).strftime('%Y-%m-%d')"/>
+            <field name="time_from">16.5</field>
+            <field name="time_to">17.5</field>
+            <field name="overtime_type">weekend</field>
+            <field name="state">approved</field>
+            <field name="reason">Làm việc thứ 7 - hỗ trợ bán hàng</field>
+        </record>
+        
+        <!-- ========== THƯỞNG - PHẠT (REWARD/PUNISHMENT) ========== -->
+        
+        <!-- Thưởng -->
+        <record id="reward_001" model="hr.reward.punishment">
+            <field name="employee_id" ref="employee_demo_001"/>
+            <field name="type_id" ref="reward_type_good_performance"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=5)).strftime('%Y-%m-%d')"/>
+            <field name="period">01/2026</field>
+            <field name="amount">500000</field>
+            <field name="state">confirmed</field>
+            <field name="reason">Thưởng hoàn thành dự án đúng hạn</field>
+        </record>
+        
+        <record id="reward_002" model="hr.reward.punishment">
+            <field name="employee_id" ref="employee_demo_002"/>
+            <field name="type_id" ref="reward_type_excellent_customer_service"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=3)).strftime('%Y-%m-%d')"/>
+            <field name="period">01/2026</field>
+            <field name="amount">300000</field>
+            <field name="state">confirmed</field>
+            <field name="reason">Phục vụ khách hàng xuất sắc</field>
+        </record>
+        
+        <record id="reward_003" model="hr.reward.punishment">
+            <field name="employee_id" ref="employee_demo_005"/>
+            <field name="type_id" ref="reward_type_innovation"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="period">01/2026</field>
+            <field name="amount">400000</field>
+            <field name="state">confirmed</field>
+            <field name="reason">Đề xuất cải tiến quy trình bán hàng</field>
+        </record>
+        
+        <!-- Phạt -->
+        <record id="punishment_001" model="hr.reward.punishment">
+            <field name="employee_id" ref="employee_demo_003"/>
+            <field name="type_id" ref="punishment_type_attendance"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=6)).strftime('%Y-%m-%d')"/>
+            <field name="period">01/2026</field>
+            <field name="amount">100000</field>
+            <field name="state">confirmed</field>
+            <field name="reason">Đi trễ hơn 15 phút nhiều lần</field>
+        </record>
+        
+        <record id="punishment_002" model="hr.reward.punishment">
+            <field name="employee_id" ref="employee_demo_007"/>
+            <field name="type_id" ref="punishment_type_attitude"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=4)).strftime('%Y-%m-%d')"/>
+            <field name="period">01/2026</field>
+            <field name="amount">150000</field>
+            <field name="state">confirmed</field>
+            <field name="reason">Vi phạm quy tắc ứng xử</field>
+        </record>
+        
+        <!-- ========== BẢNG LƯƠNG (PAYSLIP) - THÁNG 01/2026 ========== -->
+        
+        <record id="payslip_demo_001" model="hr.payslip.btl">
+            <field name="employee_id" ref="employee_demo_001"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="work_days">20.5</field>
+            <field name="overtime_hours">1.25</field>
+            <field name="kpi_achievement">105.0</field>
+            <field name="attendance_bonus">200000</field>
+            <field name="other_bonus">100000</field>
+            <field name="state">draft</field>
+        </record>
+        
+        <record id="payslip_demo_002" model="hr.payslip.btl">
+            <field name="employee_id" ref="employee_demo_002"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="work_days">19.5</field>
+            <field name="overtime_hours">0.5</field>
+            <field name="kpi_achievement">98.0</field>
+            <field name="attendance_bonus">150000</field>
+            <field name="other_bonus">50000</field>
+            <field name="state">draft</field>
+        </record>
+        
+        <record id="payslip_demo_003" model="hr.payslip.btl">
+            <field name="employee_id" ref="employee_demo_003"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="work_days">19.0</field>
+            <field name="overtime_hours">0</field>
+            <field name="kpi_achievement">92.0</field>
+            <field name="attendance_bonus">100000</field>
+            <field name="other_bonus">0</field>
+            <field name="state">draft</field>
+        </record>
+        
+        <record id="payslip_demo_004" model="hr.payslip.btl">
+            <field name="employee_id" ref="employee_demo_005"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="work_days">20.0</field>
+            <field name="overtime_hours">1.2</field>
+            <field name="kpi_achievement">102.0</field>
+            <field name="attendance_bonus">250000</field>
+            <field name="other_bonus">150000</field>
+            <field name="state">draft</field>
+        </record>
+        
+        <record id="payslip_demo_005" model="hr.payslip.btl">
+            <field name="employee_id" ref="employee_demo_006"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="work_days">21.5</field>
+            <field name="overtime_hours">1.1</field>
+            <field name="kpi_achievement">108.0</field>
+            <field name="attendance_bonus">300000</field>
+            <field name="other_bonus">200000</field>
+            <field name="state">draft</field>
+        </record>
+        
+        <!-- ========== HIỆU SUẤT (PERFORMANCE) - THÁNG 01/2026 ========== -->
+        
+        <record id="performance_demo_001" model="hr.performance">
+            <field name="employee_id" ref="employee_demo_001"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="sales_target">50000000</field>
+            <field name="kpi_target">100.0</field>
+        </record>
+        
+        <record id="performance_demo_002" model="hr.performance">
+            <field name="employee_id" ref="employee_demo_002"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="sales_target">40000000</field>
+            <field name="kpi_target">100.0</field>
+        </record>
+        
+        <record id="performance_demo_003" model="hr.performance">
+            <field name="employee_id" ref="employee_demo_003"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="sales_target">35000000</field>
+            <field name="kpi_target">100.0</field>
+        </record>
+        
+        <record id="performance_demo_004" model="hr.performance">
+            <field name="employee_id" ref="employee_demo_005"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="sales_target">45000000</field>
+            <field name="kpi_target">100.0</field>
+        </record>
+        
+        <record id="performance_demo_005" model="hr.performance">
+            <field name="employee_id" ref="employee_demo_006"/>
+            <field name="date" eval="(DateTime.now() - timedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="sales_target">38000000</field>
+            <field name="kpi_target">100.0</field>
+        </record>
+        
+    </data>
+</odoo>

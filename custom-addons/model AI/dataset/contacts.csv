@@ -1,0 +1,101 @@
+id,name,company_type,related_company,email,phone,street,street2,city,state,zip,country,tax_id,website,tags,reference,notes
+1,United Enterprises,Company,"""""",sales@unitedenterprises.com,+1 9000082072,Kennedy Road 55,"""""",Kirkland,Quebec,H9J,CA,"""""",https://www.unitedenterprises.com,"""""",CUST100001,""""""
+2,Innovative Design,Company,"""""",hello@innovativedesign.com,+44 0492936006,Abbey Road 126,"""""",Meliden,Wales,LL19,GB,"""""","""""","Healthcare,Wholesaler",CUST100002,Priority support
+3,Creative Tech,Company,"""""",sales@creativetech.com,"""""",Torsgatan 184,"""""",Kristinehamn,Värmland,681 84,SE,SE752576227,https://www.creativetech.com,Desk Manufacturers,CUST100003,""""""
+4,Prime Software,Company,"""""",info@primesoftware.com,+33 912502985,Avenue Kléber 17,"""""",La Chapelle-Montmartin,Centre-Val de Loire,41320,FR,FR242963771,https://www.primesoftware.com,Supplier,CUST100004,""""""
+5,Pacific Enterprises,Company,"""""",hello@pacificenterprises.com,+65 73544182,Newton Road 19,"""""",Jalan Naga Sari,"""""",288836,SG,SG196134728,https://www.pacificenterprises.com,"""""",CUST100005,Long-term partner
+6,Metro Consulting,Company,"""""",sales@metroconsulting.com,+49 4932855151,Rembrandtstraße 168,"""""",Heilsbronn,Bayern,91560,DE,DE979047036,https://www.metroconsulting.com,Agency,CUST100006,""""""
+7,Pacific Inc,Company,"""""",info@pacificinc.com,+46 894314282,Hagagatan 163,"""""",Sunne,Värmland,686 34,SE,SE138720299,https://www.pacificinc.com,"Marketing,Wholesaler",CUST100007,""""""
+8,Central Partners,Company,"""""",support@centralpartners.com,+61 672902071,Smith Street 154,Floor 15,Shortland,New South Wales,2307,AU,"""""",https://www.centralpartners.com,Wholesaler,CUST100008,""""""
+9,Innovative Dynamics,Company,"""""",support@innovativedynamics.com,+39 9460027424,Piazza Mazzini 172,"""""",Spezzano Albanese Stazione,Calabria,87019,IT,IT280829265,https://www.innovativedynamics.com,"Desk Manufacturers,Partner",CUST100009,""""""
+10,Asia Services,Company,"""""",info@asiaservices.com,+46 786997813,Päronvägen 59,"""""",Borås,Västra Götaland,508 87,SE,SE616589225,https://www.asiaservices.com,"Finance,Wholesaler",CUST100010,""""""
+11,Asia Labs,Company,"""""",info@asialabs.com,+41 364647656,Gotthardstrasse 171,"""""",Solduno,Ticino,6600,CH,CH811278318,https://www.asialabs.com,"Legal,Partner",CUST100011,""""""
+12,Smart Interiors,Company,"""""",contact@smartinteriors.com,+39 6785009554,Via Garibaldi 96,Floor 17,Telese Terme,Campania,82037,IT,IT014121770,"""""","Contractor,Healthcare",CUST100012,""""""
+13,United Consulting,Company,"""""",contact@unitedconsulting.com,+49 1507679966,Wagnerstraße 136,"""""",Altrip,Rheinland-Pfalz,67122,DE,"""""",https://www.unitedconsulting.com,"IT Services,Supplier",CUST100013,""""""
+14,Metro Group,Company,"""""",support@metrogroup.com,+32 865931219,Bergensesteenweg 75,"""""",Braibant,Wallonie,5590,BE,BE162143826,"""""","""""",CUST100014,""""""
+15,Asia Technologies,Company,"""""",sales@asiatechnologies.com,+65 53345939,Middle Road 5,"""""",Cashew Road,"""""",679648,SG,SG477843655,"""""","Manufacturer,Reseller",CUST100015,""""""
+16,Euro Logistics,Company,"""""",info@eurologistics.com,+32 591619771,Rue du Commerce 109,"""""",Lambusart,Wallonie,6220,BE,"""""",https://www.eurologistics.com,Freelancer,CUST100016,""""""
+17,Atlantic Group,Company,"""""",contact@atlanticgroup.com,+1 9071803330,Huron Street 180,"""""",Plessisville,Quebec,G6L,CA,"""""",https://www.atlanticgroup.com,Customer,CUST100017,""""""
+18,Nordic Trading,Company,"""""",info@nordictrading.com,+1 4274069076,Boulevard Drive 156,"""""",Los Angeles,California,90055,US,US693243194,"""""",Marketing,CUST100018,""""""
+19,Tech Corp,Company,"""""",info@techcorp.com,+61 120313297,Victoria Road 171,"""""",Simpsons Creek,Victoria,3888,AU,AU069356467,https://www.techcorp.com,"IT Services,Partner",CUST100019,""""""
+20,Atlantic Corp,Company,"""""",contact@atlanticcorp.com,+44 3494338928,Forge Lane 37,"""""",Kirkton,Scotland,IV1,GB,GB787355743,https://www.atlanticcorp.com,Desk Manufacturers,CUST100020,""""""
+21,Tech Tech,Company,"""""",contact@techtech.com,+33 367577276,Place Vendôme 113,"""""",Le Tranger,Centre-Val de Loire,36700,FR,FR023497978,https://www.techtech.com,Wholesaler,CUST100021,Priority support
+22,Dynamic Labs,Company,"""""",info@dynamiclabs.com,+34 417864104,Avenida de José Antonio 155,"""""",Bardaos,Galicia,15684,ES,"""""","""""","Contractor,Retailer",CUST100022,""""""
+23,Future Consulting,Company,"""""",info@futureconsulting.com,+81 8088269290,国際通り (Kokusai-dōri) 9,Floor 14,Nishitsuzuramachi,Shiga Ken,522-0213,JP,JP209919223,https://www.futureconsulting.com,Manufacturer,CUST100023,""""""
+24,Digital Technologies,Company,"""""",sales@digitaltechnologies.com,+1 3841591111,Buchanan Street 124,"""""",Stamford,Connecticut,06922,US,"""""",https://www.digitaltechnologies.com,Desk Manufacturers,CUST100024,""""""
+25,Atlantic Corp,Company,"""""",hello@atlanticcorp.com,+31 021783271,Rapenburg 111,Floor 4,Veghel,North Brabant,5462,NL,NL939558964,https://www.atlanticcorp.com,"Contractor,Legal",CUST100025,""""""
+26,Global Trading,Company,"""""",hello@globaltrading.com,"""""",Carrer d'Aragó 144,"""""",Lluçars,Cataluna,25736,ES,ES799084088,https://www.globaltrading.com,Supplier,CUST100026,""""""
+27,Info Technologies,Company,"""""",sales@infotechnologies.com,"""""",Bellmansgatan 149,"""""",Täby,Stockholm,187 26,SE,SE612098603,"""""","Vendor,Marketing",CUST100027,VIP customer
+28,Alpha Solutions,Company,"""""",info@alphasolutions.com,"""""",First Street 138,"""""",Cleveland,Ohio,44105,US,"""""",https://www.alphasolutions.com,Partner,CUST100028,""""""
+29,Pro Digital,Company,"""""",contact@prodigital.com,+44 3352389104,Park Road 76,"""""",Charney Bassett,England,OX12,GB,GB995736320,https://www.prodigital.com,"Finance,Marketing",CUST100029,""""""
+30,Soft Consulting,Company,"""""",contact@softconsulting.com,"""""",Feldeggstrasse 121,"""""",Estévenens,Canton de Fribourg,1687,CH,"""""",https://www.softconsulting.com,Vendor,CUST100030,""""""
+31,Alpha Solutions,Company,"""""",hello@alphasolutions.com,+65 38047847,Jalan Besar 156,"""""",Rebecca Road,"""""",266709,SG,SG079755917,https://www.alphasolutions.com,"""""",CUST100031,""""""
+32,Next Design,Company,"""""",contact@nextdesign.com,"""""",Kirchgasse 17,"""""",Niedergesteln,Canton du Valais,3942,CH,CH349811283,https://www.nextdesign.com,"Customer,Desk Manufacturers",CUST100032,""""""
+33,Modern Digital,Company,"""""",support@moderndigital.com,"""""",Calle de Velázquez 180,"""""",Piquera,Asturias,33313,ES,ES595773669,"""""",Retailer,CUST100033,""""""
+34,Innovative Consulting,Company,"""""",support@innovativeconsulting.com,+33 057120609,Rue Saint-Antoine 177,"""""",Alès,Occitanie,30112 CEDEX,FR,FR924191911,"""""","""""",CUST100034,""""""
+35,Cloud Dynamics,Company,"""""",contact@clouddynamics.com,"""""",Queen Street East 140,"""""",London,Ontario,N5X,CA,CA878898081,https://www.clouddynamics.com,"Desk Manufacturers,Reseller",CUST100035,""""""
+36,Smart Design,Company,"""""",hello@smartdesign.com,+34 826209668,Plaza de Toros 55,"""""",Gaime,Galicia,32453,ES,"""""",https://www.smartdesign.com,"Healthcare,Agency",CUST100036,Priority support
+37,Ultra Labs,Company,"""""",sales@ultralabs.com,+61 884353178,Pulteney Street 193,Floor 17,Leumeah,New South Wales,2560,AU,AU861610317,https://www.ultralabs.com,"Desk Manufacturers,Retailer",CUST100037,""""""
+38,Pro Software,Company,"""""",sales@prosoftware.com,"""""",Elgin Street 63,"""""",Tarraganda,New South Wales,2550,AU,AU957792751,https://www.prosoftware.com,Services,CUST100038,""""""
+39,Ultra Services,Company,"""""",contact@ultraservices.com,+31 498653031,Haven 122,Floor 11,Oss,North Brabant,5346,NL,NL861053309,"""""",Consulting Services,CUST100039,VIP customer
+40,Innovative Manufacturing,Company,"""""",contact@innovativemanufacturing.com,+39 7461055236,Corso Mazzini 90,"""""",Meana Di Susa,Piemonte,10050,IT,IT265812122,https://www.innovativemanufacturing.com,"""""",CUST100040,""""""
+41,United Dynamics,Company,"""""",support@uniteddynamics.com,+46 195835862,Teknologgatan 193,"""""",Södertälje,Stockholm,152 51,SE,SE265667323,https://www.uniteddynamics.com,"""""",CUST100041,""""""
+42,Tech Enterprises,Company,"""""",support@techenterprises.com,+61 193774594,Wellington Street 75,"""""",Billys Creek,New South Wales,2453,AU,"""""","""""","Customer,Consulting Services",CUST100042,""""""
+43,Pro Corp,Company,"""""",contact@procorp.com,"""""",MLK Boulevard 158,"""""",Bloomington,Indiana,47405,US,US469497883,"""""",Finance,CUST100043,""""""
+44,Data Corp,Company,"""""",contact@datacorp.com,+44 0586198108,Pall Mall 94,"""""",Milton on Stour,England,SP8,GB,"""""","""""",Partner,CUST100044,Priority support
+45,Tech Consulting,Company,"""""",sales@techconsulting.com,+1 3693566492,Kingston Road 186,Floor 18,Camrose,Alberta,T4V,CA,CA102439769,https://www.techconsulting.com,"Reseller,Customer",CUST100045,Long-term partner
+46,Info Digital,Company,"""""",sales@infodigital.com,"""""",Piet Heinkade 46,"""""",Geleen,Limburg,6166,NL,"""""","""""","""""",CUST100046,""""""
+47,Dynamic Consulting,Company,"""""",info@dynamicconsulting.com,"""""",Avenida del Mediterráneo 81,"""""",San Martin Del Valle,Castilla - Leon,34116,ES,ES899124739,https://www.dynamicconsulting.com,"Marketing,Healthcare",CUST100047,New account
+48,Tech Corp,Company,"""""",contact@techcorp.com,+34 813317995,Via Augusta 88,"""""",Barranco Zapatero,Canarias,35338,ES,"""""","""""",Distributor,CUST100048,Priority support
+49,Ultra Tech,Company,"""""",sales@ultratech.com,+81 0135754113,東大路通 (Higashiōji-dōri) 64,"""""",Okehazamamorimae,Aichi Ken,458-0910,JP,"""""",https://www.ultratech.com,Finance,CUST100049,""""""
+50,Mega Software,Company,"""""",info@megasoftware.com,"""""",Kennedy Drive 131,"""""",Peoria,Illinois,61651,US,"""""",https://www.megasoftware.com,"""""",CUST100050,New account
+51,Cyber Labs,Company,"""""",info@cyberlabs.com,+1 1761730729,Trans-Canada Highway 70,"""""",Kingsclear,New Brunswick,E3E,CA,"""""","""""","Healthcare,Supplier",CUST100051,Long-term partner
+52,Innovative Dynamics,Company,"""""",hello@innovativedynamics.com,+46 741667474,Strandvägen 163,"""""",Alingsås,Västra Götaland,441 22,SE,"""""",https://www.innovativedynamics.com,"Distributor,Desk Manufacturers",CUST100052,Long-term partner
+53,Pacific Corp,Company,"""""",contact@pacificcorp.com,"""""",Piazza Vittorio Emanuele 35,"""""",Piacenza D'Adige,Veneto,35040,IT,"""""",https://www.pacificcorp.com,"Customer,Finance",CUST100053,Priority support
+54,Data Consulting,Company,"""""",hello@dataconsulting.com,+31 639082375,Raamgracht 159,"""""",De Groeve,Drenthe,9473,NL,"""""","""""","Freelancer,Desk Manufacturers",CUST100054,""""""
+55,Innovative Systems,Company,"""""",support@innovativesystems.com,+34 379963842,Calle de Picasso 76,"""""",Mourillos,Galicia,32817,ES,"""""",https://www.innovativesystems.com,Freelancer,CUST100055,""""""
+56,Pro Interiors,Company,"""""",info@prointeriors.com,+39 6382337971,Via della Chiesa 1,"""""",Paquier,Valle D'Aosta,11028,IT,IT164817928,"""""",Legal,CUST100056,""""""
+57,Creative Partners,Company,"""""",info@creativepartners.com,+33 020491678,Boulevard Berthier 198,"""""",Puligny-Montrachet,Bourgogne-Franche-Comté,21190,FR,"""""","""""","Partner,IT Services",CUST100057,Long-term partner
+58,Central Software,Company,"""""",sales@centralsoftware.com,+49 8104392502,Einsteinstraße 168,"""""",Mehlbach,Rheinland-Pfalz,67735,DE,DE545460327,https://www.centralsoftware.com,Supplier,CUST100058,""""""
+59,Digital Corp,Company,"""""",sales@digitalcorp.com,+34 860632616,Calle de Emilio Castelar 107,"""""",Espoz/Espotz,Navarra,31438,ES,ES092474591,"""""","Distributor,Freelancer",CUST100059,""""""
+60,Alpha Manufacturing,Company,"""""",contact@alphamanufacturing.com,+1 7920395827,Runnymede Road 122,Floor 20,Salaberry-de-Valleyfield North,Quebec,J6S,CA,"""""",https://www.alphamanufacturing.com,"Consulting Services,Retailer",CUST100060,""""""
+61,Mega Corp,Company,"""""",support@megacorp.com,"""""",Imperial Street 193,"""""",Port-Cartier,Quebec,G5B,CA,CA152641574,https://www.megacorp.com,Desk Manufacturers,CUST100061,Priority support
+62,Euro Manufacturing,Company,"""""",info@euromanufacturing.com,+33 274850648,Rue du Château 24,"""""",Trizay-Coutretot-Saint-Serge,Centre-Val de Loire,28400,FR,"""""","""""",Marketing,CUST100062,""""""
+63,Cloud Tech,Company,"""""",contact@cloudtech.com,+46 620470350,Lapplandsgatan 87,"""""",Göteborg,Västra Götaland,415 14,SE,"""""","""""","""""",CUST100063,""""""
+64,Mega Software,Company,"""""",hello@megasoftware.com,+49 4804634708,Goethestraße 185,"""""",Potsdam,Brandenburg,14482,DE,"""""","""""","""""",CUST100064,""""""
+65,Next Trading,Company,"""""",hello@nexttrading.com,+44 0858600088,Kingsway 168,"""""",Piddlehinton,England,DT2,GB,GB647262864,https://www.nexttrading.com,"Contractor,Distributor",CUST100065,""""""
+66,Global Corp,Company,"""""",sales@globalcorp.com,"""""",Rue Thiers 7,"""""",Saint-Maurice-l'Exil,Auvergne-Rhône-Alpes,38550,FR,FR850848107,"""""",Reseller,CUST100066,""""""
+67,Innovative Interiors,Company,"""""",hello@innovativeinteriors.com,+61 295564790,Park Street 189,"""""",Robinvale Irrigation District Section C,Victoria,3549,AU,"""""",https://www.innovativeinteriors.com,"Vendor,Partner",CUST100067,""""""
+68,Future Manufacturing,Company,"""""",sales@futuremanufacturing.com,+46 642938122,Karlstadsvägen 62,"""""",Boden,Norrbotten,961 98,SE,"""""","""""","""""",CUST100068,""""""
+69,Cloud Tech,Company,"""""",sales@cloudtech.com,+33 924517516,Rue de Condé 159,Floor 1,Nîmes,Occitanie,30936 CEDEX 9,FR,FR477719050,https://www.cloudtech.com,Healthcare,CUST100069,Priority support
+70,Modern Partners,Company,"""""",support@modernpartners.com,+81 6494795158,元町通 (Motomachi-dōri) 168,"""""",Nishishinjuku Shinjuku Enuesubiru,Tokyo To,163-0824,JP,JP022550838,https://www.modernpartners.com,Manufacturer,CUST100070,Long-term partner
+71,Nordic Systems,Company,"""""",contact@nordicsystems.com,+46 364263863,Västerlånggatan 37,"""""",Västra Frölunda,Västra Götaland,421 33,SE,SE058667635,https://www.nordicsystems.com,"Reseller,Partner",CUST100071,VIP customer
+72,Cyber Enterprises,Company,"""""",info@cyberenterprises.com,+61 300459765,Carlisle Street 12,Floor 8,Docklands,Victoria,3008,AU,AU398089425,https://www.cyberenterprises.com,"Legal,IT Services",CUST100072,""""""
+73,Elite Labs,Company,"""""",sales@elitelabs.com,+81 5398171171,桜通り (Sakura-dōri) 111,Floor 8,Shimizucho,Hyogo Ken,678-0212,JP,JP603162310,https://www.elitelabs.com,"""""",CUST100073,""""""
+74,Debora Ferretti,Person,"""""",debora.ferretti@example.com,"""""","""""","""""","""""","""""","""""",IT,"""""","""""","""""",CONT200001,""""""
+75,Karin Persson,Person,"""""",karin.persson@example.com,+46 551448064,"""""","""""","""""","""""","""""",SE,"""""","""""",Partner,"""""",""""""
+76,Oliver Bieri,Person,"""""",oliver.bieri@example.com,+41 237517451,"""""","""""","""""","""""","""""",CH,"""""","""""","""""",CONT200003,""""""
+77,Mattia Lombardo,Person,"""""",mattia.lombardo@example.com,+39 8149138958,"""""","""""","""""","""""","""""",IT,"""""","""""","""""",CONT200004,""""""
+78,Wei Ting Soh,Person,Alpha Solutions,weiting.soh@alphasolutions.com,+65 83700734,Outram Road 136,Apt 40,Rebecca Road,"""""",266709,SG,"""""","""""","""""","""""",""""""
+79,Jessica van Dam,Person,Atlantic Corp,jessica.vandam@atlanticcorp.com,+31 483790793,Vijzelstraat 84,"""""",Veghel,North Brabant,5462,NL,"""""","""""",Distributor,"""""",""""""
+80,Gustav Schmitz,Person,"""""",gustav.schmitz@example.com,"""""",Am Berg 43,"""""",Stuttgart Uhlbach,Baden-Württemberg,70329,DE,"""""","""""",Wholesaler,"""""",""""""
+81,Siti Cheah,Person,"""""",siti.cheah@example.com,+65 55301025,Anson Road 64,"""""",Lantana Avenue,"""""",277914,SG,"""""","""""","""""","""""",""""""
+82,Gwenaëlle Lemaire,Person,Creative Partners,gwenaelle.lemaire@creativepartners.com,+33 936769763,Boulevard Pereire 197,"""""",Puligny-Montrachet,Bourgogne-Franche-Comté,21190,FR,"""""","""""",Marketing,CONT200009,""""""
+83,Tiphaine Gauthier,Person,Creative Partners,tiphaine.gauthier@creativepartners.com,"""""",Rue de Fleurus 105,Apt 10,Puligny-Montrachet,Bourgogne-Franche-Comté,21190,FR,"""""","""""",Healthcare,"""""",""""""
+84,Dennis Maier,Person,Mega Software,dennis.maier@megasoftware.com,"""""",Thomas-Mann-Straße 167,"""""",Potsdam,Brandenburg,14482,DE,"""""","""""","""""","""""",""""""
+85,Nel Jansen,Person,Atlantic Corp,nel.jansen@atlanticcorp.com,"""""",Olympiaweg 198,Apt 50,Veghel,North Brabant,5462,NL,"""""","""""","""""",CONT200012,""""""
+86,Franco Gentili,Person,Smart Interiors,franco.gentili@smartinteriors.com,"""""",Corso Vittorio Emanuele 168,Apt 31,Telese Terme,Campania,82037,IT,"""""","""""",Contractor,"""""",""""""
+87,Lotte Vliet,Person,"""""",lotte.vliet@example.com,"""""","""""","""""","""""","""""","""""",NL,"""""","""""","""""","""""",""""""
+88,Sigrid Lindahl,Person,Creative Tech,sigrid.lindahl@creativetech.com,+46 145568710,Tegnérgatan 177,"""""",Kristinehamn,Värmland,681 84,SE,"""""","""""","""""",CONT200015,""""""
+89,Grazia Martino,Person,"""""",grazia.martino@example.com,+39 0135930214,"""""",Apt 2,"""""","""""","""""",IT,"""""","""""","""""","""""",""""""
+90,Barbara Palmieri,Person,"""""",barbara.palmieri@example.com,"""""","""""","""""","""""","""""","""""",IT,"""""","""""",Desk Manufacturers,CONT200017,""""""
+91,Eleanor Mitchell,Person,Alpha Solutions,eleanor.mitchell@alphasolutions.com,"""""",Mill Road 61,"""""",Cleveland,Ohio,44105,US,"""""","""""","""""",CONT200018,""""""
+92,Esme Rhodes,Person,Pro Digital,esme.rhodes@prodigital.com,+44 8507710901,Cedar Avenue 18,"""""",Charney Bassett,England,OX12,GB,"""""","""""","""""","""""",""""""
+93,Alexander Lundkvist,Person,Creative Tech,alexander.lundkvist@creativetech.com,+46 444208003,Industrivägen 92,"""""",Kristinehamn,Värmland,681 84,SE,"""""","""""",Desk Manufacturers,CONT200020,""""""
+94,Viktoria Håkansson,Person,Future Manufacturing,viktoria.hakansson@futuremanufacturing.com,"""""",Lilla Nygatan 124,"""""",Boden,Norrbotten,961 98,SE,"""""","""""",Agency,CONT200021,""""""
+95,Cheryl Murray,Person,"""""",cheryl.murray@example.com,"""""","""""",Apt 26,"""""","""""","""""",US,"""""","""""","""""","""""",""""""
+96,Carl Lindberg,Person,Cloud Tech,carl.lindberg@cloudtech.com,"""""",Universitetsvägen 15,"""""",Göteborg,Västra Götaland,415 14,SE,"""""","""""",Wholesaler,CONT200023,""""""
+97,Gianni Stocker,Person,"""""",gianni.stocker@example.com,+41 791692254,Rue de l'Hôpital 105,"""""",Oeschgen,Kanton Aargau,5072,CH,"""""","""""","""""","""""",""""""
+98,Ada Dunn,Person,Pro Digital,ada.dunn@prodigital.com,+44 4070283029,Wordsworth Road 52,Apt 41,Charney Bassett,England,OX12,GB,"""""","""""","""""","""""",""""""
+99,Tova Löfgren,Person,Creative Tech,tova.lofgren@creativetech.com,"""""",Skolgatan 181,"""""",Kristinehamn,Värmland,681 84,SE,"""""","""""",IT Services,"""""",""""""
+100,Yoshiko Iwasaki,Person,Elite Labs,yoshiko.iwasaki@elitelabs.com,+81 5140618189,中央通り (Chūō-dōri) 159,"""""",Shimizucho,Hyogo Ken,678-0212,JP,"""""","""""",IT Services,CONT200027,""""""

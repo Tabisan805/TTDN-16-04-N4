@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Cron: Tạo bảng công tự động đầu tháng -->
+    <record id="ir_cron_create_work_entry" model="ir.cron">
+        <field name="name">BTL HR: Tạo bảng công tháng mới</field>
+        <field name="model_id" ref="model_hr_work_entry_btl"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_create_monthly_work_entry()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+    
+    <!-- Cron: Tạo đánh giá hiệu suất tháng mới -->
+    <record id="ir_cron_create_performance" model="ir.cron">
+        <field name="name">BTL HR: Tạo đánh giá hiệu suất tháng mới</field>
+        <field name="model_id" ref="model_hr_performance"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_create_monthly_performance()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+    
+    <!-- Cron: Nhắc nhở chốt công cuối tháng -->
+    <record id="ir_cron_remind_lock_work_entry" model="ir.cron">
+        <field name="name">BTL HR: Nhắc chốt công cuối tháng</field>
+        <field name="model_id" ref="model_hr_work_entry_btl"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_remind_lock_work_entry()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+
+</odoo>

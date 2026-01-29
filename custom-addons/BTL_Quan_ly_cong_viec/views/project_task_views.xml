@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- ==================== PROJECT TASK VIEWS ==================== -->
+    
+    <!-- Form View - Kế thừa và mở rộng -->
+    <record id="project_task_btl_form_view" model="ir.ui.view">
+        <field name="name">project.task.btl.form</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            
+            <!-- Thêm buttons -->
+            <xpath expr="//header" position="inside">
+                <button name="action_start_task" string="Bắt đầu" type="object" 
+                        invisible="task_status != 'not_started'" class="oe_highlight"/>
+                <button name="action_complete_task" string="Hoàn thành" type="object" 
+                        invisible="task_status == 'completed'" class="oe_highlight"/>
+                <button name="action_handover_task" string="Bàn giao" type="object"/>
+                <button name="action_cancel_task" string="Hủy" type="object" 
+                        invisible="task_status in ['completed', 'cancelled']"/>
+                <field name="task_status" widget="statusbar" statusbar_visible="not_started,in_progress,completed"/>
+            </xpath>
+            
+            <!-- Thêm thông tin BTL -->
+            <xpath expr="//field[@name='user_ids']" position="after">
+                <field name="task_type_code"/>
+                <field name="priority_level"/>
+                <field name="department_id"/>
+                <field name="assigned_by_id"/>
+            </xpath>
+            
+            <!-- Tab mới cho thông tin chi tiết -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Thông tin BTL">
+                    <group>
+                        <group string="Liên kết">
+                            <field name="partner_id"/>
+                            <field name="lead_id"/>
+                            <field name="sale_order_id"/>
+                        </group>
+                        <group string="Thời gian">
+                            <field name="date_start"/>
+                            <field name="date_deadline"/>
+                            <field name="date_end"/>
+                            <field name="duration_planned"/>
+                            <field name="duration_actual"/>
+                            <field name="is_overdue"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Tiến độ">
+                            <field name="completion_percentage" widget="progressbar"/>
+                        </group>
+                        <group string="Phối hợp">
+                            <field name="collaborator_ids" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                    <group string="Kết quả thực hiện">
+                        <field name="result_note" nolabel="1"/>
+                    </group>
+                </page>
+                
+                <page string="Lịch sử bàn giao">
+                    <field name="handover_ids">
+                        <list>
+                            <field name="handover_date"/>
+                            <field name="from_user_id"/>
+                            <field name="to_user_id"/>
+                            <field name="reason"/>
+                            <field name="state"/>
+                        </list>
+                    </field>
+                </page>
+                
+                <page string="Lịch sử thay đổi">
+                    <field name="history_ids">
+                        <list>
+                            <field name="change_date"/>
+                            <field name="user_id"/>
+                            <field name="description"/>
+                            <field name="old_value"/>
+                            <field name="new_value"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+            
+        </field>
+    </record>
+    
+    <!-- List View - Kế thừa và mở rộng -->
+    <record id="project_task_btl_list_view" model="ir.ui.view">
+        <field name="name">project.task.btl.list</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_tree2"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="task_type_code"/>
+                <field name="priority_level"/>
+                <field name="task_status"/>
+                <field name="completion_percentage" widget="progressbar"/>
+                <field name="is_overdue"/>
+            </field>
+        </field>
+    </record>
+    
+    <!-- Search View -->
+    <record id="project_task_btl_search_view" model="ir.ui.view">
+        <field name="name">project.task.btl.search</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_search_form"/>
+        <field name="arch" type="xml">
+            <filter name="my_tasks" position="after">
+                <filter string="Công việc của tôi (BTL)" name="my_tasks_btl" 
+                        domain="['|', '|', ('user_ids', 'in', [uid]), ('assigned_by_id', '=', uid), ('collaborator_ids', 'in', [uid])]"/>
+                <separator/>
+                <filter string="Quá hạn" name="overdue" 
+                        domain="[('is_overdue', '=', True)]"/>
+                <separator/>
+                <filter string="Sale" name="type_sale" 
+                        domain="[('task_type_code', '=', 'sale')]"/>
+                <filter string="Marketing" name="type_marketing" 
+                        domain="[('task_type_code', '=', 'marketing')]"/>
+                <filter string="Kế toán" name="type_accounting" 
+                        domain="[('task_type_code', '=', 'accounting')]"/>
+                <filter string="Nhân sự" name="type_hr" 
+                        domain="[('task_type_code', '=', 'hr')]"/>
+                <filter string="Trợ lý" name="type_assistant" 
+                        domain="[('task_type_code', '=', 'assistant')]"/>
+            </filter>
+            <field name="name" position="after">
+                <field name="task_type_code"/>
+                <field name="department_id"/>
+                <field name="assigned_by_id"/>
+            </field>
+            <group position="inside">
+                <filter string="Loại công việc" name="group_task_type" context="{'group_by': 'task_type_code'}"/>
+                <filter string="Phòng ban" name="group_department" context="{'group_by': 'department_id'}"/>
+                <filter string="Trạng thái" name="group_status" context="{'group_by': 'task_status'}"/>
+            </group>
+        </field>
+    </record>
+    
+    <!-- Action -->
+    <record id="project_task_btl_action" model="ir.actions.act_window">
+        <field name="name">Công việc BTL</field>
+        <field name="res_model">project.task</field>
+        <field name="view_mode">list,form,kanban,calendar,pivot,graph</field>
+        <field name="context">{'search_default_my_tasks_btl': 1}</field>
+    </record>
+    
+</odoo>

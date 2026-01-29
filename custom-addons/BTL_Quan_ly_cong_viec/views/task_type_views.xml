@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- ==================== TASK TYPE VIEWS ==================== -->
+    
+    <!-- List View -->
+    <record id="task_type_btl_list_view" model="ir.ui.view">
+        <field name="name">task.type.btl.list</field>
+        <field name="model">task.type.btl</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="task_count"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+    
+    <!-- Form View -->
+    <record id="task_type_btl_form_view" model="ir.ui.view">
+        <field name="name">task.type.btl.form</field>
+        <field name="model">task.type.btl</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Tên loại công việc..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="code"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                        </group>
+                        <group>
+                            <field name="color" widget="color"/>
+                            <field name="icon"/>
+                            <field name="task_count"/>
+                        </group>
+                    </group>
+                    <group string="Mô tả">
+                        <field name="description" nolabel="1"/>
+                    </group>
+                    <group string="Phòng ban áp dụng">
+                        <field name="department_ids" nolabel="1" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- Action -->
+    <record id="task_type_btl_action" model="ir.actions.act_window">
+        <field name="name">Loại công việc</field>
+        <field name="res_model">task.type.btl</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    
+</odoo>

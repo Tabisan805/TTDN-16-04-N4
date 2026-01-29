@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <!-- Report Template -->
+        <record id="report_task_performance" model="ir.actions.report">
+            <field name="name">Báo cáo hiệu suất</field>
+            <field name="model">task.performance.btl</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">Quan_ly_cong_viec.report_task_performance_document</field>
+            <field name="report_file">Quan_ly_cong_viec.report_task_performance_document</field>
+            <field name="binding_model_id" ref="model_task_performance_btl"/>
+            <field name="binding_type">report</field>
+        </record>
+        
+        <!-- Report Template QWeb -->
+        <template id="report_task_performance_document">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2>
+                                <span t-field="o.name"/>
+                            </h2>
+                            
+                            <div class="row mt32 mb32">
+                                <div class="col-6">
+                                    <strong>Kỳ báo cáo:</strong> <span t-field="o.period_type"/><br/>
+                                    <strong>Từ ngày:</strong> <span t-field="o.date_from"/><br/>
+                                    <strong>Đến ngày:</strong> <span t-field="o.date_to"/><br/>
+                                </div>
+                                <div class="col-6">
+                                    <strong>Loại báo cáo:</strong> <span t-field="o.report_type"/><br/>
+                                    <strong t-if="o.user_id">Nhân viên:</strong> <span t-field="o.user_id" t-if="o.user_id"/><br/>
+                                    <strong t-if="o.department_id">Phòng ban:</strong> <span t-field="o.department_id" t-if="o.department_id"/><br/>
+                                </div>
+                            </div>
+                            
+                            <h3>Thống kê tổng quan</h3>
+                            <table class="table table-sm">
+                                <tr>
+                                    <td><strong>Tổng công việc:</strong></td>
+                                    <td><span t-field="o.total_tasks"/></td>
+                                    <td><strong>Hoàn thành:</strong></td>
+                                    <td><span t-field="o.tasks_completed"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Đang thực hiện:</strong></td>
+                                    <td><span t-field="o.tasks_in_progress"/></td>
+                                    <td><strong>Quá hạn:</strong></td>
+                                    <td><span t-field="o.tasks_overdue"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tỷ lệ hoàn thành:</strong></td>
+                                    <td><span t-field="o.completion_rate"/>%</td>
+                                    <td><strong>Tỷ lệ quá hạn:</strong></td>
+                                    <td><span t-field="o.overdue_rate"/>%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Thời gian TB:</strong></td>
+                                    <td><span t-field="o.avg_completion_time"/> giờ</td>
+                                    <td><strong>Tổng thời gian:</strong></td>
+                                    <td><span t-field="o.total_time_spent"/> giờ</td>
+                                </tr>
+                            </table>
+                            
+                            <h3 class="mt32">Theo loại công việc</h3>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Loại công việc</th>
+                                        <th>Tổng số</th>
+                                        <th>Hoàn thành</th>
+                                        <th>Tỷ lệ (%)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="o.task_by_type_ids" t-as="line">
+                                        <td><span t-field="line.task_type_id"/></td>
+                                        <td><span t-field="line.total_tasks"/></td>
+                                        <td><span t-field="line.completed_tasks"/></td>
+                                        <td><span t-field="line.completion_rate"/>%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+        
+    </data>
+</odoo>

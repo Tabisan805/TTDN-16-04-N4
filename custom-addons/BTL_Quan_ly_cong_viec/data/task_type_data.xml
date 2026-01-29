@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- Loại công việc: Sale -->
+        <record id="task_type_sale" model="task.type.btl">
+            <field name="name">Bán hàng</field>
+            <field name="code">sale</field>
+            <field name="description">Công việc liên quan đến bán hàng, chăm sóc khách hàng, follow-up</field>
+            <field name="sequence">10</field>
+            <field name="color">3</field>
+            <field name="icon">fa-shopping-cart</field>
+        </record>
+        
+        <!-- Loại công việc: Marketing -->
+        <record id="task_type_marketing" model="task.type.btl">
+            <field name="name">Marketing</field>
+            <field name="code">marketing</field>
+            <field name="description">Chiến dịch marketing, content, quảng cáo</field>
+            <field name="sequence">20</field>
+            <field name="color">5</field>
+            <field name="icon">fa-bullhorn</field>
+        </record>
+        
+        <!-- Loại công việc: Kế toán -->
+        <record id="task_type_accounting" model="task.type.btl">
+            <field name="name">Kế toán</field>
+            <field name="code">accounting</field>
+            <field name="description">Hóa đơn, thanh toán, báo cáo tài chính</field>
+            <field name="sequence">30</field>
+            <field name="color">2</field>
+            <field name="icon">fa-calculator</field>
+        </record>
+        
+        <!-- Loại công việc: Nhân sự -->
+        <record id="task_type_hr" model="task.type.btl">
+            <field name="name">Nhân sự</field>
+            <field name="code">hr</field>
+            <field name="description">Tuyển dụng, đánh giá, đào tạo nhân sự</field>
+            <field name="sequence">40</field>
+            <field name="color">8</field>
+            <field name="icon">fa-users</field>
+        </record>
+        
+        <!-- Loại công việc: Trợ lý -->
+        <record id="task_type_assistant" model="task.type.btl">
+            <field name="name">Trợ lý</field>
+            <field name="code">assistant</field>
+            <field name="description">Sắp xếp lịch, hỗ trợ hành chính, văn phòng</field>
+            <field name="sequence">50</field>
+            <field name="color">1</field>
+            <field name="icon">fa-briefcase</field>
+        </record>
+        
+    </data>
+</odoo>

@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 200 Project Task Records -->
+        <record id="task_demo_001" model="project.task">
+            <field name="name">Chạy ads Google #1</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Chạy ads Google cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_002" model="project.task">
+            <field name="name">Thanh toán nhà cung cấp #2</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Thanh toán nhà cung cấp cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_003" model="project.task">
+            <field name="name">Phân tích thị trường #3</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Phân tích thị trường cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_004" model="project.task">
+            <field name="name">Tổ chức team building #4</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Tổ chức team building cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_005" model="project.task">
+            <field name="name">Đàm phán hợp đồng #5</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_039"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_003"/>
+            <field name="description">&lt;p&gt;Công việc Đàm phán hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_006" model="project.task">
+            <field name="name">Gửi báo giá #6</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_045"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_043"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_007" model="project.task">
+            <field name="name">Lên kế hoạch chiến dịch #7</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Lên kế hoạch chiến dịch cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_008" model="project.task">
+            <field name="name">Nhập hóa đơn #8</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Nhập hóa đơn cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_009" model="project.task">
+            <field name="name">SEO website #9</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc SEO website cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_010" model="project.task">
+            <field name="name">Đối chiếu công nợ #10</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đối chiếu công nợ cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_011" model="project.task">
+            <field name="name">Quyết toán thuế #11</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Quyết toán thuế cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_012" model="project.task">
+            <field name="name">Thanh toán nhà cung cấp #12</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Thanh toán nhà cung cấp cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_013" model="project.task">
+            <field name="name">Đặt phòng họp #13</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đặt phòng họp cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_014" model="project.task">
+            <field name="name">Thiết kế banner quảng cáo #14</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Thiết kế banner quảng cáo cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_015" model="project.task">
+            <field name="name">Chuẩn bị tài liệu họp #15</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Chuẩn bị tài liệu họp cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_016" model="project.task">
+            <field name="name">Đàm phán hợp đồng #16</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_099"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_003"/>
+            <field name="description">&lt;p&gt;Công việc Đàm phán hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_017" model="project.task">
+            <field name="name">Lập bảng lương #17</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Lập bảng lương cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_018" model="project.task">
+            <field name="name">Gửi báo giá #18</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_025"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_024"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_019" model="project.task">
+            <field name="name">Tiếp khách #19</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Tiếp khách cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_020" model="project.task">
+            <field name="name">Tiếp khách #20</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Tiếp khách cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_021" model="project.task">
+            <field name="name">Lên kế hoạch chiến dịch #21</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Lên kế hoạch chiến dịch cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_022" model="project.task">
+            <field name="name">Ký kết hợp đồng #22</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_067"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_019"/>
+            <field name="description">&lt;p&gt;Công việc Ký kết hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_023" model="project.task">
+            <field name="name">Sắp xếp lịch làm việc #23</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Sắp xếp lịch làm việc cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_024" model="project.task">
+            <field name="name">Đàm phán hợp đồng #24</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_022"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_006"/>
+            <field name="description">&lt;p&gt;Công việc Đàm phán hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_025" model="project.task">
+            <field name="name">Kiểm tra sổ sách #25</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Kiểm tra sổ sách cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_026" model="project.task">
+            <field name="name">Tiếp khách #26</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">not_started</field>
+            <field name="description">&lt;p&gt;Công việc Tiếp khách cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_027" model="project.task">
+            <field name="name">Mua văn phòng phẩm #27</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">not_started</field>
+            <field name="description">&lt;p&gt;Công việc Mua văn phòng phẩm cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_028" model="project.task">
+            <field name="name">Email marketing #28</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Email marketing cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_029" model="project.task">
+            <field name="name">Đánh giá hiệu suất #29</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đánh giá hiệu suất cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_030" model="project.task">
+            <field name="name">Chuẩn bị tài liệu họp #30</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Chuẩn bị tài liệu họp cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_031" model="project.task">
+            <field name="name">Quyết toán thuế #31</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Quyết toán thuế cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_032" model="project.task">
+            <field name="name">Mua văn phòng phẩm #32</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">not_started</field>
+            <field name="description">&lt;p&gt;Công việc Mua văn phòng phẩm cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_033" model="project.task">
+            <field name="name">Nhập hóa đơn #33</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Nhập hóa đơn cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_034" model="project.task">
+            <field name="name">Xử lý kỷ luật #34</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Xử lý kỷ luật cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_035" model="project.task">
+            <field name="name">Đặt vé máy bay #35</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đặt vé máy bay cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_036" model="project.task">
+            <field name="name">Sắp xếp lịch làm việc #36</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Sắp xếp lịch làm việc cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_037" model="project.task">
+            <field name="name">Đánh giá hiệu suất #37</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đánh giá hiệu suất cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_038" model="project.task">
+            <field name="name">Thanh toán nhà cung cấp #38</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Thanh toán nhà cung cấp cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_039" model="project.task">
+            <field name="name">Tổ chức sự kiện #39</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Tổ chức sự kiện cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_040" model="project.task">
+            <field name="name">Đào tạo kỹ năng #40</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đào tạo kỹ năng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_041" model="project.task">
+            <field name="name">Demo sản phẩm #41</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_017"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_018"/>
+            <field name="description">&lt;p&gt;Công việc Demo sản phẩm cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_042" model="project.task">
+            <field name="name">Chăm sóc khách hàng #42</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">not_started</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_011"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_019"/>
+            <field name="description">&lt;p&gt;Công việc Chăm sóc khách hàng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_043" model="project.task">
+            <field name="name">Liên hệ khách hàng mới #43</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_033"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_045"/>
+            <field name="description">&lt;p&gt;Công việc Liên hệ khách hàng mới cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_044" model="project.task">
+            <field name="name">Tiếp khách #44</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">not_started</field>
+            <field name="description">&lt;p&gt;Công việc Tiếp khách cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_045" model="project.task">
+            <field name="name">Chăm sóc khách hàng #45</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_087"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_049"/>
+            <field name="description">&lt;p&gt;Công việc Chăm sóc khách hàng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_046" model="project.task">
+            <field name="name">Đánh giá hiệu suất #46</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Đánh giá hiệu suất cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_047" model="project.task">
+            <field name="name">Gửi báo giá #47</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_002"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_032"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_048" model="project.task">
+            <field name="name">Xử lý nghỉ phép #48</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Xử lý nghỉ phép cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_049" model="project.task">
+            <field name="name">Chuẩn bị tài liệu họp #49</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Chuẩn bị tài liệu họp cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_050" model="project.task">
+            <field name="name">Book khách sạn #50</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Book khách sạn cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_051" model="project.task">
+            <field name="name">Theo dõi thanh toán #51</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_046"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_006"/>
+            <field name="description">&lt;p&gt;Công việc Theo dõi thanh toán cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_052" model="project.task">
+            <field name="name">Lên kế hoạch chiến dịch #52</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Lên kế hoạch chiến dịch cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_053" model="project.task">
+            <field name="name">Phân tích thị trường #53</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Phân tích thị trường cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_054" model="project.task">
+            <field name="name">Chăm sóc khách hàng #54</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_079"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_048"/>
+            <field name="description">&lt;p&gt;Công việc Chăm sóc khách hàng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_055" model="project.task">
+            <field name="name">Đối chiếu công nợ #55</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đối chiếu công nợ cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_056" model="project.task">
+            <field name="name">Lập báo cáo tài chính #56</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Lập báo cáo tài chính cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_057" model="project.task">
+            <field name="name">Tổ chức sự kiện #57</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Tổ chức sự kiện cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_058" model="project.task">
+            <field name="name">Ký kết hợp đồng #58</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">not_started</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_075"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_040"/>
+            <field name="description">&lt;p&gt;Công việc Ký kết hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_059" model="project.task">
+            <field name="name">Đối chiếu công nợ #59</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đối chiếu công nợ cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_060" model="project.task">
+            <field name="name">Lập báo cáo tài chính #60</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Lập báo cáo tài chính cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_061" model="project.task">
+            <field name="name">Book khách sạn #61</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">not_started</field>
+            <field name="description">&lt;p&gt;Công việc Book khách sạn cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_062" model="project.task">
+            <field name="name">Đàm phán hợp đồng #62</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_095"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_015"/>
+            <field name="description">&lt;p&gt;Công việc Đàm phán hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_063" model="project.task">
+            <field name="name">Lập bảng lương #63</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Lập bảng lương cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_064" model="project.task">
+            <field name="name">Đàm phán hợp đồng #64</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_005"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_028"/>
+            <field name="description">&lt;p&gt;Công việc Đàm phán hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_065" model="project.task">
+            <field name="name">Liên hệ khách hàng mới #65</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_088"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_034"/>
+            <field name="description">&lt;p&gt;Công việc Liên hệ khách hàng mới cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_066" model="project.task">
+            <field name="name">Tuyển dụng nhân viên mới #66</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Tuyển dụng nhân viên mới cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_067" model="project.task">
+            <field name="name">Phân tích thị trường #67</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Phân tích thị trường cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_068" model="project.task">
+            <field name="name">Xử lý nghỉ phép #68</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Xử lý nghỉ phép cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_069" model="project.task">
+            <field name="name">Mua văn phòng phẩm #69</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Mua văn phòng phẩm cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_070" model="project.task">
+            <field name="name">Mua văn phòng phẩm #70</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Mua văn phòng phẩm cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_071" model="project.task">
+            <field name="name">Book khách sạn #71</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Book khách sạn cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_072" model="project.task">
+            <field name="name">Chuẩn bị tài liệu họp #72</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Chuẩn bị tài liệu họp cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_073" model="project.task">
+            <field name="name">Lập bảng lương #73</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Lập bảng lương cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_074" model="project.task">
+            <field name="name">Tổ chức team building #74</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Tổ chức team building cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_075" model="project.task">
+            <field name="name">Tiếp khách #75</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">not_started</field>
+            <field name="description">&lt;p&gt;Công việc Tiếp khách cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_076" model="project.task">
+            <field name="name">Quyết toán thuế #76</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Quyết toán thuế cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_077" model="project.task">
+            <field name="name">Chạy ads Google #77</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Chạy ads Google cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_078" model="project.task">
+            <field name="name">Ký kết hợp đồng #78</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_095"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_019"/>
+            <field name="description">&lt;p&gt;Công việc Ký kết hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_079" model="project.task">
+            <field name="name">Thiết kế banner quảng cáo #79</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Thiết kế banner quảng cáo cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_080" model="project.task">
+            <field name="name">Xử lý nghỉ phép #80</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Xử lý nghỉ phép cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_081" model="project.task">
+            <field name="name">Ký kết hợp đồng #81</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_041"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_011"/>
+            <field name="description">&lt;p&gt;Công việc Ký kết hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_082" model="project.task">
+            <field name="name">Gửi báo giá #82</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_063"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_039"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_083" model="project.task">
+            <field name="name">Tổ chức team building #83</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Tổ chức team building cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_084" model="project.task">
+            <field name="name">Đàm phán hợp đồng #84</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_087"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_028"/>
+            <field name="description">&lt;p&gt;Công việc Đàm phán hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_085" model="project.task">
+            <field name="name">Ký kết hợp đồng #85</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_022"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_034"/>
+            <field name="description">&lt;p&gt;Công việc Ký kết hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_086" model="project.task">
+            <field name="name">Xử lý kỷ luật #86</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Xử lý kỷ luật cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_087" model="project.task">
+            <field name="name">Sắp xếp lịch làm việc #87</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Sắp xếp lịch làm việc cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_088" model="project.task">
+            <field name="name">Lập bảng lương #88</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Lập bảng lương cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_089" model="project.task">
+            <field name="name">Sửa chữa thiết bị #89</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Sửa chữa thiết bị cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_090" model="project.task">
+            <field name="name">Phân tích thị trường #90</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Phân tích thị trường cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_091" model="project.task">
+            <field name="name">Cập nhật hồ sơ nhân sự #91</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Cập nhật hồ sơ nhân sự cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_092" model="project.task">
+            <field name="name">Sửa chữa thiết bị #92</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Sửa chữa thiết bị cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_093" model="project.task">
+            <field name="name">Sửa chữa thiết bị #93</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Sửa chữa thiết bị cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_094" model="project.task">
+            <field name="name">Tuyển dụng nhân viên mới #94</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Tuyển dụng nhân viên mới cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_095" model="project.task">
+            <field name="name">Sửa chữa thiết bị #95</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Sửa chữa thiết bị cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_096" model="project.task">
+            <field name="name">Gửi báo giá #96</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_041"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_036"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_097" model="project.task">
+            <field name="name">Chăm sóc khách hàng #97</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_096"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_030"/>
+            <field name="description">&lt;p&gt;Công việc Chăm sóc khách hàng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_098" model="project.task">
+            <field name="name">Gửi báo giá #98</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_095"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_012"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_099" model="project.task">
+            <field name="name">Xử lý khiếu nại #99</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_017"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_047"/>
+            <field name="description">&lt;p&gt;Công việc Xử lý khiếu nại cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_100" model="project.task">
+            <field name="name">Đối chiếu công nợ #100</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đối chiếu công nợ cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_101" model="project.task">
+            <field name="name">Phân tích thị trường #101</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Phân tích thị trường cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_102" model="project.task">
+            <field name="name">Cập nhật hồ sơ nhân sự #102</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Cập nhật hồ sơ nhân sự cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_103" model="project.task">
+            <field name="name">Thiết kế banner quảng cáo #103</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Thiết kế banner quảng cáo cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_104" model="project.task">
+            <field name="name">Cập nhật hồ sơ nhân sự #104</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Cập nhật hồ sơ nhân sự cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_105" model="project.task">
+            <field name="name">Lên kế hoạch chiến dịch #105</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Lên kế hoạch chiến dịch cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_106" model="project.task">
+            <field name="name">Mua văn phòng phẩm #106</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Mua văn phòng phẩm cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_107" model="project.task">
+            <field name="name">Xử lý nghỉ phép #107</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">not_started</field>
+            <field name="description">&lt;p&gt;Công việc Xử lý nghỉ phép cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_108" model="project.task">
+            <field name="name">Gửi báo giá #108</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_100"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_045"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_109" model="project.task">
+            <field name="name">Tuyển dụng nhân viên mới #109</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Tuyển dụng nhân viên mới cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_110" model="project.task">
+            <field name="name">Demo sản phẩm #110</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_037"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_004"/>
+            <field name="description">&lt;p&gt;Công việc Demo sản phẩm cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_111" model="project.task">
+            <field name="name">Theo dõi thanh toán #111</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">in_progress</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_066"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_001"/>
+            <field name="description">&lt;p&gt;Công việc Theo dõi thanh toán cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_112" model="project.task">
+            <field name="name">Xử lý nghỉ phép #112</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">not_started</field>
+            <field name="description">&lt;p&gt;Công việc Xử lý nghỉ phép cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_113" model="project.task">
+            <field name="name">Đối chiếu công nợ #113</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đối chiếu công nợ cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_114" model="project.task">
+            <field name="name">Onboarding nhân viên #114</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Onboarding nhân viên cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_115" model="project.task">
+            <field name="name">Nhập hóa đơn #115</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Nhập hóa đơn cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_116" model="project.task">
+            <field name="name">Tiếp khách #116</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Tiếp khách cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_117" model="project.task">
+            <field name="name">Quyết toán thuế #117</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Quyết toán thuế cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_118" model="project.task">
+            <field name="name">Sắp xếp lịch làm việc #118</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Sắp xếp lịch làm việc cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_119" model="project.task">
+            <field name="name">Lập báo cáo tài chính #119</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Lập báo cáo tài chính cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_120" model="project.task">
+            <field name="name">Lập báo cáo tài chính #120</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Lập báo cáo tài chính cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_121" model="project.task">
+            <field name="name">Sửa chữa thiết bị #121</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Sửa chữa thiết bị cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_122" model="project.task">
+            <field name="name">Đánh giá hiệu suất #122</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Đánh giá hiệu suất cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_123" model="project.task">
+            <field name="name">Gửi báo giá #123</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_093"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_019"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_124" model="project.task">
+            <field name="name">Xử lý kỷ luật #124</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Xử lý kỷ luật cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_125" model="project.task">
+            <field name="name">Đánh giá hiệu suất #125</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Đánh giá hiệu suất cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_126" model="project.task">
+            <field name="name">Đàm phán hợp đồng #126</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">in_progress</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_023"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_017"/>
+            <field name="description">&lt;p&gt;Công việc Đàm phán hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_127" model="project.task">
+            <field name="name">Sắp xếp lịch làm việc #127</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Sắp xếp lịch làm việc cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_128" model="project.task">
+            <field name="name">Thu tiền khách hàng #128</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Thu tiền khách hàng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_129" model="project.task">
+            <field name="name">Email marketing #129</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Email marketing cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_130" model="project.task">
+            <field name="name">Gửi báo giá #130</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_015"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_007"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_131" model="project.task">
+            <field name="name">Xử lý nghỉ phép #131</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Xử lý nghỉ phép cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_132" model="project.task">
+            <field name="name">Liên hệ khách hàng mới #132</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_034"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_041"/>
+            <field name="description">&lt;p&gt;Công việc Liên hệ khách hàng mới cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_133" model="project.task">
+            <field name="name">Phân tích thị trường #133</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">not_started</field>
+            <field name="description">&lt;p&gt;Công việc Phân tích thị trường cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_134" model="project.task">
+            <field name="name">Đặt phòng họp #134</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Đặt phòng họp cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_135" model="project.task">
+            <field name="name">Đặt vé máy bay #135</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đặt vé máy bay cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_136" model="project.task">
+            <field name="name">Tổ chức team building #136</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Tổ chức team building cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_137" model="project.task">
+            <field name="name">SEO website #137</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">not_started</field>
+            <field name="description">&lt;p&gt;Công việc SEO website cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_138" model="project.task">
+            <field name="name">Thiết kế banner quảng cáo #138</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Thiết kế banner quảng cáo cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_139" model="project.task">
+            <field name="name">Ký kết hợp đồng #139</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_045"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_050"/>
+            <field name="description">&lt;p&gt;Công việc Ký kết hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_140" model="project.task">
+            <field name="name">Xử lý nghỉ phép #140</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Xử lý nghỉ phép cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_141" model="project.task">
+            <field name="name">Gửi báo giá #141</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">in_progress</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_096"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_028"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_142" model="project.task">
+            <field name="name">Lên kế hoạch chiến dịch #142</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Lên kế hoạch chiến dịch cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_143" model="project.task">
+            <field name="name">Gửi báo giá #143</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_097"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_014"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_144" model="project.task">
+            <field name="name">Viết content Facebook #144</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Viết content Facebook cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_145" model="project.task">
+            <field name="name">Đối chiếu công nợ #145</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đối chiếu công nợ cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_146" model="project.task">
+            <field name="name">Tổ chức sự kiện #146</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Tổ chức sự kiện cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_147" model="project.task">
+            <field name="name">Đặt vé máy bay #147</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Đặt vé máy bay cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_148" model="project.task">
+            <field name="name">Phân tích thị trường #148</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Phân tích thị trường cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_149" model="project.task">
+            <field name="name">Book khách sạn #149</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Book khách sạn cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_150" model="project.task">
+            <field name="name">Chạy ads Google #150</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Chạy ads Google cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_151" model="project.task">
+            <field name="name">Sắp xếp lịch làm việc #151</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Sắp xếp lịch làm việc cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_152" model="project.task">
+            <field name="name">Lập báo cáo tài chính #152</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Lập báo cáo tài chính cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_153" model="project.task">
+            <field name="name">Ký kết hợp đồng #153</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_020"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_046"/>
+            <field name="description">&lt;p&gt;Công việc Ký kết hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_154" model="project.task">
+            <field name="name">Đào tạo kỹ năng #154</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đào tạo kỹ năng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_155" model="project.task">
+            <field name="name">Gửi báo giá #155</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_092"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_026"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_156" model="project.task">
+            <field name="name">Ký kết hợp đồng #156</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_087"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_045"/>
+            <field name="description">&lt;p&gt;Công việc Ký kết hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_157" model="project.task">
+            <field name="name">Thiết kế banner quảng cáo #157</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Thiết kế banner quảng cáo cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_158" model="project.task">
+            <field name="name">Đánh giá hiệu suất #158</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đánh giá hiệu suất cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_159" model="project.task">
+            <field name="name">Đánh giá hiệu suất #159</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">not_started</field>
+            <field name="description">&lt;p&gt;Công việc Đánh giá hiệu suất cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_160" model="project.task">
+            <field name="name">Book khách sạn #160</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Book khách sạn cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_161" model="project.task">
+            <field name="name">Xử lý nghỉ phép #161</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Xử lý nghỉ phép cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_162" model="project.task">
+            <field name="name">Xử lý khiếu nại #162</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_031"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_007"/>
+            <field name="description">&lt;p&gt;Công việc Xử lý khiếu nại cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_163" model="project.task">
+            <field name="name">Theo dõi thanh toán #163</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">not_started</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_010"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_046"/>
+            <field name="description">&lt;p&gt;Công việc Theo dõi thanh toán cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_164" model="project.task">
+            <field name="name">Gửi báo giá #164</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_018"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_034"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_165" model="project.task">
+            <field name="name">Ký kết hợp đồng #165</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_057"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_045"/>
+            <field name="description">&lt;p&gt;Công việc Ký kết hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_166" model="project.task">
+            <field name="name">Lập bảng lương #166</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Lập bảng lương cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_167" model="project.task">
+            <field name="name">Tiếp khách #167</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Tiếp khách cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_168" model="project.task">
+            <field name="name">Ký kết hợp đồng #168</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">not_started</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_081"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_031"/>
+            <field name="description">&lt;p&gt;Công việc Ký kết hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_169" model="project.task">
+            <field name="name">Liên hệ khách hàng mới #169</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_042"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_013"/>
+            <field name="description">&lt;p&gt;Công việc Liên hệ khách hàng mới cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_170" model="project.task">
+            <field name="name">Sắp xếp lịch làm việc #170</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Sắp xếp lịch làm việc cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_171" model="project.task">
+            <field name="name">Email marketing #171</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Email marketing cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_172" model="project.task">
+            <field name="name">Lập báo cáo tài chính #172</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Lập báo cáo tài chính cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_173" model="project.task">
+            <field name="name">Mua văn phòng phẩm #173</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Mua văn phòng phẩm cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_174" model="project.task">
+            <field name="name">Lập báo cáo tài chính #174</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Lập báo cáo tài chính cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_175" model="project.task">
+            <field name="name">Xử lý khiếu nại #175</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_038"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_034"/>
+            <field name="description">&lt;p&gt;Công việc Xử lý khiếu nại cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_176" model="project.task">
+            <field name="name">Ký kết hợp đồng #176</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_050"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_037"/>
+            <field name="description">&lt;p&gt;Công việc Ký kết hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_177" model="project.task">
+            <field name="name">Xử lý nghỉ phép #177</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Xử lý nghỉ phép cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_178" model="project.task">
+            <field name="name">Liên hệ khách hàng mới #178</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_051"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_008"/>
+            <field name="description">&lt;p&gt;Công việc Liên hệ khách hàng mới cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_179" model="project.task">
+            <field name="name">Cập nhật hồ sơ nhân sự #179</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Cập nhật hồ sơ nhân sự cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_180" model="project.task">
+            <field name="name">Liên hệ khách hàng mới #180</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_033"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_001"/>
+            <field name="description">&lt;p&gt;Công việc Liên hệ khách hàng mới cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_181" model="project.task">
+            <field name="name">Thiết kế banner quảng cáo #181</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Thiết kế banner quảng cáo cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_182" model="project.task">
+            <field name="name">Lập báo cáo tài chính #182</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Lập báo cáo tài chính cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_183" model="project.task">
+            <field name="name">Chuẩn bị tài liệu họp #183</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Chuẩn bị tài liệu họp cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_184" model="project.task">
+            <field name="name">Ký kết hợp đồng #184</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_037"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_036"/>
+            <field name="description">&lt;p&gt;Công việc Ký kết hợp đồng cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_185" model="project.task">
+            <field name="name">Nhập hóa đơn #185</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Nhập hóa đơn cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_186" model="project.task">
+            <field name="name">Gửi báo giá #186</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_085"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_036"/>
+            <field name="description">&lt;p&gt;Công việc Gửi báo giá cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_187" model="project.task">
+            <field name="name">Lập báo cáo tài chính #187</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Lập báo cáo tài chính cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_188" model="project.task">
+            <field name="name">Viết content Facebook #188</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Viết content Facebook cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_189" model="project.task">
+            <field name="name">Cập nhật hồ sơ nhân sự #189</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">not_started</field>
+            <field name="description">&lt;p&gt;Công việc Cập nhật hồ sơ nhân sự cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_190" model="project.task">
+            <field name="name">Sắp xếp lịch làm việc #190</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Sắp xếp lịch làm việc cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_191" model="project.task">
+            <field name="name">Xử lý khiếu nại #191</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">in_progress</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_086"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_008"/>
+            <field name="description">&lt;p&gt;Công việc Xử lý khiếu nại cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_192" model="project.task">
+            <field name="name">Đối chiếu công nợ #192</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Đối chiếu công nợ cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_193" model="project.task">
+            <field name="name">Chuẩn bị tài liệu họp #193</field>
+            <field name="task_type_code">assistant</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Chuẩn bị tài liệu họp cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_194" model="project.task">
+            <field name="name">Tổ chức team building #194</field>
+            <field name="task_type_code">hr</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Tổ chức team building cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_195" model="project.task">
+            <field name="name">Lên kế hoạch chiến dịch #195</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Lên kế hoạch chiến dịch cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_196" model="project.task">
+            <field name="name">Thanh toán nhà cung cấp #196</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Thanh toán nhà cung cấp cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_197" model="project.task">
+            <field name="name">Theo dõi thanh toán #197</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">urgent</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_060"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_022"/>
+            <field name="description">&lt;p&gt;Công việc Theo dõi thanh toán cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_198" model="project.task">
+            <field name="name">Tổ chức sự kiện #198</field>
+            <field name="task_type_code">marketing</field>
+            <field name="priority_level">low</field>
+            <field name="task_status">completed</field>
+            <field name="description">&lt;p&gt;Công việc Tổ chức sự kiện cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_199" model="project.task">
+            <field name="name">Xử lý khiếu nại #199</field>
+            <field name="task_type_code">sale</field>
+            <field name="priority_level">normal</field>
+            <field name="task_status">completed</field>
+            <field name="partner_id" ref="BTL_Quan_ly_khach_hang.customer_demo_091"/>
+            <field name="lead_id" ref="BTL_Quan_ly_khach_hang.lead_demo_001"/>
+            <field name="description">&lt;p&gt;Công việc Xử lý khiếu nại cho khách hàng&lt;/p&gt;</field>
+        </record>
+        <record id="task_demo_200" model="project.task">
+            <field name="name">Lập báo cáo tài chính #200</field>
+            <field name="task_type_code">accounting</field>
+            <field name="priority_level">high</field>
+            <field name="task_status">in_progress</field>
+            <field name="description">&lt;p&gt;Công việc Lập báo cáo tài chính cho khách hàng&lt;/p&gt;</field>
+        </record>
+    </data>
+</odoo>
