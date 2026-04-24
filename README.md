@@ -277,8 +277,8 @@ Password: admin (hoặc theo cấu hình trong odoo.conf)
 
 ## ✉️ 6. Liên hệ cá nhân
 Nếu bạn cần trao đổi thêm hoặc muốn phát triển mở rộng hệ thống, vui lòng liên hệ:  
-- 👨‍💻 Tác giả: Đào Duy Mạnh
-- 📧 Email: Manh12088@gmail.com
+- 👨‍💻 Tác giả: Lã Việt Hoàng
+- 📧 Email: lahoangprotknl@gmail.com
 - 🏫 Lớp: CNTT 16-04
 - 🏢 Khoa: Công nghệ thông tin – Trường Đại học Đại Nam
 - 🌐 GitHub: github.com/DaoDuyManh
